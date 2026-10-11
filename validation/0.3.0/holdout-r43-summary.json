@@ -1,0 +1,12 @@
+{
+  "sample": "holdout",
+  "version": "r43",
+  "titles": 8,
+  "ai_a_coverage": 8,
+  "ai_b_coverage": 8,
+  "script_matches_a": 8,
+  "script_uncertain": 0,
+  "script_determinate_mismatches_supported_by_both_ai": 0,
+  "ai_cross_disagreements_or_uncertain": 0,
+  "true_accuracy": null
+}

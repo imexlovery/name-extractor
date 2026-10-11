@@ -17,15 +17,17 @@ from pilot import read_jsonl, write_json, write_jsonl, regression_rows
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE_VERSION = tomllib.loads((ROOT / 'pyproject.toml').read_text())['project']['version']
 BASELINE = ROOT / 'validation' / 'v1'
-DEFAULT_WORK = ROOT / 'validation' / 'v2'
+DEFAULT_WORK = ROOT / 'validation' / ('v2' if RELEASE_VERSION=='0.2.0' else RELEASE_VERSION)
 WORK = DEFAULT_WORK
+PREVIOUS_STAGE = ROOT / 'validation' / 'v2'
+NEXT_STAGE = ROOT / 'validation' / '0.3.0'
 OLD = ROOT / '.local' / 'pilot-20261010'
 
 
 def labels(channel):
     result = {}
     originals = {}
-    if WORK == DEFAULT_WORK:
+    if WORK in (DEFAULT_WORK, NEXT_STAGE):
         for path in (BASELINE/'ai-references.jsonl', BASELINE/'ai-reference-exclusions.jsonl'):
             for row in read_jsonl(path):
                 label = row.get(f'ai_{channel}')
@@ -33,7 +35,9 @@ def labels(channel):
                     result[row['row']] = label
                     originals.setdefault(row['row'], []).append(label)
     paths = [p for p in (WORK / 'labels').glob(f'*-{channel}-*.jsonl') if not p.name.startswith('reference-corrections-')]
-    if WORK == DEFAULT_WORK:
+    if WORK == NEXT_STAGE:
+        paths += [p for p in (PREVIOUS_STAGE/'labels').glob(f'*-{channel}-*.jsonl') if not p.name.startswith('reference-corrections-')]
+    if WORK in (DEFAULT_WORK, NEXT_STAGE):
         pass
     elif channel == 'a':
         paths += list(OLD.glob('ai-a-*.jsonl')) + [OLD / 'holdout-ai-a.jsonl']
@@ -57,9 +61,12 @@ def labels(channel):
 
 
 def coverage(channel, inventory):
-    if WORK == DEFAULT_WORK:
+    if WORK in (DEFAULT_WORK, NEXT_STAGE):
         old_ids = {v['row'] for path in (BASELINE/'ai-references.jsonl',BASELINE/'ai-reference-exclusions.jsonl')
                    for v in read_jsonl(path) if v.get(f'ai_{channel}') is not None}
+        if WORK == NEXT_STAGE:
+            old_ids.update(v['row'] for p in (PREVIOUS_STAGE/'labels').glob(f'*-{channel}-*.jsonl')
+                           if not p.name.startswith('reference-corrections-') for v in read_jsonl(p))
     else:
         old_paths = list(OLD.glob(f'ai-{channel}-*.jsonl')) + [OLD / f'holdout-ai-{channel}.jsonl']
         old_ids = {v['row'] for path in old_paths for v in read_jsonl(path)}
@@ -88,13 +95,23 @@ def learn_anchors(target_version):
     anchors = {}
     for row, av in a.items():
         bv = b.get(row)
-        if row in excluded or not bv or av['status']!='names' or bv['status']!='names' or av['names']!=bv['names'] or not av['names']:
+        if row in excluded or not bv or av['status'] not in ('names','no_name') or bv['status']!=av['status'] or av['names']!=bv['names'] or (av['status']=='names' and not av['names']):
             continue
         core = inventory[row]['title'].split('关于',1)[-1].strip()
-        q = re.search('任职资格|任职',core)
-        if not q: continue
-        core = core[:q.start()].strip()
+        q = re.search('任职资格|任职|职资格|拟任资格|资格',core)
+        if q:
+            core = core[:q.start()].strip()
+        elif av['status']=='names':
+            continue
+        else:
+            core = core.removesuffix('的批复').strip()
         while match := rules._PREFIX.match(core): core=core[match.end():].lstrip()
+        if av['status']=='no_name':
+            candidate=rules._before_role(core).strip()
+            candidate=re.sub(r'(?:[、,，及和并]*开业[、,，及和并]*)$', '', candidate)
+            if re.search(r'(?:'+rules._INSTITUTION_END.pattern+r')$', candidate) and not re.search(r'[《》、;；及兼]', candidate):
+                anchors.setdefault(candidate,[]).append(row)
+            continue
         cursor, valid = 0, True
         for name in av['names']:
             position = core.find(name,cursor)
@@ -110,10 +127,16 @@ def learn_anchors(target_version):
         first=core.find(av['names'][0])
         if len(av['names']) == 1 and first >= 0:
             tail = core[first+len(av['names'][0]):].strip()
+            tail = re.sub(r'^(?:同志|先生|女士|拟任|担任|出任|任|的)', '', tail)
             outer, balanced = rules._outside(tail)
             match = rules._INSTITUTION_END.search(outer)
             if match and balanced:
                 candidates.append(tail[:match.end()].strip())
+            # Some titles use an institutional short form without 银行/公司.
+            if role := rules._ROLE.search(outer):
+                short = tail[:role.start()].strip()
+                if short and not rules._ROLE.search(short) and not re.search(r'[、,，;；和及与]',short):
+                    candidates.append(short)
         if first>0:
             prefix=core[:first];outer,balanced=rules._outside(prefix)
             matches=list(rules._INSTITUTION_END.finditer(outer))
@@ -123,7 +146,7 @@ def learn_anchors(target_version):
             if re.fullmatch(r'(?:村镇|农商|农村商业|农村信用|商业|股份制)?银行(?:股份有限公司)?|信用社|联社|保险公司|金融机构',anchor): continue
             anchors.setdefault(anchor,[]).append(row)
     write_json(ROOT/'scripts'/f'institution_anchors_{target_version}.json', sorted(anchors))
-    write_json(WORK/f'institution-anchors-{target_version}-sources.json', {'anchors':anchors, 'excluded_frozen_rows':sorted(excluded), 'derivation':'独立A/B参考一致，原标题明示姓名前或后的机构片段；非姓名答案表，不代表独立真值。'})
+    write_json(WORK/f'institution-anchors-{target_version}-sources.json', {'anchors':anchors, 'excluded_frozen_rows':sorted(excluded), 'derivation':'独立A/B确定参考一致；明示姓名前后机构片段、明确岗位前机构简称及无姓名参考支持的完整机构；非姓名答案表，不代表独立真值。'})
     print(json.dumps({'target_version':target_version,'institution_anchors':len(anchors),'excluded_frozen_titles':len(excluded)},ensure_ascii=False))
 
 
@@ -143,7 +166,9 @@ def run():
                'status_rows':{s:sum(len(v['rows']) for v in output if v['result']['status']==s) for s in ('names','no_name','uncertain')},
                'hard_failure_titles':sum(bool(v['checks']['failures']) for v in output)}
     previous_paths = [p for p in WORK.glob('script-r*.jsonl') if int(p.stem[8:]) < int(VERSION[1:])]
-    previous = {v['row']:v for v in read_jsonl(max(previous_paths, key=lambda p:int(p.stem[8:])))} if previous_paths else baseline
+    previous = {v['row']:v for v in read_jsonl(max(previous_paths, key=lambda p:int(p.stem[8:])))} if previous_paths else (
+        {v['row']:v for v in read_jsonl(PREVIOUS_STAGE/'script-r38.jsonl')} if WORK == NEXT_STAGE else baseline)
+    summary['comparison_baseline_version'] = max(previous_paths, key=lambda p:int(p.stem[8:])).stem.removeprefix('script-') if previous_paths else ('r38' if WORK == NEXT_STAGE else 'r29')
     changed = [dict(v, before=previous[v['row']]['result']) for v in output
                if (v['result']['names'],v['result']['status']) != (previous[v['row']]['result']['names'],previous[v['row']]['result']['status'])]
     summary['changed_titles'] = len(changed)
@@ -274,7 +299,7 @@ def finish():
              'regression_rows_from_v1':regressions,
              'ai_a_coverage':len(a),'ai_b_coverage':len(b),
              'true_accuracy':None,'human_review_performed':False,'production_source':'script_only'}
-    if WORK == DEFAULT_WORK:
+    if WORK in (DEFAULT_WORK, NEXT_STAGE):
         index = {v['row']:v for v in data}
         summary['v1_reference_comparison'] = dict(Counter(comparison_state(index[v['row']],v['ai_a'],v['ai_b'])
                                                          for v in read_jsonl(BASELINE/'ai-references.jsonl')))
@@ -294,9 +319,11 @@ def export(source, output):
 
 if __name__ == '__main__':
     p=argparse.ArgumentParser();p.add_argument('action',choices=['run','reviews','reviews-extra','finish','learn','export']);p.add_argument('--target-version')
+    p.add_argument('--work',type=Path,default=DEFAULT_WORK)
     p.add_argument('--source',type=Path,default=ROOT/'任职资格批复汇总测试.xlsx')
-    p.add_argument('--output',type=Path,default=ROOT/f'outputs/v2/任职资格批复汇总测试-{RELEASE_VERSION}纯脚本待复核版.xlsx')
+    p.add_argument('--output',type=Path,default=ROOT/f'outputs/{"v2" if RELEASE_VERSION=="0.2.0" else RELEASE_VERSION}/任职资格批复汇总测试-{RELEASE_VERSION}纯脚本待复核版.xlsx')
     args=p.parse_args()
+    WORK = args.work.resolve()
     if args.action=='export':
         export(args.source,args.output)
     elif args.action=='learn':

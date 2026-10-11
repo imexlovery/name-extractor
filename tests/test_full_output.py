@@ -13,6 +13,21 @@ from pilot import write_jsonl, read_jsonl
 
 
 class ReviewFailureHandling(unittest.TestCase):
+    def test_v030_inherits_saved_references_and_counts_only_new_judgments(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);baseline=root/'v1';previous=root/'v2';work=root/'0.3.0'
+            labels=[{'row':r,'names':['梁晓芝'],'status':'names'} for r in (2,3,4)]
+            write_jsonl(baseline/'ai-references.jsonl',[{'row':2,'ai_a':labels[0],'ai_b':labels[0]}])
+            write_jsonl(baseline/'ai-reference-exclusions.jsonl',[])
+            for channel in ('a','b'):
+                write_jsonl(previous/f'labels/review-{channel}-01.jsonl',[labels[1]])
+                write_jsonl(work/f'labels/holdout-{channel}-01.jsonl',[labels[2]])
+            inventory=[{'row':r,'rows':[r],'title':'关于梁晓芝任职资格的批复'} for r in (2,3,4)]
+            with patch.object(full,'BASELINE',baseline),patch.object(full,'WORK',work),patch.object(full,'NEXT_STAGE',work),patch.object(full,'PREVIOUS_STAGE',previous),patch.object(full,'OLD',root/'missing'):
+                for channel in ('a','b'):
+                    self.assertEqual(set(full.labels(channel)),{2,3,4})
+                    self.assertEqual(full.coverage(channel,inventory)['new_unique_titles'],1)
+
     def test_v1_reference_cache_without_ignored_local_history(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);baseline=root/'v1';work=root/'v2'

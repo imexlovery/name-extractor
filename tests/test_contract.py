@@ -56,12 +56,48 @@ class BusinessContract(unittest.TestCase):
         for person in ['和全', '郑和', '刘金和', '孟和巴拉']:
             self.assertEqual(extract(f'关于{person}任职资格的批复')['names'], [person])
         self.assertEqual(extract('关于和田智岳（TomotakeWada）任职资格的批复')['status'],'names')
-        self.assertEqual(extract('关于大连银行毕贺轩重庆分行行长任职资格的批复')['status'],'uncertain')
+        self.assertEqual(extract('关于大连银行毕贺轩重庆分行行长任职资格的批复')['names'],['毕贺轩'])
+        self.assertEqual(extract('关于大连银行毕贺轩重庆分行行长任职资格的批复')['status'],'names')
         long_person=extract('关于核准阿拉腾础鲁任职资格的批复')
         self.assertEqual(long_person['names'],['阿拉腾础鲁'])
         self.assertEqual(long_person['status'],'uncertain')
         for fragment in ['兼','总裁','营业部','开业及高管']:
             self.assertTrue(check(title, {'names':[fragment], 'status':'names'})['flags'])
+
+    def test_v030_observed_complete_title_boundaries(self):
+        cases = [
+            ('关于中国银行股份有限公司大连瓦房店支行行长于鹏任职资格的批复',['于鹏']),
+            ('关于刘海松魏县农村信用合作联社主任任职资格的批复',['刘海松']),
+            ('关于福海县农村信用合作联社徐兆杰联社主任任职资格的批复',['徐兆杰']),
+            ('关于内蒙古自治区农村信用社联合社周秀颖通辽审计中心主任任职资格的批复',['周秀颖']),
+            ('关于何春艳法律合规部负责人任职资格的批复',['何春艳']),
+            ('关于新疆喀什农村商业银行股份有限公司张洋拟任资格的批复',['张洋']),
+            ('关于郑向敏福州农商银行独立董事、陈智力福州农商银行董事任职资格的批复',['郑向敏','陈智力']),
+            ('关于卢锡羿任职资格的批复于卢锡羿任职资格的批复',['卢锡羿']),
+            ('关于义康安保险代理有限责任公司\u200c纳亮任职资格的批复',['纳亮']),
+        ]
+        for title,names in cases:
+            with self.subTest(title=title):
+                self.assertEqual((extract(title)['status'],extract(title)['names']),('names',names))
+        for title in [
+            '关于《保险公司董事和高级管理人员任职资格管理规定》具体适用问题的通知',
+            '关于交通银行娄底分行副行长任职资格的批复',
+            '关于核准青海同仁农村商业银行股份有限公司独立董事任职资格的批复',
+        ]:
+            self.assertEqual(extract(title)['status'],'no_name')
+
+    def test_v030_historical_doubts_remain_explicitly_uncertain(self):
+        for title in [
+            '关于核准路达的批复',
+            '关于核准Stéphanie,Anne,MarieLEGALdeKERANGALép.CLEMENTDEGIVRY法国兴业银行（中国）有限公司董事任职资格的批复',
+            '关于DAUNYSandrine，Marie-José广汽汇理汽车金融有限公司董事任职资格的批复',
+            '关于纳雍县农村信用合作联社行舒振国任职资格的批复',
+            '关于BaronvonPfetten，JeanChristophe任职资格的批复',
+            '关于王菲米兰金融机构独立董事任职资格的批复',
+            '关于陈\ue863任职资格的批复',
+        ]:
+            with self.subTest(title=title):
+                self.assertEqual(extract(title)['status'],'uncertain')
 
     def test_regression_includes_later_fixes_and_length(self):
         good={'names':['崔延峰'], 'status':'names', 'length':3, 'extracted_name':'崔延峰'}

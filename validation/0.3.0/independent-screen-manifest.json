@@ -1,0 +1,174 @@
+{
+  "inventory_titles": 46760,
+  "used_titles": 23544,
+  "remaining_titles": 23216,
+  "excluded_sources": [
+    {
+      "source": "validation/v1/ai-reference-corrections.jsonl",
+      "titles": 5
+    },
+    {
+      "source": "validation/v1/ai-references.jsonl",
+      "titles": 23387
+    },
+    {
+      "source": "validation/v1/ai-reference-exclusions.jsonl",
+      "titles": 55
+    },
+    {
+      "source": "validation/v2/labels/followup-a-01.jsonl",
+      "titles": 101
+    },
+    {
+      "source": "validation/v2/labels/pilot-b-01.jsonl",
+      "titles": 21
+    },
+    {
+      "source": "validation/v2/labels/followup-b-01.jsonl",
+      "titles": 101
+    },
+    {
+      "source": "validation/v2/labels/pilot-a-01.jsonl",
+      "titles": 21
+    },
+    {
+      "source": ".local/full-20261011/diagnostic-long-contiguous.jsonl",
+      "titles": 52
+    },
+    {
+      "source": ".local/full-20261011/diagnostic-blind.jsonl",
+      "titles": 24
+    },
+    {
+      "source": ".local/full-20261011/review-targets.jsonl",
+      "titles": 23405
+    },
+    {
+      "source": ".local/full-20261011/review-targets-initial.jsonl",
+      "titles": 22258
+    },
+    {
+      "source": ".local/full-20261011/holdout3-frozen.jsonl",
+      "titles": 400
+    },
+    {
+      "source": ".local/full-20261011/holdout4-frozen.jsonl",
+      "titles": 400
+    },
+    {
+      "source": ".local/full-20261011/holdout5-frozen.jsonl",
+      "titles": 400
+    },
+    {
+      "source": ".local/full-20261011/holdout2-frozen.jsonl",
+      "titles": 400
+    },
+    {
+      "source": ".local/full-20261011/holdout-frozen.jsonl",
+      "titles": 400
+    },
+    {
+      "source": ".local/pilot-20261010/ai-a-04.jsonl",
+      "titles": 40
+    },
+    {
+      "source": ".local/pilot-20261010/ai-a-02.jsonl",
+      "titles": 40
+    },
+    {
+      "source": ".local/pilot-20261010/ai-a-03.jsonl",
+      "titles": 40
+    },
+    {
+      "source": ".local/pilot-20261010/ai-a-01.jsonl",
+      "titles": 40
+    },
+    {
+      "source": ".local/pilot-20261010/ai-b-02.jsonl",
+      "titles": 40
+    },
+    {
+      "source": ".local/pilot-20261010/holdout-ai-a.jsonl",
+      "titles": 40
+    },
+    {
+      "source": ".local/pilot-20261010/ai-b-01.jsonl",
+      "titles": 40
+    },
+    {
+      "source": ".local/pilot-20261010/ai-b-03.jsonl",
+      "titles": 36
+    },
+    {
+      "source": ".local/pilot-20261010/holdout-ai-b.jsonl",
+      "titles": 34
+    },
+    {
+      "source": "validation/v2/institution-anchors-r36-sources.json",
+      "titles": 18991
+    },
+    {
+      "source": "validation/v1/institution-anchor-sources-r29.json",
+      "titles": 18480
+    }
+  ],
+  "independent_raw_features_all": {
+    "多个机构或分支": 11790,
+    "中外文或括注": 1564,
+    "连接词": 550,
+    "多个完整岗位": 598,
+    "名单标点": 934,
+    "缺少标准后缀": 772,
+    "异常字符": 42,
+    "重复任职或批复": 4
+  },
+  "independent_raw_features_remaining": {
+    "缺少标准后缀": 2,
+    "异常字符": 5,
+    "重复任职或批复": 1
+  },
+  "candidate_titles": 8,
+  "candidate_titles_not_revealed_to_parent": true,
+  "feature_screen_is_mechanical_not_semantic_diagnosis": true,
+  "prior_rule_changes_checked": [
+    {
+      "source": "validation/archive/0.2.0-rounds.zip:validation/v2/changes-r29.jsonl",
+      "titles": 0
+    },
+    {
+      "source": "validation/archive/0.2.0-rounds.zip:validation/v2/changes-r30.jsonl",
+      "titles": 353
+    },
+    {
+      "source": "validation/archive/0.2.0-rounds.zip:validation/v2/changes-r31.jsonl",
+      "titles": 37
+    },
+    {
+      "source": "validation/archive/0.2.0-rounds.zip:validation/v2/changes-r32.jsonl",
+      "titles": 99
+    },
+    {
+      "source": "validation/archive/0.2.0-rounds.zip:validation/v2/changes-r33.jsonl",
+      "titles": 144
+    },
+    {
+      "source": "validation/archive/0.2.0-rounds.zip:validation/v2/changes-r34.jsonl",
+      "titles": 92
+    },
+    {
+      "source": "validation/archive/0.2.0-rounds.zip:validation/v2/changes-r35.jsonl",
+      "titles": 17
+    },
+    {
+      "source": "validation/archive/0.2.0-rounds.zip:validation/v2/changes-r36.jsonl",
+      "titles": 3
+    },
+    {
+      "source": "validation/archive/0.2.0-rounds.zip:validation/v2/changes-r37.jsonl",
+      "titles": 2
+    }
+  ],
+  "prior_change_candidate_overlap": [],
+  "used_titles_after_historical_change_check": 23544,
+  "remaining_titles_after_historical_change_check": 23216
+}

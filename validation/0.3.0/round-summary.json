@@ -1,0 +1,120 @@
+[
+  {
+    "version": "r39",
+    "status_titles": {
+      "names": 45923,
+      "uncertain": 174,
+      "no_name": 663
+    },
+    "status_rows": {
+      "names": 51233,
+      "no_name": 730,
+      "uncertain": 183
+    },
+    "comparison_baseline_version": "r38",
+    "transitions": {
+      "names -> uncertain": 6
+    },
+    "determinate_reference_differences": 0
+  },
+  {
+    "version": "r40",
+    "status_titles": {
+      "names": 45932,
+      "uncertain": 158,
+      "no_name": 670
+    },
+    "status_rows": {
+      "names": 51242,
+      "no_name": 737,
+      "uncertain": 167
+    },
+    "comparison_baseline_version": "r39",
+    "transitions": {
+      "uncertain -> names": 9,
+      "uncertain -> no_name": 7
+    },
+    "determinate_reference_differences": 0
+  },
+  {
+    "version": "r41",
+    "status_titles": {
+      "names": 45872,
+      "uncertain": 132,
+      "no_name": 756
+    },
+    "status_rows": {
+      "names": 51178,
+      "no_name": 827,
+      "uncertain": 141
+    },
+    "comparison_baseline_version": "r40",
+    "transitions": {
+      "names -> no_name": 70,
+      "uncertain -> no_name": 16,
+      "uncertain -> names": 11,
+      "names -> uncertain": 1
+    },
+    "determinate_reference_differences": 70
+  },
+  {
+    "version": "r42",
+    "status_titles": {
+      "names": 45877,
+      "uncertain": 191,
+      "no_name": 692
+    },
+    "status_rows": {
+      "names": 51187,
+      "no_name": 759,
+      "uncertain": 200
+    },
+    "comparison_baseline_version": "r41",
+    "transitions": {
+      "no_name -> names": 70,
+      "names -> uncertain": 70,
+      "uncertain -> names": 5,
+      "uncertain -> no_name": 6,
+      "uncertain -> uncertain": 1
+    },
+    "determinate_reference_differences": 0
+  },
+  {
+    "version": "r43",
+    "status_titles": {
+      "names": 45949,
+      "uncertain": 117,
+      "no_name": 694
+    },
+    "status_rows": {
+      "names": 51259,
+      "no_name": 761,
+      "uncertain": 126
+    },
+    "comparison_baseline_version": "r42",
+    "transitions": {
+      "uncertain -> names": 72,
+      "uncertain -> uncertain": 1,
+      "uncertain -> no_name": 2
+    },
+    "determinate_reference_differences": 0
+  },
+  {
+    "version": "r44",
+    "status_titles": {
+      "names": 45945,
+      "uncertain": 121,
+      "no_name": 694
+    },
+    "status_rows": {
+      "names": 51255,
+      "no_name": 761,
+      "uncertain": 130
+    },
+    "comparison_baseline_version": "r43",
+    "transitions": {
+      "names -> uncertain": 4
+    },
+    "determinate_reference_differences": 0
+  }
+]
