@@ -1,0 +1,542 @@
+{
+  "scope": {
+    "source": "validation/0.3.0/script-r44.jsonl title field only; scripts/extract.py; permitted blind titles",
+    "distinct_original_titles_screened": 46760,
+    "screening_method": "全量原标题经过独立结构筛查，定向人工阅读多机构、重复任职资格、岗位后剩余片段、开业任职组合和规范/行政标题；不等同于逐条独立姓名准确率验证。",
+    "other_labels_read": false,
+    "extractor_modified": false,
+    "observed_version": "r47"
+  },
+  "real_original_findings": [
+    {
+      "source": "real_original_title",
+      "source_distinct_title_index": 32635,
+      "title": "关于核钟丽华任职资格的批复",
+      "independent_expected": {
+        "names": [],
+        "status": "uncertain",
+        "reason": "核可能属于完整姓名，也可能是核准动词的残缺；原标题缺少唯一边界。"
+      },
+      "observed_extractor_version": "r47",
+      "observed": {
+        "names": [
+          "核钟丽华"
+        ],
+        "status": "names",
+        "rule": "person_before_qualification",
+        "note": ""
+      },
+      "classification": "new_boundary_ambiguity_candidate_not_confirmed_name_error",
+      "root_cause": "_PREFIX不识别残缺核，四字片段直接在_finish中确认为姓名。",
+      "generalizable_change": "保留原标题为未决，不补准字、不直接删除核；将残缺审批动词边界纳入复核。"
+    },
+    {
+      "source": "real_original_title",
+      "source_distinct_title_index": 36133,
+      "title": "关于邱畅殷拟任职资格的批复",
+      "independent_expected": {
+        "names": [],
+        "status": "uncertain",
+        "reason": "拟可能是姓名尾字，也可能修饰拟任职资格；原标题没有分隔。"
+      },
+      "observed_extractor_version": "r47",
+      "observed": {
+        "names": [
+          "邱畅殷拟"
+        ],
+        "status": "names",
+        "rule": "person_before_qualification",
+        "note": ""
+      },
+      "classification": "new_boundary_ambiguity_candidate_not_confirmed_name_error",
+      "root_cause": "qualification在任职资格处截断后留下拟；_finish四字片段返回names。",
+      "generalizable_change": "拟任结构应在姓名候选与任职结构边界统一分析；歧义保留，不按字数裁剪。"
+    },
+    {
+      "source": "real_original_title",
+      "source_distinct_title_index": 45820,
+      "title": "关于殷熊毅辉任职资格的批复",
+      "independent_expected": {
+        "names": [],
+        "status": "uncertain",
+        "reason": "连续四字既可为完整姓名，也可能为多个名字连写；原标题无人数或分隔证据。"
+      },
+      "observed_extractor_version": "r47",
+      "observed": {
+        "names": [
+          "殷熊毅辉"
+        ],
+        "status": "names",
+        "rule": "person_before_qualification",
+        "note": ""
+      },
+      "classification": "new_boundary_ambiguity_candidate_not_confirmed_name_error",
+      "root_cause": "_finish仅对大于四个汉字标长姓名歧义，四字直接确认为单人。",
+      "generalizable_change": "连续汉字边界需依标题人数、分项、别名等证据；不能用四字阈值证明单人或用姓氏猜拆。"
+    },
+    {
+      "source": "real_original_title",
+      "source_distinct_title_index": 13129,
+      "title": "关于王夏春子任职资格的批复",
+      "independent_expected": {
+        "names": [],
+        "status": "uncertain",
+        "reason": "原标题只有连续四字，缺少单人或多人唯一边界；不依据姓名词典认定。"
+      },
+      "observed_extractor_version": "r47",
+      "observed": {
+        "names": [
+          "王夏春子"
+        ],
+        "status": "names",
+        "rule": "person_before_qualification",
+        "note": ""
+      },
+      "classification": "new_boundary_ambiguity_candidate_not_confirmed_name_error",
+      "root_cause": "_finish把不超过四字的连续候选直接判为一人。",
+      "generalizable_change": "缺乏人数及分隔证据的边界问题交给人工复核；不可自动拆成王夏和春子。"
+    }
+  ],
+  "real_new_confirmed_omission_count": 0,
+  "real_boundary_ambiguity_candidate_count": 4,
+  "real_structural_controls": [
+    {
+      "source_distinct_title_index": 28807,
+      "title": "关于郑向敏福州农商银行独立董事、陈智力福州农商银行董事任职资格的批复",
+      "independent_expected": {
+        "names": [
+          "郑向敏",
+          "陈智力"
+        ],
+        "status": "names",
+        "reason": "两个明确机构岗位分句各自明示姓名"
+      },
+      "observed": {
+        "names": [
+          "郑向敏",
+          "陈智力"
+        ],
+        "status": "names",
+        "rule": "explicit_post_clauses",
+        "note": ""
+      },
+      "matches_reference": true
+    },
+    {
+      "source_distinct_title_index": 36224,
+      "title": "关于李江龙湖南衡阳衡州农村商业银行股份有限公司董事任职资格和罗文正湖南衡阳衡州农村商业银行股份有限公司独立董事任职资格的批复",
+      "independent_expected": {
+        "names": [
+          "李江龙",
+          "罗文正"
+        ],
+        "status": "names",
+        "reason": "重复任职资格分句各自明示姓名"
+      },
+      "observed": {
+        "names": [
+          "李江龙",
+          "罗文正"
+        ],
+        "status": "names",
+        "rule": "explicit_qualification_clauses",
+        "note": ""
+      },
+      "matches_reference": true
+    },
+    {
+      "source_distinct_title_index": 441,
+      "title": "关于中国银行股份有限公司大连瓦房店支行行长于鹏任职资格的批复",
+      "independent_expected": {
+        "names": [
+          "于鹏"
+        ],
+        "status": "names",
+        "reason": "行长岗位后明示于鹏"
+      },
+      "observed": {
+        "names": [
+          "于鹏"
+        ],
+        "status": "names",
+        "rule": "institution_before_person",
+        "note": ""
+      },
+      "matches_reference": true
+    },
+    {
+      "source_distinct_title_index": 623,
+      "title": "关于中国农业银行股份有限公司六盘水钟山支行副行长（主持工作）胡俊任职资格的批复",
+      "independent_expected": {
+        "names": [
+          "胡俊"
+        ],
+        "status": "names",
+        "reason": "副行长附注之后明示胡俊"
+      },
+      "observed": {
+        "names": [
+          "胡俊"
+        ],
+        "status": "names",
+        "rule": "institution_before_person",
+        "note": ""
+      },
+      "matches_reference": true
+    },
+    {
+      "source_distinct_title_index": 9882,
+      "title": "关于中国农业发展银行内蒙古自治区分行田普丞同志银行业金融机构高级管理人员任职资格的批复",
+      "independent_expected": {
+        "names": [
+          "田普丞"
+        ],
+        "status": "names",
+        "reason": "田普丞同志位于机构和高管岗位之间"
+      },
+      "observed": {
+        "names": [
+          "田普丞"
+        ],
+        "status": "names",
+        "rule": "institution_before_person",
+        "note": ""
+      },
+      "matches_reference": true
+    },
+    {
+      "source_distinct_title_index": 8401,
+      "title": "关于《保险公司董事和高级管理人员任职资格管理规定》具体适用问题的通知",
+      "independent_expected": {
+        "names": [],
+        "status": "no_name",
+        "reason": "真实规范文件通知未明示个人"
+      },
+      "observed": {
+        "names": [],
+        "status": "no_name",
+        "rule": "regulatory_document",
+        "note": "规范性文件标题未明示被批复人"
+      },
+      "matches_reference": true
+    },
+    {
+      "source_distinct_title_index": 21959,
+      "title": "关于执行《保险公司董事和高级管理人员任职资格管理规定》若干问题的通知",
+      "independent_expected": {
+        "names": [],
+        "status": "no_name",
+        "reason": "真实规范文件通知未明示个人"
+      },
+      "observed": {
+        "names": [],
+        "status": "no_name",
+        "rule": "regulatory_document",
+        "note": "规范性文件标题未明示被批复人"
+      },
+      "matches_reference": true
+    },
+    {
+      "source_distinct_title_index": 407,
+      "title": "关于广发银行股份有限公司信用卡中心石家庄分中心开业及马兆银任职资格的批复",
+      "independent_expected": {
+        "names": [
+          "马兆银"
+        ],
+        "status": "names",
+        "reason": "机构开业和马兆银任职为并列事项"
+      },
+      "observed": {
+        "names": [
+          "马兆银"
+        ],
+        "status": "names",
+        "rule": "institution_before_person",
+        "note": ""
+      },
+      "matches_reference": true
+    }
+  ],
+  "synthetic": {
+    "title_file": "validation/0.4.0/blind/structure-holdout.jsonl",
+    "first_answer_reference_file": "validation/0.4.0/structure-holdout-reference.jsonl",
+    "observed_file": ".local/0.4.0/structure-holdout-observed.jsonl",
+    "count": 48,
+    "matches": 24,
+    "mismatches": 24,
+    "reference_saved_before_extractor_run": true,
+    "design": "从真实结构替换已明示姓名、机构、岗位后形成新的组合，另注入无分隔与外文别名歧义；不是新发现的真实数据错误。",
+    "development_test_separation": "原标题开发证据与新增structure-holdout文件分开；首次预期已固定，没有依据脚本输出调整。若后续根据这48条修改规则，它们即成为开发回归样本，最终保留集应另外建立。"
+  },
+  "architecture_risks": [
+    {
+      "id": "shared_qualification_multiple_institutions",
+      "evidence_kind": "synthetic_pressure_test",
+      "root_cause": "person_before_institution取最早机构前缀，institution_before_person取最后机构后缀；单个任职资格不触发多分句保护。",
+      "generalizable_change": "在确认姓名结果前检查完整任职片段内所有机构位置和分项，不以最早或最后一次机构命中直接返回；同一机构重复出现应使用全部匹配位置。",
+      "failing_case_ids": [
+        "structure-holdout-001",
+        "structure-holdout-002",
+        "structure-holdout-003",
+        "structure-holdout-004",
+        "structure-holdout-005",
+        "structure-holdout-006",
+        "structure-holdout-023",
+        "structure-holdout-037",
+        "structure-holdout-038"
+      ],
+      "examples": [
+        {
+          "id": "structure-holdout-001",
+          "title": "关于张瑞中国农业银行股份有限公司、陈琳中国银行股份有限公司任职资格的批复",
+          "extractor_version": "r47",
+          "actual": {
+            "names": [
+              "张瑞"
+            ],
+            "status": "names",
+            "rule": "person_before_institution",
+            "note": ""
+          },
+          "expected": {
+            "names": [
+              "张瑞",
+              "陈琳"
+            ],
+            "status": "names",
+            "reason": "顿号分别连接两个姓名加机构主体，共用任职资格"
+          },
+          "matches_reference": false
+        },
+        {
+          "id": "structure-holdout-002",
+          "title": "关于核准胡宇中国农业银行股份有限公司；胡铁中国建设银行股份有限公司任职资格的批复",
+          "extractor_version": "r47",
+          "actual": {
+            "names": [
+              "胡宇"
+            ],
+            "status": "names",
+            "rule": "person_before_institution",
+            "note": ""
+          },
+          "expected": {
+            "names": [
+              "胡宇",
+              "胡铁"
+            ],
+            "status": "names",
+            "reason": "分号分隔两个任职主体"
+          },
+          "matches_reference": false
+        }
+      ]
+    },
+    {
+      "id": "person_after_first_post",
+      "evidence_kind": "synthetic_pressure_test",
+      "root_cause": "_before_role剪去首个岗位及之后全部文本；只有第二个岗位才可能触发既有多岗位保护。",
+      "generalizable_change": "以完整分项为单位辨认岗位与姓名；首个岗位之后还有非岗位内容时不得忽略，能证明第二主体则提取，否则uncertain。",
+      "failing_case_ids": [
+        "structure-holdout-007",
+        "structure-holdout-008",
+        "structure-holdout-009",
+        "structure-holdout-010",
+        "structure-holdout-039"
+      ],
+      "examples": [
+        {
+          "id": "structure-holdout-007",
+          "title": "关于张瑞中国农业银行股份有限公司董事、陈琳任职资格的批复",
+          "extractor_version": "r47",
+          "actual": {
+            "names": [
+              "张瑞"
+            ],
+            "status": "names",
+            "rule": "person_before_institution",
+            "note": ""
+          },
+          "expected": {
+            "names": [
+              "张瑞",
+              "陈琳"
+            ],
+            "status": "names",
+            "reason": "顿号在首人岗位之后引入第二任职姓名"
+          },
+          "matches_reference": false
+        },
+        {
+          "id": "structure-holdout-008",
+          "title": "关于陈琳中国银行股份有限公司副行长；张瑞任职资格的批复",
+          "extractor_version": "r47",
+          "actual": {
+            "names": [
+              "陈琳"
+            ],
+            "status": "names",
+            "rule": "person_before_institution",
+            "note": ""
+          },
+          "expected": {
+            "names": [
+              "陈琳",
+              "张瑞"
+            ],
+            "status": "names",
+            "reason": "分号在首人岗位后引入第二任职姓名"
+          },
+          "matches_reference": false
+        }
+      ]
+    },
+    {
+      "id": "normative_or_administrative_early_no_name",
+      "evidence_kind": "synthetic_pressure_test",
+      "root_cause": "文书类型或书名号命中即在语义解析前返回no_name。",
+      "generalizable_change": "书名号内规范性任职字样与书名号外具体个人任职分开处理；只有完整标题未明示任何个人时返回no_name。",
+      "failing_case_ids": [
+        "structure-holdout-013",
+        "structure-holdout-014",
+        "structure-holdout-015",
+        "structure-holdout-016",
+        "structure-holdout-017",
+        "structure-holdout-018"
+      ],
+      "examples": [
+        {
+          "id": "structure-holdout-013",
+          "title": "关于印发《董事任职资格管理规定》及核准陈琳董事任职资格的通知",
+          "extractor_version": "r47",
+          "actual": {
+            "names": [],
+            "status": "no_name",
+            "rule": "regulatory_document",
+            "note": "规范性文件标题未明示被批复人"
+          },
+          "expected": {
+            "names": [
+              "陈琳"
+            ],
+            "status": "names",
+            "reason": "书名号外明确核准陈琳任职，规范文件名不应吞掉主体"
+          },
+          "matches_reference": false
+        },
+        {
+          "id": "structure-holdout-014",
+          "title": "关于执行《高级管理人员任职资格管理规定》并核准张瑞行长任职资格的通知",
+          "extractor_version": "r47",
+          "actual": {
+            "names": [],
+            "status": "no_name",
+            "rule": "regulatory_document",
+            "note": "规范性文件标题未明示被批复人"
+          },
+          "expected": {
+            "names": [
+              "张瑞"
+            ],
+            "status": "names",
+            "reason": "规范规定之后明示核准张瑞任职"
+          },
+          "matches_reference": false
+        }
+      ]
+    },
+    {
+      "id": "opening_named_appointment_early_return",
+      "evidence_kind": "synthetic_pressure_test",
+      "root_cause": "开业并核准分支只用_before_role处理核准尾部并直接返回；多个机构岗位保护在复合开业语法下未覆盖全部主体。",
+      "generalizable_change": "完整解析开业后任职分句，核准片段内继续检查全部姓名和岗位，不在首个岗位处返回。",
+      "failing_case_ids": [
+        "structure-holdout-019",
+        "structure-holdout-020",
+        "structure-holdout-022"
+      ],
+      "examples": [
+        {
+          "id": "structure-holdout-019",
+          "title": "关于中国银行股份有限公司开业并核准陈琳董事、张瑞任职资格的批复",
+          "extractor_version": "r47",
+          "actual": {
+            "names": [
+              "陈琳"
+            ],
+            "status": "names",
+            "rule": "opening_and_named_appointment",
+            "note": ""
+          },
+          "expected": {
+            "names": [
+              "陈琳",
+              "张瑞"
+            ],
+            "status": "names",
+            "reason": "开业后核准段落包含首人岗位以及第二姓名"
+          },
+          "matches_reference": false
+        },
+        {
+          "id": "structure-holdout-020",
+          "title": "关于中国建设银行股份有限公司开业及核准胡铁行长；胡宇任职资格的批复",
+          "extractor_version": "r47",
+          "actual": {
+            "names": [
+              "胡铁"
+            ],
+            "status": "names",
+            "rule": "opening_and_named_appointment",
+            "note": ""
+          },
+          "expected": {
+            "names": [
+              "胡铁",
+              "胡宇"
+            ],
+            "status": "names",
+            "reason": "开业后的核准事项由分号明确列举两人"
+          },
+          "matches_reference": false
+        }
+      ]
+    },
+    {
+      "id": "four_han_contiguous_name_or_people",
+      "evidence_kind": "synthetic_pressure_test",
+      "root_cause": "_finish把四字连续汉字确认为单人，而大于四字才承认连写歧义。",
+      "generalizable_change": "题内人数、分隔、别名等是边界证据；对无唯一边界的连续表达保留uncertain，不按字数阈值拆分或确认。",
+      "failing_case_ids": [
+        "structure-holdout-031"
+      ],
+      "examples": [
+        {
+          "id": "structure-holdout-031",
+          "title": "关于陈琳张瑞任职资格的批复",
+          "extractor_version": "r47",
+          "actual": {
+            "names": [
+              "陈琳张瑞"
+            ],
+            "status": "names",
+            "rule": "person_before_qualification",
+            "note": ""
+          },
+          "expected": {
+            "names": [],
+            "status": "uncertain",
+            "reason": "四字连续片段可能完整姓名或两名连写，标题缺少唯一人数边界"
+          },
+          "matches_reference": false
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "AI独立首答不等于人工真值，仍须人工检查。",
+    "四条真实边界候选为保守复核，不确认其实际姓名或人数；不应作为真实已确认错误统计。",
+    "24个合成不匹配是结构压力测试结果，不可外推46760原标题的真实准确率。",
+    "架构核验运行时主Agent脚本已由初读r45变为r47；所有脚本比较注明观察版本。"
+  ]
+}

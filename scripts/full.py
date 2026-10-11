@@ -35,8 +35,10 @@ def labels(channel):
                     result[row['row']] = label
                     originals.setdefault(row['row'], []).append(label)
     paths = [p for p in (WORK / 'labels').glob(f'*-{channel}-*.jsonl') if not p.name.startswith('reference-corrections-')]
-    if WORK == NEXT_STAGE:
-        paths += [p for p in (PREVIOUS_STAGE/'labels').glob(f'*-{channel}-*.jsonl') if not p.name.startswith('reference-corrections-')]
+    if WORK in (DEFAULT_WORK, NEXT_STAGE):
+        for stage in (PREVIOUS_STAGE, NEXT_STAGE):
+            if stage != WORK and stage.parent == BASELINE.parent:
+                paths += [p for p in (stage/'labels').glob(f'*-{channel}-*.jsonl') if not p.name.startswith('reference-corrections-')]
     if WORK in (DEFAULT_WORK, NEXT_STAGE):
         pass
     elif channel == 'a':
@@ -51,7 +53,11 @@ def labels(channel):
                 result[row['row']] = dict(row, status='uncertain', reason='参考答案版本分歧')
             else:
                 result[row['row']] = row
-    for path in sorted(list((WORK/'labels').glob(f'reference-corrections-{channel}-*.jsonl'))+list(WORK.glob(f'reference-corrections-{channel}-*.jsonl'))):
+    correction_stages = [stage for stage in (PREVIOUS_STAGE, NEXT_STAGE)
+                         if WORK in (DEFAULT_WORK, NEXT_STAGE) and stage != WORK and stage.parent == BASELINE.parent] + [WORK]
+    for path in [path for stage in correction_stages for path in sorted(
+            list((stage/'labels').glob(f'reference-corrections-{channel}-*.jsonl')) +
+            list(stage.glob(f'reference-corrections-{channel}-*.jsonl')))]:
         for correction in read_jsonl(path):
             row, before, after = correction['row'], correction['before'], correction['after']
             if not correction['reason'] or after['row']!=row or not any((v['names'],v['status'])==(before['names'],before['status']) for v in originals.get(row,[])):
@@ -64,9 +70,10 @@ def coverage(channel, inventory):
     if WORK in (DEFAULT_WORK, NEXT_STAGE):
         old_ids = {v['row'] for path in (BASELINE/'ai-references.jsonl',BASELINE/'ai-reference-exclusions.jsonl')
                    for v in read_jsonl(path) if v.get(f'ai_{channel}') is not None}
-        if WORK == NEXT_STAGE:
-            old_ids.update(v['row'] for p in (PREVIOUS_STAGE/'labels').glob(f'*-{channel}-*.jsonl')
-                           if not p.name.startswith('reference-corrections-') for v in read_jsonl(p))
+        for stage in (PREVIOUS_STAGE, NEXT_STAGE):
+            if stage != WORK and stage.parent == BASELINE.parent:
+                old_ids.update(v['row'] for p in (stage/'labels').glob(f'*-{channel}-*.jsonl')
+                               if not p.name.startswith('reference-corrections-') for v in read_jsonl(p))
     else:
         old_paths = list(OLD.glob(f'ai-{channel}-*.jsonl')) + [OLD / f'holdout-ai-{channel}.jsonl']
         old_ids = {v['row'] for path in old_paths for v in read_jsonl(path)}

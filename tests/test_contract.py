@@ -9,6 +9,39 @@ from pilot import regression_rows
 
 
 class BusinessContract(unittest.TestCase):
+    def test_complete_clauses_keep_subjects_and_attach_intervening_roles(self):
+        cases = [
+            ('关于张瑞中国农业银行股份有限公司董事、行长、陈琳任职资格的批复', ['张瑞', '陈琳']),
+            ('关于张瑞中国农业银行股份有限公司、陈琳中国银行股份有限公司任职资格的批复', ['张瑞', '陈琳']),
+            ('关于中国银行股份有限公司晴川支行开业并核准陈琳董事、张瑞任职资格的批复', ['陈琳', '张瑞']),
+            ('关于印发《董事任职资格管理规定》及核准陈琳董事任职资格的通知', ['陈琳']),
+            ('关于中国农业银行股份有限公司沐云支行：张瑞、陈琳董事任职资格的批复', ['张瑞', '陈琳']),
+            ('关于中国建设银行股份有限公司听澜支行（董事名单：胡铁、张瑞）任职资格的批复', ['胡铁', '张瑞']),
+        ]
+        for title, names in cases:
+            if names is not None:
+                self.assertEqual((extract(title)['status'], extract(title)['names']), ('names', names))
+        result = {'names': ['陈琳张瑞'], 'status': 'names'}
+        self.assertIn('四字姓名内部人数待复核', check('关于陈琳张瑞任职资格的批复', result)['flags'])
+
+    def test_structural_actions_parent_institutions_and_complete_roles(self):
+        cases = [
+            ('关于中国民生银行股份有限公司信用卡中心东北分中心开业并核准杜振亮任职资格的批复', ['杜振亮']),
+            ('关于高辉友太安保险经纪有限公司天津分公司主要负责人任职资格的批复', ['高辉']),
+            ('关于核准呼天智金融高级管理人员任职资格的批复', ['呼天智']),
+            ('关于林远友太安保险经纪有限公司成都分公司主要负责人任职资格的批复', ['林远']),
+            ('关于李斌中国工商银行股份有限公司济南分行副行长、风险官任职资格的批复', ['李斌']),
+        ]
+        for title, names in cases:
+            self.assertEqual((extract(title)['status'], extract(title)['names']), ('names', names))
+        for title in [
+            '关于张三中国工商银行行长李四任职资格的批复',
+            '关于林远友太安保险经纪有限公司成都分公司主要负责人周宁任职资格的批复',
+        ]:
+            result = extract(title)
+            self.assertEqual((result['status'], result['rule']), ('uncertain', 'conflicting_person_boundaries'))
+            self.assertEqual(check(title, result)['failures'], [])
+
     def test_v2_observed_boundaries_and_aliases(self):
         cases = [
             ('关于核准冉洵高管任职资格的批复', ['冉洵']),

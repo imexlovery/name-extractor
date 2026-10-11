@@ -1,0 +1,8 @@
+{
+  "version": "r50",
+  "source": "extract-r50.py",
+  "resource": "institution_anchors_r41.json",
+  "parent_derivation": "parent-institution-sources.json",
+  "final_synthetic_set": "blind/final-structure.jsonl",
+  "truth": "同模型独立上下文与合成预期，不是人工真值"
+}

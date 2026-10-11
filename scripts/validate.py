@@ -22,7 +22,7 @@ def check(title, result):
             failures.append("姓名不在原标题或顺序不符")
         else:
             cursor = position + len(name)
-        if NON_NAME.search(name):
+        if NON_NAME.search(name) or name == '风险官':
             flags.append("疑似机构或职位残留")
     if result.get("status") not in {"names", "no_name", "uncertain"}:
         failures.append("状态无效")
@@ -48,6 +48,8 @@ def check(title, result):
         flags.append('省略称谓或介词复核')
     if any(reference_length([name]) < 2 or (not re.search(r"[A-Za-z]", name) and reference_length([name]) > 4) for name in names):
         flags.append("异常长度线索")
+    if any(re.fullmatch(r'[\u4e00-\u9fff]{4}', name) for name in names):
+        flags.append('四字姓名内部人数待复核')
     return {"failures": sorted(set(failures)), "flags": sorted(set(flags))}
 
 
@@ -74,6 +76,8 @@ def risk_categories(title, result, checks):
         tags.append('称谓或介词结构')
     if '异常长度线索' in checks['flags']:
         tags.append('长连续姓名或异常长度')
+    if '四字姓名内部人数待复核' in checks['flags']:
+        tags.append('四字姓名人数边界')
     if '特殊形式复核' in checks['flags'] and re.search('[·•‧・()（）]',title):
         tags.append('中点或括号姓名形式')
     return tags

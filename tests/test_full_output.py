@@ -13,6 +13,24 @@ from pilot import write_jsonl, read_jsonl
 
 
 class ReviewFailureHandling(unittest.TestCase):
+    def test_v040_inherits_all_saved_stages_and_preserves_reference_conflicts(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            baseline, previous, next_stage, work = [root / name for name in ('v1', 'v2', '0.3.0', '0.4.0')]
+            label = {'row': 2, 'names': ['梁晓芝'], 'status': 'names'}
+            write_jsonl(baseline / 'ai-references.jsonl', [{'row': 2, 'ai_a': label, 'ai_b': label}])
+            write_jsonl(baseline / 'ai-reference-exclusions.jsonl', [])
+            write_jsonl(previous / 'labels/review-a-01.jsonl', [dict(label, row=3)])
+            write_jsonl(next_stage / 'labels/review-a-01.jsonl', [dict(label, row=4)])
+            write_jsonl(work / 'labels/review-a-01.jsonl', [dict(label, row=5), dict(label, row=4, status='uncertain')])
+            inventory = [{'row': row, 'rows': [row], 'title': '关于梁晓芝任职资格的批复'} for row in (2, 3, 4, 5)]
+            with patch.object(full, 'BASELINE', baseline), patch.object(full, 'PREVIOUS_STAGE', previous), \
+                    patch.object(full, 'NEXT_STAGE', next_stage), patch.object(full, 'WORK', work), \
+                    patch.object(full, 'DEFAULT_WORK', work):
+                self.assertEqual(set(full.labels('a')), {2, 3, 4, 5})
+                self.assertEqual(full.labels('a')[4]['status'], 'uncertain')
+                self.assertEqual(full.coverage('a', inventory)['new_unique_titles'], 1)
+
     def test_v030_inherits_saved_references_and_counts_only_new_judgments(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);baseline=root/'v1';previous=root/'v2';work=root/'0.3.0'
