@@ -1,0 +1,17 @@
+{
+  "titles": 107,
+  "mapped_rows": 110,
+  "dispositions": {
+    "retain_with_person_count_risk": 105,
+    "reviewed_ambiguity_abstain": 2
+  },
+  "existing_reference_states": {
+    "missing_reference": 34,
+    "match": 71,
+    "disputed_reference": 2
+  },
+  "explicit_person_count_titles": 0,
+  "independent_new_judgments": 0,
+  "new_semantic_truth": false,
+  "interpretation": "逐项结构审查，复用历史AI首答。71双路一致、34缺参考、2双路人数未决。其余105保留风险，不声称人数已证明。"
+}

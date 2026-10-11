@@ -13,6 +13,26 @@ from pilot import write_jsonl, read_jsonl
 
 
 class ReviewFailureHandling(unittest.TestCase):
+    def test_v050_reuses_v040_first_answers_and_corrections(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            baseline, previous, next_stage, latest, work = [root / name for name in ('v1', 'v2', '0.3.0', '0.4.0', '0.5.0')]
+            label = {'row': 2, 'names': ['梁晓芝'], 'status': 'names'}
+            write_jsonl(baseline / 'ai-references.jsonl', [{'row': 2, 'ai_a': label, 'ai_b': label}])
+            write_jsonl(baseline / 'ai-reference-exclusions.jsonl', [])
+            first = dict(label, row=3, status='uncertain')
+            after = dict(label, row=3)
+            write_jsonl(latest / 'labels/review-a-01.jsonl', [first])
+            write_jsonl(latest / 'labels/reference-corrections-a-01.jsonl', [
+                {'row': 3, 'before': first, 'after': after, 'reason': '原标题边界复核'}])
+            inventory = [{'row': row, 'rows': [row], 'title': '关于梁晓芝任职资格的批复'} for row in (2, 3)]
+            with patch.object(full, 'BASELINE', baseline), patch.object(full, 'PREVIOUS_STAGE', previous), \
+                    patch.object(full, 'NEXT_STAGE', next_stage), patch.object(full, 'LATEST_STAGE', latest), \
+                    patch.object(full, 'WORK', work), patch.object(full, 'DEFAULT_WORK', work):
+                self.assertEqual(full.labels('a'), {2: label, 3: after})
+                self.assertEqual(full.coverage('a', inventory)['new_unique_titles'], 0)
+            self.assertEqual(read_jsonl(latest / 'labels/review-a-01.jsonl'), [first])
+
     def test_v040_inherits_all_saved_stages_and_preserves_reference_conflicts(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

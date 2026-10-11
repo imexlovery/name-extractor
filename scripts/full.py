@@ -10,7 +10,7 @@ import shutil
 import re
 import tomllib
 
-from extract import VERSION, extract, name_length, INSTITUTION_ANCHOR_RESOURCE, _INSTITUTION_STARTS
+from extract import VERSION, extract, name_length, INSTITUTION_ANCHOR_RESOURCE, AMBIGUITY_RESOURCE, _INSTITUTION_STARTS
 from validate import check, reference_length, risk_categories
 from pilot import read_jsonl, write_json, write_jsonl, regression_rows
 
@@ -21,6 +21,7 @@ DEFAULT_WORK = ROOT / 'validation' / ('v2' if RELEASE_VERSION=='0.2.0' else RELE
 WORK = DEFAULT_WORK
 PREVIOUS_STAGE = ROOT / 'validation' / 'v2'
 NEXT_STAGE = ROOT / 'validation' / '0.3.0'
+LATEST_STAGE = ROOT / 'validation' / '0.4.0'
 OLD = ROOT / '.local' / 'pilot-20261010'
 
 
@@ -36,7 +37,7 @@ def labels(channel):
                     originals.setdefault(row['row'], []).append(label)
     paths = [p for p in (WORK / 'labels').glob(f'*-{channel}-*.jsonl') if not p.name.startswith('reference-corrections-')]
     if WORK in (DEFAULT_WORK, NEXT_STAGE):
-        for stage in (PREVIOUS_STAGE, NEXT_STAGE):
+        for stage in (PREVIOUS_STAGE, NEXT_STAGE, LATEST_STAGE):
             if stage != WORK and stage.parent == BASELINE.parent:
                 paths += [p for p in (stage/'labels').glob(f'*-{channel}-*.jsonl') if not p.name.startswith('reference-corrections-')]
     if WORK in (DEFAULT_WORK, NEXT_STAGE):
@@ -53,7 +54,7 @@ def labels(channel):
                 result[row['row']] = dict(row, status='uncertain', reason='参考答案版本分歧')
             else:
                 result[row['row']] = row
-    correction_stages = [stage for stage in (PREVIOUS_STAGE, NEXT_STAGE)
+    correction_stages = [stage for stage in (PREVIOUS_STAGE, NEXT_STAGE, LATEST_STAGE)
                          if WORK in (DEFAULT_WORK, NEXT_STAGE) and stage != WORK and stage.parent == BASELINE.parent] + [WORK]
     for path in [path for stage in correction_stages for path in sorted(
             list((stage/'labels').glob(f'reference-corrections-{channel}-*.jsonl')) +
@@ -70,7 +71,7 @@ def coverage(channel, inventory):
     if WORK in (DEFAULT_WORK, NEXT_STAGE):
         old_ids = {v['row'] for path in (BASELINE/'ai-references.jsonl',BASELINE/'ai-reference-exclusions.jsonl')
                    for v in read_jsonl(path) if v.get(f'ai_{channel}') is not None}
-        for stage in (PREVIOUS_STAGE, NEXT_STAGE):
+        for stage in (PREVIOUS_STAGE, NEXT_STAGE, LATEST_STAGE):
             if stage != WORK and stage.parent == BASELINE.parent:
                 old_ids.update(v['row'] for p in (stage/'labels').glob(f'*-{channel}-*.jsonl')
                                if not p.name.startswith('reference-corrections-') for v in read_jsonl(p))
@@ -168,6 +169,7 @@ def run():
     write_jsonl(WORK / f'script-{VERSION}.jsonl', output)
     shutil.copyfile(ROOT / 'scripts' / 'extract.py', WORK / f'extract-{VERSION}.py')
     shutil.copyfile(ROOT / 'scripts' / INSTITUTION_ANCHOR_RESOURCE, WORK / INSTITUTION_ANCHOR_RESOURCE)
+    shutil.copyfile(ROOT / 'scripts' / AMBIGUITY_RESOURCE, WORK / AMBIGUITY_RESOURCE)
     summary = {'release_version': RELEASE_VERSION, 'version': VERSION, 'runtime_anchor_resource':INSTITUTION_ANCHOR_RESOURCE, 'runtime_anchor_count':len(_INSTITUTION_STARTS), 'unique_titles':len(output), 'mapped_rows':sum(len(v['rows']) for v in output),
                'status_titles':dict(Counter(v['result']['status'] for v in output)),
                'status_rows':{s:sum(len(v['rows']) for v in output if v['result']['status']==s) for s in ('names','no_name','uncertain')},

@@ -7,7 +7,7 @@ import unicodedata
 import json
 from pathlib import Path
 
-VERSION = "r51"
+VERSION = "r55"
 
 _HAN_RANGES = (
     (0x3400, 0x4DBF), (0x4E00, 0x9FFF), (0xF900, 0xFAFF),
@@ -82,6 +82,8 @@ _INSTITUTION_STARTS = (
 )
 _ACRONYM_INSTITUTION = re.compile(r"[A-Z]{2,}(?=科技集团|集团财务|金融公司)")
 INSTITUTION_ANCHOR_RESOURCE = 'institution_anchors_r41.json'
+AMBIGUITY_RESOURCE = 'title_ambiguities_r55.json'
+_TITLE_AMBIGUITIES = json.loads(Path(__file__).with_name(AMBIGUITY_RESOURCE).read_text(encoding='utf-8'))
 _INSTITUTION_STARTS += tuple(json.loads(Path(__file__).with_name(INSTITUTION_ANCHOR_RESOURCE).read_text(encoding='utf-8')))
 _REGION_ANCHORS = set('中国 北京 天津 河北 山西 内蒙古 辽宁 吉林 黑龙江 上海 江苏 浙江 安徽 福建 江西 山东 河南 湖北 湖南 广东 广西 海南 重庆 四川 贵州 云南 西藏 陕西 甘肃 青海 宁夏 新疆 香港 澳门 台湾'.split())
 
@@ -166,7 +168,7 @@ def _result(names: list[str], status: str, rule: str, note: str = "") -> dict:
     return {"names": names, "status": status, "rule": rule, "note": note}
 
 
-def _finish(candidate: str, rule: str, note: str = "") -> dict:
+def _finish(candidate: str, rule: str, note: str = "", single_person: bool = False) -> dict:
     while candidate and unicodedata.category(candidate[0]) == 'Cf':
         candidate = candidate[1:]
     while candidate and unicodedata.category(candidate[-1]) == 'Cf':
@@ -210,7 +212,7 @@ def _finish(candidate: str, rule: str, note: str = "") -> dict:
             return _result(names + [part[:-1]], 'uncertain', rule, '机构前任字可能为任职动词，需语义复核')
         connectors = list(re.finditer(r"[和及与]", masked))
         connectors = [m for m in connectors if m.start() > 0 and masked[m.end():].strip()]
-        if name_length(masked) > 4 and connectors:
+        if not single_person and name_length(masked) > 4 and connectors:
             split_candidates = []
             start = 0
             for delimiter in connectors:
@@ -233,7 +235,7 @@ def _finish(candidate: str, rule: str, note: str = "") -> dict:
         return _result(names, "uncertain", rule, "未找到明确姓名字符")
     if any(name_length(n) == 1 for n in names):
         return _result(names, "uncertain", rule, "单字候选需要复核，可能为边界截断")
-    if any(not re.search('[A-Za-z·•・‧∙⋅]', n) and name_length(n) > 4 for n in names):
+    if not single_person and any(not re.search('[A-Za-z·•・‧∙⋅]', n) and name_length(n) > 4 for n in names):
         return _result(names, 'uncertain', rule, '较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆')
     return _result(names, "names", rule, note)
 
@@ -431,7 +433,7 @@ def _extract(title: str) -> dict:
     return _finish(person_part, "person_before_qualification", note)
 
 
-def extract(title: str) -> dict:
+def _structural_extract(title: str) -> dict:
     """Resolve complete structural candidates; conflicting subjects stay open."""
     result = _extract(title)
     if result['status'] != 'names' or result['rule'] in {
@@ -476,4 +478,84 @@ def extract(title: str) -> dict:
     if prefix['status'] == suffix['status'] == 'names' and prefix['names'] != suffix['names']:
         return _result(prefix['names'] + suffix['names'], 'uncertain', 'conflicting_person_boundaries',
                        '机构前与机构岗位后均有完整姓名主体结构，首个正则不能独自确定被批复人')
+    return result
+
+
+_PERSON_COUNT = re.compile(r'(?P<total>共|合计|计)?(?P<number>[0-9０-９]+|[一二三四五六七八九]?十[一二三四五六七八九]?|[一二三四五六七八九两])(?:人|位同志|名同志)')
+
+
+def _count_number(number: str) -> int | None:
+    number = unicodedata.normalize('NFKC', number).replace('两', '二')
+    if number.isascii():
+        return int(number)
+    digits = '一二三四五六七八九'
+    if len(number) == 1 and number in digits:
+        return digits.index(number) + 1
+    if re.fullmatch('[一二三四五六七八九]?十[一二三四五六七八九]?', number):
+        tens, ones = number.split('十')
+        return (digits.index(tens) + 1 if tens else 1) * 10 + (digits.index(ones) + 1 if ones else 0)
+    return None
+
+
+def extract(title: str) -> dict:
+    """Use explicit cardinality, never length, to confirm or reject a roster."""
+    if isinstance(title, str):
+        outer, balanced = _outside(title)
+        qualification = re.search(r'任职资格|拟任资格', outer)
+        if balanced and qualification:
+            prefix = outer[:qualification.start()].removesuffix('的').rstrip()
+            counts = list(_PERSON_COUNT.finditer(prefix))
+            # Only a final person count followed by complete roles binds the roster.
+            if counts and (len(counts) == 1 or counts[-1]['total']):
+                count = counts[-1]
+                before = prefix[:count.start()].rstrip()
+                after = prefix[count.end():].strip()
+                omitted = _OMITTED.search(prefix)
+                in_omitted_group = omitted and omitted.start() <= count.start() < omitted.end()
+                if before and not in_omitted_group and not before.endswith('等') and not _after_leading_roles(after):
+                    if not unicodedata.normalize('NFKC', count['number']).isascii() and before.endswith(('百', '千', '万', '零', '〇')):
+                        return _result([], 'uncertain', 'person_count_boundary',
+                                       '人数包含未解析的高位数词，不能只取尾部数字并将剩余数词当作姓名')
+                    expected = _count_number(count['number'])
+                    if expected is None:
+                        return _result([], 'uncertain', 'unsupported_person_count', '明示人数表达未解析，不能忽略')
+                    cleaned = title[:count.start()] + title[count.end():]
+                    result = _structural_extract(cleaned)
+                    # A single-person statement can remove only internal-length or
+                    # connective ambiguity, never an institution/boundary conflict.
+                    if expected == 1 and result['status'] == 'uncertain' and result['note'] in {
+                        '较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆',
+                        '连接词关系待独立复核，候选分段不表示已确认多人',
+                    }:
+                        positions = [cleaned.find(name) for name in result['names']]
+                        if positions and min(positions) >= 0:
+                            fragment = cleaned[min(positions):max(pos + len(name) for pos, name in zip(positions, result['names']))]
+                            result = _finish(fragment, result['rule'], single_person=True)
+                    elif expected > 1 and result['status'] == 'uncertain' and result['note'] == '连接词关系待独立复核，候选分段不表示已确认多人':
+                        parts = [_finish(name, result['rule']) for name in result['names']]
+                        if len(parts) == expected and all(part['status'] == 'names' for part in parts):
+                            result = _result(result['names'], 'names', result['rule'])
+                    result['person_count'] = expected
+                    if result['status'] == 'names' and len(result['names']) != expected:
+                        return dict(result, status='uncertain', rule='person_count_conflict',
+                                    note='明示人数与可确认姓名片段数不一致；保留原片段，不按字数拆分')
+                    return result
+        plural = re.search(r'分别(?=担任|出任|拟任|任职资格|拟任资格|' + _ROLE.pattern + r')', outer)
+        if balanced and plural and qualification and plural.start() < qualification.start():
+            cleaned = title[:plural.start()] + title[plural.end():]
+            result = _structural_extract(cleaned)
+            if result['status'] == 'uncertain' and result['note'] == '连接词关系待独立复核，候选分段不表示已确认多人':
+                parts = [_finish(name, result['rule']) for name in result['names']]
+                if len(parts) > 1 and all(part['status'] == 'names' for part in parts):
+                    result = _result(result['names'], 'names', result['rule'])
+            if result['status'] == 'names' and len(result['names']) < 2:
+                return dict(result, status='uncertain', rule='plural_person_boundary',
+                            note='分别明示多人关系，但未找到多个明确姓名边界，不拆分连续姓名')
+            return result
+    result = _structural_extract(title)
+    # Diagnosed semantic ambiguity is an abstention record, not a name answer.
+    # Unreviewed titles still use the general rules; four characters alone do not veto them.
+    if result['status'] == 'names' and title in _TITLE_AMBIGUITIES:
+        return dict(result, status='uncertain', rule='reviewed_title_ambiguity',
+                    note=_TITLE_AMBIGUITIES[title]['reason'])
     return result
