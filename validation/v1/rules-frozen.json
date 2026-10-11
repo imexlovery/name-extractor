@@ -1,0 +1,5 @@
+{
+  "version": "r11",
+  "holdout_answers_used_to_revise": false,
+  "note": "冻结后才揭示逐条答案；此前诊断仅查看非冻结集及已知错误。"
+}

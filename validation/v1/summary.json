@@ -1,0 +1,85 @@
+{
+  "snapshot": "v1",
+  "date": "2026-10-11",
+  "rule_version": "r29",
+  "unique_titles": 46760,
+  "mapped_rows": 52146,
+  "script_status_titles": {
+    "names": 45349,
+    "uncertain": 812,
+    "no_name": 599
+  },
+  "script_status_rows": {
+    "names": 50648,
+    "uncertain": 871,
+    "no_name": 627
+  },
+  "ai_reference_titles": 23387,
+  "ai_reference_status_titles": {
+    "names": 22688,
+    "no_name": 699
+  },
+  "ai_reference_excluded_titles": 55,
+  "ai_reference_exclusion_reasons": {
+    "missing_channel": 35,
+    "disputed_or_uncertain": 20
+  },
+  "script_vs_ai_reference_titles": {
+    "exact_match": 22592,
+    "script_uncertain": 795,
+    "determinate_mismatch": 0,
+    "display_or_length_mismatch": 0
+  },
+  "script_vs_ai_reference_rows": {
+    "exact_match": 23627,
+    "script_uncertain": 852,
+    "determinate_mismatch": 0,
+    "display_or_length_mismatch": 0
+  },
+  "script_uncertain_reference_status": {
+    "names": 695,
+    "no_name": 100
+  },
+  "script_uncertain_without_accepted_reference": 17,
+  "unreviewed_titles": 23318,
+  "script_uncertain_risk_categories": {
+    "多人连接": 175,
+    "机构边界": 566,
+    "无姓名候选": 429,
+    "职务或部门残片": 249,
+    "中点或括号姓名形式": 168,
+    "长连续姓名或异常长度": 273,
+    "缺少标准结构": 145,
+    "英文及别名": 36,
+    "括号异常": 3,
+    "等人省略": 4,
+    "称谓或介词结构": 4
+  },
+  "historical_mixed_output": {
+    "path": "outputs/20261011/任职资格批复汇总测试-待复核版.xlsx",
+    "status_titles": {
+      "names": 46041,
+      "no_name": 699,
+      "uncertain": 20
+    },
+    "status_rows": {
+      "names": 51354,
+      "no_name": 770,
+      "uncertain": 22
+    },
+    "production_script_result": false
+  },
+  "verification": {
+    "fresh_full_extraction_changed_titles": 0,
+    "unit_tests_passed": 14
+  },
+  "limitations": [
+    "AI参考为有效A/B共识，不是独立客观真值",
+    "参考池已用于规则诊断和机构锚点学习，属于回归集；不是全新的未见测试集",
+    "A/B为同一模型的独立上下文，存在共同偏差可能",
+    "后两组冻结新样本仅为普通结构",
+    "现有finish()仍生成混合实验输出，生产分离待实现"
+  ],
+  "true_accuracy": null,
+  "human_review_performed": false
+}

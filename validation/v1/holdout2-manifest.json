@@ -1,0 +1,15 @@
+{
+  "seed": 20261013,
+  "count": 400,
+  "excluded_already_labelled_or_diagnostic": 739,
+  "frozen_before_r12": true,
+  "strata": {
+    "关于结构": 91,
+    "其他括号": 51,
+    "其他结构": 50,
+    "多人分隔线索": 50,
+    "核准结构": 58,
+    "等人省略线索": 50,
+    "英文或中英并列": 50
+  }
+}
