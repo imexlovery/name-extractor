@@ -1,0 +1,35 @@
+{
+  "baseline_commit": "5d4616d",
+  "rules": "r56",
+  "unique_titles": 46760,
+  "mapped_rows": 52146,
+  "missing_reference_titles": 22810,
+  "missing_reference_rules": {
+    "person_before_qualification": 22810
+  },
+  "missing_reference_strata": 33,
+  "strict_full_title_slot_discrepancies": 0,
+  "candidates": 2187,
+  "signal_counts": {
+    "parentheses_outside_extracted_names": 1419,
+    "no_name_full_title_review": 694,
+    "qualification_tail_needs_review": 64,
+    "unconsumed_post_tail": 64,
+    "coordination_after_omission": 2,
+    "multiple_qualification_segments": 3
+  },
+  "candidate_reference_states": {
+    "match": 2184,
+    "disputed_reference": 2,
+    "script_unresolved": 1
+  },
+  "new_review_queue_titles": 0,
+  "no_name_reference_states": {
+    "match": 694
+  },
+  "new_ai_judgments": 0,
+  "production_changes": 0,
+  "true_accuracy": null,
+  "human_review_performed": false,
+  "interpretation": "Full-title structural scan only. Risk flags are not confirmed errors. Strict-slot consistency does not add independent semantic references. Existing matches are reused, not relabeled or declared human truth."
+}
