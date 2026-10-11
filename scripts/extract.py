@@ -7,7 +7,7 @@ import unicodedata
 import json
 from pathlib import Path
 
-VERSION = "r55"
+VERSION = "r56"
 
 _HAN_RANGES = (
     (0x3400, 0x4DBF), (0x4E00, 0x9FFF), (0xF900, 0xFAFF),
@@ -36,8 +36,8 @@ _INSTITUTION_END = re.compile(
     r"银行|保险公社|保险社|银行业|保险业|农信社|信托|人寿|财险|寿险|养老|株式会社|农发行|进出口行|金租|消金|理财|村行|互保|中支|代表处|分行|支行|分社|支公司|分公司|分中心|审计中心|电话销售中心|营业部|财务|服务点|公司"
 )
 _ROLE = re.compile(
-    r"内部审计部负责人|法律合规部负责人|内审合规部总经理|会长|"
-    r"计划财务部(?:负责人|总经理|经理)|财务会计部(?:负责人|总经理|经理)|财务总监|风险合规部(?:负责人|总经理|经理)|合规风险法务部门负责人|营业部(?:总经理|经理)|"
+    r"内部审计部负责人|法律合规部负责人|内审合规部总经理|理事会秘书|会长|"
+    r"计划财务部(?:负责人|总经理|经理)|财务会计部(?:负责人|总经理|经理)|财务总监|风险合规部(?:负责人|总经理|经理)|合规风险法务部门负责人|营业部(?:总经理助理|总经理|经理)|"
     r"(?:银行业金融机构|商业银行|农村商业银行|金融机构|金融)?高级管理人员|高管人员|高管|"
     r"(?:内审|财务|合规)(?:部门|部)负责人|合规风险法务部经理|运营财务部总经理|内控与风险合规部负责人|"
     r"首席合规官|首席运营官|"
@@ -295,6 +295,11 @@ def _extract(title: str) -> dict:
         prefix = core[:qualification.start()]
         masked_prefix, balanced_prefix = _outside(prefix)
         separators = list(re.finditer('[、；;]', masked_prefix))
+        # A completed post followed by a conjunction introduces another clause.
+        # Connectors inside a name or department do not establish this boundary.
+        separators += [match for match in re.finditer('[和及与]', masked_prefix)
+                       if re.search(r'(?:' + _ROLE.pattern + r')$', masked_prefix[:match.start()].rstrip())]
+        separators.sort(key=lambda match: match.start())
         if balanced_prefix and separators:
             starts = [0] + [match.end() for match in separators]
             ends = [match.start() for match in separators] + [len(prefix)]
@@ -451,9 +456,20 @@ def _structural_extract(title: str) -> dict:
     outer, balanced = _outside(core)
     if not balanced:
         return result
+    guarded = result
+    name_end = 0
+    for name in result['names']:
+        position = core.find(name, name_end)
+        if position >= 0:
+            name_end = position + len(name)
+    if role := _ROLE.search(outer, name_end):
+        remainder = _after_leading_roles(outer[role.start():]).strip().removesuffix('的').rstrip()
+        if remainder and not _OMITTED.fullmatch(remainder):
+            guarded = _result(result['names'], 'uncertain', 'unconsumed_post_subject',
+                              '完整岗位后仍有未消费内容，可能包含其他主体；不能仅确认首个姓名')
     spans = _registered_spans(outer)
     if not spans:
-        return result
+        return guarded
     # Nested mother/branch matches belong to the same institution span.
     first = min(start for start, end in spans)
     last = max(end for start, end in spans)
@@ -464,21 +480,21 @@ def _structural_extract(title: str) -> dict:
                         if match.start() >= first and not any(
                             match.start() < role.end() and match.end() > role.start() for role in roles)])
     if first == 0:
-        return result
+        return guarded
     prefix = _finish(core[:first].strip(), 'structural_prefix')
     tail = _after_leading_roles(core[last:])
     tail_outer, _ = _outside(tail)
     if role := _ROLE.search(tail_outer):
         if _after_leading_roles(tail[role.start():]).strip():
-            return result
+            return guarded
         tail = tail[:role.start()].strip()
     if not tail:
-        return result
+        return guarded
     suffix = _finish(tail, 'structural_suffix')
     if prefix['status'] == suffix['status'] == 'names' and prefix['names'] != suffix['names']:
         return _result(prefix['names'] + suffix['names'], 'uncertain', 'conflicting_person_boundaries',
                        '机构前与机构岗位后均有完整姓名主体结构，首个正则不能独自确定被批复人')
-    return result
+    return guarded
 
 
 _PERSON_COUNT = re.compile(r'(?P<total>共|合计|计)?(?P<number>[0-9０-９]+|[一二三四五六七八九]?十[一二三四五六七八九]?|[一二三四五六七八九两])(?:人|位同志|名同志)')

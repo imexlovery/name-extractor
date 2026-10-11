@@ -54,6 +54,29 @@ class PersonCountContract(unittest.TestCase):
         ]:
             self.assertEqual(extract(title)['status'], 'uncertain', title)
 
+    def test_conjoined_complete_posts_cover_every_named_subject(self):
+        for connector in ['及', '和', '与', '、']:
+            for first, second in [('张明', '李华'), ('欧阳鹏飞', '林远'), ('阿拉腾础鲁一人', '王五一人')]:
+                names = [first.removesuffix('一人'), second.removesuffix('一人')]
+                self.assert_result(f'关于核准{first}董事{connector}{second}监事任职资格的批复', 'names', names)
+            self.assert_result(f'关于张明董事{connector}李华监事共两人任职资格的批复', 'names', ['张明', '李华'])
+            self.assert_result(f'关于张明董事{connector}李华监事共一人任职资格的批复', 'uncertain', ['张明', '李华'])
+
+    def test_unconsumed_post_subjects_cannot_be_silently_dropped(self):
+        for title in ['关于张明董事李华监事任职资格的批复',
+                      '关于张明中国银行董事李华任职资格的批复']:
+            self.assertEqual(extract(title)['status'], 'uncertain', title)
+        for title in ['关于张明董事及监事任职资格的批复',
+                      '关于张明董事兼监事任职资格的批复',
+                      '关于梁居正大连银行营业部总经理助理任职资格的批复',
+                      '关于核准区琨瑜理事会秘书任职资格的批复']:
+            self.assertEqual(extract(title)['status'], 'names', title)
+
+    def test_connectors_inside_names_departments_and_aliases_are_not_clause_boundaries(self):
+        self.assert_result('关于任庆和董事任职资格的批复', 'names', ['任庆和'])
+        self.assert_result('关于张明内控与风险合规部负责人任职资格的批复', 'names', ['张明'])
+        self.assert_result('关于GohYihYee（吴子宇）董事及李华监事任职资格的批复', 'names', ['GohYihYee（吴子宇）', '李华'])
+
     def test_omitted_people_are_not_exact_counts_of_visible_names(self):
         for title, names in [
             ('关于孙体虎等4人任职资格的批复', ['孙体虎']),

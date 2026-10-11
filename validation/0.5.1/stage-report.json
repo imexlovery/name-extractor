@@ -1,0 +1,171 @@
+{
+  "four-character": {
+    "titles": 34,
+    "mapped_rows": 34,
+    "initial_consensus": 29,
+    "final_comparison": {
+      "match": 34
+    },
+    "proved_single_person": 0
+  },
+  "silent-screen": {
+    "titles": 303,
+    "mapped_rows": 319,
+    "initial_consensus": 303,
+    "final_comparison": {
+      "match": 303
+    },
+    "proved_single_person": null
+  },
+  "synthetic_contracts": {
+    "r55": {
+      "total": 28,
+      "matched": 12,
+      "failed": [
+        "关于核准张明董事及李华监事任职资格的批复",
+        "关于核准欧阳鹏飞董事及林远监事任职资格的批复",
+        "关于核准GohYihYee（吴子宇）董事及王五监事任职资格的批复",
+        "关于张明董事及李华监事共两人任职资格的批复",
+        "关于张明董事及李华监事共一人任职资格的批复",
+        "关于核准张明董事和李华监事任职资格的批复",
+        "关于核准欧阳鹏飞董事和林远监事任职资格的批复",
+        "关于核准GohYihYee（吴子宇）董事和王五监事任职资格的批复",
+        "关于张明董事和李华监事共两人任职资格的批复",
+        "关于张明董事和李华监事共一人任职资格的批复",
+        "关于核准张明董事与李华监事任职资格的批复",
+        "关于核准欧阳鹏飞董事与林远监事任职资格的批复",
+        "关于核准GohYihYee（吴子宇）董事与王五监事任职资格的批复",
+        "关于张明董事与李华监事共两人任职资格的批复",
+        "关于张明董事与李华监事共一人任职资格的批复",
+        "关于张明董事李华监事任职资格的批复"
+      ]
+    },
+    "r56": {
+      "total": 28,
+      "matched": 28,
+      "failed": []
+    }
+  },
+  "old_person_count_regressions": {
+    "structure_contract": {
+      "total": 94,
+      "matched": 94
+    },
+    "known_risk_replay": {
+      "total": 2,
+      "matched": 2
+    },
+    "retention_policy": {
+      "total": 6,
+      "matched": 6
+    }
+  },
+  "cached_synthetic_regressions": {
+    "development": {
+      "agreed": 45,
+      "r55_matched": 45,
+      "r56_matched": 45,
+      "new_regressions": []
+    },
+    "fresh_then_revealed": {
+      "agreed": 35,
+      "r55_matched": 34,
+      "r56_matched": 34,
+      "new_regressions": []
+    },
+    "final_then_revealed": {
+      "agreed": 24,
+      "r55_matched": 23,
+      "r56_matched": 23,
+      "new_regressions": []
+    }
+  },
+  "full_comparison": {
+    "release_version": "0.5.1",
+    "version": "r56",
+    "unique_titles": 46760,
+    "mapped_rows": 52146,
+    "output_status_titles": {
+      "names": 45944,
+      "uncertain": 122,
+      "no_name": 694
+    },
+    "output_status_rows": {
+      "names": 51254,
+      "uncertain": 131,
+      "no_name": 761
+    },
+    "comparison_titles": {
+      "single_channel": 35,
+      "missing_reference": 22810,
+      "match": 23792,
+      "script_unresolved": 86,
+      "disputed_reference": 37
+    },
+    "regression_rows_from_v1": [
+      38243
+    ],
+    "ai_a_coverage": 23950,
+    "ai_b_coverage": 23915,
+    "true_accuracy": null,
+    "human_review_performed": false,
+    "production_source": "script_only",
+    "v1_reference_comparison": {
+      "match": 23289,
+      "script_unresolved": 98
+    },
+    "ai_coverage": {
+      "a": {
+        "unique_titles": 23950,
+        "mapped_rows": 25104,
+        "new_unique_titles": 337,
+        "new_mapped_rows": 353,
+        "saved_judgments": 337,
+        "repeated_saved_judgments": 0,
+        "reference_corrections": 0,
+        "invalid_reference_titles": []
+      },
+      "b": {
+        "unique_titles": 23915,
+        "mapped_rows": 25063,
+        "new_unique_titles": 337,
+        "new_mapped_rows": 353,
+        "saved_judgments": 337,
+        "repeated_saved_judgments": 0,
+        "reference_corrections": 5,
+        "invalid_reference_titles": []
+      }
+    }
+  },
+  "mining": {
+    "baseline_commit": "21fdfdb",
+    "rules": "r55",
+    "titles": 46760,
+    "mapped_rows": 52146,
+    "status": {
+      "names": 45944,
+      "uncertain": 122,
+      "no_name": 694
+    },
+    "signal_counts": {
+      "institution_adjacency": 19094,
+      "noncanonical_complete_title": 20100,
+      "post_structure": 16695,
+      "qualification_tail": 347,
+      "existing_abstention": 122,
+      "list_or_connector": 1322,
+      "no_name_assertion": 694,
+      "name_lexical_overlap": 319,
+      "unconsumed_post_tail": 64,
+      "potential_subject_in_no_name": 46,
+      "explicit_count_without_omission": 6
+    },
+    "missing_reference_titles": 23147,
+    "newly_reviewed_non_four_structure_titles": 237,
+    "ordinary_sample_titles": 66,
+    "ordinary_pool": 22876,
+    "seed": 20261012,
+    "interpretation": "Signals are risk nominations, not errors. Prior semantic references are reused. Full census is not full independent semantic labeling."
+  },
+  "interpretation": "337 new title-only A/B references; 5 B evidence-classification corrections preserve raw first answers. No single-person count proof for 34 four-character titles. Synthetic improvement is not real-data accuracy improvement. Full saved-title output is unchanged; no confirmed new real-data silent error. Existing uncertainties and historical reference disputes remain. No new abstention exceptions. True accuracy unmeasured."
+}

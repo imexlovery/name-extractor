@@ -1,0 +1,14 @@
+{
+  "baseline_commit": "21fdfdb",
+  "version": "r55",
+  "titles": 46760,
+  "mapped_rows": 52146,
+  "status_titles": {
+    "names": 45944,
+    "uncertain": 122,
+    "no_name": 694
+  },
+  "output_changes": [],
+  "hard_failures": [],
+  "scope": "Replay every saved original title against current production rules; existing Excel is unchanged."
+}

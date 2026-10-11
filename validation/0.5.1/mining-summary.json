@@ -1,0 +1,30 @@
+{
+  "baseline_commit": "21fdfdb",
+  "rules": "r55",
+  "titles": 46760,
+  "mapped_rows": 52146,
+  "status": {
+    "names": 45944,
+    "uncertain": 122,
+    "no_name": 694
+  },
+  "signal_counts": {
+    "institution_adjacency": 19094,
+    "noncanonical_complete_title": 20100,
+    "post_structure": 16695,
+    "qualification_tail": 347,
+    "existing_abstention": 122,
+    "list_or_connector": 1322,
+    "no_name_assertion": 694,
+    "name_lexical_overlap": 319,
+    "unconsumed_post_tail": 64,
+    "potential_subject_in_no_name": 46,
+    "explicit_count_without_omission": 6
+  },
+  "missing_reference_titles": 23147,
+  "newly_reviewed_non_four_structure_titles": 237,
+  "ordinary_sample_titles": 66,
+  "ordinary_pool": 22876,
+  "seed": 20261012,
+  "interpretation": "Signals are risk nominations, not errors. Prior semantic references are reused. Full census is not full independent semantic labeling."
+}
