@@ -7,7 +7,7 @@ import unicodedata
 import json
 from pathlib import Path
 
-VERSION = "r29"
+VERSION = "r38"
 
 _HAN_RANGES = (
     (0x3400, 0x4DBF), (0x4E00, 0x9FFF), (0xF900, 0xFAFF),
@@ -28,14 +28,18 @@ def name_length(text: str) -> int:
     return sum(_han(c) or "A" <= c <= "Z" or "a" <= c <= "z" for c in text)
 
 
-_PREFIX = re.compile(r"^(?:终止审查|同意核准|不予核准|不予许可|核准|批准|同意|核定|确认|申请|拟任|担任|出任)")
-_OMITTED = re.compile(r"等(?:[0-9０-９一二三四五六七八九十百千万两〇零]+)?(?:人|位同志|名(?:同志)?|同志)|等$")
+_PREFIX = re.compile(r"^(?:终止审查|同意核准|不予核准|不予许可|注销|核准|批准|同意|核定|确认|申请|拟任|担任|出任)")
+_OMITTED = re.compile(r"等(?:[0-9０-９一二三四五六七八九十百千万两〇零]+)?(?:人|位(?:同志|理事|董事)|名(?:同志)?|同志)|等$")
 _INSTITUTION_END = re.compile(
     r"股份有限公司|有限责任公司|有限公司|股份公司|相互保险社|"
     r"农村信用社联合社|农村信用合作联社|农村信用联社|信用合作社|信用社|联合社|联社|农商行|农合行|"
-    r"银行|保险公社|保险社|银行业|保险业|农信社|信托|人寿|财险|寿险|养老|株式会社|农发行|进出口行|金租|消金|理财|村行|互保|中支|代表处|分行|支行|分社|支公司|分公司|服务点|公司"
+    r"银行|保险公社|保险社|银行业|保险业|农信社|信托|人寿|财险|寿险|养老|株式会社|农发行|进出口行|金租|消金|理财|村行|互保|中支|代表处|分行|支行|分社|支公司|分公司|分中心|审计中心|电话销售中心|营业部|财务|服务点|公司"
 )
 _ROLE = re.compile(
+    r"内部审计部负责人|"
+    r"计划财务部(?:负责人|总经理|经理)|财务会计部(?:负责人|总经理|经理)|财务总监|风险合规部(?:负责人|总经理|经理)|合规风险法务部门负责人|营业部(?:总经理|经理)|"
+    r"(?:银行业金融机构|商业银行|农村商业银行|金融机构)?高级管理人员|高管人员|高管|"
+    r"(?:内审|财务|合规)(?:部门|部)负责人|合规风险法务部经理|运营财务部总经理|内控与风险合规部负责人|"
     r"首席合规官|首席运营官|"
     r"首席风险管理执行官|首席风险控制官|信息科技总监|信息总监|运营总监|营销总监|总审计师|审计责任人|信贷风险官|合规负责人|合规总监|合规官|风险总监|(?:合规[与及和]?)?风险管理部|"
     r"总会计师|总法律顾问|总裁助理|副总裁|总裁|"
@@ -49,8 +53,8 @@ _ROLE = re.compile(
 )
 _ROLE_QUALIFIER = re.compile(r"^[（(](?:主持工作|代为履职|代行职责|风险总监)[）)]")
 _DEPARTMENT = re.compile(r"再保险运营中心|运营中心|审计中心|稽核审计部|审计分部|审计部|风险内控部|内控合规部|法律合规部|合规部|财会部|计财部|合规风险法务部|风险合规部|风险管理部|管理部|金融市场中心|营业部|营业室|办事处")
-_TO_POST = re.compile(r"担任|出任|拟任")
-_BUSINESS_ACTION = re.compile(r"开业|设立|筹建|终止营业|撤销|变更首席代表|更名|变更营业场所|变更机构名称|变更.*营业场所|修改.*章程")
+_TO_POST = re.compile(r"担任|出任|拟任|任(?=" + _ROLE.pattern + r")")
+_BUSINESS_ACTION = re.compile(r"开业|设立|筹建|升格|改建为支公司|终止营业|撤销|变更首席代表|变更董事|更名|变更(?:营业场所|机构名称|住所|组织形式|营业地址|总代表)|变更.*营业场所|(?:修改|修订|变更).*章程|章程变更|资本工具计划发行额度")
 _NON_PERSON = re.compile(r"营业部|营业室|中心|办事处|部门|管理部|管理行|审计分部|审计部|风险内控部|合规部|财会部|计财部|风险合规部|合规风险法务部|业务部|事业部|总部|总行|开业|高管|负责人|主要|财务|保险|信用社|股份有限公|派驻|^兼$|^及$|^和$|^助理$")
 
 # These are institutional/geographical anchors, never person or surname lists.
@@ -77,7 +81,7 @@ _INSTITUTION_STARTS = (
     "云南", "西藏", "陕西", "甘肃", "青海", "宁夏", "新疆", "香港", "澳门", "台湾",
 )
 _ACRONYM_INSTITUTION = re.compile(r"[A-Z]{2,}(?=科技集团|集团财务|金融公司)")
-INSTITUTION_ANCHOR_RESOURCE = 'institution_anchors_r29.json'
+INSTITUTION_ANCHOR_RESOURCE = 'institution_anchors_r36.json'
 _INSTITUTION_STARTS += tuple(json.loads(Path(__file__).with_name(INSTITUTION_ANCHOR_RESOURCE).read_text(encoding='utf-8')))
 _REGION_ANCHORS = set('中国 北京 天津 河北 山西 内蒙古 辽宁 吉林 黑龙江 上海 江苏 浙江 安徽 福建 江西 山东 河南 湖北 湖南 广东 广西 海南 重庆 四川 贵州 云南 西藏 陕西 甘肃 青海 宁夏 新疆 香港 澳门 台湾'.split())
 
@@ -91,12 +95,17 @@ def _outside(text: str) -> tuple[str, bool]:
             stack.append(char)
             output.append(" ")
         elif char in "）)":
-            if not stack or (stack.pop(), char) not in (("（", "）"), ("(", ")")):
+            if not stack:
                 return text, False
+            stack.pop()
             output.append(" ")
         else:
             output.append(" " if stack else char)
     return "".join(output), not stack
+
+
+# Institution resources are fixed for a run; mask once, retaining source offsets.
+_MASKED_INSTITUTIONS = tuple((_outside(anchor)[0], len(anchor)) for anchor in _INSTITUTION_STARTS if anchor not in _REGION_ANCHORS)
 
 
 def _before_role(text: str) -> str:
@@ -122,6 +131,7 @@ def _result(names: list[str], status: str, rule: str, note: str = "") -> dict:
 
 
 def _finish(candidate: str, rule: str, note: str = "") -> dict:
+    candidate = re.sub(r'^DR\.', '', candidate, flags=re.I)
     outer, balanced = _outside(candidate)
     if not balanced:
         return _result([candidate] if candidate else [], "uncertain", rule, "括号不配对")
@@ -147,6 +157,8 @@ def _finish(candidate: str, rule: str, note: str = "") -> dict:
         if part.endswith('等'):
             return _result(names + [part[:-1]], 'uncertain', rule, '候选尾部等字可能为省略标记，需语义复核')
         if re.fullmatch(r'[0-9０-９一二三四五六七八九十百千万两〇零]+[名位个]',part):
+            if rule == 'institution_before_person' and not names:
+                return _result([], 'no_name', rule, '机构职务只明示人数，未明示姓名')
             return _result(names + [part], 'uncertain', rule, '候选仅是人数表达，标题是否明示姓名需复核')
         if rule == 'person_before_institution' and part.endswith('任'):
             return _result(names + [part[:-1]], 'uncertain', rule, '机构前任字可能为任职动词，需语义复核')
@@ -169,13 +181,13 @@ def _finish(candidate: str, rule: str, note: str = "") -> dict:
         if any(not (c.isalpha() or _han(c) or c.isspace() or c in allowed_punctuation) for c in part):
             return _result(names + [part], "uncertain", rule, "候选含未定义的字符")
         names.append(part)
-    if any(unicodedata.category(c).startswith("L") and not (_han(c) or c.isascii()) for n in names for c in n):
+    if any(unicodedata.category(c).startswith("L") and not (_han(c) or c.isascii() or 'LATIN' in unicodedata.name(c, '')) for n in names for c in n):
         return _result(names, "uncertain", rule, "其他书写体系需要复核")
     if any(name_length(n) == 0 for n in names):
         return _result(names, "uncertain", rule, "未找到明确姓名字符")
     if any(name_length(n) == 1 for n in names):
         return _result(names, "uncertain", rule, "单字候选需要复核，可能为边界截断")
-    if any(not re.search('[A-Za-z]', n) and name_length(n) > 4 for n in names):
+    if any(not re.search('[A-Za-z·•・‧∙⋅]', n) and name_length(n) > 4 for n in names):
         return _result(names, 'uncertain', rule, '较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆')
     return _result(names, "names", rule, note)
 
@@ -186,21 +198,35 @@ def extract(title: str) -> dict:
         return _result([], "uncertain", "empty_title", "标题为空")
     core = title.split("关于", 1)[-1].strip()
     core = re.sub(r"^[\u4e00-\u9fff]{2,24}?(?:银保监局|银监局|监管分局|监管局)", "", core).strip()
-    qualification = re.search(r"任职资格|任职", core)
+    qualification = re.search(r"任职资格|任职|职资格", core)
     if qualification is None:
+        if re.fullmatch(r'.*?(?:准予行政许可决定书|行政许可事项终止审查通知书)', core):
+            return _result([], 'no_name', 'administrative_notice', '文书标题未明示被批复人')
+        if _INSTITUTION_END.search(core) and _BUSINESS_ACTION.search(core):
+            return _result([], "no_name", "institution_business_action", "机构事项，标题未明示姓名")
+        if (_INSTITUTION_END.search(core) or _ROLE.search(core)) and _ROLE.search(core) and core.endswith('的批复'):
+            # A named institution and explicit post supply the missing qualification context.
+            return extract(re.sub(r'资格$', '', core.removesuffix('的批复')) + '任职资格的批复')
         if _INSTITUTION_END.search(core) and _BUSINESS_ACTION.search(core):
             return _result([], "no_name", "institution_business_action", "机构事项，标题未明示姓名")
         return _result([], "uncertain", "missing_qualification", "缺少任职资格结构")
     if len(re.findall('任职资格',core)) > 1:
+        clauses = re.split(r'任职资格(?:的批复)?[、和及与]', core)
+        if len(clauses) > 1:
+            results = [extract(clause if '任职资格' in clause else clause+'任职资格') for clause in clauses]
+            if all(result['status']=='names' for result in results):
+                return _result([name for result in results for name in result['names']], 'names', 'explicit_qualification_clauses')
         return _result([], 'uncertain', 'multiple_qualification_segments', '标题有多个任职资格片段，需检查全部被批复人，不能仅取首段')
     core = core[:qualification.start()].strip()
-    if core.startswith('对') and '关于对' in title:
+    if core.startswith('对') and ('关于对' in title or '监管分局对' in title or '监管局对' in title):
         core = core[1:].lstrip()
     while match := _PREFIX.match(core):
         core = core[match.end():].lstrip()
     outer, balanced = _outside(core)
     if not balanced:
         return _result([core] if core else [], "uncertain", "unbalanced_parentheses", "括号不配对")
+    if not _INSTITUTION_END.search(outer) and (ambiguous := re.search(r'(?<!主)任(?=高级管理人员|高管)', outer)):
+        return _result([core[:ambiguous.end()]], 'uncertain', 'ambiguous_post_verb', '任可能为姓名尾字或任职动词，标题无明确分隔')
     roles=list(_ROLE.finditer(outer))
     if any(re.search('[、,，;；和及与]',outer[first.end():second.start()]) and _INSTITUTION_END.search(outer[first.end():second.start()]) for first,second in zip(roles,roles[1:])):
         return _result([], 'uncertain', 'multiple_person_or_post_clauses', '多个机构职务片段可能对应不同人，不能仅取首个姓名')
@@ -211,7 +237,13 @@ def extract(title: str) -> dict:
     if not core:
         return _result([], "uncertain", "missing_person_segment", "未找到被批复人片段")
 
-    institutions = list(_INSTITUTION_END.finditer(outer))
+    person_part = _before_role(core).strip()
+    masked, _ = _outside(person_part)
+    institutions = list(_INSTITUTION_END.finditer(masked))
+    specific = [(masked.find(anchor), masked.find(anchor) + length) for anchor,length in _MASKED_INSTITUTIONS if anchor in masked]
+    if specific and min(start for start,end in specific) > 0 and not any(masked.startswith(region) for region in _REGION_ANCHORS):
+        candidate = person_part[:min(start for start,end in specific)].strip()
+        return _finish(candidate, 'person_before_institution', note)
     unresolved_tail = None
     if institutions:
         # Institution-first titles can contain branches and a job before the name.
@@ -223,7 +255,7 @@ def extract(title: str) -> dict:
         department = _DEPARTMENT.search(tail)
         if department:
             prefix = tail[:department.start()]
-            if not prefix or any(prefix.startswith(region) for region in _REGION_ANCHORS) or _NON_PERSON.search(prefix):
+            if not prefix or any(prefix.startswith(region) for region in _REGION_ANCHORS) or _NON_PERSON.search(prefix) or re.search(r'路$|第[一二三四五六七八九十0-9]+$|^[东西南北]区$', prefix):
                 after_department = _after_leading_roles(tail[department.end():])
                 if after_department:
                     tail = after_department
@@ -237,7 +269,7 @@ def extract(title: str) -> dict:
     person_part = _before_role(core).strip()
     masked, _ = _outside(person_part)
     if _INSTITUTION_END.search(masked) or "金融机构" in masked:
-        specific = [(masked.find(anchor), masked.find(anchor) + len(anchor)) for anchor in _INSTITUTION_STARTS if anchor not in _REGION_ANCHORS and anchor in masked]
+        specific = [(masked.find(anchor), masked.find(anchor) + length) for anchor,length in _MASKED_INSTITUTIONS if anchor in masked]
         cuts = [start for start, end in specific]
         for anchor in _REGION_ANCHORS:
             position = masked.find(anchor)
@@ -247,7 +279,7 @@ def extract(title: str) -> dict:
         if cuts and min(cuts) > 0:
             candidate = person_part[:min(cuts)].strip()
             # A leftover administrative suffix indicates an unresolved earlier root.
-            if re.search(r"省|自治区|自治州|市|县|区|乡|镇|旗|盟|街道", candidate):
+            if not specific and re.search(r"省|自治区|自治州|市|县|区|乡|镇|旗|盟|街道", candidate):
                 return _result([], "uncertain", "institution_root_unknown", "机构起点可能早于已识别锚点")
             return _finish(candidate, "person_before_institution", note)
         if cuts and min(cuts) == 0:

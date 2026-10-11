@@ -1,0 +1,55 @@
+{
+  "release_version": "0.2.0",
+  "version": "r38",
+  "unique_titles": 46760,
+  "mapped_rows": 52146,
+  "output_status_titles": {
+    "names": 45929,
+    "uncertain": 168,
+    "no_name": 663
+  },
+  "output_status_rows": {
+    "names": 51239,
+    "uncertain": 177,
+    "no_name": 730
+  },
+  "comparison_titles": {
+    "single_channel": 35,
+    "missing_reference": 23216,
+    "match": 23336,
+    "script_unresolved": 152,
+    "disputed_reference": 21
+  },
+  "regression_rows_from_v1": [],
+  "ai_a_coverage": 23544,
+  "ai_b_coverage": 23509,
+  "true_accuracy": null,
+  "human_review_performed": false,
+  "production_source": "script_only",
+  "v1_reference_comparison": {
+    "match": 23235,
+    "script_unresolved": 152
+  },
+  "ai_coverage": {
+    "a": {
+      "unique_titles": 23544,
+      "mapped_rows": 24671,
+      "new_unique_titles": 102,
+      "new_mapped_rows": 129,
+      "saved_judgments": 122,
+      "repeated_saved_judgments": 0,
+      "reference_corrections": 0,
+      "invalid_reference_titles": []
+    },
+    "b": {
+      "unique_titles": 23509,
+      "mapped_rows": 24630,
+      "new_unique_titles": 102,
+      "new_mapped_rows": 129,
+      "saved_judgments": 122,
+      "repeated_saved_judgments": 0,
+      "reference_corrections": 0,
+      "invalid_reference_titles": []
+    }
+  }
+}

@@ -8,21 +8,34 @@ from pathlib import Path
 import random
 import shutil
 import re
+import tomllib
 
 from extract import VERSION, extract, name_length, INSTITUTION_ANCHOR_RESOURCE, _INSTITUTION_STARTS
 from validate import check, reference_length, risk_categories
 from pilot import read_jsonl, write_json, write_jsonl, regression_rows
 
 ROOT = Path(__file__).resolve().parents[1]
-WORK = ROOT / '.local' / 'full-20261011'
+RELEASE_VERSION = tomllib.loads((ROOT / 'pyproject.toml').read_text())['project']['version']
+BASELINE = ROOT / 'validation' / 'v1'
+DEFAULT_WORK = ROOT / 'validation' / 'v2'
+WORK = DEFAULT_WORK
 OLD = ROOT / '.local' / 'pilot-20261010'
 
 
 def labels(channel):
     result = {}
     originals = {}
+    if WORK == DEFAULT_WORK:
+        for path in (BASELINE/'ai-references.jsonl', BASELINE/'ai-reference-exclusions.jsonl'):
+            for row in read_jsonl(path):
+                label = row.get(f'ai_{channel}')
+                if label is not None:
+                    result[row['row']] = label
+                    originals.setdefault(row['row'], []).append(label)
     paths = [p for p in (WORK / 'labels').glob(f'*-{channel}-*.jsonl') if not p.name.startswith('reference-corrections-')]
-    if channel == 'a':
+    if WORK == DEFAULT_WORK:
+        pass
+    elif channel == 'a':
         paths += list(OLD.glob('ai-a-*.jsonl')) + [OLD / 'holdout-ai-a.jsonl']
     else:
         paths += list(OLD.glob('ai-b-*.jsonl')) + [OLD / 'holdout-ai-b.jsonl']
@@ -44,8 +57,12 @@ def labels(channel):
 
 
 def coverage(channel, inventory):
-    old_paths = list(OLD.glob(f'ai-{channel}-*.jsonl')) + [OLD / f'holdout-ai-{channel}.jsonl']
-    old_ids = {v['row'] for path in old_paths for v in read_jsonl(path)}
+    if WORK == DEFAULT_WORK:
+        old_ids = {v['row'] for path in (BASELINE/'ai-references.jsonl',BASELINE/'ai-reference-exclusions.jsonl')
+                   for v in read_jsonl(path) if v.get(f'ai_{channel}') is not None}
+    else:
+        old_paths = list(OLD.glob(f'ai-{channel}-*.jsonl')) + [OLD / f'holdout-ai-{channel}.jsonl']
+        old_ids = {v['row'] for path in old_paths for v in read_jsonl(path)}
     judgments = [v for path in (WORK/'labels').glob(f'*-{channel}-*.jsonl') if not path.name.startswith('reference-corrections-') for v in read_jsonl(path)]
     current_ids = {v['row'] for v in judgments}
     new_ids = current_ids - old_ids
@@ -62,7 +79,7 @@ def learn_anchors(target_version):
     """Freeze reusable institution spans supported by two blind references."""
     import extract as rules
     a, b = labels('a'), labels('b')
-    inventory = {v['row']:v for v in read_jsonl(OLD/'inventory.jsonl')}
+    inventory = {v['row']:v for v in read_jsonl(BASELINE/'script-r29.jsonl')}
     excluded = set()
     for path in WORK.glob('holdout*-frozen.jsonl'):
         suffix = path.name.removeprefix('holdout').split('-')[0]
@@ -91,12 +108,18 @@ def learn_anchors(target_version):
             match=rules._INSTITUTION_END.search(outer)
             if match and balanced:candidates.append(tail[:match.end()].strip())
         first=core.find(av['names'][0])
+        if len(av['names']) == 1 and first >= 0:
+            tail = core[first+len(av['names'][0]):].strip()
+            outer, balanced = rules._outside(tail)
+            match = rules._INSTITUTION_END.search(outer)
+            if match and balanced:
+                candidates.append(tail[:match.end()].strip())
         if first>0:
             prefix=core[:first];outer,balanced=rules._outside(prefix)
             matches=list(rules._INSTITUTION_END.finditer(outer))
             if matches and balanced:candidates.append(prefix[:matches[-1].end()].strip())
         for anchor in candidates:
-            if len(anchor)<3 or rules._ROLE.search(anchor) or rules._TO_POST.search(anchor) or rules._BUSINESS_ACTION.search(anchor) or re.search('[、；;及和兼（）()]',anchor): continue
+            if len(anchor)<3 or rules._ROLE.search(anchor) or rules._TO_POST.search(anchor) or rules._BUSINESS_ACTION.search(anchor) or re.search('[、；;及兼]',anchor): continue
             if re.fullmatch(r'(?:村镇|农商|农村商业|农村信用|商业|股份制)?银行(?:股份有限公司)?|信用社|联社|保险公司|金融机构',anchor): continue
             anchors.setdefault(anchor,[]).append(row)
     write_json(ROOT/'scripts'/f'institution_anchors_{target_version}.json', sorted(anchors))
@@ -105,68 +128,29 @@ def learn_anchors(target_version):
 
 
 def run():
+    baseline = {v['row']: v for v in read_jsonl(BASELINE / 'script-r29.jsonl')}
     output = []
-    for item in read_jsonl(OLD / 'inventory.jsonl'):
+    for item in baseline.values():
         result = extract(item['title'])
         result.update(length=sum(map(name_length, result['names'])), extracted_name='；'.join(result['names']))
-        checks=check(item['title'], result)
-        output.append(dict(item, result=result, checks=checks, risk_categories=risk_categories(item['title'],result,checks)))
+        checks = check(item['title'], result)
+        output.append(dict(item, result=result, checks=checks, risk_categories=risk_categories(item['title'], result, checks)))
     write_jsonl(WORK / f'script-{VERSION}.jsonl', output)
     shutil.copyfile(ROOT / 'scripts' / 'extract.py', WORK / f'extract-{VERSION}.py')
-    for resource in (ROOT / 'scripts').glob('institution_anchors_*.json'):
-        shutil.copyfile(resource, WORK / resource.name)
-    summary = {
-        'version': VERSION, 'unique_titles': len(output), 'mapped_rows': sum(len(v['rows']) for v in output),
-        'runtime_anchor_resource':INSTITUTION_ANCHOR_RESOURCE, 'runtime_anchor_count':len(_INSTITUTION_STARTS),
-        'status_titles': dict(Counter(v['result']['status'] for v in output)),
-        'status_rows': {s: sum(len(v['rows']) for v in output if v['result']['status'] == s) for s in ('names', 'uncertain', 'no_name')},
-        'hard_failure_titles': sum(bool(v['checks']['failures']) for v in output),
-        'flagged_titles': sum(bool(v['checks']['flags']) for v in output),
-        'flags': dict(Counter(f for v in output for f in v['checks']['flags'])),
-        'risk_categories': dict(Counter(f for v in output for f in v['risk_categories'])),
-    }
-    baseline = {v['row']: v for v in read_jsonl(WORK / 'script-r03.jsonl')}
-    summary['status_transitions_from_r03'] = dict(Counter(baseline[v['row']]['result']['status'] + ' -> ' + v['result']['status'] for v in output))
-    a = labels('a')
-    for path in WORK.glob('holdout*-frozen.jsonl'):
-        suffix=path.name.removeprefix('holdout').split('-')[0]
-        if not (WORK/f'rules-frozen{suffix}.json').exists():
-            frozen={v['row'] for v in read_jsonl(path)}
-            a={row:label for row,label in a.items() if row not in frozen}
-    summary['ai_a_comparable'] = len(a)
-    summary['script_ai_a_matches'] = sum(v['row'] in a and v['result']['names'] == a[v['row']]['names'] and v['result']['status'] == a[v['row']]['status'] for v in output)
-    def histories():
-        for path in sorted(WORK.glob('script-r*.jsonl')):
-            yield {v['row']: v['result'] for v in read_jsonl(path)}
-        for path in sorted(OLD.glob('script-r*.jsonl')):
-            yield {v['row']: v for v in read_jsonl(path)}
-    summary['regression_rows'] = regression_rows(histories(), {v['row']: dict(v['result'],checks=v['checks']) for v in output}, a)
-    indexed={v['row']:v for v in output}
-    summary['regression_uncertain_downgrades']=[row for row in summary['regression_rows'] if indexed[row]['result']['status']=='uncertain']
-    summary['regression_determinate_differences']=[row for row in summary['regression_rows'] if indexed[row]['result']['status']!='uncertain']
-    b = labels('b')
-    references = {row:av for row,av in a.items() if row in b and av['status']!='uncertain' and (av['names'],av['status'])==(b[row]['names'],b[row]['status']) and not check(indexed[row]['title'],av)['failures'] and not check(indexed[row]['title'],b[row])['failures']}
-    def determinate_differences(items):
-        return {v['row'] for v in items if v['row'] in references and v['result']['status']!='uncertain' and (v['result']['names'],v['result']['status'])!=(references[v['row']]['names'],references[v['row']]['status'])}
-    current_differences = determinate_differences(output)
-    baseline_differences = determinate_differences(baseline.values())
-    summary['ai_both_supported_comparable'] = len(references)
-    summary['ai_both_supported_determinate_difference_rows'] = sorted(current_differences)
-    summary['r03_ai_both_supported_determinate_difference_rows'] = sorted(baseline_differences)
-    summary['r03_determinate_differences_removed'] = sorted(baseline_differences-current_differences)
+    shutil.copyfile(ROOT / 'scripts' / INSTITUTION_ANCHOR_RESOURCE, WORK / INSTITUTION_ANCHOR_RESOURCE)
+    summary = {'release_version': RELEASE_VERSION, 'version': VERSION, 'runtime_anchor_resource':INSTITUTION_ANCHOR_RESOURCE, 'runtime_anchor_count':len(_INSTITUTION_STARTS), 'unique_titles':len(output), 'mapped_rows':sum(len(v['rows']) for v in output),
+               'status_titles':dict(Counter(v['result']['status'] for v in output)),
+               'status_rows':{s:sum(len(v['rows']) for v in output if v['result']['status']==s) for s in ('names','no_name','uncertain')},
+               'hard_failure_titles':sum(bool(v['checks']['failures']) for v in output)}
     previous_paths = [p for p in WORK.glob('script-r*.jsonl') if int(p.stem[8:]) < int(VERSION[1:])]
-    if previous_paths:
-        previous_path = max(previous_paths,key=lambda p:int(p.stem[8:]))
-        previous = read_jsonl(previous_path)
-        previous_index = {v['row']:v for v in previous}
-        previous_differences = determinate_differences(previous)
-        summary['previous_version'] = previous_path.stem.removeprefix('script-')
-        summary['status_transitions_from_previous'] = dict(Counter(previous_index[v['row']]['result']['status']+' -> '+v['result']['status'] for v in output))
-        summary['changed_results_from_previous'] = sum(v['result']!=previous_index[v['row']]['result'] for v in output)
-        summary['new_determinate_differences_from_previous'] = sorted(current_differences-previous_differences)
-        summary['removed_determinate_differences_from_previous'] = sorted(previous_differences-current_differences)
-    write_json(WORK / f'summary-{VERSION}.json', summary)
-    print(json.dumps(summary, ensure_ascii=False, indent=2))
+    previous = {v['row']:v for v in read_jsonl(max(previous_paths, key=lambda p:int(p.stem[8:])))} if previous_paths else baseline
+    changed = [dict(v, before=previous[v['row']]['result']) for v in output
+               if (v['result']['names'],v['result']['status']) != (previous[v['row']]['result']['names'],previous[v['row']]['result']['status'])]
+    summary['changed_titles'] = len(changed)
+    summary['status_transitions'] = dict(Counter(v['before']['status']+' -> '+v['result']['status'] for v in changed))
+    write_jsonl(WORK/f'changes-{VERSION}.jsonl', changed)
+    write_json(WORK/f'summary-{VERSION}.json',summary)
+    print(json.dumps(summary,ensure_ascii=False,indent=2))
 
 
 def prepare_reviews(extra=False):
@@ -241,50 +225,81 @@ def evaluate_frozen_sets():
     return reports
 
 
+def production_records(item):
+    """AI references never participate in production values."""
+    result = item['result']
+    name, length = (None, None) if result['status']=='uncertain' else ('；'.join(result['names']), result['length'])
+    return [{'row':row,'name':name,'length':length} for row in item['rows']]
+
+
+def comparison_state(item, av, bv):
+    if check(item['title'], item['result'])['failures']:
+        return 'invalid_script'
+    if av is None or bv is None:
+        return 'missing_reference' if av is None and bv is None else 'single_channel'
+    if check(item['title'], av)['failures'] or check(item['title'], bv)['failures']:
+        return 'invalid_reference'
+    if av['status']=='uncertain' or bv['status']=='uncertain' or (av['names'],av['status'])!=(bv['names'],bv['status']):
+        return 'disputed_reference'
+    result = item['result']
+    if result['status']=='uncertain':
+        return 'script_unresolved'
+    if (result['names'],result['status'])==(av['names'],av['status']):
+        return 'match'
+    return 'no_name_dispute' if 'no_name' in (result['status'],av['status']) else 'determinate_difference'
+
+
 def finish():
     data = read_jsonl(WORK / f'script-{VERSION}.jsonl')
-    a, b = labels('a'), labels('b')
-    targets = {v['row'] for v in read_jsonl(WORK / 'review-targets.jsonl')}
-    audit, export = [], []
+    a,b = labels('a'),labels('b')
+    baseline = {v['row']:v for v in read_jsonl(BASELINE/'script-r29.jsonl')}
+    audit,export=[],[]
+    regressions=[]
     for v in data:
-        row, result = v['row'], v['result']
-        av, bv = a.get(row), b.get(row)
-        valid_a = av is not None and not check(v['title'], av)['failures']
-        valid_b = bv is not None and not check(v['title'], bv)['failures']
-        if row in targets:
-            if valid_a and valid_b and av['status'] != 'uncertain' and bv['status'] == av['status'] and av['names'] == bv['names']:
-                state, names, source = av['status'], av['names'], 'ai_a_b_supported'
-            else:
-                state, names, source = 'uncertain', (av or bv or result)['names'], 'missing_invalid_or_disputed_review'
-        elif v['checks']['failures']:
-            state, names, source = 'uncertain', result['names'], 'hard_check_failure'
-        else:
-            state, names, source = result['status'], result['names'], 'script_only'
-        name, length = (None, None) if state == 'uncertain' else ('；'.join(names), reference_length(names))
-        audit.append(dict(v, ai_a=av, ai_b=bv, output_state=state, output_source=source, candidate=names, independent_truth=False))
-        export.extend({'row':r, 'name':name, 'length':length} for r in v['rows'])
-    write_jsonl(WORK / 'audit.jsonl', audit)
-    write_jsonl(WORK / 'unresolved.jsonl', [v for v in audit if v['output_state']=='uncertain'])
-    write_jsonl(WORK / 'excel-records.jsonl', sorted(export,key=lambda r:r['row']))
-    frozen = {v['row'] for v in read_jsonl(WORK/'holdout-frozen.jsonl')}
-    holdout = [v for v in audit if v['row'] in frozen]
-    summary = {'version':VERSION, 'unique_titles':len(audit), 'mapped_rows':len(export), 'output_status_titles':dict(Counter(v['output_state'] for v in audit)), 'output_status_rows':dict(Counter('uncertain' if r['name'] is None else 'no_name' if not r['name'] else 'names' for r in export)), 'ai_a_coverage':len(a), 'ai_b_coverage':len(b), 'review_required':len(targets), 'review_missing_a':len(targets-a.keys()), 'review_missing_b':len(targets-b.keys()), 'ai_a_b_disagreements':sum(v['ai_a'] is not None and v['ai_b'] is not None and (v['ai_a']['names'],v['ai_a']['status'])!=(v['ai_b']['names'],v['ai_b']['status']) for v in audit), 'ai_supported_script_differences':sum(v['output_source']=='ai_a_b_supported' and (v['result']['names'],v['result']['status'])!=(v['candidate'],v['output_state']) for v in audit), 'holdout_ai_a_covered':sum(v['ai_a'] is not None for v in holdout), 'holdout_ai_b_covered':sum(v['ai_b'] is not None for v in holdout), 'holdout_script_matches_a':sum(v['ai_a'] is not None and (v['result']['names'],v['result']['status'])==(v['ai_a']['names'],v['ai_a']['status']) for v in holdout), 'true_accuracy':None, 'human_review_performed':False}
-    summary['ai_coverage'] = {channel:coverage(channel,data) for channel in ('a','b')}
-    for channel in ('a','b'):
-        summary[f'new_ai_{channel}_titles'] = summary['ai_coverage'][channel]['new_unique_titles']
-        summary[f'ai_{channel}_mapped_rows'] = summary['ai_coverage'][channel]['mapped_rows']
-        summary[f'new_ai_{channel}_mapped_rows'] = summary['ai_coverage'][channel]['new_mapped_rows']
-    summary['invalid_reference_a'] = len(summary['ai_coverage']['a']['invalid_reference_titles'])
-    summary['invalid_reference_b'] = len(summary['ai_coverage']['b']['invalid_reference_titles'])
-    summary['frozen_samples'] = evaluate_frozen_sets()
+        if check(v['title'], v['result'])['failures']:
+            raise ValueError(f"Script output contract failure at row {v['row']}")
+        row=v['row']; av,bv=a.get(row),b.get(row)
+        state=comparison_state(v,av,bv)
+        audit.append(dict(v, ai_a=av,ai_b=bv,comparison_state=state,output_state=v['result']['status'],output_source='script_only',independent_truth=False))
+        export.extend(production_records(v))
+        if row in baseline and comparison_state(baseline[row],av,bv)=='match' and state!='match':
+            regressions.append(row)
+    write_jsonl(WORK/f'audit-{VERSION}.jsonl',audit)
+    write_jsonl(WORK/f'unresolved-{VERSION}.jsonl',[v for v in audit if v['output_state']=='uncertain'])
+    write_jsonl(WORK/'excel-records.jsonl',sorted(export,key=lambda r:r['row']))
+    summary={'release_version':RELEASE_VERSION,'version':VERSION,'unique_titles':len(data),'mapped_rows':len(export),
+             'output_status_titles':dict(Counter(v['output_state'] for v in audit)),
+             'output_status_rows':dict(Counter('uncertain' if r['name'] is None else 'no_name' if not r['name'] else 'names' for r in export)),
+             'comparison_titles':dict(Counter(v['comparison_state'] for v in audit)),
+             'regression_rows_from_v1':regressions,
+             'ai_a_coverage':len(a),'ai_b_coverage':len(b),
+             'true_accuracy':None,'human_review_performed':False,'production_source':'script_only'}
+    if WORK == DEFAULT_WORK:
+        index = {v['row']:v for v in data}
+        summary['v1_reference_comparison'] = dict(Counter(comparison_state(index[v['row']],v['ai_a'],v['ai_b'])
+                                                         for v in read_jsonl(BASELINE/'ai-references.jsonl')))
+        summary['ai_coverage'] = {channel:coverage(channel,data) for channel in ('a','b')}
+    write_json(WORK/f'comparison-{VERSION}.json',summary)
     write_json(WORK/'delivery-summary.json',summary)
     print(json.dumps(summary,ensure_ascii=False,indent=2))
 
 
+def export(source, output):
+    from excel_output import export_workbook
+    finish()
+    verification = export_workbook(source, output, read_jsonl(WORK/'excel-records.jsonl'))
+    write_json(WORK/'excel-verification.json',verification)
+    print(json.dumps(verification,ensure_ascii=False,indent=2))
+
+
 if __name__ == '__main__':
-    p=argparse.ArgumentParser();p.add_argument('action',choices=['run','reviews','reviews-extra','finish','learn']);p.add_argument('--target-version')
+    p=argparse.ArgumentParser();p.add_argument('action',choices=['run','reviews','reviews-extra','finish','learn','export']);p.add_argument('--target-version')
+    p.add_argument('--source',type=Path,default=ROOT/'任职资格批复汇总测试.xlsx')
+    p.add_argument('--output',type=Path,default=ROOT/f'outputs/v2/任职资格批复汇总测试-{RELEASE_VERSION}纯脚本待复核版.xlsx')
     args=p.parse_args()
-    if args.action=='learn':
+    if args.action=='export':
+        export(args.source,args.output)
+    elif args.action=='learn':
         if not args.target_version: p.error('learn requires --target-version')
         learn_anchors(args.target_version)
     elif args.action=='reviews-extra': prepare_reviews(extra=True)

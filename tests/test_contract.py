@@ -9,6 +9,25 @@ from pilot import regression_rows
 
 
 class BusinessContract(unittest.TestCase):
+    def test_v2_observed_boundaries_and_aliases(self):
+        cases = [
+            ('关于核准冉洵高管任职资格的批复', ['冉洵']),
+            ('关于核准袁斯佳井冈山九银村镇银行有限公司计划财务部负责人任职资格的批复', ['袁斯佳']),
+            ('关于HONGYOUNG（洪铃）现代财产保险（中国）有限公司董事、董事长任职资格的批复', ['HONGYOUNG（洪铃）']),
+            ('关于姚镇杰中国人寿财产保险股份有限公司防城港市中心支公司副总经理（主持工作）任职资格的批复', ['姚镇杰']),
+            ('关于牙哈甫江·阿不都拉中国建设银行股份有限公司阿克苏地区分行副行长任职资格的批复', ['牙哈甫江·阿不都拉']),
+            ('关于核准DR.DAHLHEIMCHRISTIAN大众汽车金融（中国）有限公司董事任职资格的批复', ['DAHLHEIMCHRISTIAN']),
+            ('关于中国人寿保险股份有限公司襄阳市襄城区支公司溪苑路营业部经理向晓静任职资格的批复', ['向晓静']),
+            ('关于注销潘明（PANMING）华美银行（中国）有限公司行长任职资格行政许可决定的通知', ['潘明（PANMING）']),
+        ]
+        for title,names in cases:
+            with self.subTest(title=title):
+                result=extract(title)
+                self.assertEqual((result['status'],result['names']),('names',names))
+                self.assertEqual(check(title,result)['failures'],[])
+        self.assertEqual(extract('关于核准何子任高级管理人员任职资格的批复')['status'],'uncertain')
+        self.assertEqual(extract('关于德国安顾集团股份公司济南代表处变更首席代表的批复')['status'],'no_name')
+
     def test_real_silent_error_fixes(self):
         cases = [
             ('关于核准宋正周遂宁银行股份有限公司总行营业部总经理任职资格的批复', ['宋正周']),

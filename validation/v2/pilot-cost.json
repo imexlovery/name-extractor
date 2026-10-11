@@ -1,0 +1,20 @@
+{
+  "titles_per_channel": 21,
+  "independent_channels": 2,
+  "model": "gpt-6.1-sol",
+  "reasoning": "medium",
+  "channel_a_elapsed_seconds_approx": 28,
+  "channel_b_elapsed_seconds_approx": 37,
+  "actual_model_tokens": null,
+  "token_telemetry": "不可观测",
+  "account_weekly_used_percent_before": 6,
+  "account_weekly_used_percent_after": 6,
+  "usage_scope": "共享账号全部任务，整百分比粒度；不能推算本批精确token或额度",
+  "additional_paid_api": false,
+  "next_batch_per_channel": 101,
+  "rationale": "100个普通未见标题抽样、20个已有争议、2个未覆盖变化；无新复杂未见结构，不扩大至数千",
+  "followup_titles_per_channel": 101,
+  "followup_a_elapsed_seconds_approx": 53,
+  "followup_b_elapsed_seconds_approx": 56,
+  "account_weekly_used_percent_after_followup": 6
+}

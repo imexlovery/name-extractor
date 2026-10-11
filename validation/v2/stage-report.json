@@ -1,0 +1,135 @@
+{
+  "release_version": "0.2.0",
+  "version": "r38",
+  "titles": 46760,
+  "original_rows": 52146,
+  "script_status_titles": {
+    "names": 45929,
+    "uncertain": 168,
+    "no_name": 663
+  },
+  "script_status_rows": {
+    "names": 51239,
+    "no_name": 730,
+    "uncertain": 177
+  },
+  "status_changes_from_v1": {
+    "uncertain -> names": 581,
+    "uncertain -> no_name": 64,
+    "names -> uncertain": 1
+  },
+  "v1_reference_comparison": {
+    "match": 23235,
+    "script_unresolved": 152,
+    "determinate_difference": 0,
+    "no_name_dispute": 0
+  },
+  "v1_regressions": [],
+  "confirmed_differences_introduced_during_iteration": 38,
+  "iteration_difference_rows": [
+    226,
+    4341,
+    4344,
+    4731,
+    5206,
+    5635,
+    6315,
+    6895,
+    9850,
+    11823,
+    12100,
+    14077,
+    14884,
+    17241,
+    19219,
+    21443,
+    21849,
+    22335,
+    22756,
+    22785,
+    24721,
+    25858,
+    27930,
+    31033,
+    33220,
+    36166,
+    36183,
+    38013,
+    38881,
+    41066,
+    41796,
+    42294,
+    42349,
+    43334,
+    44495,
+    48620,
+    49575,
+    50059
+  ],
+  "remaining_determinate_differences_against_v1": 0,
+  "new_review_titles": 122,
+  "new_review_judgments": 244,
+  "new_unseen_titles": 100,
+  "new_unseen_strata": {
+    "关于结构": 72,
+    "核准结构": 28
+  },
+  "frozen_r37_new_unseen_comparison": {
+    "match": 100
+  },
+  "complex_unseen_available": false,
+  "historical_dispute_new_judgments": {
+    "uncertain": 17,
+    "names": 2,
+    "a_b_disagree": 1
+  },
+  "historical_disputes_not_auto_closed": true,
+  "determinate_outputs_with_historical_ai_doubts": [
+    32004,
+    35692,
+    39226,
+    41190,
+    45205
+  ],
+  "new_ambiguities_downgraded": [
+    41811
+  ],
+  "true_accuracy": null,
+  "human_review_performed": false,
+  "paid_api_used": false,
+  "excel_verification": {
+    "records_verified": 52146,
+    "original_field_slots_verified": 677898,
+    "original_cells_xml_verified": 677911,
+    "xml_rows_preserved": 107328,
+    "unchanged_zip_members": 16,
+    "result_cells_verified": 104294,
+    "original_values_types_styles_order_preserved": true,
+    "original_column_formats_preserved": true,
+    "dimension_and_filter_expanded_to_O": true,
+    "source_overwritten": false
+  },
+  "tests_passed": 17,
+  "word_pages_visually_checked": 9,
+  "excel_representative_display_rows": [
+    2,
+    19,
+    68,
+    520,
+    32004,
+    12313,
+    44406,
+    30494,
+    6995,
+    42349,
+    38881,
+    41811,
+    39226,
+    39589,
+    42644,
+    52147
+  ],
+  "current_entry_verified_without_old_local_history": true,
+  "risk_list_titles": 173,
+  "risk_list_original_rows": 182
+}
