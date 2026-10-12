@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-12",
+  "source": "audit-r56.jsonl frozen missing_reference population",
+  "blind_input": "template-semantic/blind.jsonl",
+  "channels": {
+    "a": "/root/blind_a",
+    "b": "/root/blind_b"
+  },
+  "history": "none",
+  "allowed_inputs": [
+    "original title",
+    "row identifier",
+    "common business convention"
+  ],
+  "forbidden_inputs": [
+    "production extractor",
+    "script answers",
+    "existing references",
+    "other channel answers",
+    "body text"
+  ],
+  "generation": "Semantic judgment by independent contexts; explicit judgments may be serialized by code, no regex/template-generated names.",
+  "model_configuration": "Inherited parent model and defaults; not claimed to be two different models or gpt-6.1-sol/medium.",
+  "expected_titles_per_channel": 285,
+  "labels": "../labels/template-semantic-[ab]-01.jsonl",
+  "first_answers_preserved": true
+}

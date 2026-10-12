@@ -1,0 +1,45 @@
+{
+  "rules": "r56",
+  "selected_titles": 285,
+  "selected_mapped_rows": 308,
+  "templates_covered": 33,
+  "first_answers_agree": 285,
+  "first_answer_comparison_states": {
+    "match": 285
+  },
+  "explicit_person_count_evidence": {
+    "a": 0,
+    "b": 0
+  },
+  "corrections": 0,
+  "labels_added_per_channel": 285,
+  "full_unique_titles": 46760,
+  "full_mapped_rows": 52146,
+  "full_comparison_states_with_new_labels": {
+    "single_channel": 35,
+    "missing_reference": 22525,
+    "match": 24077,
+    "script_unresolved": 86,
+    "disputed_reference": 37
+  },
+  "ai_coverage_titles_with_new_labels": {
+    "a": 24235,
+    "b": 24200
+  },
+  "script_status_titles": {
+    "names": 45944,
+    "uncertain": 122,
+    "no_name": 694
+  },
+  "script_status_rows": {
+    "names": 51254,
+    "uncertain": 131,
+    "no_name": 761
+  },
+  "frozen_full_output_contract_failures": 0,
+  "frozen_output_changes_from_r55": 0,
+  "production_changes": 0,
+  "true_accuracy": null,
+  "human_review_performed": false,
+  "evidence_limit": "Two independent contexts with the inherited parent model/configuration, not two different models or human truth. Selected sample is targeted and cannot estimate population accuracy. Existing r56 audit/comparison snapshots retained; updated coverage is reported here."
+}
