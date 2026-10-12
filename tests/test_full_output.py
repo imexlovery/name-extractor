@@ -13,6 +13,26 @@ from pilot import write_jsonl, read_jsonl
 
 
 class ReviewFailureHandling(unittest.TestCase):
+    def test_v060_inherits_r56_corrections_and_template_labels_as_old_coverage(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            baseline, frozen, work = [root / name for name in ('v1', '0.5.1', '0.6.0')]
+            first = {'row': 2, 'names': ['梁晓芝'], 'status': 'uncertain'}
+            corrected = dict(first, status='names')
+            template = dict(corrected, row=3)
+            write_jsonl(baseline / 'ai-references.jsonl', [])
+            write_jsonl(baseline / 'ai-reference-exclusions.jsonl', [])
+            write_jsonl(frozen / 'labels/review-a-01.jsonl', [first])
+            write_jsonl(frozen / 'labels/reference-corrections-a-01.jsonl', [
+                dict(row=2, before=first, after=corrected, reason='保留首答的显式更正')])
+            write_jsonl(frozen / 'labels/template-semantic-a-01.jsonl', [template])
+            inventory = [dict(row=row, rows=[row], title='关于梁晓芝任职资格的批复') for row in (2, 3)]
+            with patch.object(full, 'BASELINE', baseline), patch.object(full, 'FROZEN_STAGE', frozen), \
+                    patch.object(full, 'DEFAULT_WORK', work), patch.object(full, 'WORK', work):
+                self.assertEqual(full.labels('a'), {2: corrected, 3: template})
+                self.assertEqual(full.coverage('a', inventory)['new_unique_titles'], 0)
+            self.assertEqual(read_jsonl(frozen / 'labels/review-a-01.jsonl'), [first])
+
     def test_v050_reuses_v040_first_answers_and_corrections(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

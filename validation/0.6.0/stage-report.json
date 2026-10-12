@@ -1,0 +1,101 @@
+{
+  "version": "r60",
+  "release_version": "0.6.0",
+  "rounds": [
+    {
+      "version": "r57",
+      "changed_titles": 29,
+      "changed_rows": 31,
+      "accepted": true,
+      "observed_error_rows": [],
+      "note": "机构类型与7个完整机构补充"
+    },
+    {
+      "version": "r58",
+      "changed_titles": 53,
+      "changed_rows": 55,
+      "accepted": false,
+      "observed_error_rows": [
+        25132
+      ],
+      "note": "r58误拆带外文别名的坂内和隆；r59修复并全量复验"
+    },
+    {
+      "version": "r59",
+      "changed_titles": 52,
+      "changed_rows": 54,
+      "accepted": true,
+      "observed_error_rows": [],
+      "note": "r58误拆带外文别名的坂内和隆；r59修复并全量复验"
+    },
+    {
+      "version": "r60",
+      "changed_titles": 52,
+      "changed_rows": 54,
+      "accepted": true,
+      "observed_error_rows": [],
+      "note": "明确一人且片段重复时保留整个连接表达；真实输出相对r59无变化"
+    }
+  ],
+  "unique_titles": 46760,
+  "mapped_rows": 52146,
+  "status_titles": {
+    "names": 45991,
+    "no_name": 694,
+    "uncertain": 75
+  },
+  "status_rows": {
+    "names": 51303,
+    "no_name": 761,
+    "uncertain": 82
+  },
+  "hard_failure_titles": 0,
+  "supported_solutions_titles": 47,
+  "supported_solutions_rows": 49,
+  "solutions_evidence": "标题结构检查＋已有人工反馈一致；变化后人工复核尚未完成，非独立准确率真值",
+  "solutions_matching_human_titles": 47,
+  "solutions_matching_human_rows": 49,
+  "title_supported_human_corrections_rows": [
+    25395
+  ],
+  "corrected_original_errors_rows": 0,
+  "known_new_errors_remaining_rows": 0,
+  "previously_determinate_changes": 0,
+  "post_change_human_review_complete": false,
+  "random_sample_changes": 0,
+  "all_human_review_complete": false,
+  "true_accuracy": null,
+  "comparison_titles": {
+    "single_channel": 35,
+    "missing_reference": 22525,
+    "match": 24121,
+    "disputed_reference": 37,
+    "script_unresolved": 42
+  },
+  "surname_experiment": {
+    "production_enabled": false,
+    "resource": "surname-candidates-resource.json",
+    "uncertain_titles_with_candidates": 9,
+    "conclusion": "整段始终是竞争候选，唯一词表切分不证明人数；不进入生产"
+  },
+  "long_and_foreign_experiment": {
+    "production_relaxation": false,
+    "conclusion": "完整槽位保留；无可靠通用单人数条件，不用正文答案放行。显式人数现有路径继续有效"
+  },
+  "human_review_scope": {
+    "initial_review_titles": 122,
+    "initial_review_rows": 131,
+    "corrections": 6,
+    "post_change_confirmed_titles": 1,
+    "post_change_confirmed_rows": [
+      25395
+    ],
+    "content_assisted": true,
+    "all_titles_human_reviewed": false,
+    "no_name_review_titles": 694,
+    "no_name_review_rows": 761,
+    "no_name_review_complete": false,
+    "random_review_titles": 200,
+    "random_review_complete": false
+  }
+}

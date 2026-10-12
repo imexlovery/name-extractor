@@ -1,0 +1,10 @@
+{
+  "release_version": "0.6.0",
+  "rule_version": "r60",
+  "original_workbook_modified_during_review": false,
+  "review_method": "最终导出N/O单元格及列格式的只读OOXML投影，用artifact-tool渲染并人工视觉检查",
+  "original_rows": [1, 2, 3, 67, 68, 69, 25394, 25395, 25396],
+  "preview": ".local/excel-qa/preview.png",
+  "result": "表头、中文姓名、分号分隔及数值显示可读，无截断",
+  "limitation": "全表artifact-tool导入超过5分钟未完成，停止后改用局部投影；全表原字段和格式保留由excel-verification.json独立验证"
+}

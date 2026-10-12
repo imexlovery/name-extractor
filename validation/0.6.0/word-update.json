@@ -1,0 +1,26 @@
+{
+  "updated_effective_paragraphs": [
+    1,
+    2,
+    6,
+    12,
+    14,
+    22,
+    28,
+    30,
+    32,
+    33,
+    34,
+    35,
+    37,
+    38
+  ],
+  "historical_paragraphs_preserved": 117,
+  "tables_preserved": 2,
+  "rendering_verified": true,
+  "rendered_pages": 21,
+  "visual_review": "更正后检查变化页5及历史附录入口页6；中文可读、无截断或页脚重叠，其余沿用此前21页检查",
+  "render_fontconfig": ".local/word-fonts.conf",
+  "render_output": ".local/0.6.0-word-correction",
+  "pre_edit_copy": "/Users/tristana/法询金融科技codex测试/.local/word-history/20261012-before-0.6.0.docx"
+}

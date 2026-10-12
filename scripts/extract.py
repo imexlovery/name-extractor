@@ -7,7 +7,7 @@ import unicodedata
 import json
 from pathlib import Path
 
-VERSION = "r56"
+VERSION = "r60"
 
 _HAN_RANGES = (
     (0x3400, 0x4DBF), (0x4E00, 0x9FFF), (0xF900, 0xFAFF),
@@ -81,11 +81,12 @@ _INSTITUTION_STARTS = (
     "云南", "西藏", "陕西", "甘肃", "青海", "宁夏", "新疆", "香港", "澳门", "台湾",
 )
 _ACRONYM_INSTITUTION = re.compile(r"[A-Z]{2,}(?=科技集团|集团财务|金融公司)")
-INSTITUTION_ANCHOR_RESOURCE = 'institution_anchors_r41.json'
-AMBIGUITY_RESOURCE = 'title_ambiguities_r55.json'
+INSTITUTION_ANCHOR_RESOURCE = 'institution_anchors_r57.json'
+AMBIGUITY_RESOURCE = 'title_ambiguities_r57.json'
 _TITLE_AMBIGUITIES = json.loads(Path(__file__).with_name(AMBIGUITY_RESOURCE).read_text(encoding='utf-8'))
 _INSTITUTION_STARTS += tuple(json.loads(Path(__file__).with_name(INSTITUTION_ANCHOR_RESOURCE).read_text(encoding='utf-8')))
 _REGION_ANCHORS = set('中国 北京 天津 河北 山西 内蒙古 辽宁 吉林 黑龙江 上海 江苏 浙江 安徽 福建 江西 山东 河南 湖北 湖南 广东 广西 海南 重庆 四川 贵州 云南 西藏 陕西 甘肃 青海 宁夏 新疆 香港 澳门 台湾'.split())
+_GENERIC_BANK_TYPE = re.compile(r'村镇银行|农村商业银行')
 
 
 def _outside(text: str) -> tuple[str, bool]:
@@ -188,6 +189,7 @@ def _finish(candidate: str, rule: str, note: str = "", single_person: bool = Fal
     if not re.search(r"[A-Za-z]", outer):
         separators += [m.start() for m in re.finditer(r"[,，]", outer)]
     starts, names = 0, []
+    conjoined_names = False
     for end in sorted(separators) + [len(candidate)]:
         part = re.sub(r"(?:[0-9０-９一二三四五六七八九十百千万两〇零]+位)?(?:同志|先生|女士)(?:的)?$", "", candidate[starts:end].strip())
         part = re.sub(r'[一二三四五六七八九十两0-9]+人$', '', part)
@@ -212,7 +214,7 @@ def _finish(candidate: str, rule: str, note: str = "", single_person: bool = Fal
             return _result(names + [part[:-1]], 'uncertain', rule, '机构前任字可能为任职动词，需语义复核')
         connectors = list(re.finditer(r"[和及与]", masked))
         connectors = [m for m in connectors if m.start() > 0 and masked[m.end():].strip()]
-        if not single_person and name_length(masked) > 4 and connectors:
+        if not single_person and connectors and not re.search('[A-Za-z]', part):
             split_candidates = []
             start = 0
             for delimiter in connectors:
@@ -220,7 +222,14 @@ def _finish(candidate: str, rule: str, note: str = "", single_person: bool = Fal
                 start = delimiter.end()
             split_candidates.append(part[start:].strip())
             candidates = split_candidates if all(name_length(n) >= 2 for n in split_candidates) else [part]
-            return _result(names + candidates, "uncertain", rule, "连接词关系待独立复核，候选分段不表示已确认多人")
+            # The conjunction is the boundary evidence. Length or surname alone
+            # cannot create it; every complete side still passes the usual rules.
+            if len(candidates) > 1 and all(_finish(n, rule)['status'] == 'names' for n in candidates):
+                names.extend(candidates)
+                conjoined_names = True
+                continue
+            if name_length(masked) > 4 or len(candidates) > 1:
+                return _result(names + candidates, "uncertain", rule, "连接词关系待独立复核，候选分段不表示已确认多人")
         if _INSTITUTION_END.search(masked) or _ROLE.search(masked) or "金融机构" in masked:
             return _result(names, "uncertain", rule, "姓名与机构或职务边界未确定")
         if _NON_PERSON.search(masked):
@@ -237,7 +246,10 @@ def _finish(candidate: str, rule: str, note: str = "", single_person: bool = Fal
         return _result(names, "uncertain", rule, "单字候选需要复核，可能为边界截断")
     if not single_person and any(not re.search('[A-Za-z·•・‧∙⋅]', n) and name_length(n) > 4 for n in names):
         return _result(names, 'uncertain', rule, '较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆')
-    return _result(names, "names", rule, note)
+    result = _result(names, "names", rule, note)
+    if conjoined_names:
+        result['conjoined_names'] = True
+    return result
 
 
 def _extract(title: str) -> dict:
@@ -373,6 +385,16 @@ def _extract(title: str) -> dict:
         return _result([], 'no_name', 'complete_institution_without_person', '有来源的完整机构及职务结构未明示姓名')
     institutions = list(_INSTITUTION_END.finditer(masked))
     specific = _registered_spans(masked)
+    # A complete named bank takes precedence over a generic type. Accept a type
+    # boundary only with a fully consumed appointment post, never a bare suffix.
+    bank_type = _GENERIC_BANK_TYPE.search(masked)
+    if bank_type and not specific and not any(masked.startswith(region) for region in _REGION_ANCHORS):
+        post = core[bank_type.end():].strip()
+        if _ROLE.match(post) and not _after_leading_roles(post):
+            candidate = person_part[:bank_type.start()].strip()
+            if candidate:
+                return _finish(candidate, 'person_before_generic_bank', note)
+            return _result([], 'no_name', 'generic_bank_without_person', '泛称机构及完整岗位，未明示姓名')
     leading = [end for start,end in specific if start==0]
     if leading:
         start = max(leading)
@@ -537,6 +559,14 @@ def extract(title: str) -> dict:
                         return _result([], 'uncertain', 'unsupported_person_count', '明示人数表达未解析，不能忽略')
                     cleaned = title[:count.start()] + title[count.end():]
                     result = _structural_extract(cleaned)
+                    if expected == 1 and result.get('conjoined_names'):
+                        positions, cursor = [], 0
+                        for name in result['names']:
+                            position = cleaned.find(name, cursor)
+                            positions.append(position)
+                            cursor = position + len(name)
+                        fragment = cleaned[positions[0]:cursor]
+                        result = _finish(fragment, result['rule'], single_person=True)
                     # A single-person statement can remove only internal-length or
                     # connective ambiguity, never an institution/boundary conflict.
                     if expected == 1 and result['status'] == 'uncertain' and result['note'] in {

@@ -80,11 +80,11 @@ class BusinessContract(unittest.TestCase):
                 self.assertEqual(extract(title)['names'], expected)
                 self.assertEqual(extract(title)['status'], 'names')
 
-    def test_connectors_do_not_silently_become_confirmed_names(self):
+    def test_complete_connector_rosters_and_internal_name_characters(self):
         title='关于杨宝秀和孟光任职资格的批复'
         result=extract(title)
         self.assertEqual(result['names'], ['杨宝秀', '孟光'])
-        self.assertEqual(result['status'], 'uncertain')
+        self.assertEqual(result['status'], 'names')
         self.assertEqual(sum(map(name_length, result['names'])), 5)
         for person in ['和全', '郑和', '刘金和', '孟和巴拉']:
             self.assertEqual(extract(f'关于{person}任职资格的批复')['names'], [person])

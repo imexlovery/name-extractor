@@ -1,0 +1,16 @@
+{
+  "initial_review_titles": 122,
+  "initial_review_rows": 131,
+  "corrections": 6,
+  "post_change_confirmed_titles": 1,
+  "post_change_confirmed_rows": [
+    25395
+  ],
+  "content_assisted": true,
+  "all_titles_human_reviewed": false,
+  "no_name_review_titles": 694,
+  "no_name_review_rows": 761,
+  "no_name_review_complete": false,
+  "random_review_titles": 200,
+  "random_review_complete": false
+}
