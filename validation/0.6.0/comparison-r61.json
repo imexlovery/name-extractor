@@ -1,0 +1,148 @@
+{
+  "release_version": "0.6.0",
+  "version": "r61",
+  "unique_titles": 46760,
+  "mapped_rows": 52146,
+  "output_status_titles": {
+    "names": 45995,
+    "no_name": 694,
+    "uncertain": 71
+  },
+  "output_status_rows": {
+    "names": 51307,
+    "no_name": 761,
+    "uncertain": 78
+  },
+  "comparison_titles": {
+    "single_channel": 35,
+    "missing_reference": 22525,
+    "match": 24125,
+    "disputed_reference": 37,
+    "script_unresolved": 38
+  },
+  "regression_rows_from_v1": [
+    38243
+  ],
+  "ai_a_coverage": 24235,
+  "ai_b_coverage": 24200,
+  "true_accuracy": null,
+  "human_review_performed": true,
+  "production_source": "script_only",
+  "human_review_scope": {
+    "initial_review_titles": 122,
+    "initial_review_rows": 131,
+    "corrections": 6,
+    "post_change_confirmed_titles": 52,
+    "post_change_confirmed_rows": [
+      68,
+      4493,
+      5312,
+      6349,
+      7216,
+      8050,
+      8992,
+      9394,
+      40569,
+      11008,
+      11286,
+      11994,
+      13829,
+      14507,
+      14524,
+      14577,
+      14688,
+      17200,
+      17864,
+      19065,
+      19822,
+      20943,
+      22501,
+      23033,
+      23637,
+      24247,
+      25395,
+      25726,
+      28776,
+      29240,
+      29639,
+      31750,
+      32897,
+      32930,
+      34848,
+      35479,
+      35682,
+      36124,
+      36328,
+      39063,
+      44773,
+      45799,
+      46416,
+      46801,
+      47203,
+      48730,
+      51930,
+      49344,
+      50204,
+      50539,
+      51378,
+      51535,
+      52054,
+      52079
+    ],
+    "content_assisted": true,
+    "all_titles_human_reviewed": false,
+    "no_name_review_titles": 694,
+    "no_name_review_rows": 761,
+    "no_name_review_complete": false,
+    "random_review_titles": 200,
+    "random_review_complete": false,
+    "post_change_confirmation_method": "用户2026-10-13在当前聊天整体确认，Codex按其指示代填；钱锦既有确认保留",
+    "no_name_ai_review_titles": 694,
+    "no_name_ai_review_rows": 761,
+    "no_name_ai_review_complete": true,
+    "no_name_ai_status_titles": {
+      "no_name": 689,
+      "uncertain": 5
+    },
+    "no_name_ai_status_rows": {
+      "no_name": 756,
+      "uncertain": 5
+    },
+    "no_name_ai_confirmed_name_omissions_rows": 0,
+    "no_name_ai_needs_review_rows": [
+      7753,
+      14373,
+      21338,
+      33890,
+      34754
+    ],
+    "no_name_ai_strict_independent_blinding": false
+  },
+  "full_human_review_complete": false,
+  "v1_reference_comparison": {
+    "match": 23337,
+    "script_unresolved": 50
+  },
+  "ai_coverage": {
+    "a": {
+      "unique_titles": 24235,
+      "mapped_rows": 25412,
+      "new_unique_titles": 0,
+      "new_mapped_rows": 0,
+      "saved_judgments": 0,
+      "repeated_saved_judgments": 0,
+      "reference_corrections": 0,
+      "invalid_reference_titles": []
+    },
+    "b": {
+      "unique_titles": 24200,
+      "mapped_rows": 25371,
+      "new_unique_titles": 0,
+      "new_mapped_rows": 0,
+      "saved_judgments": 0,
+      "repeated_saved_judgments": 0,
+      "reference_corrections": 0,
+      "invalid_reference_titles": []
+    }
+  }
+}

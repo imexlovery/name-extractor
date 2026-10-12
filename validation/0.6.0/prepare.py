@@ -16,6 +16,8 @@ WORK = Path(__file__).resolve().parent
 
 
 def review_csv(path, items):
+    if path.exists():
+        return  # 冻结检查表的已填写人工结论和Codex旁路审查不能被重跑清空。
     with path.open('w', encoding='utf-8-sig', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['序号', '完整标题', '人工姓名或无姓名判断', '判断依据及是否查看正文', '原Excel行号'])
@@ -71,12 +73,21 @@ def main():
         review_csv(WORK / '随机200标题-人工盲审.csv', sample)
     no_name = [dict(row=v['row'], rows=v['rows'], title=v['title']) for v in baseline if v['result']['status'] == 'no_name']
     review_csv(WORK / '原694无姓名标题-人工盲审.csv', no_name)
-    write_json(WORK / 'human-review-scope.json', dict(
+    scope_path = WORK / 'human-review-scope.json'
+    scope = json.loads(scope_path.read_text()) if scope_path.exists() else {}
+    post_change = []
+    review_path = WORK / '变化标题-人工复核.csv'
+    if review_path.exists():
+        with review_path.open(encoding='utf-8-sig', newline='') as file:
+            post_change = [v for v in csv.DictReader(file) if v['变化后人工结论（待填写）'].strip()]
+    scope.update(dict(
         initial_review_titles=122, initial_review_rows=131, corrections=6,
-        post_change_confirmed_titles=len(confirmed), post_change_confirmed_rows=list(confirmed),
+        post_change_confirmed_titles=len(post_change) if review_path.exists() else len(confirmed),
+        post_change_confirmed_rows=[int(row) for v in post_change for row in v['原Excel行号'].split('；')] if review_path.exists() else list(confirmed),
         content_assisted=True, all_titles_human_reviewed=False,
         no_name_review_titles=694, no_name_review_rows=761, no_name_review_complete=False,
         random_review_titles=200, random_review_complete=False))
+    write_json(scope_path, scope)
     print('Saved 122 feedback records, 694 no-name review titles, frozen 200 random titles.')
 
 

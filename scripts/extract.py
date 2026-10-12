@@ -7,7 +7,7 @@ import unicodedata
 import json
 from pathlib import Path
 
-VERSION = "r60"
+VERSION = "r61"
 
 _HAN_RANGES = (
     (0x3400, 0x4DBF), (0x4E00, 0x9FFF), (0xF900, 0xFAFF),
@@ -82,7 +82,7 @@ _INSTITUTION_STARTS = (
 )
 _ACRONYM_INSTITUTION = re.compile(r"[A-Z]{2,}(?=科技集团|集团财务|金融公司)")
 INSTITUTION_ANCHOR_RESOURCE = 'institution_anchors_r57.json'
-AMBIGUITY_RESOURCE = 'title_ambiguities_r57.json'
+AMBIGUITY_RESOURCE = 'title_ambiguities_r61.json'
 _TITLE_AMBIGUITIES = json.loads(Path(__file__).with_name(AMBIGUITY_RESOURCE).read_text(encoding='utf-8'))
 _INSTITUTION_STARTS += tuple(json.loads(Path(__file__).with_name(INSTITUTION_ANCHOR_RESOURCE).read_text(encoding='utf-8')))
 _REGION_ANCHORS = set('中国 北京 天津 河北 山西 内蒙古 辽宁 吉林 黑龙江 上海 江苏 浙江 安徽 福建 江西 山东 河南 湖北 湖南 广东 广西 海南 重庆 四川 贵州 云南 西藏 陕西 甘肃 青海 宁夏 新疆 香港 澳门 台湾'.split())
@@ -404,8 +404,17 @@ def _extract(title: str) -> dict:
         if trailing:
             return _finish(person_part[start:min(trailing)].strip(), 'person_between_institutions', note)
     if specific and min(start for start,end in specific) > 0 and not any(masked.startswith(region) for region in _REGION_ANCHORS):
-        candidate = person_part[:min(start for start,end in specific)].strip()
-        if person_part[min(start for start,end in specific):].startswith('金融机构') and re.fullmatch(r'[\u4e00-\u9fff]{4,}', candidate):
+        institution_start = min(start for start,end in specific)
+        candidate = person_part[:institution_start].strip()
+        institution_end = max(end for start,end in specific if start == institution_start)
+        institution = masked[institution_start:institution_end]
+        post = core[institution_end:].strip()
+        if (candidate.endswith('任') and _institution_context(institution) and not _INSTITUTION_END.fullmatch(institution)
+                and re.fullmatch(r'[\u4e00-\u9fff]+部总经理', post) and not _after_leading_roles(post)):
+            result = _finish(candidate[:-1], 'person_before_department_appointment', note)
+            if result['status'] == 'names':
+                return result
+        if person_part[institution_start:].startswith('金融机构') and re.fullmatch(r'[\u4e00-\u9fff]{4,}', candidate):
             return _finish(candidate, 'generic_institution_before_boundary', note)
         return _finish(candidate, 'person_before_institution', note)
     unresolved_tail = None

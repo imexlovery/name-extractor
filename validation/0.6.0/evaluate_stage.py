@@ -58,12 +58,19 @@ def main():
     feedback = {v['row']: v for v in read_jsonl(WORK / 'human-review.jsonl')}
     changes = read_jsonl(WORK / f'changes-from-r56-{VERSION}.jsonl')
     resource = json.loads((WORK / 'surname-candidates-resource.json').read_text())
+    review_path = WORK / '变化标题-人工复核.csv'
+    post_change_conclusions = {}
+    if review_path.exists():
+        with review_path.open(encoding='utf-8-sig', newline='') as file:
+            post_change_conclusions = {v['完整标题']: v['变化后人工结论（待填写）'] for v in csv.DictReader(file)}
     comparisons = []
     for item in data:
         if item['row'] not in feedback and item['row'] not in {v['row'] for v in changes}:
             continue
         human = feedback.get(item['row'])
         confirmed = (human or {}).get('user_confirmed_correction')
+        if confirmed and item['title'] not in post_change_conclusions:
+            post_change_conclusions[item['title']] = '用户已确认：' + '；'.join(confirmed['names']) + '（见user-confirmed-corrections.json）'
         expected = confirmed or (human or {}).get('conversation_correction') or (human or {}).get('updated_judgment')
         result = item['result']
         matches = expected is not None and (result['status'], result['names']) == (expected['status'], expected['names'])
@@ -74,12 +81,13 @@ def main():
             matches_existing_human_judgment=matches, title_reason=title_reason(item),
             surname_split_candidates=candidates, whole_candidate_preserved=True,
             surname_candidates_confirm_output=False, reviewed_by='Codex标题结构及既有人工反馈比较',
-            post_change_human_review_complete=bool(confirmed),
+            post_change_human_review_complete=bool(post_change_conclusions.get(item['title']) or confirmed),
+            post_change_human_review_conclusion=post_change_conclusions.get(item['title'], ''),
             title_supported_human_correction=('用户已确认钱锦，人工初答误把理事首字带入姓名；原C值保留，更正独立记录' if title_supported_correction else None),
             review_state='支持确定结果' if result['status'] == 'names' and (matches or title_supported_correction) else '继续未决' if result['status'] == 'uncertain' else '需要人工判断'))
     write_jsonl(WORK / 'human-comparison.jsonl', comparisons)
     by_row = {v['row']: v for v in comparisons}
-    review = [dict(v, **{k: by_row[v['row']][k] for k in ('review_state', 'title_reason', 'matches_existing_human_judgment', 'post_change_human_review_complete')}) for v in changes]
+    review = [dict(v, **{k: by_row[v['row']][k] for k in ('review_state', 'title_reason', 'matches_existing_human_judgment', 'post_change_human_review_complete', 'post_change_human_review_conclusion')}) for v in changes]
     write_jsonl(WORK / f'change-review-{VERSION}.jsonl', review)
     known_errors = [v for v in changes if v['result']['status'] == 'names' and by_row[v['row']]['review_state'] != '支持确定结果']
     if known_errors:
@@ -89,14 +97,14 @@ def main():
         writer.writerow(['完整标题', 'r56状态', '当前状态', '脚本候选（未决不写入Excel）', '已有人工更新判断', '标题依据', '变化后人工结论（待填写）', '原Excel行号'])
         for v in review:
             human = by_row[v['row']]['human_expected']
-            writer.writerow([v['title'], v['before']['status'], v['result']['status'], '；'.join(v['result']['names']), '；'.join(human['names']) if human else '', v['title_reason'], '用户已确认：肖云瑞；钱锦（2026-10-12）' if by_row[v['row']]['post_change_human_review_complete'] else '', '；'.join(map(str, v['rows']))])
+            writer.writerow([v['title'], v['before']['status'], v['result']['status'], '；'.join(v['result']['names']), '；'.join(human['names']) if human else '', v['title_reason'], v['post_change_human_review_conclusion'], '；'.join(map(str, v['rows']))])
     write_jsonl(WORK / 'remaining-unresolved.jsonl', [v for v in comparisons if v['result']['status'] == 'uncertain'])
     rounds = []
-    for version in ('r57', 'r58', 'r59', 'r60'):
+    for version in ('r57', 'r58', 'r59', 'r60', 'r61'):
         round_data = read_jsonl(WORK / f'changes-from-r56-{version}.jsonl')
         rounds.append(dict(version=version, changed_titles=len(round_data), changed_rows=sum(len(v['rows']) for v in round_data),
                            accepted=version != 'r58', observed_error_rows=[25132] if version == 'r58' else [],
-                           note='明确一人且片段重复时保留整个连接表达；真实输出相对r59无变化' if version == 'r60' else 'r58误拆带外文别名的坂内和隆；r59修复并全量复验' if version in ('r58', 'r59') else '机构类型与7个完整机构补充'))
+                           note='撤销逯晓利旧弃权，完整命名机构及部门总经理岗位约束任职动词；相对r60仅4条转确定' if version == 'r61' else '明确一人且片段重复时保留整个连接表达；真实输出相对r59无变化' if version == 'r60' else 'r58误拆带外文别名的坂内和隆；r59修复并全量复验' if version in ('r58', 'r59') else '机构类型与7个完整机构补充'))
     solved = [v for v in changes if v['before']['status'] == 'uncertain' and v['result']['status'] == 'names']
     frozen_changes = [v for v in changes if v['row'] in {r['row'] for r in read_jsonl(WORK / 'random-human-frozen.jsonl')}]
     a, b = labels('a'), labels('b')
@@ -106,13 +114,16 @@ def main():
         status_rows={status:sum(len(v['rows']) for v in data if v['result']['status'] == status) for status in ('names', 'no_name', 'uncertain')},
         hard_failure_titles=sum(bool(check(v['title'], v['result'])['failures']) for v in data),
         supported_solutions_titles=len(solved), supported_solutions_rows=sum(len(v['rows']) for v in solved),
-        solutions_evidence='标题结构检查＋已有人工反馈一致；变化后人工复核尚未完成，非独立准确率真值',
+        solutions_evidence='标题结构检查＋已有人工反馈一致；变化后人工结论见复核表，不等同全量准确率',
         solutions_matching_human_titles=sum(by_row[v['row']]['matches_existing_human_judgment'] for v in solved),
         solutions_matching_human_rows=sum(len(v['rows']) for v in solved if by_row[v['row']]['matches_existing_human_judgment']),
         title_supported_human_corrections_rows=[25395],
         corrected_original_errors_rows=0, known_new_errors_remaining_rows=len(known_errors),
+        known_new_errors_scope='仅统计新增确定输出与参考冲突；已知未决漏提另列',
+        known_unresolved_error_rows=[v['row'] for v in review if '漏提待修正' in v['post_change_human_review_conclusion']],
+        known_pending_output_rows=[v['row'] for v in review if v['result']['status'] == 'uncertain' and v['post_change_human_review_complete']],
         previously_determinate_changes=sum(v['before']['status'] != 'uncertain' for v in changes),
-        post_change_human_review_complete=False, random_sample_changes=len(frozen_changes),
+        post_change_human_review_complete=all(v['post_change_human_review_complete'] for v in review), random_sample_changes=len(frozen_changes),
         all_human_review_complete=False, true_accuracy=None,
         comparison_titles=dict(Counter(comparison_state(v, a.get(v['row']), b.get(v['row'])) for v in data)),
         surname_experiment=dict(production_enabled=False, resource='surname-candidates-resource.json',

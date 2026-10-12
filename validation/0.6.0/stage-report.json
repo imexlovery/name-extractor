@@ -1,5 +1,5 @@
 {
-  "version": "r60",
+  "version": "r61",
   "release_version": "0.6.0",
   "rounds": [
     {
@@ -35,42 +35,57 @@
       "accepted": true,
       "observed_error_rows": [],
       "note": "明确一人且片段重复时保留整个连接表达；真实输出相对r59无变化"
+    },
+    {
+      "version": "r61",
+      "changed_titles": 52,
+      "changed_rows": 54,
+      "accepted": true,
+      "observed_error_rows": [],
+      "note": "撤销逯晓利旧弃权，完整命名机构及部门总经理岗位约束任职动词；相对r60仅4条转确定"
     }
   ],
   "unique_titles": 46760,
   "mapped_rows": 52146,
   "status_titles": {
-    "names": 45991,
+    "names": 45995,
     "no_name": 694,
-    "uncertain": 75
+    "uncertain": 71
   },
   "status_rows": {
-    "names": 51303,
+    "names": 51307,
     "no_name": 761,
-    "uncertain": 82
+    "uncertain": 78
   },
   "hard_failure_titles": 0,
-  "supported_solutions_titles": 47,
-  "supported_solutions_rows": 49,
-  "solutions_evidence": "标题结构检查＋已有人工反馈一致；变化后人工复核尚未完成，非独立准确率真值",
-  "solutions_matching_human_titles": 47,
-  "solutions_matching_human_rows": 49,
+  "supported_solutions_titles": 51,
+  "supported_solutions_rows": 53,
+  "solutions_evidence": "标题结构检查＋已有人工反馈一致；变化后人工结论见复核表，不等同全量准确率",
+  "solutions_matching_human_titles": 51,
+  "solutions_matching_human_rows": 53,
   "title_supported_human_corrections_rows": [
     25395
   ],
   "corrected_original_errors_rows": 0,
   "known_new_errors_remaining_rows": 0,
+  "known_new_errors_scope": "仅统计新增确定输出与参考冲突；已知未决漏提另列",
+  "known_unresolved_error_rows": [
+    11008
+  ],
+  "known_pending_output_rows": [
+    11008
+  ],
   "previously_determinate_changes": 0,
-  "post_change_human_review_complete": false,
+  "post_change_human_review_complete": true,
   "random_sample_changes": 0,
   "all_human_review_complete": false,
   "true_accuracy": null,
   "comparison_titles": {
     "single_channel": 35,
     "missing_reference": 22525,
-    "match": 24121,
+    "match": 24125,
     "disputed_reference": 37,
-    "script_unresolved": 42
+    "script_unresolved": 38
   },
   "surname_experiment": {
     "production_enabled": false,
@@ -86,9 +101,62 @@
     "initial_review_titles": 122,
     "initial_review_rows": 131,
     "corrections": 6,
-    "post_change_confirmed_titles": 1,
+    "post_change_confirmed_titles": 52,
     "post_change_confirmed_rows": [
-      25395
+      68,
+      4493,
+      5312,
+      6349,
+      7216,
+      8050,
+      8992,
+      9394,
+      40569,
+      11008,
+      11286,
+      11994,
+      13829,
+      14507,
+      14524,
+      14577,
+      14688,
+      17200,
+      17864,
+      19065,
+      19822,
+      20943,
+      22501,
+      23033,
+      23637,
+      24247,
+      25395,
+      25726,
+      28776,
+      29240,
+      29639,
+      31750,
+      32897,
+      32930,
+      34848,
+      35479,
+      35682,
+      36124,
+      36328,
+      39063,
+      44773,
+      45799,
+      46416,
+      46801,
+      47203,
+      48730,
+      51930,
+      49344,
+      50204,
+      50539,
+      51378,
+      51535,
+      52054,
+      52079
     ],
     "content_assisted": true,
     "all_titles_human_reviewed": false,
@@ -96,6 +164,27 @@
     "no_name_review_rows": 761,
     "no_name_review_complete": false,
     "random_review_titles": 200,
-    "random_review_complete": false
+    "random_review_complete": false,
+    "post_change_confirmation_method": "用户2026-10-13在当前聊天整体确认，Codex按其指示代填；钱锦既有确认保留",
+    "no_name_ai_review_titles": 694,
+    "no_name_ai_review_rows": 761,
+    "no_name_ai_review_complete": true,
+    "no_name_ai_status_titles": {
+      "no_name": 689,
+      "uncertain": 5
+    },
+    "no_name_ai_status_rows": {
+      "no_name": 756,
+      "uncertain": 5
+    },
+    "no_name_ai_confirmed_name_omissions_rows": 0,
+    "no_name_ai_needs_review_rows": [
+      7753,
+      14373,
+      21338,
+      33890,
+      34754
+    ],
+    "no_name_ai_strict_independent_blinding": false
   }
 }

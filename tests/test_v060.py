@@ -21,7 +21,8 @@ class HumanFeedbackRules(unittest.TestCase):
             self.assertEqual((result['status'], result['names']), ('names', names), title)
             self.assertEqual(check(title, result)['failures'], [])
         self.assertEqual(extract('关于村镇银行董事任职资格的批复')['status'], 'no_name')
-        self.assertEqual(extract('关于核准逯晓利村镇银行高级管理人员任职资格的批复')['status'], 'uncertain')
+        self.assertEqual(extract('关于核准逯晓利村镇银行高级管理人员任职资格的批复')['names'], ['逯晓利'])
+        self.assertEqual(extract('关于核准逯晓利村镇银行高级管理人员任职资格的批复')['status'], 'names')
         self.assertEqual(extract('关于通辽金谷村镇银行股份有限公司白玉娥李毅昕高级管理人员任职资格的批复')['status'], 'uncertain')
 
     def test_connector_rosters_consume_every_fragment(self):
@@ -43,6 +44,25 @@ class HumanFeedbackRules(unittest.TestCase):
         self.assertEqual(extract('关于杨宝秀和孟光一人任职资格的批复')['names'], ['杨宝秀和孟光'])
         self.assertEqual(extract('关于张三和张三一人任职资格的批复')['names'], ['张三和张三'])
         self.assertEqual(extract('关于张三和李四共三人任职资格的批复')['status'], 'uncertain')
+
+    def test_appointment_verb_before_complete_institution_and_department_post(self):
+        for title, name in [
+            ('关于申玉林任东宁农商行财务会计部总经理的批复', '申玉林'),
+            ('关于张继迪任绥芬河农商行内审合规部总经理的批复', '张继迪'),
+            ('关于侯琳任绥芬河农商行风险管理部总经理的批复', '侯琳'),
+        ]:
+            result = extract(title)
+            self.assertEqual((result['status'], result['names']), ('names', [name]), title)
+            self.assertEqual(check(title, result)['failures'], [], title)
+        for title in [
+            '关于刘任深圳市南华保险经纪有限公司副总经理任职资格的批复',
+            '关于核准何子任高级管理人员任职资格的批复',
+            '关于刘永任新华人寿九江中支副总经理（主持工作）的批复',
+            '关于张明任农商行财务会计部总经理任职资格的批复',
+            '关于张明任东宁农商行财务会计部总经理李华任职资格的批复',
+        ]:
+            self.assertEqual(extract(title)['status'], 'uncertain', title)
+        self.assertEqual(extract('关于何子任村镇银行财务会计部总经理任职资格的批复')['names'], ['何子任'])
 
 
 if __name__ == '__main__':
