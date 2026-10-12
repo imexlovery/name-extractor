@@ -1,5 +1,6 @@
 """Compare this stage with frozen r61 and retained human feedback."""
 from collections import Counter
+import csv
 from pathlib import Path
 import sys
 
@@ -38,6 +39,20 @@ def main():
               for status in ('names', 'no_name', 'uncertain')}
     frozen_sample = {v['row'] for v in read_jsonl(PREVIOUS / 'random-human-frozen.jsonl')}
     solved = [v for v in reviews if v['before']['status'] == 'uncertain' and v['result']['status'] == 'names']
+    current = {v['row']: v for v in data}
+    determinate_human = [v for v in human.values()
+                        if (v.get('human_expected') or {}).get('status') in {'names', 'no_name'}]
+    complete_human = [v for v in determinate_human
+                      if (current[v['row']]['result']['status'], current[v['row']]['result']['names'])
+                      == (v['human_expected']['status'], v['human_expected']['names'])]
+    blind_progress = {}
+    for kind, path in [('no_name', PREVIOUS / '原694无姓名标题-人工盲审.csv'),
+                       ('random', PREVIOUS / '随机200标题-人工盲审.csv')]:
+        with path.open(encoding='utf-8-sig', newline='') as file:
+            rows = list(csv.DictReader(file))
+        blind_progress[kind] = dict(source=str(path.relative_to(ROOT)), titles=len(rows),
+            filled=sum(bool(v['人工姓名或无姓名判断'].strip()) for v in rows),
+            filling_is_not_correctness_validation=True)
     write_json(WORK / 'stage-report.json', dict(
         release_version='0.7.0', version=VERSION, baseline_version='r61', baseline_tag='v0.6.0-r61',
         unique_titles=len(data), mapped_rows=sum(counts.values()),
@@ -50,6 +65,14 @@ def main():
         hard_failure_titles=sum(bool(v['checks']['failures']) for v in data),
         random_sample_changes=sum(v['row'] in frozen_sample for v in changes),
         known_unresolved_error_rows=[11008],
+        historical_human_answer_completion=dict(
+            reviewed_titles=len(human), determinate_answer_titles=len(determinate_human),
+            exact_completed_titles=len(complete_human),
+            pending_titles=len(determinate_human) - len(complete_human),
+            answer_still_uncertain_titles=len(human) - len(determinate_human),
+            completion_fraction=len(complete_human) / len(determinate_human),
+            some_answers_content_assisted=True, independent_final_acceptance=False),
+        historical_optional_human_review_progress=blind_progress,
         new_independent_human_review=False, full_human_review_complete=False, true_accuracy=None,
         production_source='script_only',
         conditional_accuracy_if_all_other_rows_correct=(sum(counts.values()) - counts['uncertain']) / sum(counts.values()),

@@ -1,0 +1,36 @@
+{
+  "version": "r63",
+  "distinct_titles": 894,
+  "mapped_rows": 987,
+  "original_sampling_membership_preserved": true,
+  "contexts": 2,
+  "judgments_per_title": 1,
+  "distinct_model_independence_claimed": false,
+  "answers_generated_without_script_results": true,
+  "new_human_reviews": 0,
+  "scopes": {
+    "frozen_random_200": {
+      "titles": 200,
+      "mapped_rows": 226,
+      "comparison_states": {
+        "match": 200
+      }
+    },
+    "original_no_name_694": {
+      "titles": 694,
+      "mapped_rows": 761,
+      "comparison_states": {
+        "match": 689,
+        "both_uncertain": 5
+      }
+    }
+  },
+  "comparison_states": {
+    "match": 889,
+    "both_uncertain": 5
+  },
+  "contract_failures": 0,
+  "true_accuracy": null,
+  "production_backfilled": false,
+  "sampling_limit": "694为历史无姓名池；200为r56姓名去重标题随机样本。单次GPT判断及一致不能估计全表真实准确率。"
+}

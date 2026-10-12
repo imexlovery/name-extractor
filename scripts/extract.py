@@ -7,7 +7,7 @@ import unicodedata
 import json
 from pathlib import Path
 
-VERSION = "r62"
+VERSION = "r63"
 
 _HAN_RANGES = (
     (0x3400, 0x4DBF), (0x4E00, 0x9FFF), (0xF900, 0xFAFF),
@@ -191,7 +191,15 @@ def _finish(candidate: str, rule: str, note: str = "", single_person: bool = Fal
     starts, names = 0, []
     conjoined_names = False
     for end in sorted(separators) + [len(candidate)]:
-        part = re.sub(r"(?:[0-9０-９一二三四五六七八九十百千万两〇零]+位)?(?:同志|先生|女士)(?:的)?$", "", candidate[starts:end].strip())
+        original_part = candidate[starts:end].strip()
+        part = re.sub(r"(?:[0-9０-９一二三四五六七八九十百千万两〇零]+位)?(?:同志|先生|女士)(?:的)?$", "", original_part)
+        if part != original_part and name_length(part) == 1:
+            return dict(_result(names + [original_part], 'uncertain', rule,
+                                '称谓剥离后只剩单字，原片段与称谓解释均需保留'),
+                        candidate_interpretations=[
+                            {'names': names + [original_part], 'meaning': '末尾称谓字样可能属于姓名'},
+                            {'names': names + [part], 'meaning': '末尾字样为称谓，剩余单字可能是边界截断'},
+                        ])
         part = re.sub(r'[一二三四五六七八九十两0-9]+人$', '', part)
         qualifier = re.search(r'[（(]([^（）()]*)[）)]$', part)
         if qualifier and _ROLE.fullmatch(qualifier[1]):
@@ -202,16 +210,19 @@ def _finish(candidate: str, rule: str, note: str = "", single_person: bool = Fal
         masked, _ = _outside(part)
         if not masked.strip():
             return _result(names + [part], "uncertain", rule, "只有括号内说明，缺少括号外姓名")
-        if rule == 'person_before_institution' and part.endswith('的'):
-            return _result(names + [part[:-1]], 'uncertain', rule, '机构前的字可能为连接词，候选需语义复核')
+        if rule in {'person_before_institution', 'person_before_generic_bank'} and part.endswith(('的', '任')):
+            return dict(_result(names + [part], 'uncertain', rule,
+                                f'机构前{part[-1]}字可能为姓名末字或连接词/任职动词，需语义复核'),
+                        candidate_interpretations=[
+                            {'names': names + [part], 'meaning': '末字属于姓名'},
+                            {'names': names + [part[:-1]], 'meaning': '末字为连接词或任职动词'},
+                        ])
         if part.endswith('等'):
             return _result(names + [part[:-1]], 'uncertain', rule, '候选尾部等字可能为省略标记，需语义复核')
         if re.fullmatch(r'[0-9０-９一二三四五六七八九十百千万两〇零]+[名位个]',part):
             if rule == 'institution_before_person' and not names:
                 return _result([], 'no_name', rule, '机构职务只明示人数，未明示姓名')
             return _result(names + [part], 'uncertain', rule, '候选仅是人数表达，标题是否明示姓名需复核')
-        if rule == 'person_before_institution' and part.endswith('任'):
-            return _result(names + [part[:-1]], 'uncertain', rule, '机构前任字可能为任职动词，需语义复核')
         connectors = list(re.finditer(r"[和及与]", masked))
         connectors = [m for m in connectors if m.start() > 0 and masked[m.end():].strip()]
         if not single_person and connectors and not re.search('[A-Za-z]', part):

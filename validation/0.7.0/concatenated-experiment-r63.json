@@ -1,0 +1,1011 @@
+{
+  "summary": {
+    "input_version": "r62",
+    "title_only": true,
+    "duplicate_titles_counted_once": true,
+    "extraction_imported": false,
+    "human_answers_used_only_for_case_selection_and_evaluation": true,
+    "boundary_scope": "仅自动检查直接资格主体和明示标点名单；机构后姓名等其他结构仍需单独核验。",
+    "positive_cases": 15,
+    "original_risk_controls": 2,
+    "all_parts_substring_supported": 2,
+    "all_parts_independent_boundary_supported": 1,
+    "historical_multiple_answers_proposed": 1,
+    "original_risk_controls_with_split_proposals": 0,
+    "synthetic_cases": [
+      {
+        "title": "关于张三李四两人任职资格的批复",
+        "expected": [
+          "张三",
+          "李四"
+        ],
+        "proposed_splits": [
+          [
+            "张三",
+            "李四"
+          ]
+        ],
+        "split_only_policy_would_be_wrong": false,
+        "production_enabled": false,
+        "source": "synthetic boundary counterexample"
+      },
+      {
+        "title": "关于张三李四一人任职资格的批复",
+        "expected": [
+          "张三李四"
+        ],
+        "proposed_splits": [
+          [
+            "张三",
+            "李四"
+          ]
+        ],
+        "split_only_policy_would_be_wrong": true,
+        "production_enabled": false,
+        "source": "synthetic boundary counterexample"
+      }
+    ],
+    "synthetic_false_split_if_evidence_alone_confirms": 1,
+    "production_rules_changed_by_experiment": 0,
+    "corrected_original_rows": 0,
+    "production_regressed_rows": 0,
+    "true_accuracy": null,
+    "conclusion": "跨标题边界证据只用于提出研究候选，不能证明当前目标人数；整段解释必须保留。暂不接入生产。"
+  },
+  "cases": [
+    {
+      "row": 5162,
+      "rows": [
+        5162
+      ],
+      "title": "关于彭一桅胡明清董事任职资格的批复",
+      "fragment": "彭一桅胡明清",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "彭一桅",
+          "胡明清"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "彭一桅",
+        "胡明清"
+      ],
+      "support": [
+        {
+          "piece": "彭一桅",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "胡明清",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "彭一桅胡明清",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 7228,
+      "rows": [
+        7228
+      ],
+      "title": "关于虞焰智徐安任职资格的批复",
+      "fragment": "虞焰智徐安",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "虞焰智",
+          "徐安"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "虞焰智",
+        "徐安"
+      ],
+      "support": [
+        {
+          "piece": "虞焰智",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "徐安",
+          "substring_distinct_titles": 1,
+          "substring_rows": [
+            3416
+          ],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "虞焰智徐安",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 11008,
+      "rows": [
+        11008
+      ],
+      "title": "关于通辽金谷村镇银行股份有限公司白玉娥李毅昕高级管理人员任职资格的批复",
+      "fragment": "白玉娥李毅昕",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "白玉娥",
+          "李毅昕"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "白玉娥",
+        "李毅昕"
+      ],
+      "support": [
+        {
+          "piece": "白玉娥",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "李毅昕",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "白玉娥李毅昕",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 11197,
+      "rows": [
+        11197,
+        30379
+      ],
+      "title": "关于王祖慈王志斌王洪国查腾飞任职资格的批复",
+      "fragment": "王祖慈王志斌王洪国查腾飞",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "王祖慈",
+          "王志斌",
+          "王洪国",
+          "查腾飞"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "王祖慈",
+        "王志斌",
+        "王洪国",
+        "查腾飞"
+      ],
+      "support": [
+        {
+          "piece": "王祖慈",
+          "substring_distinct_titles": 1,
+          "substring_rows": [
+            18521
+          ],
+          "independent_boundary_distinct_titles": 1,
+          "boundary_evidence": [
+            {
+              "row": 18521,
+              "rows": [
+                18521
+              ],
+              "title": "关于王祖慈任职资格的批复"
+            }
+          ]
+        },
+        {
+          "piece": "王志斌",
+          "substring_distinct_titles": 1,
+          "substring_rows": [
+            47323
+          ],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "王洪国",
+          "substring_distinct_titles": 1,
+          "substring_rows": [
+            29464
+          ],
+          "independent_boundary_distinct_titles": 1,
+          "boundary_evidence": [
+            {
+              "row": 29464,
+              "rows": [
+                29464
+              ],
+              "title": "关于孙发明、邓普祥、王洪国、孙彦任职资格的批复"
+            }
+          ]
+        },
+        {
+          "piece": "查腾飞",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "王祖慈王志斌王洪国查腾飞",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 11606,
+      "rows": [
+        11606
+      ],
+      "title": "关于核准凤为树房友安金阳董事任职资格的批复",
+      "fragment": "凤为树房友安金阳",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "凤为树",
+          "房友安",
+          "金阳"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "凤为树",
+        "房友安",
+        "金阳"
+      ],
+      "support": [
+        {
+          "piece": "凤为树",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "房友安",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "金阳",
+          "substring_distinct_titles": 4,
+          "substring_rows": [
+            645,
+            1894,
+            22789,
+            32390
+          ],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "凤为树房友安金阳",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 16866,
+      "rows": [
+        16866
+      ],
+      "title": "关于核准郑三民李长宏侯少伟任职资格的批复",
+      "fragment": "郑三民李长宏侯少伟",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "郑三民",
+          "李长宏",
+          "侯少伟"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "郑三民",
+        "李长宏",
+        "侯少伟"
+      ],
+      "support": [
+        {
+          "piece": "郑三民",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "李长宏",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "侯少伟",
+          "substring_distinct_titles": 1,
+          "substring_rows": [
+            26503
+          ],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "郑三民李长宏侯少伟",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 17104,
+      "rows": [
+        17104
+      ],
+      "title": "关于核准刘鹏张旭邢乐成银行业金融机构董事任职资格的批复",
+      "fragment": "刘鹏张旭邢乐成",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "刘鹏",
+          "张旭",
+          "邢乐成"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "刘鹏",
+        "张旭",
+        "邢乐成"
+      ],
+      "support": [
+        {
+          "piece": "刘鹏",
+          "substring_distinct_titles": 15,
+          "substring_rows": [
+            401,
+            2511,
+            7064,
+            8351,
+            8526,
+            9384,
+            14796,
+            15769,
+            16341,
+            22815,
+            26820,
+            30579,
+            37121,
+            47205,
+            51434
+          ],
+          "independent_boundary_distinct_titles": 2,
+          "boundary_evidence": [
+            {
+              "row": 7064,
+              "rows": [
+                7064,
+                9323
+              ],
+              "title": "关于核准刘鹏任职资格的批复"
+            },
+            {
+              "row": 15769,
+              "rows": [
+                15769,
+                17715,
+                20827,
+                32528,
+                43509
+              ],
+              "title": "关于刘鹏任职资格的批复"
+            }
+          ]
+        },
+        {
+          "piece": "张旭",
+          "substring_distinct_titles": 15,
+          "substring_rows": [
+            116,
+            10651,
+            13267,
+            13598,
+            17414,
+            22311,
+            22825,
+            33749,
+            34574,
+            39670,
+            42314,
+            42736,
+            44931,
+            47704,
+            49198
+          ],
+          "independent_boundary_distinct_titles": 1,
+          "boundary_evidence": [
+            {
+              "row": 17414,
+              "rows": [
+                17414,
+                35837,
+                42157,
+                44397
+              ],
+              "title": "关于张旭任职资格的批复"
+            }
+          ]
+        },
+        {
+          "piece": "邢乐成",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "刘鹏张旭邢乐成",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 20255,
+      "rows": [
+        20255
+      ],
+      "title": "关于鹿永乐刘佩嵘任职资格的批复",
+      "fragment": "鹿永乐刘佩嵘",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "鹿永乐",
+          "刘佩嵘"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "鹿永乐",
+        "刘佩嵘"
+      ],
+      "support": [
+        {
+          "piece": "鹿永乐",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "刘佩嵘",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "鹿永乐刘佩嵘",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 23748,
+      "rows": [
+        23748,
+        41431
+      ],
+      "title": "关于科尔沁左翼后旗农村信用合作联社刘明亮陈昊理事任职资格的批复",
+      "fragment": "刘明亮陈昊",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "刘明亮",
+          "陈昊"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "刘明亮",
+        "陈昊"
+      ],
+      "support": [
+        {
+          "piece": "刘明亮",
+          "substring_distinct_titles": 1,
+          "substring_rows": [
+            26756
+          ],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "陈昊",
+          "substring_distinct_titles": 3,
+          "substring_rows": [
+            2782,
+            22814,
+            39435
+          ],
+          "independent_boundary_distinct_titles": 1,
+          "boundary_evidence": [
+            {
+              "row": 39435,
+              "rows": [
+                39435
+              ],
+              "title": "关于核准陈昊任职资格的批复"
+            }
+          ]
+        }
+      ],
+      "all_parts_have_substring_support": true,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "刘明亮陈昊",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 24854,
+      "rows": [
+        24854
+      ],
+      "title": "关于科尔沁区农村信用合作联社刘柏风周建波理事任职资格的批复",
+      "fragment": "刘柏风周建波",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "刘柏风",
+          "周建波"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "刘柏风",
+        "周建波"
+      ],
+      "support": [
+        {
+          "piece": "刘柏风",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "周建波",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "刘柏风周建波",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 33411,
+      "rows": [
+        33411
+      ],
+      "title": "关于史巍陈光源任职资格的批复",
+      "fragment": "史巍陈光源",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "史巍",
+          "陈光源"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "史巍",
+        "陈光源"
+      ],
+      "support": [
+        {
+          "piece": "史巍",
+          "substring_distinct_titles": 1,
+          "substring_rows": [
+            36540
+          ],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "陈光源",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "史巍陈光源",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 37806,
+      "rows": [
+        37806
+      ],
+      "title": "关于吴芳敏黄洵任职资格的批复",
+      "fragment": "吴芳敏黄洵",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "吴芳敏",
+          "黄洵"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "吴芳敏",
+        "黄洵"
+      ],
+      "support": [
+        {
+          "piece": "吴芳敏",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "黄洵",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "吴芳敏黄洵",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 42435,
+      "rows": [
+        42435
+      ],
+      "title": "关于鲁圣翰俞茂林任职资格的批复",
+      "fragment": "鲁圣翰俞茂林",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "鲁圣翰",
+          "俞茂林"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "鲁圣翰",
+        "俞茂林"
+      ],
+      "support": [
+        {
+          "piece": "鲁圣翰",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "俞茂林",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "鲁圣翰俞茂林",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 42476,
+      "rows": [
+        42476
+      ],
+      "title": "关于姚林海徐炜任职资格的批复",
+      "fragment": "姚林海徐炜",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "姚林海",
+          "徐炜"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "姚林海",
+        "徐炜"
+      ],
+      "support": [
+        {
+          "piece": "姚林海",
+          "substring_distinct_titles": 1,
+          "substring_rows": [
+            35423
+          ],
+          "independent_boundary_distinct_titles": 1,
+          "boundary_evidence": [
+            {
+              "row": 35423,
+              "rows": [
+                35423
+              ],
+              "title": "关于姚林海任职资格的批复"
+            }
+          ]
+        },
+        {
+          "piece": "徐炜",
+          "substring_distinct_titles": 6,
+          "substring_rows": [
+            21968,
+            22294,
+            25093,
+            36664,
+            43313,
+            48512
+          ],
+          "independent_boundary_distinct_titles": 2,
+          "boundary_evidence": [
+            {
+              "row": 25093,
+              "rows": [
+                25093
+              ],
+              "title": "关于吕益民、徐炜任职资格的批复"
+            },
+            {
+              "row": 43313,
+              "rows": [
+                43313
+              ],
+              "title": "关于徐炜任职资格的批复"
+            }
+          ]
+        }
+      ],
+      "all_parts_have_substring_support": true,
+      "all_parts_have_boundary_support": true,
+      "proposed_splits": [
+        [
+          "姚林海",
+          "徐炜"
+        ]
+      ],
+      "whole_name_competing_interpretation": "姚林海徐炜",
+      "historical_answer_proposed": true,
+      "production_enabled": false
+    },
+    {
+      "row": 46851,
+      "rows": [
+        46851
+      ],
+      "title": "关于核准储柱东刘刚董事任职资格的批复",
+      "fragment": "储柱东刘刚",
+      "case_type": "historical_multiple_name_answer",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "储柱东",
+          "刘刚"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "储柱东",
+        "刘刚"
+      ],
+      "support": [
+        {
+          "piece": "储柱东",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "刘刚",
+          "substring_distinct_titles": 9,
+          "substring_rows": [
+            3282,
+            4265,
+            6745,
+            16199,
+            21453,
+            21977,
+            23242,
+            46967,
+            48007
+          ],
+          "independent_boundary_distinct_titles": 2,
+          "boundary_evidence": [
+            {
+              "row": 3282,
+              "rows": [
+                3282,
+                14353,
+                16301,
+                17666,
+                45981,
+                49145
+              ],
+              "title": "关于刘刚任职资格的批复"
+            },
+            {
+              "row": 4265,
+              "rows": [
+                4265,
+                25232
+              ],
+              "title": "关于核准刘刚任职资格的批复"
+            }
+          ]
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "储柱东刘刚",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 49883,
+      "rows": [
+        49883
+      ],
+      "title": "关于内蒙古扎鲁特农村商业银行股份有限公司韩豪日钦夫董事、董事会秘书任职资格的批复",
+      "fragment": "韩豪日钦夫",
+      "case_type": "single_name_or_disputed_risk_control",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "韩豪日钦夫"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "韩豪日",
+        "钦夫"
+      ],
+      "support": [
+        {
+          "piece": "韩豪日",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "钦夫",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "韩豪日钦夫",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    },
+    {
+      "row": 51022,
+      "rows": [
+        51022
+      ],
+      "title": "关于殷熊毅辉任职资格的批复",
+      "fragment": "殷熊毅辉",
+      "case_type": "single_name_or_disputed_risk_control",
+      "historical_human_expected": {
+        "status": "names",
+        "names": [
+          "殷熊毅辉"
+        ]
+      },
+      "human_answer_is_independent_blind_truth": false,
+      "checked_parts": [
+        "殷熊",
+        "毅辉"
+      ],
+      "support": [
+        {
+          "piece": "殷熊",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        },
+        {
+          "piece": "毅辉",
+          "substring_distinct_titles": 0,
+          "substring_rows": [],
+          "independent_boundary_distinct_titles": 0,
+          "boundary_evidence": []
+        }
+      ],
+      "all_parts_have_substring_support": false,
+      "all_parts_have_boundary_support": false,
+      "proposed_splits": [],
+      "whole_name_competing_interpretation": "殷熊毅辉",
+      "historical_answer_proposed": false,
+      "production_enabled": false
+    }
+  ]
+}
