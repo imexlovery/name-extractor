@@ -13,6 +13,29 @@ from pilot import write_jsonl, read_jsonl
 
 
 class ReviewFailureHandling(unittest.TestCase):
+    def test_v070_compares_r61_and_reuses_v060_references(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            baseline, previous, work = [root / name for name in ('v1', '0.6.0', '0.7.0')]
+            label = {'row': 2, 'names': ['梁晓芝'], 'status': 'names'}
+            title = '关于梁晓芝任职资格的批复'
+            item = dict(row=2, rows=[2], title=title, result=dict(label, status='uncertain', length=3, extracted_name='梁晓芝'))
+            write_jsonl(baseline / 'script-r29.jsonl', [item])
+            write_jsonl(baseline / 'ai-references.jsonl', [])
+            write_jsonl(baseline / 'ai-reference-exclusions.jsonl', [])
+            write_jsonl(previous / 'script-r61.jsonl', [item])
+            write_jsonl(previous / 'labels/review-a-01.jsonl', [label])
+            with patch.object(full, 'BASELINE', baseline), patch.object(full, 'V060_STAGE', previous), \
+                    patch.object(full, 'DEFAULT_WORK', work), patch.object(full, 'WORK', work), \
+                    patch.object(full, 'RELEASE_VERSION', '0.7.0'), contextlib.redirect_stdout(io.StringIO()):
+                full.run()
+                self.assertEqual(full.labels('a')[2], label)
+                self.assertEqual(full.coverage('a', [item])['new_unique_titles'], 0)
+            summary = json.loads((work / f'summary-{full.VERSION}.json').read_text())
+            self.assertEqual(summary['comparison_baseline_version'], 'r61')
+            self.assertEqual(summary['changed_titles_from_r61'], 1)
+            self.assertEqual(len(read_jsonl(work / f'changes-from-r61-{full.VERSION}.jsonl')), 1)
+
     def test_v060_inherits_r56_corrections_and_template_labels_as_old_coverage(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

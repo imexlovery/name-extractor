@@ -1,0 +1,42 @@
+{
+  "release_version": "0.7.0",
+  "version": "r62",
+  "baseline_version": "r61",
+  "baseline_tag": "v0.6.0-r61",
+  "unique_titles": 46760,
+  "mapped_rows": 52146,
+  "status_titles": {
+    "names": 45997,
+    "no_name": 689,
+    "uncertain": 74
+  },
+  "status_rows": {
+    "names": 51309,
+    "no_name": 756,
+    "uncertain": 81
+  },
+  "changed_titles": 7,
+  "changed_rows": 7,
+  "newly_resolved_names_titles": 2,
+  "newly_resolved_names_rows": 2,
+  "solutions_matching_existing_human_titles": 2,
+  "changed_existing_name_outputs": 0,
+  "incomplete_no_name_to_uncertain_rows": [
+    7753,
+    14373,
+    21338,
+    33890,
+    34754
+  ],
+  "hard_failure_titles": 0,
+  "random_sample_changes": 0,
+  "known_unresolved_error_rows": [
+    11008
+  ],
+  "new_independent_human_review": false,
+  "full_human_review_complete": false,
+  "true_accuracy": null,
+  "production_source": "script_only",
+  "conditional_accuracy_if_all_other_rows_correct": 0.9984466689678978,
+  "conditional_accuracy_is_measured": false
+}

@@ -24,6 +24,7 @@ NEXT_STAGE = ROOT / 'validation' / '0.3.0'
 LATEST_STAGE = ROOT / 'validation' / '0.4.0'
 RECENT_STAGE = ROOT / 'validation' / '0.5.0'
 FROZEN_STAGE = ROOT / 'validation' / '0.5.1'
+V060_STAGE = ROOT / 'validation' / '0.6.0'
 OLD = ROOT / '.local' / 'pilot-20261010'
 
 
@@ -39,7 +40,7 @@ def labels(channel):
                     originals.setdefault(row['row'], []).append(label)
     paths = [p for p in (WORK / 'labels').glob(f'*-{channel}-*.jsonl') if not p.name.startswith('reference-corrections-')]
     if WORK in (DEFAULT_WORK, NEXT_STAGE):
-        for stage in (PREVIOUS_STAGE, NEXT_STAGE, LATEST_STAGE, RECENT_STAGE, FROZEN_STAGE):
+        for stage in (PREVIOUS_STAGE, NEXT_STAGE, LATEST_STAGE, RECENT_STAGE, FROZEN_STAGE, V060_STAGE):
             if stage != WORK and stage.parent == BASELINE.parent:
                 paths += [p for p in (stage/'labels').glob(f'*-{channel}-*.jsonl') if not p.name.startswith('reference-corrections-')]
     if WORK in (DEFAULT_WORK, NEXT_STAGE):
@@ -56,7 +57,7 @@ def labels(channel):
                 result[row['row']] = dict(row, status='uncertain', reason='参考答案版本分歧')
             else:
                 result[row['row']] = row
-    correction_stages = [stage for stage in (PREVIOUS_STAGE, NEXT_STAGE, LATEST_STAGE, RECENT_STAGE, FROZEN_STAGE)
+    correction_stages = [stage for stage in (PREVIOUS_STAGE, NEXT_STAGE, LATEST_STAGE, RECENT_STAGE, FROZEN_STAGE, V060_STAGE)
                          if WORK in (DEFAULT_WORK, NEXT_STAGE) and stage != WORK and stage.parent == BASELINE.parent] + [WORK]
     for path in [path for stage in correction_stages for path in sorted(
             list((stage/'labels').glob(f'reference-corrections-{channel}-*.jsonl')) +
@@ -73,7 +74,7 @@ def coverage(channel, inventory):
     if WORK in (DEFAULT_WORK, NEXT_STAGE):
         old_ids = {v['row'] for path in (BASELINE/'ai-references.jsonl',BASELINE/'ai-reference-exclusions.jsonl')
                    for v in read_jsonl(path) if v.get(f'ai_{channel}') is not None}
-        for stage in (PREVIOUS_STAGE, NEXT_STAGE, LATEST_STAGE, RECENT_STAGE, FROZEN_STAGE):
+        for stage in (PREVIOUS_STAGE, NEXT_STAGE, LATEST_STAGE, RECENT_STAGE, FROZEN_STAGE, V060_STAGE):
             if stage != WORK and stage.parent == BASELINE.parent:
                 old_ids.update(v['row'] for p in (stage/'labels').glob(f'*-{channel}-*.jsonl')
                                if not p.name.startswith('reference-corrections-') for v in read_jsonl(p))
@@ -177,11 +178,12 @@ def run():
                'status_rows':{s:sum(len(v['rows']) for v in output if v['result']['status']==s) for s in ('names','no_name','uncertain')},
                'hard_failure_titles':sum(bool(v['checks']['failures']) for v in output)}
     previous_paths = [p for p in WORK.glob('script-r*.jsonl') if int(p.stem[8:]) < int(VERSION[1:])]
-    stage_baseline = read_jsonl(FROZEN_STAGE/'script-r56.jsonl') if RELEASE_VERSION == '0.6.0' else []
+    stage_baseline_version = 'r61' if RELEASE_VERSION == '0.7.0' else 'r56'
+    stage_baseline = read_jsonl(V060_STAGE/'script-r61.jsonl') if RELEASE_VERSION == '0.7.0' else read_jsonl(FROZEN_STAGE/'script-r56.jsonl') if RELEASE_VERSION == '0.6.0' else []
     previous = {v['row']:v for v in read_jsonl(max(previous_paths, key=lambda p:int(p.stem[8:])))} if previous_paths else (
         {v['row']:v for v in stage_baseline} if stage_baseline else
         {v['row']:v for v in read_jsonl(PREVIOUS_STAGE/'script-r38.jsonl')} if WORK == NEXT_STAGE else baseline)
-    summary['comparison_baseline_version'] = max(previous_paths, key=lambda p:int(p.stem[8:])).stem.removeprefix('script-') if previous_paths else ('r56' if stage_baseline else 'r38' if WORK == NEXT_STAGE else 'r29')
+    summary['comparison_baseline_version'] = max(previous_paths, key=lambda p:int(p.stem[8:])).stem.removeprefix('script-') if previous_paths else (stage_baseline_version if stage_baseline else 'r38' if WORK == NEXT_STAGE else 'r29')
     fields = ('names', 'status', 'extracted_name', 'length')
     changed = [dict(v, before=previous[v['row']]['result']) for v in output
                if any(v['result'].get(key) != previous[v['row']]['result'].get(key) for key in fields)]
@@ -189,9 +191,9 @@ def run():
         frozen = {v['row']:v for v in stage_baseline}
         stage_changes = [dict(v, before=frozen[v['row']]['result']) for v in output
                          if any(v['result'].get(key) != frozen[v['row']]['result'].get(key) for key in fields)]
-        write_jsonl(WORK/f'changes-from-r56-{VERSION}.jsonl', stage_changes)
-        summary['changed_titles_from_r56'] = len(stage_changes)
-        summary['changed_rows_from_r56'] = sum(len(v['rows']) for v in stage_changes)
+        write_jsonl(WORK/f'changes-from-{stage_baseline_version}-{VERSION}.jsonl', stage_changes)
+        summary[f'changed_titles_from_{stage_baseline_version}'] = len(stage_changes)
+        summary[f'changed_rows_from_{stage_baseline_version}'] = sum(len(v['rows']) for v in stage_changes)
     summary['changed_titles'] = len(changed)
     summary['status_transitions'] = dict(Counter(v['before']['status']+' -> '+v['result']['status'] for v in changed))
     write_jsonl(WORK/f'changes-{VERSION}.jsonl', changed)

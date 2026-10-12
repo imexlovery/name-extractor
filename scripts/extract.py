@@ -7,7 +7,7 @@ import unicodedata
 import json
 from pathlib import Path
 
-VERSION = "r61"
+VERSION = "r62"
 
 _HAN_RANGES = (
     (0x3400, 0x4DBF), (0x4E00, 0x9FFF), (0xF900, 0xFAFF),
@@ -290,6 +290,8 @@ def _extract(title: str) -> dict:
             institution_only = institution_only[match.end():].lstrip()
         institution_only, balanced = _outside(institution_only)
         if balanced and institution_only in _COMPLETE_INSTITUTIONS:
+            if not core.endswith('的批复'):
+                return _result([], 'uncertain', 'incomplete_institution_title', '标题在完整机构后结束，缺少许可事项及完整尾文，不能确认无姓名')
             return _result([], 'no_name', 'complete_institution_without_person', '标题仅为有来源的完整机构，未明示姓名')
         if re.fullmatch(r'.*?(?:准予行政许可决定书|行政许可事项终止审查通知书)', core):
             return _result([], 'no_name', 'administrative_notice', '文书标题未明示被批复人')
@@ -409,6 +411,11 @@ def _extract(title: str) -> dict:
         institution_end = max(end for start,end in specific if start == institution_start)
         institution = masked[institution_start:institution_end]
         post = core[institution_end:].strip()
+        linker_institution = masked[institution_start:]
+        linker_post = core[len(person_part):].strip()
+        if (candidate.endswith('的') and _institution_context(linker_institution) and not _INSTITUTION_END.fullmatch(linker_institution)
+                and _ROLE.match(linker_post) and not _after_leading_roles(linker_post)):
+            return _finish(candidate[:-1], 'person_before_institution_linker', note)
         if (candidate.endswith('任') and _institution_context(institution) and not _INSTITUTION_END.fullmatch(institution)
                 and re.fullmatch(r'[\u4e00-\u9fff]+部总经理', post) and not _after_leading_roles(post)):
             result = _finish(candidate[:-1], 'person_before_department_appointment', note)
