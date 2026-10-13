@@ -42,6 +42,17 @@ class IndependentEvidenceContract(unittest.TestCase):
         with self.assertRaises(AssertionError):
             validate_answer(answer, self.source)
 
+    def test_body_quote_object_is_rejected_even_when_its_quote_is_literal(self):
+        answer = dict(self.answer, body_evidence=[dict(quote=self.answer['body_evidence'][0])])
+        with self.assertRaises(AssertionError):
+            validate_answer(answer, self.source)
+
+    def test_independent_prompt_is_accepted_only_in_second_round(self):
+        answer = dict(self.answer, prompt_version='title-body-independent-v1')
+        with self.assertRaises(AssertionError):
+            validate_answer(answer, self.source)
+        self.assertEqual(validate_answer(answer, self.source, ('title-body-independent-v1',))['names'], self.answer['names'])
+
     def test_wrong_identity_and_empty_confirmed_answer_are_rejected(self):
         for change in [dict(row_id='Sheet1:00003'), dict(names=[], title_evidence=[], status='names'),
                        dict(status='no_name'), dict(prompt_version='old-reference')]:

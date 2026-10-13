@@ -145,12 +145,13 @@ def prepare():
     print((WORK / 'manifest.json').read_text())
 
 
-def validate_answer(answer, source):
+def validate_answer(answer, source, prompt_versions=None):
     required = ('input_id', 'row_id', 'names', 'title_evidence', 'body_evidence', 'status', 'reason',
                 'model', 'prompt_version')
     assert all(key in answer for key in required), 'Missing output fields'
     assert answer['input_id'] == source['input_id'] and answer['row_id'] == source['row_id'], 'Wrong identity'
-    assert answer['model'] == MODEL and answer['prompt_version'] in (PROMPT_VERSION, 'title-body-blind-v1'), 'Wrong model/prompt'
+    versions = prompt_versions or (PROMPT_VERSION, 'title-body-blind-v1')
+    assert answer['model'] == MODEL and answer['prompt_version'] in versions, 'Wrong model/prompt'
     assert answer['status'] in ('names', 'no_name', 'conflict', 'uncertain'), 'Invalid status'
     names = answer['names']
     assert isinstance(names, list) and all(isinstance(n, str) and n for n in names), 'Invalid names'
@@ -327,6 +328,49 @@ def runtime():
     print(json.dumps(totals))
 
 
+def collect_second():
+    """Validate independent rereads; disagreements still require explicit adjudication."""
+    first = {r['input_id']: r for r in read(WORK / 'valid-first-answers.jsonl')}
+    original = read(WORK / 'blind/inputs.jsonl')
+    if len(first) != len(original):
+        raise ValueError('Complete valid first-round coverage before second-round collection.')
+    sources = {r['input_id']: r for r in read(WORK / 'blind/second-inputs.jsonl')}
+    accepted, invalid, duplicated = {}, [], set()
+    for path in sorted((WORK / 'answers/second').glob('*.jsonl')):
+        for line_no, line in enumerate(path.read_text().split('\n'), 1):
+            if not line.strip():
+                continue
+            try:
+                answer = json.loads(line)
+                key = answer['input_id']
+                valid = validate_answer(answer, sources[key], ('title-body-independent-v1',))
+                if key in accepted or key in duplicated:
+                    accepted.pop(key, None)
+                    duplicated.add(key)
+                    raise ValueError('Duplicate second-round answer; preserve retries separately')
+                accepted[key] = dict(valid, answer_file=str(path.relative_to(ROOT)))
+            except (AssertionError, ValueError, KeyError, TypeError) as exc:
+                invalid.append(dict(file=str(path.relative_to(ROOT)), line=line_no, reason=str(exc)))
+    disagreements = []
+    for key, second in accepted.items():
+        prior = first[key]
+        if second['status'] not in ('names', 'no_name') or prior['status'] != second['status'] or prior['names'] != second['names']:
+            disagreements.append(dict(input_id=key, first=prior, second=second))
+    lines(WORK / 'valid-second-answers.jsonl', accepted.values())
+    save(WORK / 'invalid-second-answers.json', invalid)
+    lines(WORK / 'second-disagreements.jsonl', disagreements)
+    save(WORK / 'second-progress.json', dict(required_inputs=len(sources), reviewed_inputs=len(accepted),
+         pending_inputs=len(sources)-len(accepted), invalid_answers=len(invalid),
+         needs_adjudication_inputs=len(disagreements), reference_set_frozen=False))
+    if len(accepted) == len(sources) and not invalid:
+        disputed = {r['input_id'] for r in disagreements}
+        ordered = [r for r in original if r['input_id'] in disputed]
+        lines(WORK / 'blind/third-inputs.jsonl', ordered)
+        for offset in range(0, len(ordered), 20):
+            lines(WORK / 'blind/third' / f'third-{offset // 20 + 1:04d}.jsonl', ordered[offset:offset+20])
+    print((WORK / 'second-progress.json').read_text())
+
+
 def watch():
     """Checkpoint active subagent batches once a minute; exit when coverage is complete."""
     while True:
@@ -345,6 +389,6 @@ def watch():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action', choices=['prepare', 'collect', 'compare', 'human_random', 'runtime', 'watch'])
+    parser.add_argument('action', choices=['prepare', 'collect', 'compare', 'collect_second', 'human_random', 'runtime', 'watch'])
     args = parser.parse_args()
     globals()[args.action]()
