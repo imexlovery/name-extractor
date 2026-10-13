@@ -254,6 +254,14 @@ def compare():
     answers = {r['input_id']: r for r in read(WORK / 'valid-first-answers.jsonl')}
     baseline = {row: item for item in read(ROOT / 'validation/0.7.0/script-r64.jsonl') for row in item['rows']}
     diffs, categories, review = [], Counter(), set()
+    # Corrected first answers still need an independent reread even if they now agree.
+    corrected = set()
+    for path in (WORK / 'answers/retries').rglob('*.jsonl'):
+        for old in read(path):
+            current = answers.get(old.get('input_id'))
+            if current and 'names' in old and 'status' in old and \
+                    (old['names'] != current['names'] or old['status'] != current['status']):
+                corrected.add(old['input_id'])
     for m in read(WORK / 'row-map.jsonl'):
         a = answers.get(m['input_id'])
         b = baseline[m['excel_row']]
@@ -276,7 +284,7 @@ def compare():
                          '多人连接', '括号异常', '职务或部门残片', '称谓或介词结构'}
         risky = bool(focused_risks.intersection(b.get('risk_categories', []))) or \
                 s['status'] in ('uncertain', 'no_name') or len(s['names']) > 1
-        if a is not None and (category not in ('consistent_supported', 'consistent_no_name') or risky):
+        if a is not None and (category not in ('consistent_supported', 'consistent_no_name') or risky or m['input_id'] in corrected):
             review.add(m['input_id'])
         if category not in ('consistent_supported', 'consistent_no_name', 'pending_ai'):
             diffs.append(dict(m, category=category, script=s, ai=a))
@@ -289,6 +297,7 @@ def compare():
         for offset in range(0, len(ordered), 20):
             lines(WORK / 'blind/second' / f'second-{offset // 20 + 1:04d}.jsonl', ordered[offset:offset+20])
     save(WORK / 'first-comparison.json', dict(categories_rows=dict(categories), second_round_inputs=len(review),
+         corrected_first_inputs_requiring_reread=len(corrected),
          final_reference_agreement=None, reference_set_frozen=False, true_accuracy=None))
     print((WORK / 'first-comparison.json').read_text())
 

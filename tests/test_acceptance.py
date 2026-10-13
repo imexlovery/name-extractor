@@ -4,9 +4,10 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from acceptance import validate_answer, read, lines
+from acceptance import validate_answer, read, lines, compare
 
 
 class IndependentEvidenceContract(unittest.TestCase):
@@ -58,6 +59,23 @@ class IndependentEvidenceContract(unittest.TestCase):
                        dict(status='no_name'), dict(prompt_version='old-reference')]:
             with self.subTest(change=change), self.assertRaises(AssertionError):
                 validate_answer(dict(self.answer, **change), self.source)
+
+    def test_corrected_first_answer_still_gets_raw_independent_reread(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            work = root / 'acceptance'
+            source = dict(self.source, 标题='关于张明任职资格的批复', 内容='核准张明的任职资格。')
+            answer = dict(self.answer, names=['张明'], title_evidence=[dict(name='张明', quote='张明')],
+                          body_evidence=[], reason='标题明示一人。')
+            lines(work / 'blind/inputs.jsonl', [source])
+            lines(work / 'valid-first-answers.jsonl', [answer])
+            lines(work / 'row-map.jsonl', [dict(input_id=source['input_id'], row_id=source['row_id'], excel_row=2)])
+            lines(root / 'validation/0.7.0/script-r64.jsonl', [dict(rows=[2], result=dict(status='names', names=['张明']), risk_categories=[])])
+            lines(work / 'answers/retries/old.jsonl', [dict(answer, names=[], title_evidence=[], status='no_name')])
+            with patch('acceptance.ROOT', root), patch('acceptance.WORK', work):
+                compare()
+            self.assertEqual(read(work / 'blind/second-inputs.jsonl'), [source])
+            self.assertNotIn('names', read(work / 'blind/second-inputs.jsonl')[0])
 
 
 if __name__ == '__main__':
