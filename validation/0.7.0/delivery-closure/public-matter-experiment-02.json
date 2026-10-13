@@ -1,0 +1,217 @@
+{
+  "baseline_version": "r63",
+  "applied_in_memory_only": true,
+  "news_pattern": "(?:银保监会|中国银行保险监督管理委员会)(?:(?:持续|继续|深入)?开展|推进|深化)银行保险机构(?:股权(?:[和及与]关联交易)?|关联交易)(?:专项)?整治(?:(?:不断|进一步)?(?:提升|提高)公司治理(?:质效|水平))?",
+  "notice_pattern": "(?:内蒙古|黑龙江|上海|中国|云南|北京|台湾|吉林|四川|天津|宁夏|安徽|山东|山西|广东|广西|新疆|江苏|江西|河北|河南|浙江|海南|湖北|湖南|澳门|甘肃|福建|西藏|贵州|辽宁|重庆|陕西|青海|香港)(?:省|市|自治区)?金融学会第[一二三四五六七八九十百0-9]+届理事会(?:届中)?变更负责人的公示",
+  "full_distinct_titles_examined": 46760,
+  "mapped_rows": 52146,
+  "changes": [
+    {
+      "row": 18200,
+      "rows": [
+        18200
+      ],
+      "title": "银保监会持续开展银行保险机构股权和关联交易专项整治不断提升公司治理质效",
+      "before": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构",
+        "length": 0,
+        "extracted_name": ""
+      },
+      "after": {
+        "names": [],
+        "status": "no_name",
+        "rule": "complete_regulatory_news",
+        "note": "完整监管主体的机构治理整治及成效事项，全文未明示人员"
+      }
+    },
+    {
+      "row": 44338,
+      "rows": [
+        44338
+      ],
+      "title": "关于江苏省金融学会第十一届理事会届中变更负责人的公示",
+      "before": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构",
+        "length": 0,
+        "extracted_name": ""
+      },
+      "after": {
+        "names": [],
+        "status": "no_name",
+        "rule": "complete_governance_notice",
+        "note": "完整地区金融学会的理事会届次变更事项公示，全文未明示人员"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "key": "general_news",
+      "title": "关于中国银行保险监督管理委员会推进银行保险机构股权专项整治进一步提高公司治理水平",
+      "expected": "no_name",
+      "before": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      },
+      "after": {
+        "names": [],
+        "status": "no_name",
+        "rule": "complete_regulatory_news",
+        "note": "完整监管主体的机构治理整治及成效事项，全文未明示人员"
+      }
+    },
+    {
+      "key": "general_notice",
+      "title": "关于浙江省金融学会第十二届理事会变更负责人的公示",
+      "expected": "no_name",
+      "before": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      },
+      "after": {
+        "names": [],
+        "status": "no_name",
+        "rule": "complete_governance_notice",
+        "note": "完整地区金融学会的理事会届次变更事项公示，全文未明示人员"
+      }
+    },
+    {
+      "key": "named_news",
+      "title": "张明在银保监会开展银行保险机构股权专项整治会议上发言",
+      "expected": "not_no_name",
+      "before": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      },
+      "after": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      }
+    },
+    {
+      "key": "name_in_news_clause",
+      "title": "银保监会持续开展银行保险机构股权和关联交易专项整治张明提出不断提升公司治理质效",
+      "expected": "not_no_name",
+      "before": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      },
+      "after": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      }
+    },
+    {
+      "key": "name_in_governance_notice",
+      "title": "关于江苏省金融学会第十一届理事会届中变更负责人张明的公示",
+      "expected": "not_no_name",
+      "before": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      },
+      "after": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      }
+    },
+    {
+      "key": "named_qualification_notice",
+      "title": "关于加强张明同志任职资格管理的通知",
+      "expected": "names",
+      "before": {
+        "names": [
+          "张明"
+        ],
+        "status": "names",
+        "rule": "named_administrative_notice",
+        "note": ""
+      },
+      "after": {
+        "names": [
+          "张明"
+        ],
+        "status": "names",
+        "rule": "named_administrative_notice",
+        "note": ""
+      }
+    },
+    {
+      "key": "named_after_complete_notice",
+      "title": "关于江苏省金融学会第十一届理事会届中变更负责人的公示并核准李华任职资格的批复",
+      "expected": "not_no_name",
+      "before": {
+        "names": [
+          "江苏省金融学会第十一届"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆"
+      },
+      "after": {
+        "names": [
+          "江苏省金融学会第十一届"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆"
+      }
+    },
+    {
+      "key": "truncated_news",
+      "title": "银保监会持续开展银行保险机构",
+      "expected": "uncertain",
+      "before": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      },
+      "after": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      }
+    },
+    {
+      "key": "truncated_notice",
+      "title": "关于江苏省金融学会第十一届理事会届中变更负责人",
+      "expected": "uncertain",
+      "before": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      },
+      "after": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构"
+      }
+    }
+  ],
+  "changed_existing_names_titles": 0,
+  "changed_rows": 2
+}

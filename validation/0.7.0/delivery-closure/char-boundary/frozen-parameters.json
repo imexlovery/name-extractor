@@ -1,0 +1,27 @@
+{
+  "stage": "A",
+  "model_family": "one_predeclared_character_context_naive_bayes",
+  "seed": 20261013,
+  "source_path": ".local/pilot-20261010/inventory.jsonl",
+  "target_predictions_computed": false,
+  "code_entrypoint": "experiment.py",
+  "protocol": "protocol.md",
+  "status": "stopped_insufficient_calibration_evidence",
+  "selected": null,
+  "title_truth_claimed": false,
+  "minimum_piece_length": 2,
+  "no_maximum_piece_length": true,
+  "no_surname_table": true,
+  "no_full_name_lookup": true,
+  "coverage_rule": "all_feasible_gaps_have_seen_left_and_right_character_roles",
+  "boundary_support_rule": "chosen_cut_left_observed_at_end_and_right_observed_at_start",
+  "model_features": [
+    "left",
+    "right",
+    "pair",
+    "left_triple",
+    "right_triple"
+  ],
+  "equal_feature_weights": 1,
+  "laplace_smoothing": 1
+}

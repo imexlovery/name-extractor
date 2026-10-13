@@ -1,0 +1,28 @@
+{
+  "version": "r64",
+  "round": 3,
+  "render_directory": "/Users/tristana/法询金融科技codex测试/.local/0.7.0-r64-final-word-qa-cjk",
+  "rendered_pages": 23,
+  "page_pngs_present": 23,
+  "visual_review_complete": true,
+  "renderer": "/Users/tristana/.codex/plugins/cache/openai-primary-runtime/documents/26.1011.11113/skills/documents/render_docx.py",
+  "python_runtime": "/Users/tristana/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "soffice_runtime": "/Users/tristana/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+  "fontconfig_file": "/Users/tristana/法询金融科技codex测试/.local/word-fonts.conf",
+  "reviewed_ranges": [
+    {
+      "pages": "1-8",
+      "reviewer": "主Agent",
+      "result": "pass"
+    },
+    {
+      "pages": "9-23",
+      "reviewer": "交付子Agent",
+      "result": "pass"
+    }
+  ],
+  "layout_defects_reported": 0,
+  "historical_paragraphs_preserved": 117,
+  "tables_preserved": 2,
+  "note": "A command-level fontconfig selection restored CJK glyphs. Historical section spacing and page breaks were preserved."
+}

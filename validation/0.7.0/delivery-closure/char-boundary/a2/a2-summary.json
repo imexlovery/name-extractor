@@ -1,0 +1,212 @@
+{
+  "stage": "A2",
+  "outcome": "stopped_reliable_holdout_error",
+  "weak_source": {
+    "inventory_records": 46760,
+    "accepted_source_records": 23174,
+    "excluded_source_records": 23586,
+    "exclusion_reason_record_counts": {
+      "outside_exact_short_subject_grammar": 23146,
+      "a1_non_person_or_residual_rule": 314,
+      "a1_calibration_or_holdout_part_or_text": 61,
+      "a1_target_candidate_substring": 24,
+      "a1_target_complete_title": 41,
+      "a1_target_repeated_rows": 41
+    },
+    "unique_weak_subjects": 22361,
+    "weak_source_rows": 27644,
+    "source_field_whitelist": [
+      "row",
+      "rows",
+      "title"
+    ],
+    "target_exclusion_mask": {
+      "target_records": 41,
+      "target_titles": 41,
+      "target_representative_rows": 41,
+      "candidate_substrings": 523
+    }
+  },
+  "a1": {
+    "sample_titles": 430,
+    "sample_rows": 453,
+    "group_manifest_entries": 423,
+    "split_stats": {
+      "fit": {
+        "titles": 254,
+        "groups": 251,
+        "source_kinds": {
+          "honorific_whole": 138,
+          "marked_roster": 91,
+          "bilingual_whole": 18,
+          "middle_dot_whole": 7
+        },
+        "comparison_classes": {
+          "short_whole": 150,
+          "multi": 91,
+          "whole4": 6,
+          "long_whole": 7
+        }
+      },
+      "calibration": {
+        "titles": 86,
+        "groups": 85,
+        "source_kinds": {
+          "marked_roster": 30,
+          "honorific_whole": 48,
+          "bilingual_whole": 5,
+          "middle_dot_whole": 3
+        },
+        "comparison_classes": {
+          "multi": 30,
+          "short_whole": 51,
+          "whole4": 2,
+          "long_whole": 3
+        }
+      },
+      "holdout": {
+        "titles": 90,
+        "groups": 87,
+        "source_kinds": {
+          "bilingual_whole": 8,
+          "honorific_whole": 47,
+          "marked_roster": 32,
+          "middle_dot_whole": 3
+        },
+        "comparison_classes": {
+          "short_whole": 52,
+          "multi": 32,
+          "whole4": 3,
+          "long_whole": 3
+        }
+      },
+      "group_manifest_entries": 423
+    },
+    "selected": null,
+    "holdout_scored": false
+  },
+  "fit": {
+    "unique_atoms": 22626,
+    "unique_boundary_expressions": 91,
+    "explicit_roster_boundary_events": 107,
+    "feature_counts": {
+      "left": {
+        "boundary_events": 22626,
+        "inside_events": 38824,
+        "boundary_vocabulary": 1490,
+        "inside_vocabulary": 1468
+      },
+      "right": {
+        "boundary_events": 22626,
+        "inside_events": 38824,
+        "boundary_vocabulary": 587,
+        "inside_vocabulary": 1762
+      },
+      "pair": {
+        "boundary_events": 107,
+        "inside_events": 38824,
+        "boundary_vocabulary": 106,
+        "inside_vocabulary": 26489
+      },
+      "left_triple": {
+        "boundary_events": 107,
+        "inside_events": 16198,
+        "boundary_vocabulary": 107,
+        "inside_vocabulary": 16196
+      },
+      "right_triple": {
+        "boundary_events": 107,
+        "inside_events": 16198,
+        "boundary_vocabulary": 107,
+        "inside_vocabulary": 16196
+      }
+    }
+  },
+  "calibration": {
+    "candidate_count": 98,
+    "reason": "selected",
+    "coverage": {
+      "multi": {
+        "covered": 29,
+        "unknown_gap": 1
+      },
+      "short_whole": {
+        "not_testable": 51
+      },
+      "whole4": {
+        "covered": 1,
+        "unknown_gap": 1
+      },
+      "long_whole": {
+        "covered": 2,
+        "unknown_gap": 1
+      }
+    }
+  },
+  "selected": {
+    "bias": 2.116556438866837,
+    "margin_strictly_above": 0.0,
+    "accepted_correct": {
+      "multi": 29,
+      "whole4": 1,
+      "long_whole": 2
+    },
+    "balanced_coverage": 0.6666666666666666
+  },
+  "evaluations": {
+    "calibration": {
+      "totals": {
+        "reliable_correct": 32,
+        "not_testable": 51,
+        "abstain": 3
+      },
+      "by_class": {
+        "multi": {
+          "reliable_correct": 29,
+          "abstain": 1
+        },
+        "short_whole": {
+          "not_testable": 51
+        },
+        "whole4": {
+          "reliable_correct": 1,
+          "abstain": 1
+        },
+        "long_whole": {
+          "reliable_correct": 2,
+          "abstain": 1
+        }
+      }
+    },
+    "holdout": {
+      "totals": {
+        "not_testable": 52,
+        "reliable_correct": 32,
+        "reliable_error": 4,
+        "abstain": 2
+      },
+      "by_class": {
+        "short_whole": {
+          "not_testable": 52
+        },
+        "multi": {
+          "reliable_correct": 29,
+          "reliable_error": 2,
+          "abstain": 1
+        },
+        "whole4": {
+          "reliable_correct": 3
+        },
+        "long_whole": {
+          "reliable_error": 2,
+          "abstain": 1
+        }
+      }
+    }
+  },
+  "holdout_scored": true,
+  "target_predictions_computed": false,
+  "production_changed": false,
+  "true_accuracy": null,
+  "limitation": "Weak short subjects are positional context only; structural controls do not establish human name truth."
+}

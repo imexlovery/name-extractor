@@ -1,0 +1,31 @@
+{
+  "version": "r64",
+  "full_source_import_completed": false,
+  "full_source_import_stop_reason": "只读导入超过6分钟仍未输出；源工作簿继承A1:O1048576维度及至16382列的格式范围，按自有PID终止预览，不改交付工作簿。",
+  "preview_method": "复制实际r64的A/N/O原始单元格、样式、列宽和行高到内部有界投影，仅重排行列以渲染。",
+  "preview_mapping": ".local/0.7.0-r64-excel-qa/r64-render-projection.json",
+  "preview_image": ".local/0.7.0-r64-excel-qa/slices-A-N-O-projection.png",
+  "reviewed_original_rows": [
+    1,
+    2,
+    11008,
+    18200,
+    39226,
+    44338,
+    12313,
+    52147
+  ],
+  "checked": [
+    "两列标题完整可读",
+    "两个新增无姓名记录显示空和数值0",
+    "11008及39226显示空和空",
+    "最长显示宽度的已提取姓名完整可见",
+    "最后业务行正常显示",
+    "无新增列文字重叠或裁切"
+  ],
+  "visual_defects_in_result_columns": 0,
+  "body_column_in_preview": false,
+  "delivery_workbook_reexported_by_preview_tool": false,
+  "full_workbook_contract_evidence": "../excel-verification-r64.json",
+  "scope_limit": "有界投影检查只证明所列A/N/O显示；原表全量结构保留由独立OOXML检查证明，不宣称桌面Excel全表逐页查看。"
+}

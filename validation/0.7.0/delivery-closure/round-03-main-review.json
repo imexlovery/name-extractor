@@ -1,0 +1,14 @@
+{
+  "reviewer": "root",
+  "method": "Read saved artifacts and implementation; no model or target predictions rerun",
+  "weak_calibration_holdout_complete_fragment_overlap": 0,
+  "fit_calibration_holdout_complete_fragment_overlap": 0,
+  "fit_target_possible_fragment_overlap": 0,
+  "target_unique_titles_excluded": 41,
+  "target_actual_rows_excluded": 44,
+  "holdout_cases": 90,
+  "holdout_reliable_errors": 4,
+  "decision": "Reject A2 for production; do not score revealed targets; retain r64",
+  "production_changed": false,
+  "true_accuracy": null
+}

@@ -1,0 +1,45 @@
+{
+  "version": "r64",
+  "output_workbook": "outputs/0.7.0/任职资格批复汇总测试-0.7.0-r64纯脚本待复核版.xlsx",
+  "compared_with": "outputs/0.7.0/任职资格批复汇总测试-0.7.0-r62纯脚本待复核版.xlsx",
+  "records_read_from_each_workbook": 52146,
+  "all_output_cells_match_current_script_records": true,
+  "production_status_rows_from_actual_excel": {
+    "names": 51309,
+    "no_name": 758,
+    "uncertain": 79
+  },
+  "changed_rows_count": 2,
+  "changes": [
+    {
+      "row": 18200,
+      "before": [
+        null,
+        null
+      ],
+      "after": [
+        null,
+        0
+      ]
+    },
+    {
+      "row": 44338,
+      "before": [
+        null,
+        null
+      ],
+      "after": [
+        null,
+        0
+      ]
+    }
+  ],
+  "known_omission_row_11008_still_blank_blank": true,
+  "disagreement_row_39226_still_blank_blank": true,
+  "new_result_cells_are_literals_not_formulas": true,
+  "original_workbook_contract_report": "../excel-verification-r64.json",
+  "r62_verification_archived_before_export": "../excel-verification-r62.json",
+  "source_and_old_r62_outputs_preserved": true,
+  "new_semantic_reviews": 0,
+  "true_accuracy": null
+}

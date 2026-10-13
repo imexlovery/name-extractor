@@ -8,6 +8,37 @@ from validate import check
 
 
 class IncompleteTitlesAndInstitutionLinker(unittest.TestCase):
+    def test_complete_public_matters_without_named_people(self):
+        for title in [
+            '银保监会持续开展银行保险机构股权和关联交易专项整治不断提升公司治理质效',
+            '关于江苏省金融学会第十一届理事会届中变更负责人的公示',
+            '关于中国银行保险监督管理委员会推进银行保险机构股权专项整治进一步提高公司治理水平',
+            '关于浙江省金融学会第十二届理事会变更负责人的公示',
+        ]:
+            result = extract(title)
+            self.assertEqual((result['status'], result['names']), ('no_name', []), title)
+            self.assertEqual(check(title, result)['failures'], [], title)
+
+    def test_public_matters_do_not_hide_named_or_truncated_subjects(self):
+        for title in [
+            '张明在银保监会开展银行保险机构股权专项整治会议上发言',
+            '银保监会持续开展银行保险机构股权和关联交易专项整治张明提出不断提升公司治理质效',
+            '关于江苏省金融学会第十一届理事会届中变更负责人张明的公示',
+            '关于江苏省金融学会第十一届理事会届中变更负责人的公示并核准李华任职资格的批复',
+        ]:
+            result = extract(title)
+            self.assertNotEqual(result['status'], 'no_name', title)
+            self.assertEqual(check(title, result)['failures'], [], title)
+        for title in [
+            '银保监会持续开展银行保险机构',
+            '关于江苏省金融学会第十一届理事会届中变更负责人',
+        ]:
+            result = extract(title)
+            self.assertEqual(result['status'], 'uncertain', title)
+            self.assertEqual(check(title, result)['failures'], [], title)
+        result = extract('关于加强张明同志任职资格管理的通知')
+        self.assertEqual((result['status'], result['names']), ('names', ['张明']))
+
     def test_incomplete_institution_is_not_confirmed_no_name(self):
         for title in [
             '关于同意民生人寿保险股份有限公司河南分公司',

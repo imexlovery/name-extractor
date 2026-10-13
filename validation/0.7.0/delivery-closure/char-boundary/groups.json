@@ -1,0 +1,4844 @@
+[
+  {
+    "group_id": "group-14122",
+    "split": "fit",
+    "stratum": "long_whole",
+    "rows": [
+      14122
+    ],
+    "parts": [
+      "玉苏普亚森"
+    ]
+  },
+  {
+    "group_id": "group-36112",
+    "split": "fit",
+    "stratum": "long_whole",
+    "rows": [
+      36112
+    ],
+    "parts": [
+      "伊力亚斯吐逊"
+    ]
+  },
+  {
+    "group_id": "group-22904",
+    "split": "fit",
+    "stratum": "long_whole",
+    "rows": [
+      22904
+    ],
+    "parts": [
+      "门布尔乔拉"
+    ]
+  },
+  {
+    "group_id": "group-28599",
+    "split": "fit",
+    "stratum": "long_whole",
+    "rows": [
+      28599
+    ],
+    "parts": [
+      "叶尔兰沙力他那提"
+    ]
+  },
+  {
+    "group_id": "group-27047",
+    "split": "fit",
+    "stratum": "long_whole",
+    "rows": [
+      27047
+    ],
+    "parts": [
+      "图尔孙江牙生"
+    ]
+  },
+  {
+    "group_id": "group-44294",
+    "split": "fit",
+    "stratum": "long_whole",
+    "rows": [
+      44294
+    ],
+    "parts": [
+      "尼牙孜克然木"
+    ]
+  },
+  {
+    "group_id": "group-12800",
+    "split": "fit",
+    "stratum": "long_whole",
+    "rows": [
+      12800
+    ],
+    "parts": [
+      "买日古里尼牙孜"
+    ]
+  },
+  {
+    "group_id": "group-49626",
+    "split": "calibration",
+    "stratum": "long_whole",
+    "rows": [
+      49626
+    ],
+    "parts": [
+      "依拉木江沙比尔"
+    ]
+  },
+  {
+    "group_id": "group-27192",
+    "split": "calibration",
+    "stratum": "long_whole",
+    "rows": [
+      27192
+    ],
+    "parts": [
+      "沙合班吐尔逊"
+    ]
+  },
+  {
+    "group_id": "group-50343",
+    "split": "calibration",
+    "stratum": "long_whole",
+    "rows": [
+      50343
+    ],
+    "parts": [
+      "凯迪尔丁塞迪"
+    ]
+  },
+  {
+    "group_id": "group-26523",
+    "split": "holdout",
+    "stratum": "long_whole",
+    "rows": [
+      26523
+    ],
+    "parts": [
+      "沙力买买提"
+    ]
+  },
+  {
+    "group_id": "group-35537",
+    "split": "holdout",
+    "stratum": "long_whole",
+    "rows": [
+      35537
+    ],
+    "parts": [
+      "阿依丁别克达吾列提巴义"
+    ]
+  },
+  {
+    "group_id": "group-38782",
+    "split": "holdout",
+    "stratum": "long_whole",
+    "rows": [
+      38782
+    ],
+    "parts": [
+      "阿伊丁居马洪"
+    ]
+  },
+  {
+    "group_id": "group-32972",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      32972
+    ],
+    "parts": [
+      "胡秋菊",
+      "陈珏"
+    ]
+  },
+  {
+    "group_id": "group-40453",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      40453
+    ],
+    "parts": [
+      "赵敏",
+      "闫静"
+    ]
+  },
+  {
+    "group_id": "group-8561",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      8561
+    ],
+    "parts": [
+      "李保安",
+      "李晓波"
+    ]
+  },
+  {
+    "group_id": "group-27766",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      27766
+    ],
+    "parts": [
+      "李华",
+      "梅兴金"
+    ]
+  },
+  {
+    "group_id": "group-22984",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      22984
+    ],
+    "parts": [
+      "梁海霞",
+      "王洋"
+    ]
+  },
+  {
+    "group_id": "group-44226",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      44226
+    ],
+    "parts": [
+      "张群洪",
+      "蔡义珍"
+    ]
+  },
+  {
+    "group_id": "group-23091",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      23091
+    ],
+    "parts": [
+      "王慧方",
+      "秦红松"
+    ]
+  },
+  {
+    "group_id": "group-24786",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      24786
+    ],
+    "parts": [
+      "周金鑫",
+      "周钰虹"
+    ]
+  },
+  {
+    "group_id": "group-13971",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      13971
+    ],
+    "parts": [
+      "夏颖",
+      "张波",
+      "张霆",
+      "顾伟"
+    ]
+  },
+  {
+    "group_id": "group-24631",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      24631
+    ],
+    "parts": [
+      "吴玮",
+      "张国兴",
+      "郑华生"
+    ]
+  },
+  {
+    "group_id": "group-41401",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      41401
+    ],
+    "parts": [
+      "汪辉",
+      "马帮魁"
+    ]
+  },
+  {
+    "group_id": "group-6016",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      6016
+    ],
+    "parts": [
+      "周海宇",
+      "成霞"
+    ]
+  },
+  {
+    "group_id": "group-26416",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      26416
+    ],
+    "parts": [
+      "聂齐明",
+      "钟珊"
+    ]
+  },
+  {
+    "group_id": "group-14164",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      14164
+    ],
+    "parts": [
+      "叶文辉",
+      "张华"
+    ]
+  },
+  {
+    "group_id": "group-40287",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      40287
+    ],
+    "parts": [
+      "王汉荣",
+      "董安平"
+    ]
+  },
+  {
+    "group_id": "group-13091",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      13091
+    ],
+    "parts": [
+      "姜翔程",
+      "徐林虎"
+    ]
+  },
+  {
+    "group_id": "group-22411",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      22411
+    ],
+    "parts": [
+      "赖汝均",
+      "郭耀华"
+    ]
+  },
+  {
+    "group_id": "group-50140",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      50140
+    ],
+    "parts": [
+      "张志杰",
+      "杨博"
+    ]
+  },
+  {
+    "group_id": "group-50726",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      50726
+    ],
+    "parts": [
+      "张娟",
+      "张巍"
+    ]
+  },
+  {
+    "group_id": "group-20322",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      20322
+    ],
+    "parts": [
+      "党傲东",
+      "李芬"
+    ]
+  },
+  {
+    "group_id": "group-20304",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      20304
+    ],
+    "parts": [
+      "李长友",
+      "章顺"
+    ]
+  },
+  {
+    "group_id": "group-37543",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      37543
+    ],
+    "parts": [
+      "吴立德",
+      "林怡"
+    ]
+  },
+  {
+    "group_id": "group-17301",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      17301
+    ],
+    "parts": [
+      "杜毅刚",
+      "王芙蓉",
+      "秦修宏",
+      "胡旻"
+    ]
+  },
+  {
+    "group_id": "group-29216",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      29216
+    ],
+    "parts": [
+      "何飞",
+      "余卫洲"
+    ]
+  },
+  {
+    "group_id": "group-112",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      112
+    ],
+    "parts": [
+      "秦铖",
+      "蒲涛"
+    ]
+  },
+  {
+    "group_id": "group-47239",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      47239
+    ],
+    "parts": [
+      "林汉军",
+      "林渊辉"
+    ]
+  },
+  {
+    "group_id": "group-28910",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      28910
+    ],
+    "parts": [
+      "付江伟",
+      "郝永峰"
+    ]
+  },
+  {
+    "group_id": "group-2143",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      2143
+    ],
+    "parts": [
+      "汪康",
+      "胡海洋"
+    ]
+  },
+  {
+    "group_id": "group-14746",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      14746
+    ],
+    "parts": [
+      "赵永辉",
+      "马建博"
+    ]
+  },
+  {
+    "group_id": "group-1870",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      1870
+    ],
+    "parts": [
+      "王弋",
+      "王骏"
+    ]
+  },
+  {
+    "group_id": "group-41123",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      41123
+    ],
+    "parts": [
+      "易昕",
+      "曹景泉"
+    ]
+  },
+  {
+    "group_id": "group-16645",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      16645
+    ],
+    "parts": [
+      "刘辉",
+      "权宇奇"
+    ]
+  },
+  {
+    "group_id": "group-13778",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      13778
+    ],
+    "parts": [
+      "杨春鹏",
+      "陶金"
+    ]
+  },
+  {
+    "group_id": "group-4420",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      4420
+    ],
+    "parts": [
+      "张伟",
+      "徐虎"
+    ]
+  },
+  {
+    "group_id": "group-27296",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      27296
+    ],
+    "parts": [
+      "张寒阳",
+      "彭延炼"
+    ]
+  },
+  {
+    "group_id": "group-29498",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      29498
+    ],
+    "parts": [
+      "刘霄",
+      "王新东"
+    ]
+  },
+  {
+    "group_id": "group-40899",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      40899
+    ],
+    "parts": [
+      "杨盛宗",
+      "闵晓通"
+    ]
+  },
+  {
+    "group_id": "group-3772",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      3772
+    ],
+    "parts": [
+      "刘振",
+      "徐林"
+    ]
+  },
+  {
+    "group_id": "group-4970",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      4970
+    ],
+    "parts": [
+      "胡毅",
+      "闫杰"
+    ]
+  },
+  {
+    "group_id": "group-11044",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      11044
+    ],
+    "parts": [
+      "王晓龙",
+      "韩奇"
+    ]
+  },
+  {
+    "group_id": "group-28451",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      28451
+    ],
+    "parts": [
+      "丁永",
+      "于洪岩"
+    ]
+  },
+  {
+    "group_id": "group-12632",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      12632
+    ],
+    "parts": [
+      "李雪海",
+      "秦晓刚"
+    ]
+  },
+  {
+    "group_id": "group-29986",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      29986
+    ],
+    "parts": [
+      "周升学",
+      "孙泱",
+      "章建光",
+      "钱军"
+    ]
+  },
+  {
+    "group_id": "group-6944",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      6944
+    ],
+    "parts": [
+      "童文武",
+      "陈华"
+    ]
+  },
+  {
+    "group_id": "group-4803",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      4803,
+      13109
+    ],
+    "parts": [
+      "刘影",
+      "秦晓倩",
+      "陈涛",
+      "魏玉柏"
+    ]
+  },
+  {
+    "group_id": "group-33664",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      33664
+    ],
+    "parts": [
+      "赵文海",
+      "高绍岭"
+    ]
+  },
+  {
+    "group_id": "group-13806",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      13806
+    ],
+    "parts": [
+      "王建飞",
+      "邵洁玉",
+      "陈浩"
+    ]
+  },
+  {
+    "group_id": "group-4988",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      4988
+    ],
+    "parts": [
+      "党帅",
+      "王渭"
+    ]
+  },
+  {
+    "group_id": "group-12929",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      12929
+    ],
+    "parts": [
+      "向南东",
+      "梁亚军"
+    ]
+  },
+  {
+    "group_id": "group-49214",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      49214
+    ],
+    "parts": [
+      "李俊",
+      "汪怀军",
+      "邱国文"
+    ]
+  },
+  {
+    "group_id": "group-507",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      507
+    ],
+    "parts": [
+      "吉思振",
+      "杨忠翔"
+    ]
+  },
+  {
+    "group_id": "group-20444",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      20444
+    ],
+    "parts": [
+      "罗海龙",
+      "龙杰"
+    ]
+  },
+  {
+    "group_id": "group-33710",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      33710
+    ],
+    "parts": [
+      "唐奔",
+      "张旻",
+      "曹翔"
+    ]
+  },
+  {
+    "group_id": "group-27765",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      27765
+    ],
+    "parts": [
+      "王振兴",
+      "雷森元",
+      "黄萍"
+    ]
+  },
+  {
+    "group_id": "group-6686",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      6686
+    ],
+    "parts": [
+      "宋毅",
+      "钱斌"
+    ]
+  },
+  {
+    "group_id": "group-12157",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      12157
+    ],
+    "parts": [
+      "张旗",
+      "汤世生"
+    ]
+  },
+  {
+    "group_id": "group-10613",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      10613
+    ],
+    "parts": [
+      "楚振杰",
+      "马颖"
+    ]
+  },
+  {
+    "group_id": "group-13173",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      13173
+    ],
+    "parts": [
+      "杜斌",
+      "陈振涛"
+    ]
+  },
+  {
+    "group_id": "group-22798",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      22798
+    ],
+    "parts": [
+      "常韬",
+      "秦宏伟"
+    ]
+  },
+  {
+    "group_id": "group-5322",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      5322
+    ],
+    "parts": [
+      "苏慧",
+      "谢淑贤"
+    ]
+  },
+  {
+    "group_id": "group-32578",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      32578
+    ],
+    "parts": [
+      "李凯风",
+      "杨学伟"
+    ]
+  },
+  {
+    "group_id": "group-12783",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      12783
+    ],
+    "parts": [
+      "李韬",
+      "韩辉"
+    ]
+  },
+  {
+    "group_id": "group-39537",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      39537
+    ],
+    "parts": [
+      "刘笑华",
+      "王冰"
+    ]
+  },
+  {
+    "group_id": "group-21912",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      21912
+    ],
+    "parts": [
+      "刘青青",
+      "王海涛"
+    ]
+  },
+  {
+    "group_id": "group-4960",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      4960
+    ],
+    "parts": [
+      "戴江涛",
+      "李向军"
+    ]
+  },
+  {
+    "group_id": "group-40438",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      40438
+    ],
+    "parts": [
+      "张铁雄",
+      "薛先武"
+    ]
+  },
+  {
+    "group_id": "group-31440",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      31440
+    ],
+    "parts": [
+      "张陆英",
+      "程龙",
+      "苏波",
+      "贺锦"
+    ]
+  },
+  {
+    "group_id": "group-23929",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      23929
+    ],
+    "parts": [
+      "吕浩军",
+      "詹志勇",
+      "陈清平"
+    ]
+  },
+  {
+    "group_id": "group-7358",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      7358
+    ],
+    "parts": [
+      "吴海军",
+      "谭奉亭"
+    ]
+  },
+  {
+    "group_id": "group-30252",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      30252
+    ],
+    "parts": [
+      "侯会峰",
+      "李松"
+    ]
+  },
+  {
+    "group_id": "group-40939",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      40939
+    ],
+    "parts": [
+      "张勇",
+      "李辉峰"
+    ]
+  },
+  {
+    "group_id": "group-22303",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      22303
+    ],
+    "parts": [
+      "余昌武",
+      "俞丽萍"
+    ]
+  },
+  {
+    "group_id": "group-31009",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      31009
+    ],
+    "parts": [
+      "张雅芳",
+      "杨涛"
+    ]
+  },
+  {
+    "group_id": "group-47576",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      47576
+    ],
+    "parts": [
+      "吕兆春",
+      "徐辉"
+    ]
+  },
+  {
+    "group_id": "group-23547",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      23547
+    ],
+    "parts": [
+      "曹茜",
+      "郑昕"
+    ]
+  },
+  {
+    "group_id": "group-48505",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      48505
+    ],
+    "parts": [
+      "米小东",
+      "陈博慧"
+    ]
+  },
+  {
+    "group_id": "group-44561",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      44561
+    ],
+    "parts": [
+      "梁瑞鹏",
+      "黄骏飞"
+    ]
+  },
+  {
+    "group_id": "group-21724",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      21724
+    ],
+    "parts": [
+      "王小军",
+      "田镕魁"
+    ]
+  },
+  {
+    "group_id": "group-30010",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      30010
+    ],
+    "parts": [
+      "李江红",
+      "李芳"
+    ]
+  },
+  {
+    "group_id": "group-47983",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      47983
+    ],
+    "parts": [
+      "徐彬彬",
+      "胡丹",
+      "陈青"
+    ]
+  },
+  {
+    "group_id": "group-19351",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      19351
+    ],
+    "parts": [
+      "王晓峰",
+      "高庆龙"
+    ]
+  },
+  {
+    "group_id": "group-5110",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      5110
+    ],
+    "parts": [
+      "蒋秀凤",
+      "黄高峰"
+    ]
+  },
+  {
+    "group_id": "group-31973",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      31973
+    ],
+    "parts": [
+      "水元哲",
+      "马贝贝"
+    ]
+  },
+  {
+    "group_id": "group-8211",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      8211
+    ],
+    "parts": [
+      "江幸福",
+      "程小龙"
+    ]
+  },
+  {
+    "group_id": "group-43251",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      43251
+    ],
+    "parts": [
+      "刘淑丽",
+      "郑勇"
+    ]
+  },
+  {
+    "group_id": "group-12245",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      12245
+    ],
+    "parts": [
+      "李祁斌",
+      "胡冬荣"
+    ]
+  },
+  {
+    "group_id": "group-3456",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      3456
+    ],
+    "parts": [
+      "刘红卫",
+      "高善"
+    ]
+  },
+  {
+    "group_id": "group-17252",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      17252
+    ],
+    "parts": [
+      "吉文琼",
+      "罗盛文"
+    ]
+  },
+  {
+    "group_id": "group-51256",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      51256
+    ],
+    "parts": [
+      "王世广",
+      "陈奕宇"
+    ]
+  },
+  {
+    "group_id": "group-10045",
+    "split": "fit",
+    "stratum": "multi",
+    "rows": [
+      10045
+    ],
+    "parts": [
+      "张雅",
+      "王烨烨"
+    ]
+  },
+  {
+    "group_id": "group-7560",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      7560
+    ],
+    "parts": [
+      "匡凯祥",
+      "雷鸿"
+    ]
+  },
+  {
+    "group_id": "group-13870",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      13870
+    ],
+    "parts": [
+      "吕新华",
+      "徐开明",
+      "薛文"
+    ]
+  },
+  {
+    "group_id": "group-50104",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      50104
+    ],
+    "parts": [
+      "何佳",
+      "陶天云"
+    ]
+  },
+  {
+    "group_id": "group-35104",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      35104
+    ],
+    "parts": [
+      "周华",
+      "张明"
+    ]
+  },
+  {
+    "group_id": "group-35829",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      35829
+    ],
+    "parts": [
+      "史文超",
+      "文晓东"
+    ]
+  },
+  {
+    "group_id": "group-15391",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      15391
+    ],
+    "parts": [
+      "任国华",
+      "郭华军"
+    ]
+  },
+  {
+    "group_id": "group-1146",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      1146
+    ],
+    "parts": [
+      "王增强",
+      "韩学玲"
+    ]
+  },
+  {
+    "group_id": "group-20393",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      20393
+    ],
+    "parts": [
+      "唐煌",
+      "王珂"
+    ]
+  },
+  {
+    "group_id": "group-48188",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      48188
+    ],
+    "parts": [
+      "吕磊",
+      "张超"
+    ]
+  },
+  {
+    "group_id": "group-34663",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      34663
+    ],
+    "parts": [
+      "杨轶杰",
+      "裴艳军"
+    ]
+  },
+  {
+    "group_id": "group-21657",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      21657
+    ],
+    "parts": [
+      "严晓军",
+      "张亚丽"
+    ]
+  },
+  {
+    "group_id": "group-17039",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      17039
+    ],
+    "parts": [
+      "何志国",
+      "袁伟"
+    ]
+  },
+  {
+    "group_id": "group-2922",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      2922
+    ],
+    "parts": [
+      "李峤",
+      "汤焱林"
+    ]
+  },
+  {
+    "group_id": "group-26671",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      26671
+    ],
+    "parts": [
+      "宋强",
+      "张大亮"
+    ]
+  },
+  {
+    "group_id": "group-44898",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      44898
+    ],
+    "parts": [
+      "张凤南",
+      "曹尉娟"
+    ]
+  },
+  {
+    "group_id": "group-32905",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      32905
+    ],
+    "parts": [
+      "卢俊财",
+      "安淑敏"
+    ]
+  },
+  {
+    "group_id": "group-1733",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      1733
+    ],
+    "parts": [
+      "张邦基",
+      "潘启焕",
+      "潘志松"
+    ]
+  },
+  {
+    "group_id": "group-29856",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      29856
+    ],
+    "parts": [
+      "庹文伟",
+      "胡兵平"
+    ]
+  },
+  {
+    "group_id": "group-25793",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      25793
+    ],
+    "parts": [
+      "冀茂成",
+      "李帅"
+    ]
+  },
+  {
+    "group_id": "group-23450",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      23450
+    ],
+    "parts": [
+      "杨志武",
+      "范财得"
+    ]
+  },
+  {
+    "group_id": "group-4533",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      4533
+    ],
+    "parts": [
+      "孙玉琼",
+      "谢添骏"
+    ]
+  },
+  {
+    "group_id": "group-10178",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      10178
+    ],
+    "parts": [
+      "师磊",
+      "高茹"
+    ]
+  },
+  {
+    "group_id": "group-32242",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      32242
+    ],
+    "parts": [
+      "柳向阳",
+      "韩睿"
+    ]
+  },
+  {
+    "group_id": "group-14830",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      14830
+    ],
+    "parts": [
+      "姜凌",
+      "汪流",
+      "潘桂林",
+      "胡安法"
+    ]
+  },
+  {
+    "group_id": "group-27439",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      27439
+    ],
+    "parts": [
+      "狄龙飞",
+      "王永清"
+    ]
+  },
+  {
+    "group_id": "group-51460",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      51460
+    ],
+    "parts": [
+      "姬韫滔",
+      "肖正雄",
+      "郑超"
+    ]
+  },
+  {
+    "group_id": "group-32830",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      32830
+    ],
+    "parts": [
+      "周立群",
+      "田新宽"
+    ]
+  },
+  {
+    "group_id": "group-348",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      348
+    ],
+    "parts": [
+      "弓同堂",
+      "肖乾"
+    ]
+  },
+  {
+    "group_id": "group-47637",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      47637
+    ],
+    "parts": [
+      "倪庆",
+      "杨扬",
+      "杨春云",
+      "王佳"
+    ]
+  },
+  {
+    "group_id": "group-43835",
+    "split": "calibration",
+    "stratum": "multi",
+    "rows": [
+      43835
+    ],
+    "parts": [
+      "刘宏",
+      "李先平"
+    ]
+  },
+  {
+    "group_id": "group-29032",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      29032
+    ],
+    "parts": [
+      "杨琎",
+      "马岩"
+    ]
+  },
+  {
+    "group_id": "group-35971",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      35971
+    ],
+    "parts": [
+      "张继红",
+      "高宏"
+    ]
+  },
+  {
+    "group_id": "group-10216",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      10216
+    ],
+    "parts": [
+      "刘佳佳",
+      "吴玉兰",
+      "王杉"
+    ]
+  },
+  {
+    "group_id": "group-14423",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      14423
+    ],
+    "parts": [
+      "崔玉峰",
+      "杨帆"
+    ]
+  },
+  {
+    "group_id": "group-35535",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      35535
+    ],
+    "parts": [
+      "刘晓熙",
+      "唐甸总",
+      "庞玲蔚"
+    ]
+  },
+  {
+    "group_id": "group-16507",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      16507
+    ],
+    "parts": [
+      "余江涛",
+      "杨宝莲"
+    ]
+  },
+  {
+    "group_id": "group-15466",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      15466
+    ],
+    "parts": [
+      "刘学森",
+      "姜列友"
+    ]
+  },
+  {
+    "group_id": "group-40976",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      40976
+    ],
+    "parts": [
+      "康士珍",
+      "郝建明"
+    ]
+  },
+  {
+    "group_id": "group-39874",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      39874
+    ],
+    "parts": [
+      "贺彦斌",
+      "霍耀东"
+    ]
+  },
+  {
+    "group_id": "group-39696",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      39696
+    ],
+    "parts": [
+      "刘红娟",
+      "王胜勇"
+    ]
+  },
+  {
+    "group_id": "group-26938",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      26938
+    ],
+    "parts": [
+      "吴超",
+      "彭学剑",
+      "龙其武"
+    ]
+  },
+  {
+    "group_id": "group-32711",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      32711
+    ],
+    "parts": [
+      "刘献忠",
+      "张哲琦"
+    ]
+  },
+  {
+    "group_id": "group-31317",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      31317
+    ],
+    "parts": [
+      "冯国威",
+      "张超鹏",
+      "林向勇"
+    ]
+  },
+  {
+    "group_id": "group-26231",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      26231
+    ],
+    "parts": [
+      "常红永",
+      "李桃"
+    ]
+  },
+  {
+    "group_id": "group-13808",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      13808
+    ],
+    "parts": [
+      "王玉娟",
+      "郑雪兰"
+    ]
+  },
+  {
+    "group_id": "group-16202",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      16202
+    ],
+    "parts": [
+      "李金津",
+      "陈汝慧"
+    ]
+  },
+  {
+    "group_id": "group-11835",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      11835,
+      26727
+    ],
+    "parts": [
+      "李启林",
+      "胡红霞"
+    ]
+  },
+  {
+    "group_id": "group-4124",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      4124
+    ],
+    "parts": [
+      "唐明志",
+      "王悦"
+    ]
+  },
+  {
+    "group_id": "group-12760",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      12760
+    ],
+    "parts": [
+      "林超鹏",
+      "谢帮生"
+    ]
+  },
+  {
+    "group_id": "group-40666",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      40666
+    ],
+    "parts": [
+      "张统",
+      "李志青",
+      "陈汉文"
+    ]
+  },
+  {
+    "group_id": "group-35797",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      35797
+    ],
+    "parts": [
+      "何明",
+      "张丙天",
+      "白仙"
+    ]
+  },
+  {
+    "group_id": "group-14449",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      14449
+    ],
+    "parts": [
+      "傅文胜",
+      "毕生"
+    ]
+  },
+  {
+    "group_id": "group-11031",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      11031
+    ],
+    "parts": [
+      "吴国锋",
+      "谈丽萍"
+    ]
+  },
+  {
+    "group_id": "group-17331",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      17331
+    ],
+    "parts": [
+      "曾连韬",
+      "雍涛"
+    ]
+  },
+  {
+    "group_id": "group-8146",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      8146,
+      15933
+    ],
+    "parts": [
+      "刘冠男",
+      "刘华",
+      "李靖"
+    ]
+  },
+  {
+    "group_id": "group-49083",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      49083
+    ],
+    "parts": [
+      "刘蕾蕾",
+      "常龙"
+    ]
+  },
+  {
+    "group_id": "group-50347",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      50347
+    ],
+    "parts": [
+      "崔春季",
+      "韩冰冰"
+    ]
+  },
+  {
+    "group_id": "group-16007",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      16007
+    ],
+    "parts": [
+      "瞿天龙",
+      "董志新"
+    ]
+  },
+  {
+    "group_id": "group-1188",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      1188
+    ],
+    "parts": [
+      "李子鹏",
+      "郑浩"
+    ]
+  },
+  {
+    "group_id": "group-5047",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      5047
+    ],
+    "parts": [
+      "谭琦",
+      "郑钰凡"
+    ]
+  },
+  {
+    "group_id": "group-52129",
+    "split": "holdout",
+    "stratum": "multi",
+    "rows": [
+      52129
+    ],
+    "parts": [
+      "苏利亚",
+      "赵永军"
+    ]
+  },
+  {
+    "group_id": "group-24024",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      24024
+    ],
+    "parts": [
+      "蒲宏"
+    ]
+  },
+  {
+    "group_id": "group-16530",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      16530
+    ],
+    "parts": [
+      "武仁杰"
+    ]
+  },
+  {
+    "group_id": "group-2811",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      2811
+    ],
+    "parts": [
+      "傅博"
+    ]
+  },
+  {
+    "group_id": "group-27443",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      27443
+    ],
+    "parts": [
+      "李洋"
+    ]
+  },
+  {
+    "group_id": "group-41897",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      41897
+    ],
+    "parts": [
+      "石剑"
+    ]
+  },
+  {
+    "group_id": "group-4156",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      4156
+    ],
+    "parts": [
+      "余望"
+    ]
+  },
+  {
+    "group_id": "group-31227",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      31227
+    ],
+    "parts": [
+      "霍建强"
+    ]
+  },
+  {
+    "group_id": "group-49956",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      49956
+    ],
+    "parts": [
+      "姜维艳"
+    ]
+  },
+  {
+    "group_id": "group-19034",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      19034
+    ],
+    "parts": [
+      "黄璐"
+    ]
+  },
+  {
+    "group_id": "group-30032",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      30032
+    ],
+    "parts": [
+      "李均"
+    ]
+  },
+  {
+    "group_id": "group-10671",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      10671
+    ],
+    "parts": [
+      "陈雅玲"
+    ]
+  },
+  {
+    "group_id": "group-41533",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      41533
+    ],
+    "parts": [
+      "吕建军"
+    ]
+  },
+  {
+    "group_id": "group-47325",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      47325
+    ],
+    "parts": [
+      "张国忠"
+    ]
+  },
+  {
+    "group_id": "group-24112",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      24112
+    ],
+    "parts": [
+      "张莉莉"
+    ]
+  },
+  {
+    "group_id": "group-5980",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      5980
+    ],
+    "parts": [
+      "巩伟"
+    ]
+  },
+  {
+    "group_id": "group-32900",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      32900
+    ],
+    "parts": [
+      "卫东锋"
+    ]
+  },
+  {
+    "group_id": "group-48352",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      48352
+    ],
+    "parts": [
+      "张晓霞"
+    ]
+  },
+  {
+    "group_id": "group-40969",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      40969
+    ],
+    "parts": [
+      "陈柳"
+    ]
+  },
+  {
+    "group_id": "group-10137",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      10137
+    ],
+    "parts": [
+      "祝谦"
+    ]
+  },
+  {
+    "group_id": "group-3185",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      3185
+    ],
+    "parts": [
+      "谢坤志"
+    ]
+  },
+  {
+    "group_id": "group-50219",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      50219
+    ],
+    "parts": [
+      "刘利东"
+    ]
+  },
+  {
+    "group_id": "group-20898",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      20898
+    ],
+    "parts": [
+      "李千会"
+    ]
+  },
+  {
+    "group_id": "group-18055",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      18055
+    ],
+    "parts": [
+      "范思潇"
+    ]
+  },
+  {
+    "group_id": "group-35414",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      35414
+    ],
+    "parts": [
+      "陈鑫"
+    ]
+  },
+  {
+    "group_id": "group-2449",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      2449
+    ],
+    "parts": [
+      "袁伟东"
+    ]
+  },
+  {
+    "group_id": "group-23817",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      23817
+    ],
+    "parts": [
+      "曾晖"
+    ]
+  },
+  {
+    "group_id": "group-6286",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      6286
+    ],
+    "parts": [
+      "崔金财"
+    ]
+  },
+  {
+    "group_id": "group-45984",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      45984
+    ],
+    "parts": [
+      "余缤霞"
+    ]
+  },
+  {
+    "group_id": "group-7723",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      7723
+    ],
+    "parts": [
+      "魏建春"
+    ]
+  },
+  {
+    "group_id": "group-15718",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      15718
+    ],
+    "parts": [
+      "宋潇"
+    ]
+  },
+  {
+    "group_id": "group-13626",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      13626
+    ],
+    "parts": [
+      "冯小玲"
+    ]
+  },
+  {
+    "group_id": "group-44449",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      44449
+    ],
+    "parts": [
+      "富成智"
+    ]
+  },
+  {
+    "group_id": "group-28669",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      28669
+    ],
+    "parts": [
+      "曾艺峰"
+    ]
+  },
+  {
+    "group_id": "group-39465",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      39465
+    ],
+    "parts": [
+      "王琼"
+    ]
+  },
+  {
+    "group_id": "group-89",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      89
+    ],
+    "parts": [
+      "刘超"
+    ]
+  },
+  {
+    "group_id": "group-37323",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      37323
+    ],
+    "parts": [
+      "杨保禄"
+    ]
+  },
+  {
+    "group_id": "group-34333",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      34333
+    ],
+    "parts": [
+      "许波"
+    ]
+  },
+  {
+    "group_id": "group-19094",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      19094
+    ],
+    "parts": [
+      "陈晓光"
+    ]
+  },
+  {
+    "group_id": "group-27674",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      27674
+    ],
+    "parts": [
+      "李慧娟"
+    ]
+  },
+  {
+    "group_id": "group-46817",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      46817
+    ],
+    "parts": [
+      "刘斌"
+    ]
+  },
+  {
+    "group_id": "group-37359",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      37359
+    ],
+    "parts": [
+      "胡文光"
+    ]
+  },
+  {
+    "group_id": "group-25456",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      25456
+    ],
+    "parts": [
+      "韩柏静"
+    ]
+  },
+  {
+    "group_id": "group-9164",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      9164
+    ],
+    "parts": [
+      "李志强"
+    ]
+  },
+  {
+    "group_id": "group-29668",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      29668
+    ],
+    "parts": [
+      "何其安"
+    ]
+  },
+  {
+    "group_id": "group-29985",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      29985
+    ],
+    "parts": [
+      "王晓宇"
+    ]
+  },
+  {
+    "group_id": "group-29233",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      29233
+    ],
+    "parts": [
+      "张莉"
+    ]
+  },
+  {
+    "group_id": "group-29891",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      29891
+    ],
+    "parts": [
+      "姚立国"
+    ]
+  },
+  {
+    "group_id": "group-7805",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      7805
+    ],
+    "parts": [
+      "陆文智"
+    ]
+  },
+  {
+    "group_id": "group-6601",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      6601
+    ],
+    "parts": [
+      "朴斅燮"
+    ]
+  },
+  {
+    "group_id": "group-29136",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      29136
+    ],
+    "parts": [
+      "全胜民"
+    ]
+  },
+  {
+    "group_id": "group-47631",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      47631
+    ],
+    "parts": [
+      "鲁静萍"
+    ]
+  },
+  {
+    "group_id": "group-13900",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      13900
+    ],
+    "parts": [
+      "王裕"
+    ]
+  },
+  {
+    "group_id": "group-19485",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      19485
+    ],
+    "parts": [
+      "俞宙"
+    ]
+  },
+  {
+    "group_id": "group-17399",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      17399
+    ],
+    "parts": [
+      "董海涛"
+    ]
+  },
+  {
+    "group_id": "group-20365",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      20365
+    ],
+    "parts": [
+      "冯仰秋"
+    ]
+  },
+  {
+    "group_id": "group-13972",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      13972
+    ],
+    "parts": [
+      "李圭晔"
+    ]
+  },
+  {
+    "group_id": "group-49779",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      49779
+    ],
+    "parts": [
+      "叶春雨"
+    ]
+  },
+  {
+    "group_id": "group-12112",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      12112
+    ],
+    "parts": [
+      "韩丕明"
+    ]
+  },
+  {
+    "group_id": "group-45468",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      45468
+    ],
+    "parts": [
+      "徐蕾"
+    ]
+  },
+  {
+    "group_id": "group-37536",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      37536
+    ],
+    "parts": [
+      "范华"
+    ]
+  },
+  {
+    "group_id": "group-30929",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      30929
+    ],
+    "parts": [
+      "陈景曦"
+    ]
+  },
+  {
+    "group_id": "group-4240",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      4240
+    ],
+    "parts": [
+      "蒋克"
+    ]
+  },
+  {
+    "group_id": "group-40057",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      40057
+    ],
+    "parts": [
+      "张阿香"
+    ]
+  },
+  {
+    "group_id": "group-16980",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      16980,
+      35769,
+      37148
+    ],
+    "parts": [
+      "张泽奎"
+    ]
+  },
+  {
+    "group_id": "group-50038",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      50038
+    ],
+    "parts": [
+      "唐树国"
+    ]
+  },
+  {
+    "group_id": "group-14560",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      14560
+    ],
+    "parts": [
+      "林范玺"
+    ]
+  },
+  {
+    "group_id": "group-47183",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      47183
+    ],
+    "parts": [
+      "王浩杰"
+    ]
+  },
+  {
+    "group_id": "group-12758",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      12758
+    ],
+    "parts": [
+      "魏茂林"
+    ]
+  },
+  {
+    "group_id": "group-10905",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      10905
+    ],
+    "parts": [
+      "唐利霞"
+    ]
+  },
+  {
+    "group_id": "group-7222",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      7222
+    ],
+    "parts": [
+      "孙刚"
+    ]
+  },
+  {
+    "group_id": "group-20225",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      20225
+    ],
+    "parts": [
+      "胡剑"
+    ]
+  },
+  {
+    "group_id": "group-21474",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      21474
+    ],
+    "parts": [
+      "贾海昕"
+    ]
+  },
+  {
+    "group_id": "group-36918",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      36918
+    ],
+    "parts": [
+      "杨国强"
+    ]
+  },
+  {
+    "group_id": "group-45585",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      45585
+    ],
+    "parts": [
+      "卢小意"
+    ]
+  },
+  {
+    "group_id": "group-133",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      133
+    ],
+    "parts": [
+      "陈料挥"
+    ]
+  },
+  {
+    "group_id": "group-20860",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      20860
+    ],
+    "parts": [
+      "王恒"
+    ]
+  },
+  {
+    "group_id": "group-24282",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      24282
+    ],
+    "parts": [
+      "赵启松"
+    ]
+  },
+  {
+    "group_id": "group-38125",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      38125
+    ],
+    "parts": [
+      "李振兴"
+    ]
+  },
+  {
+    "group_id": "group-11045",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      11045
+    ],
+    "parts": [
+      "耿国俊"
+    ]
+  },
+  {
+    "group_id": "group-12228",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      12228
+    ],
+    "parts": [
+      "王黎光"
+    ]
+  },
+  {
+    "group_id": "group-13332",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      13332
+    ],
+    "parts": [
+      "王志红"
+    ]
+  },
+  {
+    "group_id": "group-1527",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      1527
+    ],
+    "parts": [
+      "王冬冬"
+    ]
+  },
+  {
+    "group_id": "group-9825",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      9825
+    ],
+    "parts": [
+      "黄晓明"
+    ]
+  },
+  {
+    "group_id": "group-6513",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      6513
+    ],
+    "parts": [
+      "时宝胜"
+    ]
+  },
+  {
+    "group_id": "group-28375",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      28375
+    ],
+    "parts": [
+      "纪尚春"
+    ]
+  },
+  {
+    "group_id": "group-32121",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      32121
+    ],
+    "parts": [
+      "张凯"
+    ]
+  },
+  {
+    "group_id": "group-29420",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      29420
+    ],
+    "parts": [
+      "夏维"
+    ]
+  },
+  {
+    "group_id": "group-16296",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      16296
+    ],
+    "parts": [
+      "刘泽旭"
+    ]
+  },
+  {
+    "group_id": "group-15976",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      15976
+    ],
+    "parts": [
+      "韩首栋"
+    ]
+  },
+  {
+    "group_id": "group-7117",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      7117
+    ],
+    "parts": [
+      "徐鹏飞"
+    ]
+  },
+  {
+    "group_id": "group-8259",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      8259
+    ],
+    "parts": [
+      "唐征"
+    ]
+  },
+  {
+    "group_id": "group-51134",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      51134
+    ],
+    "parts": [
+      "卢宏伟"
+    ]
+  },
+  {
+    "group_id": "group-4148",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      4148
+    ],
+    "parts": [
+      "任维强"
+    ]
+  },
+  {
+    "group_id": "group-38936",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      38936
+    ],
+    "parts": [
+      "郑力"
+    ]
+  },
+  {
+    "group_id": "group-21251",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      21251
+    ],
+    "parts": [
+      "靳建宁"
+    ]
+  },
+  {
+    "group_id": "group-34283",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      34283
+    ],
+    "parts": [
+      "黄海滨"
+    ]
+  },
+  {
+    "group_id": "group-10433",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      10433
+    ],
+    "parts": [
+      "任静"
+    ]
+  },
+  {
+    "group_id": "group-23703",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      23703
+    ],
+    "parts": [
+      "王文超"
+    ]
+  },
+  {
+    "group_id": "group-51920",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      51920
+    ],
+    "parts": [
+      "李雪"
+    ]
+  },
+  {
+    "group_id": "group-42556",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      42556
+    ],
+    "parts": [
+      "王昆"
+    ]
+  },
+  {
+    "group_id": "group-5325",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      5325
+    ],
+    "parts": [
+      "薄宝玉"
+    ]
+  },
+  {
+    "group_id": "group-17511",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      17511
+    ],
+    "parts": [
+      "吴江"
+    ]
+  },
+  {
+    "group_id": "group-19652",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      19652
+    ],
+    "parts": [
+      "杜文刚"
+    ]
+  },
+  {
+    "group_id": "group-49213",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      49213
+    ],
+    "parts": [
+      "王海峰"
+    ]
+  },
+  {
+    "group_id": "group-44811",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      44811
+    ],
+    "parts": [
+      "禹正铉"
+    ]
+  },
+  {
+    "group_id": "group-345",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      345
+    ],
+    "parts": [
+      "董世奇"
+    ]
+  },
+  {
+    "group_id": "group-45817",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      45817
+    ],
+    "parts": [
+      "孙少仙"
+    ]
+  },
+  {
+    "group_id": "group-24702",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      24702
+    ],
+    "parts": [
+      "杨锋宝"
+    ]
+  },
+  {
+    "group_id": "group-10103",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      10103
+    ],
+    "parts": [
+      "卢长荣"
+    ]
+  },
+  {
+    "group_id": "group-49843",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      49843
+    ],
+    "parts": [
+      "吕鹏飞"
+    ]
+  },
+  {
+    "group_id": "group-40550",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      40550
+    ],
+    "parts": [
+      "徐鹏"
+    ]
+  },
+  {
+    "group_id": "group-16404",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      16404
+    ],
+    "parts": [
+      "张相勇"
+    ]
+  },
+  {
+    "group_id": "group-44537",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      44537
+    ],
+    "parts": [
+      "李初珍"
+    ]
+  },
+  {
+    "group_id": "group-4389",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      4389
+    ],
+    "parts": [
+      "平野济"
+    ]
+  },
+  {
+    "group_id": "group-8904",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      8904
+    ],
+    "parts": [
+      "朴永镇"
+    ]
+  },
+  {
+    "group_id": "group-50218",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      50218
+    ],
+    "parts": [
+      "姚宏伟"
+    ]
+  },
+  {
+    "group_id": "group-26101",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      26101
+    ],
+    "parts": [
+      "于宏"
+    ]
+  },
+  {
+    "group_id": "group-22858",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      22858
+    ],
+    "parts": [
+      "周华松"
+    ]
+  },
+  {
+    "group_id": "group-22047",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      22047
+    ],
+    "parts": [
+      "古贺谦"
+    ]
+  },
+  {
+    "group_id": "group-10706",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      10706
+    ],
+    "parts": [
+      "向祚聪"
+    ]
+  },
+  {
+    "group_id": "group-42048",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      42048
+    ],
+    "parts": [
+      "吴畅"
+    ]
+  },
+  {
+    "group_id": "group-8073",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      8073
+    ],
+    "parts": [
+      "金在明"
+    ]
+  },
+  {
+    "group_id": "group-48377",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      48377
+    ],
+    "parts": [
+      "王雅静"
+    ]
+  },
+  {
+    "group_id": "group-1025",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      1025
+    ],
+    "parts": [
+      "盛爱均"
+    ]
+  },
+  {
+    "group_id": "group-2966",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      2966
+    ],
+    "parts": [
+      "许占江"
+    ]
+  },
+  {
+    "group_id": "group-37962",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      37962
+    ],
+    "parts": [
+      "刘文娟"
+    ]
+  },
+  {
+    "group_id": "group-11489",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      11489
+    ],
+    "parts": [
+      "何英浩"
+    ]
+  },
+  {
+    "group_id": "group-40215",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      40215
+    ],
+    "parts": [
+      "李荣得"
+    ]
+  },
+  {
+    "group_id": "group-12684",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      12684
+    ],
+    "parts": [
+      "孙莉"
+    ]
+  },
+  {
+    "group_id": "group-38249",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      38249
+    ],
+    "parts": [
+      "卫海宏"
+    ]
+  },
+  {
+    "group_id": "group-34481",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      34481
+    ],
+    "parts": [
+      "汪洋"
+    ]
+  },
+  {
+    "group_id": "group-14485",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      14485
+    ],
+    "parts": [
+      "宋玮熠"
+    ]
+  },
+  {
+    "group_id": "group-42763",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      42763
+    ],
+    "parts": [
+      "田喜梅"
+    ]
+  },
+  {
+    "group_id": "group-34018",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      34018
+    ],
+    "parts": [
+      "王宁"
+    ]
+  },
+  {
+    "group_id": "group-26829",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      26829
+    ],
+    "parts": [
+      "周民"
+    ]
+  },
+  {
+    "group_id": "group-14246",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      14246
+    ],
+    "parts": [
+      "倪凯光"
+    ]
+  },
+  {
+    "group_id": "group-24479",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      24479
+    ],
+    "parts": [
+      "李炳仁"
+    ]
+  },
+  {
+    "group_id": "group-8753",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      8753
+    ],
+    "parts": [
+      "刘江华"
+    ]
+  },
+  {
+    "group_id": "group-18412",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      18412
+    ],
+    "parts": [
+      "万鹏"
+    ]
+  },
+  {
+    "group_id": "group-48892",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      48892
+    ],
+    "parts": [
+      "雷润民"
+    ]
+  },
+  {
+    "group_id": "group-21714",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      21714
+    ],
+    "parts": [
+      "郑莹"
+    ]
+  },
+  {
+    "group_id": "group-17082",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      17082
+    ],
+    "parts": [
+      "张金福"
+    ]
+  },
+  {
+    "group_id": "group-25210",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      25210
+    ],
+    "parts": [
+      "陈亮"
+    ]
+  },
+  {
+    "group_id": "group-45858",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      45858
+    ],
+    "parts": [
+      "黎雪峰"
+    ]
+  },
+  {
+    "group_id": "group-27877",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      27877
+    ],
+    "parts": [
+      "祖述洋"
+    ]
+  },
+  {
+    "group_id": "group-6860",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      6860
+    ],
+    "parts": [
+      "刘占江"
+    ]
+  },
+  {
+    "group_id": "group-15889",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      15889
+    ],
+    "parts": [
+      "吴青平"
+    ]
+  },
+  {
+    "group_id": "group-17579",
+    "split": "fit",
+    "stratum": "short_whole",
+    "rows": [
+      17579
+    ],
+    "parts": [
+      "张智辉"
+    ]
+  },
+  {
+    "group_id": "group-37413",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      37413
+    ],
+    "parts": [
+      "刘文红"
+    ]
+  },
+  {
+    "group_id": "group-14681",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      14681
+    ],
+    "parts": [
+      "廖俊浤"
+    ]
+  },
+  {
+    "group_id": "group-41856",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      41856
+    ],
+    "parts": [
+      "闫旭花"
+    ]
+  },
+  {
+    "group_id": "group-28956",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      28956
+    ],
+    "parts": [
+      "沈钟勋"
+    ]
+  },
+  {
+    "group_id": "group-44494",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      44494
+    ],
+    "parts": [
+      "孙绍飞"
+    ]
+  },
+  {
+    "group_id": "group-50806",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      50806
+    ],
+    "parts": [
+      "任伟华"
+    ]
+  },
+  {
+    "group_id": "group-1657",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      1657
+    ],
+    "parts": [
+      "王一丹"
+    ]
+  },
+  {
+    "group_id": "group-32765",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      32765
+    ],
+    "parts": [
+      "谢丽萍"
+    ]
+  },
+  {
+    "group_id": "group-4653",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      4653
+    ],
+    "parts": [
+      "姜毓航"
+    ]
+  },
+  {
+    "group_id": "group-30008",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      30008
+    ],
+    "parts": [
+      "贺金平"
+    ]
+  },
+  {
+    "group_id": "group-41172",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      41172
+    ],
+    "parts": [
+      "毛俊"
+    ]
+  },
+  {
+    "group_id": "group-43775",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      43775
+    ],
+    "parts": [
+      "陈永路"
+    ]
+  },
+  {
+    "group_id": "group-46820",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      46820
+    ],
+    "parts": [
+      "曹爱军"
+    ]
+  },
+  {
+    "group_id": "group-33285",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      33285
+    ],
+    "parts": [
+      "占涛"
+    ]
+  },
+  {
+    "group_id": "group-35409",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      35409
+    ],
+    "parts": [
+      "王阳"
+    ]
+  },
+  {
+    "group_id": "group-50621",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      50621
+    ],
+    "parts": [
+      "魏清松"
+    ]
+  },
+  {
+    "group_id": "group-15196",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      15196
+    ],
+    "parts": [
+      "赵梅"
+    ]
+  },
+  {
+    "group_id": "group-24931",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      24931
+    ],
+    "parts": [
+      "周致远"
+    ]
+  },
+  {
+    "group_id": "group-24148",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      24148
+    ],
+    "parts": [
+      "杜晓莉"
+    ]
+  },
+  {
+    "group_id": "group-51661",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      51661
+    ],
+    "parts": [
+      "金刚"
+    ]
+  },
+  {
+    "group_id": "group-8681",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      8681
+    ],
+    "parts": [
+      "邓伟祥"
+    ]
+  },
+  {
+    "group_id": "group-14765",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      14765
+    ],
+    "parts": [
+      "柴明森"
+    ]
+  },
+  {
+    "group_id": "group-22784",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      22784,
+      39620
+    ],
+    "parts": [
+      "王生慧"
+    ]
+  },
+  {
+    "group_id": "group-2991",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      2991
+    ],
+    "parts": [
+      "胡波"
+    ]
+  },
+  {
+    "group_id": "group-12262",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      12262
+    ],
+    "parts": [
+      "谢亚丽"
+    ]
+  },
+  {
+    "group_id": "group-1386",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      1386
+    ],
+    "parts": [
+      "范学博"
+    ]
+  },
+  {
+    "group_id": "group-51160",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      51160
+    ],
+    "parts": [
+      "唐霁同"
+    ]
+  },
+  {
+    "group_id": "group-50221",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      50221
+    ],
+    "parts": [
+      "雷威"
+    ]
+  },
+  {
+    "group_id": "group-611",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      611
+    ],
+    "parts": [
+      "吴全欣"
+    ]
+  },
+  {
+    "group_id": "group-15642",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      15642
+    ],
+    "parts": [
+      "孟林霞"
+    ]
+  },
+  {
+    "group_id": "group-1067",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      1067
+    ],
+    "parts": [
+      "邵明理"
+    ]
+  },
+  {
+    "group_id": "group-13663",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      13663
+    ],
+    "parts": [
+      "章光箭"
+    ]
+  },
+  {
+    "group_id": "group-27836",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      27836
+    ],
+    "parts": [
+      "谭新亮"
+    ]
+  },
+  {
+    "group_id": "group-23872",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      23872
+    ],
+    "parts": [
+      "王剑峰"
+    ]
+  },
+  {
+    "group_id": "group-33834",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      33834
+    ],
+    "parts": [
+      "陈海博"
+    ]
+  },
+  {
+    "group_id": "group-41301",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      41301
+    ],
+    "parts": [
+      "王玉霞"
+    ]
+  },
+  {
+    "group_id": "group-25552",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      25552
+    ],
+    "parts": [
+      "孔凯"
+    ]
+  },
+  {
+    "group_id": "group-43472",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      43472
+    ],
+    "parts": [
+      "毛姝"
+    ]
+  },
+  {
+    "group_id": "group-9583",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      9583
+    ],
+    "parts": [
+      "饶斌"
+    ]
+  },
+  {
+    "group_id": "group-34577",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      34577
+    ],
+    "parts": [
+      "盛文青"
+    ]
+  },
+  {
+    "group_id": "group-12261",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      12261
+    ],
+    "parts": [
+      "翟寰"
+    ]
+  },
+  {
+    "group_id": "group-17697",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      17697
+    ],
+    "parts": [
+      "董小永"
+    ]
+  },
+  {
+    "group_id": "group-8802",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      8802
+    ],
+    "parts": [
+      "福岛祐"
+    ]
+  },
+  {
+    "group_id": "group-13058",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      13058
+    ],
+    "parts": [
+      "赖红梅"
+    ]
+  },
+  {
+    "group_id": "group-16358",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      16358
+    ],
+    "parts": [
+      "李健"
+    ]
+  },
+  {
+    "group_id": "group-19653",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      19653
+    ],
+    "parts": [
+      "戴戈"
+    ]
+  },
+  {
+    "group_id": "group-20849",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      20849
+    ],
+    "parts": [
+      "薛杨"
+    ]
+  },
+  {
+    "group_id": "group-25485",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      25485
+    ],
+    "parts": [
+      "王本峰"
+    ]
+  },
+  {
+    "group_id": "group-30950",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      30950
+    ],
+    "parts": [
+      "蔡建锋"
+    ]
+  },
+  {
+    "group_id": "group-4833",
+    "split": "calibration",
+    "stratum": "short_whole",
+    "rows": [
+      4833
+    ],
+    "parts": [
+      "孙菲"
+    ]
+  },
+  {
+    "group_id": "group-41140",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      41140
+    ],
+    "parts": [
+      "杨崴"
+    ]
+  },
+  {
+    "group_id": "group-41638",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      41638
+    ],
+    "parts": [
+      "朴正薰"
+    ]
+  },
+  {
+    "group_id": "group-5131",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      5131,
+      33507
+    ],
+    "parts": [
+      "刘金财"
+    ]
+  },
+  {
+    "group_id": "group-29755",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      29755
+    ],
+    "parts": [
+      "刘博"
+    ]
+  },
+  {
+    "group_id": "group-49407",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      49407
+    ],
+    "parts": [
+      "李明"
+    ]
+  },
+  {
+    "group_id": "group-21105",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      21105
+    ],
+    "parts": [
+      "徐晓波"
+    ]
+  },
+  {
+    "group_id": "group-9687",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      9687
+    ],
+    "parts": [
+      "施萌"
+    ]
+  },
+  {
+    "group_id": "group-11260",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      11260
+    ],
+    "parts": [
+      "赵锦伟"
+    ]
+  },
+  {
+    "group_id": "group-40665",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      40665
+    ],
+    "parts": [
+      "窦松波"
+    ]
+  },
+  {
+    "group_id": "group-12645",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      12645
+    ],
+    "parts": [
+      "钟展"
+    ]
+  },
+  {
+    "group_id": "group-27787",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      27787
+    ],
+    "parts": [
+      "张学江"
+    ]
+  },
+  {
+    "group_id": "group-37839",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      37839
+    ],
+    "parts": [
+      "霍彦宏"
+    ]
+  },
+  {
+    "group_id": "group-37001",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      37001
+    ],
+    "parts": [
+      "马庆锟"
+    ]
+  },
+  {
+    "group_id": "group-27561",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      27561
+    ],
+    "parts": [
+      "霍振兴"
+    ]
+  },
+  {
+    "group_id": "group-14261",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      14261
+    ],
+    "parts": [
+      "鞠雪丹"
+    ]
+  },
+  {
+    "group_id": "group-23704",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      23704
+    ],
+    "parts": [
+      "林铭政"
+    ]
+  },
+  {
+    "group_id": "group-42722",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      42722
+    ],
+    "parts": [
+      "徐丹"
+    ]
+  },
+  {
+    "group_id": "group-42518",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      42518
+    ],
+    "parts": [
+      "何为"
+    ]
+  },
+  {
+    "group_id": "group-31909",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      31909
+    ],
+    "parts": [
+      "葛锋"
+    ]
+  },
+  {
+    "group_id": "group-871",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      871
+    ],
+    "parts": [
+      "柳东赫"
+    ]
+  },
+  {
+    "group_id": "group-38804",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      38804
+    ],
+    "parts": [
+      "杨军"
+    ]
+  },
+  {
+    "group_id": "group-49232",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      49232
+    ],
+    "parts": [
+      "高磊"
+    ]
+  },
+  {
+    "group_id": "group-43391",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      43391
+    ],
+    "parts": [
+      "裴福海"
+    ]
+  },
+  {
+    "group_id": "group-2845",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      2845
+    ],
+    "parts": [
+      "刘慧"
+    ]
+  },
+  {
+    "group_id": "group-35729",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      35729
+    ],
+    "parts": [
+      "龚铁峰"
+    ]
+  },
+  {
+    "group_id": "group-51724",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      51724
+    ],
+    "parts": [
+      "郑凯桐"
+    ]
+  },
+  {
+    "group_id": "group-1867",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      1867
+    ],
+    "parts": [
+      "张成杰"
+    ]
+  },
+  {
+    "group_id": "group-28482",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      28482
+    ],
+    "parts": [
+      "易鑫"
+    ]
+  },
+  {
+    "group_id": "group-47138",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      47138
+    ],
+    "parts": [
+      "王大伟"
+    ]
+  },
+  {
+    "group_id": "group-36500",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      36500
+    ],
+    "parts": [
+      "马群"
+    ]
+  },
+  {
+    "group_id": "group-42992",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      42992
+    ],
+    "parts": [
+      "李军柱"
+    ]
+  },
+  {
+    "group_id": "group-33682",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      33682
+    ],
+    "parts": [
+      "张钊"
+    ]
+  },
+  {
+    "group_id": "group-8181",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      8181
+    ],
+    "parts": [
+      "郭海燕"
+    ]
+  },
+  {
+    "group_id": "group-16594",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      16594
+    ],
+    "parts": [
+      "陈晋"
+    ]
+  },
+  {
+    "group_id": "group-36539",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      36539
+    ],
+    "parts": [
+      "吴思强"
+    ]
+  },
+  {
+    "group_id": "group-10565",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      10565
+    ],
+    "parts": [
+      "陆霖"
+    ]
+  },
+  {
+    "group_id": "group-28141",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      28141
+    ],
+    "parts": [
+      "胡立红"
+    ]
+  },
+  {
+    "group_id": "group-34592",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      34592
+    ],
+    "parts": [
+      "郭俊"
+    ]
+  },
+  {
+    "group_id": "group-41991",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      41991
+    ],
+    "parts": [
+      "邢登坤"
+    ]
+  },
+  {
+    "group_id": "group-26603",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      26603
+    ],
+    "parts": [
+      "贺丰"
+    ]
+  },
+  {
+    "group_id": "group-3008",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      3008
+    ],
+    "parts": [
+      "宋明辉"
+    ]
+  },
+  {
+    "group_id": "group-20855",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      20855
+    ],
+    "parts": [
+      "洪希诚"
+    ]
+  },
+  {
+    "group_id": "group-3423",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      3423
+    ],
+    "parts": [
+      "张强"
+    ]
+  },
+  {
+    "group_id": "group-50693",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      50693
+    ],
+    "parts": [
+      "靳晓娜"
+    ]
+  },
+  {
+    "group_id": "group-1048",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      1048
+    ],
+    "parts": [
+      "吴玮国"
+    ]
+  },
+  {
+    "group_id": "group-35840",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      35840
+    ],
+    "parts": [
+      "景超"
+    ]
+  },
+  {
+    "group_id": "group-17729",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      17729
+    ],
+    "parts": [
+      "郑佳毅"
+    ]
+  },
+  {
+    "group_id": "group-27080",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      27080
+    ],
+    "parts": [
+      "李小勤"
+    ]
+  },
+  {
+    "group_id": "group-18436",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      18436
+    ],
+    "parts": [
+      "何恩时"
+    ]
+  },
+  {
+    "group_id": "group-3607",
+    "split": "holdout",
+    "stratum": "short_whole",
+    "rows": [
+      3607
+    ],
+    "parts": [
+      "易轩"
+    ]
+  },
+  {
+    "group_id": "group-5369",
+    "split": "fit",
+    "stratum": "whole4",
+    "rows": [
+      5369
+    ],
+    "parts": [
+      "岩崎克彦"
+    ]
+  },
+  {
+    "group_id": "group-49373",
+    "split": "fit",
+    "stratum": "whole4",
+    "rows": [
+      49373
+    ],
+    "parts": [
+      "芥川佳久"
+    ]
+  },
+  {
+    "group_id": "group-13771",
+    "split": "fit",
+    "stratum": "whole4",
+    "rows": [
+      13771
+    ],
+    "parts": [
+      "冨井健裕"
+    ]
+  },
+  {
+    "group_id": "group-32621",
+    "split": "fit",
+    "stratum": "whole4",
+    "rows": [
+      32621
+    ],
+    "parts": [
+      "近藤圭一"
+    ]
+  },
+  {
+    "group_id": "group-49063",
+    "split": "fit",
+    "stratum": "whole4",
+    "rows": [
+      49063
+    ],
+    "parts": [
+      "渡边英隆"
+    ]
+  },
+  {
+    "group_id": "group-25034",
+    "split": "fit",
+    "stratum": "whole4",
+    "rows": [
+      25034
+    ],
+    "parts": [
+      "高塚雄介"
+    ]
+  },
+  {
+    "group_id": "group-15723",
+    "split": "calibration",
+    "stratum": "whole4",
+    "rows": [
+      15723
+    ],
+    "parts": [
+      "若林祐树"
+    ]
+  },
+  {
+    "group_id": "group-32492",
+    "split": "calibration",
+    "stratum": "whole4",
+    "rows": [
+      32492
+    ],
+    "parts": [
+      "仙头泰志"
+    ]
+  },
+  {
+    "group_id": "group-44456",
+    "split": "holdout",
+    "stratum": "whole4",
+    "rows": [
+      44456
+    ],
+    "parts": [
+      "早石胜彦"
+    ]
+  },
+  {
+    "group_id": "group-13395",
+    "split": "holdout",
+    "stratum": "whole4",
+    "rows": [
+      13395
+    ],
+    "parts": [
+      "饭岛由规"
+    ]
+  },
+  {
+    "group_id": "group-35326",
+    "split": "holdout",
+    "stratum": "whole4",
+    "rows": [
+      35326
+    ],
+    "parts": [
+      "藤田桂子"
+    ]
+  }
+]

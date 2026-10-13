@@ -1,0 +1,103 @@
+{
+  "stage": "A",
+  "outcome": "stopped_insufficient_calibration_evidence",
+  "input_titles": 46760,
+  "input_rows": 52146,
+  "source_material_titles": 430,
+  "source_material_rows": 453,
+  "source_kinds": {
+    "honorific_whole": 233,
+    "marked_roster": 153,
+    "bilingual_whole": 31,
+    "middle_dot_whole": 13
+  },
+  "rejected": {
+    "no_accepted_marked_structure": 44388,
+    "outside_narrow_title_grammar": 1123,
+    "institution_role_connector_or_residual_in_subject": 771,
+    "unconsumed_linker": 5
+  },
+  "excluded_record_count": 43,
+  "target_record_count": 41,
+  "split_stats": {
+    "fit": {
+      "titles": 254,
+      "groups": 251,
+      "kinds": {
+        "honorific_whole": 138,
+        "marked_roster": 91,
+        "bilingual_whole": 18,
+        "middle_dot_whole": 7
+      },
+      "comparison_classes": {
+        "short_whole": 150,
+        "multi": 91,
+        "whole4": 6,
+        "long_whole": 7
+      }
+    },
+    "calibration": {
+      "titles": 86,
+      "groups": 85,
+      "kinds": {
+        "marked_roster": 30,
+        "honorific_whole": 48,
+        "bilingual_whole": 5,
+        "middle_dot_whole": 3
+      },
+      "comparison_classes": {
+        "multi": 30,
+        "short_whole": 51,
+        "whole4": 2,
+        "long_whole": 3
+      }
+    },
+    "holdout": {
+      "titles": 90,
+      "groups": 87,
+      "kinds": {
+        "bilingual_whole": 8,
+        "honorific_whole": 47,
+        "marked_roster": 32,
+        "middle_dot_whole": 3
+      },
+      "comparison_classes": {
+        "short_whole": 52,
+        "multi": 32,
+        "whole4": 3,
+        "long_whole": 3
+      }
+    }
+  },
+  "group_disjointness_checks_passed": true,
+  "selected": null,
+  "evaluations": {},
+  "calibration_parameter_candidates": 34,
+  "calibration_reason": "no_candidate_protects_long_whole_and_restores_multi",
+  "calibration_coverage": {
+    "multi": {
+      "unknown_gap": 24,
+      "covered": 6
+    },
+    "short_whole": {
+      "not_testable": 51
+    },
+    "whole4": {
+      "unknown_gap": 2
+    },
+    "long_whole": {
+      "unknown_gap": 3
+    }
+  },
+  "best_calibration_correct_by_class": {
+    "multi": 4,
+    "long_whole": 0,
+    "whole4": 0
+  },
+  "holdout_scored": false,
+  "target_predictions_computed": false,
+  "production_changed": false,
+  "independent_human_labels": 0,
+  "true_accuracy": null,
+  "limitation": "All non-count whole controls are structural proxies; masking original punctuation is metamorphic validation, not true accuracy."
+}

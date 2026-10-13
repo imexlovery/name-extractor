@@ -27,7 +27,7 @@ def main():
             matches_existing_human_judgment=match,
             human_expected=expected,
             previous_no_name_codex_review=no_name_review.get(item['row']),
-            review_conclusion='完整命名机构及全部消费的岗位支持的为连接词；与已有人工答案一致' if match else result['note'],
+            review_conclusion=f"{result['rule']}：{result['note'] or '标题结构支持当前确认状态'}" + ('；与已有人工记录一致' if match else ''),
             reviewed_by='Codex逐条标题结构复核',
             new_independent_human_review=False))
     write_jsonl(WORK / f'change-review-{VERSION}.jsonl', reviews)
@@ -64,7 +64,9 @@ def main():
         incomplete_no_name_to_uncertain_rows=[v['row'] for v in changes if v['before']['status'] == 'no_name' and v['result']['status'] == 'uncertain'],
         hard_failure_titles=sum(bool(v['checks']['failures']) for v in data),
         random_sample_changes=sum(v['row'] in frozen_sample for v in changes),
-        known_unresolved_error_rows=[11008],
+        known_unresolved_error_rows=[row for row in [11008]
+            if (current[row]['result']['status'], current[row]['result']['names'])
+            != (human[row]['human_expected']['status'], human[row]['human_expected']['names'])],
         historical_human_answer_completion=dict(
             reviewed_titles=len(human), determinate_answer_titles=len(determinate_human),
             exact_completed_titles=len(complete_human),

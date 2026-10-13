@@ -1,0 +1,47 @@
+{
+  "version": "r64",
+  "unique_titles_in_index": 179,
+  "mapped_rows_in_index": 189,
+  "groups": {
+    "脚本未决": 72,
+    "本轮新增无姓名": 2,
+    "保留输出的人数风险": 105
+  },
+  "unresolved": {
+    "titles": 72,
+    "rows": 79
+  },
+  "historical_human_pending_subset": {
+    "titles": 64,
+    "rows": 67,
+    "candidate_same_but_uncertain": 41,
+    "candidate_different": 23
+  },
+  "retained_person_count_risks": {
+    "titles": 105,
+    "rows": 108,
+    "disjoint_from_unresolved": true
+  },
+  "newly_confirmed_no_name": {
+    "titles": 2,
+    "rows": [
+      18200,
+      44338
+    ]
+  },
+  "known_omission_row": 11008,
+  "historical_human_vs_new_context_disagreement_row": 39226,
+  "first_targeted_human_checks_rows": [
+    18200,
+    44338,
+    39226
+  ],
+  "index_is_mandatory_full_relabeling": false,
+  "index_is_statistically_representative_acceptance_sample": false,
+  "new_human_judgments_added": 0,
+  "production_backfilled": false,
+  "validation": {
+    "coverage_and_titles_checked": true,
+    "blank_final_opinion_preserved": true
+  }
+}

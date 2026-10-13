@@ -1,22 +1,22 @@
 {
   "release_version": "0.7.0",
-  "version": "r63",
+  "version": "r64",
   "baseline_version": "r61",
   "baseline_tag": "v0.6.0-r61",
   "unique_titles": 46760,
   "mapped_rows": 52146,
   "status_titles": {
     "names": 45997,
-    "no_name": 689,
-    "uncertain": 74
+    "no_name": 691,
+    "uncertain": 72
   },
   "status_rows": {
     "names": 51309,
-    "no_name": 756,
-    "uncertain": 81
+    "no_name": 758,
+    "uncertain": 79
   },
-  "changed_titles": 12,
-  "changed_rows": 12,
+  "changed_titles": 14,
+  "changed_rows": 14,
   "newly_resolved_names_titles": 2,
   "newly_resolved_names_rows": 2,
   "solutions_matching_existing_human_titles": 2,
@@ -36,10 +36,10 @@
   "historical_human_answer_completion": {
     "reviewed_titles": 122,
     "determinate_answer_titles": 119,
-    "exact_completed_titles": 53,
-    "pending_titles": 66,
+    "exact_completed_titles": 55,
+    "pending_titles": 64,
     "answer_still_uncertain_titles": 3,
-    "completion_fraction": 0.44537815126050423,
+    "completion_fraction": 0.46218487394957986,
     "some_answers_content_assisted": true,
     "independent_final_acceptance": false
   },
@@ -61,6 +61,6 @@
   "full_human_review_complete": false,
   "true_accuracy": null,
   "production_source": "script_only",
-  "conditional_accuracy_if_all_other_rows_correct": 0.9984466689678978,
+  "conditional_accuracy_if_all_other_rows_correct": 0.9984850228205423,
   "conditional_accuracy_is_measured": false
 }

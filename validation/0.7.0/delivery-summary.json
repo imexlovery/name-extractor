@@ -1,24 +1,24 @@
 {
   "release_version": "0.7.0",
-  "version": "r63",
+  "version": "r64",
   "unique_titles": 46760,
   "mapped_rows": 52146,
   "output_status_titles": {
     "names": 45997,
-    "no_name": 689,
-    "uncertain": 74
+    "no_name": 691,
+    "uncertain": 72
   },
   "output_status_rows": {
     "names": 51309,
-    "no_name": 756,
-    "uncertain": 81
+    "no_name": 758,
+    "uncertain": 79
   },
   "comparison_titles": {
     "single_channel": 35,
     "missing_reference": 22525,
-    "match": 24122,
+    "match": 24124,
     "disputed_reference": 37,
-    "script_unresolved": 41
+    "script_unresolved": 39
   },
   "regression_rows_from_v1": [
     38243
@@ -123,8 +123,8 @@
   },
   "full_human_review_complete": false,
   "v1_reference_comparison": {
-    "match": 23334,
-    "script_unresolved": 53
+    "match": 23336,
+    "script_unresolved": 51
   },
   "ai_coverage": {
     "a": {

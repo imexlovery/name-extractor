@@ -1,0 +1,271 @@
+{
+  "reason": "no_candidate_protects_long_whole_and_restores_multi",
+  "candidates": [
+    {
+      "bias": -4.182943578901086,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 3
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -3.173934326149747,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -3.0533532977413027,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -2.852084873576765,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -2.676983658860208,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -2.522503923410675,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -2.303376457945097,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -2.100643903891015,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -1.8656420892681471,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -1.662909535214065,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -1.5513377595569602,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -1.4074967233310696,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -1.2291592513617036,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -1.0264266973076213,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -0.8581905789970148,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -0.7670298006000374,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -0.6554580249429325,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -0.40004521305993723,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -0.25620417683404667,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": -0.11236314060815616,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 0.0,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 0.09036941344592596,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 0.24042170967109494,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 0.5869952999510676,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 1.045140665888145,
+      "margin_strictly_above": 0.0,
+      "accepted_correct": {
+        "multi": 4
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 1.3917142561681177,
+      "margin_strictly_above": 0.14384103622589062,
+      "accepted_correct": {
+        "multi": 3
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 1.679396328619899,
+      "margin_strictly_above": 0.43152310867767185,
+      "accepted_correct": {
+        "multi": 3
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 1.882128882673981,
+      "margin_strictly_above": 0.6342556627317539,
+      "accepted_correct": {
+        "multi": 3
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 2.3879293385132208,
+      "margin_strictly_above": 1.1400561185709936,
+      "accepted_correct": {
+        "multi": 2
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 2.8783439650190843,
+      "margin_strictly_above": 1.6304707450768572,
+      "accepted_correct": {
+        "multi": 1
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 3.081076519073166,
+      "margin_strictly_above": 1.833203299130939,
+      "accepted_correct": {
+        "multi": 1
+      },
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 3.6303826634072216,
+      "margin_strictly_above": 2.3825094434649943,
+      "accepted_correct": {},
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 4.916341676796036,
+      "margin_strictly_above": 3.668468456853809,
+      "accepted_correct": {},
+      "balanced_coverage": 0.0
+    },
+    {
+      "bias": 6.812221411410063,
+      "margin_strictly_above": 5.564348191467836,
+      "accepted_correct": {},
+      "balanced_coverage": 0.0
+    }
+  ]
+}

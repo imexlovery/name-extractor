@@ -1,0 +1,97 @@
+{
+  "version": "r64",
+  "test_count": 46,
+  "tests_passed": true,
+  "unique_titles": 46760,
+  "mapped_rows": 52146,
+  "hard_failure_titles": 0,
+  "changed_titles_from_r63": 2,
+  "changed_rows_from_r63": 2,
+  "changed_rows": [
+    18200,
+    44338
+  ],
+  "changed_existing_names_titles": 0,
+  "changed_existing_no_name_titles": 0,
+  "all_existing_confirmed_results_identical": true,
+  "frozen_200_results_identical": true,
+  "production_records_checked": 52146,
+  "known_unresolved_error_rows": [
+    11008
+  ],
+  "historical_human_answer_completion": {
+    "reviewed_titles": 122,
+    "determinate_answer_titles": 119,
+    "exact_completed_titles": 55,
+    "pending_titles": 64,
+    "answer_still_uncertain_titles": 3,
+    "completion_fraction": 0.46218487394957986,
+    "some_answers_content_assisted": true,
+    "independent_final_acceptance": false
+  },
+  "old_reference_comparison": {
+    "single_channel": 35,
+    "missing_reference": 22525,
+    "match": 24124,
+    "disputed_reference": 37,
+    "script_unresolved": 39
+  },
+  "existing_v1_regression_rows_preserved": [
+    38243
+  ],
+  "new_independent_human_reviews": 0,
+  "new_excel_exported": false,
+  "true_accuracy": null,
+  "changes": [
+    {
+      "row": 18200,
+      "rows": [
+        18200
+      ],
+      "title": "银保监会持续开展银行保险机构股权和关联交易专项整治不断提升公司治理质效",
+      "before": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构",
+        "length": 0,
+        "extracted_name": ""
+      },
+      "after": {
+        "names": [],
+        "status": "no_name",
+        "rule": "complete_regulatory_news",
+        "note": "完整监管主体的机构治理整治及成效事项，全文未明示人员",
+        "length": 0,
+        "extracted_name": ""
+      }
+    },
+    {
+      "row": 44338,
+      "rows": [
+        44338
+      ],
+      "title": "关于江苏省金融学会第十一届理事会届中变更负责人的公示",
+      "before": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构",
+        "length": 0,
+        "extracted_name": ""
+      },
+      "after": {
+        "names": [],
+        "status": "no_name",
+        "rule": "complete_governance_notice",
+        "note": "完整地区金融学会的理事会届次变更事项公示，全文未明示人员",
+        "length": 0,
+        "extracted_name": ""
+      }
+    }
+  ],
+  "historical_human_pending_titles": 64,
+  "historical_human_pending_rows": 67,
+  "historical_candidate_same_but_uncertain_titles": 41,
+  "historical_candidate_different_titles": 23
+}

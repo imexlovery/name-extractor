@@ -1,0 +1,48 @@
+{
+  "stage": "A2",
+  "protocol": "protocol-a2.md",
+  "code_entrypoint": "experiment_a2.py",
+  "source_path": ".local/pilot-20261010/inventory.jsonl",
+  "source_fields": [
+    "row",
+    "rows",
+    "title"
+  ],
+  "a1_sources": "../sources.jsonl",
+  "a1_groups": "../groups.json",
+  "a1_frozen_status": "stopped_insufficient_calibration_evidence",
+  "a1_selected": null,
+  "a1_holdout_scored": false,
+  "status": "frozen_for_holdout",
+  "selected": {
+    "bias": 2.116556438866837,
+    "margin_strictly_above": 0.0,
+    "accepted_correct": {
+      "multi": 29,
+      "whole4": 1,
+      "long_whole": 2
+    },
+    "balanced_coverage": 0.6666666666666666
+  },
+  "target_predictions_computed": false,
+  "independent_human_labels": 0,
+  "title_truth_claimed": false,
+  "weak_subjects_are_labels": false,
+  "minimum_piece_length": 2,
+  "no_maximum_piece_length": true,
+  "no_surname_table": true,
+  "no_full_name_lookup": true,
+  "model_features": [
+    "left",
+    "right",
+    "pair",
+    "left_triple",
+    "right_triple"
+  ],
+  "equal_feature_weights": 1,
+  "laplace_smoothing": 1,
+  "weak_subjects_used_for": "fit position and internal context only",
+  "boundary_ngram_sources": "A1 fit marked_roster explicit punctuation boundaries only",
+  "coverage_rule": "all feasible gaps have observed left and right single-character roles",
+  "boundary_support_rule": "chosen cut left character observed at atom end and right character at atom start"
+}

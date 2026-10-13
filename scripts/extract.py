@@ -7,7 +7,7 @@ import unicodedata
 import json
 from pathlib import Path
 
-VERSION = "r63"
+VERSION = "r64"
 
 _HAN_RANGES = (
     (0x3400, 0x4DBF), (0x4E00, 0x9FFF), (0xF900, 0xFAFF),
@@ -87,6 +87,16 @@ _TITLE_AMBIGUITIES = json.loads(Path(__file__).with_name(AMBIGUITY_RESOURCE).rea
 _INSTITUTION_STARTS += tuple(json.loads(Path(__file__).with_name(INSTITUTION_ANCHOR_RESOURCE).read_text(encoding='utf-8')))
 _REGION_ANCHORS = set('中国 北京 天津 河北 山西 内蒙古 辽宁 吉林 黑龙江 上海 江苏 浙江 安徽 福建 江西 山东 河南 湖北 湖南 广东 广西 海南 重庆 四川 贵州 云南 西藏 陕西 甘肃 青海 宁夏 新疆 香港 澳门 台湾'.split())
 _GENERIC_BANK_TYPE = re.compile(r'村镇银行|农村商业银行')
+_COMPLETE_REGULATORY_NEWS = re.compile(
+    r'(?:银保监会|中国银行保险监督管理委员会)'
+    r'(?:(?:持续|继续|深入)?开展|推进|深化)'
+    r'银行保险机构(?:股权(?:[和及与]关联交易)?|关联交易)(?:专项)?整治'
+    r'(?:(?:不断|进一步)?(?:提升|提高)公司治理(?:质效|水平))?'
+)
+_COMPLETE_GOVERNANCE_NOTICE = re.compile(
+    r'(?:' + '|'.join(re.escape(value) for value in sorted(_REGION_ANCHORS, key=lambda value: (-len(value), value))) +
+    r')(?:省|市|自治区)?金融学会第[一二三四五六七八九十百0-9]+届理事会(?:届中)?变更负责人的公示'
+)
 
 
 def _outside(text: str) -> tuple[str, bool]:
@@ -267,6 +277,11 @@ def _extract(title: str) -> dict:
     """Return ordered original name expressions, or an explicit unresolved status."""
     if not isinstance(title, str) or not title.strip():
         return _result([], "uncertain", "empty_title", "标题为空")
+    public_core = title.strip().removeprefix("关于").strip()
+    if _COMPLETE_REGULATORY_NEWS.fullmatch(public_core):
+        return _result([], 'no_name', 'complete_regulatory_news', '完整监管主体的机构治理整治及成效事项，全文未明示人员')
+    if _COMPLETE_GOVERNANCE_NOTICE.fullmatch(public_core):
+        return _result([], 'no_name', 'complete_governance_notice', '完整地区金融学会的理事会届次变更事项公示，全文未明示人员')
     core = title.split("关于", 1)[-1].strip()
     core = re.sub(r"^[\u4e00-\u9fff]{2,24}?(?:银保监局|银监局|监管分局|监管局)", "", core).strip()
     # A document type does not establish absence of a named applicant.

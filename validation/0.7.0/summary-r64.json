@@ -1,0 +1,26 @@
+{
+  "release_version": "0.7.0",
+  "version": "r64",
+  "runtime_anchor_resource": "institution_anchors_r57.json",
+  "runtime_anchor_count": 12360,
+  "unique_titles": 46760,
+  "mapped_rows": 52146,
+  "status_titles": {
+    "names": 45997,
+    "no_name": 691,
+    "uncertain": 72
+  },
+  "status_rows": {
+    "names": 51309,
+    "no_name": 758,
+    "uncertain": 79
+  },
+  "hard_failure_titles": 0,
+  "comparison_baseline_version": "r63",
+  "changed_titles_from_r61": 14,
+  "changed_rows_from_r61": 14,
+  "changed_titles": 2,
+  "status_transitions": {
+    "uncertain -> no_name": 2
+  }
+}

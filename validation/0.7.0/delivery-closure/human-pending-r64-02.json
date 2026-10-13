@@ -1,0 +1,1649 @@
+{
+  "pending_determinate_titles": 64,
+  "pending_determinate_rows": 67,
+  "candidate_same_but_status_uncertain_titles": 41,
+  "candidate_different_titles": 23,
+  "known_post_change_unresolved_error_rows": [
+    11008
+  ],
+  "no_name_pending_titles": 0,
+  "not_all_pending_are_confirmed_script_errors": true,
+  "new_human_truth_added": false,
+  "records": [
+    {
+      "row": 415,
+      "rows": [
+        415
+      ],
+      "title": "关于核准路达的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "路达"
+        ]
+      },
+      "result": {
+        "names": [
+          "路达"
+        ],
+        "status": "uncertain",
+        "rule": "approval_object_without_qualification",
+        "note": "裸核准对象缺少任职或岗位语义，不能区分个人和机构简称",
+        "length": 2,
+        "extracted_name": "路达"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 682,
+      "rows": [
+        682
+      ],
+      "title": "关于刘永任新华人寿九江中支副总经理（主持工作）的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "刘永"
+        ]
+      },
+      "result": {
+        "names": [
+          "刘永任"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "机构前任字可能为姓名末字或连接词/任职动词，需语义复核",
+        "candidate_interpretations": [
+          {
+            "names": [
+              "刘永任"
+            ],
+            "meaning": "末字属于姓名"
+          },
+          {
+            "names": [
+              "刘永"
+            ],
+            "meaning": "末字为连接词或任职动词"
+          }
+        ],
+        "length": 3,
+        "extracted_name": "刘永任"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 1136,
+      "rows": [
+        1136
+      ],
+      "title": "关于乌兰察布农村商业银行股份有限公司格根陶力古尔任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "格根陶力古尔"
+        ]
+      },
+      "result": {
+        "names": [
+          "格根陶力古尔"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "格根陶力古尔"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 1675,
+      "rows": [
+        1675
+      ],
+      "title": "关于蒙商银行都仁宝力格任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "都仁宝力格"
+        ]
+      },
+      "result": {
+        "names": [
+          "都仁宝力格"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "都仁宝力格"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 4682,
+      "rows": [
+        4682
+      ],
+      "title": "关于杨邵阳银保监分局",
+      "expected": {
+        "status": "names",
+        "names": [
+          "杨邵阳"
+        ]
+      },
+      "result": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构",
+        "length": 0,
+        "extracted_name": ""
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 5162,
+      "rows": [
+        5162
+      ],
+      "title": "关于彭一桅胡明清董事任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "彭一桅",
+          "胡明清"
+        ]
+      },
+      "result": {
+        "names": [
+          "彭一桅胡明清"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "彭一桅胡明清"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 5643,
+      "rows": [
+        5643
+      ],
+      "title": "关于不予核准阿拉腾苏和镶黄旗农村信用合作联社主任任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "阿拉腾苏和"
+        ]
+      },
+      "result": {
+        "names": [
+          "阿拉腾苏和"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "阿拉腾苏和"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 7228,
+      "rows": [
+        7228
+      ],
+      "title": "关于虞焰智徐安任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "虞焰智",
+          "徐安"
+        ]
+      },
+      "result": {
+        "names": [
+          "虞焰智徐安"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "虞焰智徐安"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 7590,
+      "rows": [
+        7590
+      ],
+      "title": "关于核准刘乌日尼勒中国工商银行股份有限公司资阳分行营业部负责人任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "刘乌日尼勒"
+        ]
+      },
+      "result": {
+        "names": [
+          "刘乌日尼勒"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "刘乌日尼勒"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 8327,
+      "rows": [
+        8327
+      ],
+      "title": "关于刘任深圳市南华保险经纪有限公司副总经理任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "刘任"
+        ]
+      },
+      "result": {
+        "names": [
+          "刘任"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "机构前任字可能为姓名末字或连接词/任职动词，需语义复核",
+        "candidate_interpretations": [
+          {
+            "names": [
+              "刘任"
+            ],
+            "meaning": "末字属于姓名"
+          },
+          {
+            "names": [
+              "刘"
+            ],
+            "meaning": "末字为连接词或任职动词"
+          }
+        ],
+        "length": 2,
+        "extracted_name": "刘任"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 9132,
+      "rows": [
+        9132
+      ],
+      "title": "关于森山健太郎爱和谊日生同和财产保险（中国）有限公司董事会秘书任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "森山健太郎"
+        ]
+      },
+      "result": {
+        "names": [
+          "森山健太郎"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "森山健太郎"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 10046,
+      "rows": [
+        10046
+      ],
+      "title": "关于中国农业发展银行乌兰察布市分行乌云其其格任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "乌云其其格"
+        ]
+      },
+      "result": {
+        "names": [
+          "乌云其其格"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "乌云其其格"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 10859,
+      "rows": [
+        10859,
+        14204
+      ],
+      "title": "关于镶黄旗农村信用合作联社格根陶力古尔副主任任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "格根陶力古尔"
+        ]
+      },
+      "result": {
+        "names": [
+          "格根陶力古尔"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "格根陶力古尔"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 11008,
+      "rows": [
+        11008
+      ],
+      "title": "关于通辽金谷村镇银行股份有限公司白玉娥李毅昕高级管理人员任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "白玉娥",
+          "李毅昕"
+        ]
+      },
+      "result": {
+        "names": [
+          "白玉娥李毅昕"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "白玉娥李毅昕"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 11197,
+      "rows": [
+        11197,
+        30379
+      ],
+      "title": "关于王祖慈王志斌王洪国查腾飞任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "王祖慈",
+          "王志斌",
+          "王洪国",
+          "查腾飞"
+        ]
+      },
+      "result": {
+        "names": [
+          "王祖慈王志斌王洪国查腾飞"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 12,
+        "extracted_name": "王祖慈王志斌王洪国查腾飞"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 11479,
+      "rows": [
+        11479
+      ],
+      "title": "关于核准旦银安扎西任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "旦银安扎西"
+        ]
+      },
+      "result": {
+        "names": [
+          "旦银安扎西"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "旦银安扎西"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 11606,
+      "rows": [
+        11606
+      ],
+      "title": "关于核准凤为树房友安金阳董事任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "凤为树",
+          "房友安",
+          "金阳"
+        ]
+      },
+      "result": {
+        "names": [
+          "凤为树房友安金阳"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 8,
+        "extracted_name": "凤为树房友安金阳"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 11674,
+      "rows": [
+        11674
+      ],
+      "title": "关于华夏人寿保险股份有限公司额尔德木图任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "额尔德木图"
+        ]
+      },
+      "result": {
+        "names": [
+          "额尔德木图"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "额尔德木图"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 11679,
+      "rows": [
+        11679
+      ],
+      "title": "关于东乌珠穆沁旗农村信用合作联社朝格巴达仁贵任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "朝格巴达仁贵"
+        ]
+      },
+      "result": {
+        "names": [
+          "朝格巴达仁贵"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "朝格巴达仁贵"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 13445,
+      "rows": [
+        13445
+      ],
+      "title": "关于乌审旗农村信用合作联社达布希拉图任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "达布希拉图"
+        ]
+      },
+      "result": {
+        "names": [
+          "达布希拉图"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "达布希拉图"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 13592,
+      "rows": [
+        13592
+      ],
+      "title": "关于王夏春子任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "王夏春子"
+        ]
+      },
+      "result": {
+        "names": [
+          "王夏春子"
+        ],
+        "status": "uncertain",
+        "rule": "reviewed_title_ambiguity",
+        "note": "标题无明示人数或内部姓名边界；独立复核仍无法区分单一姓名与多人连写，保留原片段并弃权",
+        "length": 4,
+        "extracted_name": "王夏春子"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 13863,
+      "rows": [
+        13863
+      ],
+      "title": "关于阳光财产保险股份有限公司爱新觉罗启峰任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "爱新觉罗启峰"
+        ]
+      },
+      "result": {
+        "names": [
+          "爱新觉罗启峰"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "爱新觉罗启峰"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 14893,
+      "rows": [
+        14893
+      ],
+      "title": "关于核准李春宇的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "李春宇"
+        ]
+      },
+      "result": {
+        "names": [
+          "李春宇"
+        ],
+        "status": "uncertain",
+        "rule": "approval_object_without_qualification",
+        "note": "裸核准对象缺少任职或岗位语义，不能区分个人和机构简称",
+        "length": 3,
+        "extracted_name": "李春宇"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 15994,
+      "rows": [
+        15994
+      ],
+      "title": "关于内蒙古自治区农村信用社联合社布仁吉日嘎拉副主任任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "布仁吉日嘎拉"
+        ]
+      },
+      "result": {
+        "names": [
+          "布仁吉日嘎拉"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "布仁吉日嘎拉"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 16000,
+      "rows": [
+        16000
+      ],
+      "title": "关于梅航宇任建信人寿九江中支总经理的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "梅航宇"
+        ]
+      },
+      "result": {
+        "names": [
+          "梅航宇任"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "机构前任字可能为姓名末字或连接词/任职动词，需语义复核",
+        "candidate_interpretations": [
+          {
+            "names": [
+              "梅航宇任"
+            ],
+            "meaning": "末字属于姓名"
+          },
+          {
+            "names": [
+              "梅航宇"
+            ],
+            "meaning": "末字为连接词或任职动词"
+          }
+        ],
+        "length": 4,
+        "extracted_name": "梅航宇任"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 16866,
+      "rows": [
+        16866
+      ],
+      "title": "关于核准郑三民李长宏侯少伟任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "郑三民",
+          "李长宏",
+          "侯少伟"
+        ]
+      },
+      "result": {
+        "names": [
+          "郑三民李长宏侯少伟"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 9,
+        "extracted_name": "郑三民李长宏侯少伟"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 17104,
+      "rows": [
+        17104
+      ],
+      "title": "关于核准刘鹏张旭邢乐成银行业金融机构董事任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "刘鹏",
+          "张旭",
+          "邢乐成"
+        ]
+      },
+      "result": {
+        "names": [
+          "刘鹏张旭邢乐成"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 7,
+        "extracted_name": "刘鹏张旭邢乐成"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 17977,
+      "rows": [
+        17977
+      ],
+      "title": "关于核准魏多兰乌日塔大连银行股份有限公司北京分行副行长任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "魏多兰乌日塔"
+        ]
+      },
+      "result": {
+        "names": [
+          "魏多兰乌日塔"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "魏多兰乌日塔"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 19664,
+      "rows": [
+        19664
+      ],
+      "title": "关于陈同志任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "陈同志"
+        ]
+      },
+      "result": {
+        "names": [
+          "陈同志"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "称谓剥离后只剩单字，原片段与称谓解释均需保留",
+        "candidate_interpretations": [
+          {
+            "names": [
+              "陈同志"
+            ],
+            "meaning": "末尾称谓字样可能属于姓名"
+          },
+          {
+            "names": [
+              "陈"
+            ],
+            "meaning": "末尾字样为称谓，剩余单字可能是边界截断"
+          }
+        ],
+        "length": 3,
+        "extracted_name": "陈同志"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 20255,
+      "rows": [
+        20255
+      ],
+      "title": "关于鹿永乐刘佩嵘任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "鹿永乐",
+          "刘佩嵘"
+        ]
+      },
+      "result": {
+        "names": [
+          "鹿永乐刘佩嵘"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "鹿永乐刘佩嵘"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 23748,
+      "rows": [
+        23748,
+        41431
+      ],
+      "title": "关于科尔沁左翼后旗农村信用合作联社刘明亮陈昊理事任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "刘明亮",
+          "陈昊"
+        ]
+      },
+      "result": {
+        "names": [
+          "刘明亮陈昊"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "刘明亮陈昊"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 24854,
+      "rows": [
+        24854
+      ],
+      "title": "关于科尔沁区农村信用合作联社刘柏风周建波理事任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "刘柏风",
+          "周建波"
+        ]
+      },
+      "result": {
+        "names": [
+          "刘柏风周建波"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "刘柏风周建波"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 28945,
+      "rows": [
+        28945
+      ],
+      "title": "关于阿巴嘎旗农村信用合作联社呼和格日乐副主任任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "呼和格日乐"
+        ]
+      },
+      "result": {
+        "names": [
+          "呼和格日乐"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "连接词关系待独立复核，候选分段不表示已确认多人",
+        "length": 5,
+        "extracted_name": "呼和格日乐"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 30285,
+      "rows": [
+        30285
+      ],
+      "title": "关于彭玉玲任永安财险九江中支总经理的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "彭玉玲"
+        ]
+      },
+      "result": {
+        "names": [
+          "彭玉玲任"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "机构前任字可能为姓名末字或连接词/任职动词，需语义复核",
+        "candidate_interpretations": [
+          {
+            "names": [
+              "彭玉玲任"
+            ],
+            "meaning": "末字属于姓名"
+          },
+          {
+            "names": [
+              "彭玉玲"
+            ],
+            "meaning": "末字为连接词或任职动词"
+          }
+        ],
+        "length": 4,
+        "extracted_name": "彭玉玲任"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 30429,
+      "rows": [
+        30429
+      ],
+      "title": "关于内蒙古自治区农村信用社联合社布仁吉日嘎拉理事任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "布仁吉日嘎拉"
+        ]
+      },
+      "result": {
+        "names": [
+          "布仁吉日嘎拉"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "布仁吉日嘎拉"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 30966,
+      "rows": [
+        30966
+      ],
+      "title": "关于核准董成的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "董成"
+        ]
+      },
+      "result": {
+        "names": [
+          "董成"
+        ],
+        "status": "uncertain",
+        "rule": "approval_object_without_qualification",
+        "note": "裸核准对象缺少任职或岗位语义，不能区分个人和机构简称",
+        "length": 2,
+        "extracted_name": "董成"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 32004,
+      "rows": [
+        32004
+      ],
+      "title": "关于核准Stéphanie,Anne,MarieLEGALdeKERANGALép.CLEMENTDEGIVRY法国兴业银行（中国）有限公司董事任职资格的批复",
+      "expected": {
+        "names": [
+          "Stéphanie,Anne,MarieLEGALdeKERANGALép.CLEMENTDEGIVRY"
+        ],
+        "status": "names",
+        "source": "目标聊天及0.6.0计划第2.3/8节的正文核验",
+        "applies_to_production": false
+      },
+      "result": {
+        "names": [
+          "Stéphanie,Anne,MarieLEGALdeKERANGALép.CLEMENTDEGIVRY"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "外文括号外逗号的同人或多人关系缺少标题依据",
+        "length": 47,
+        "extracted_name": "Stéphanie,Anne,MarieLEGALdeKERANGALép.CLEMENTDEGIVRY"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 32194,
+      "rows": [
+        32194
+      ],
+      "title": "关于陈任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "陈"
+        ]
+      },
+      "result": {
+        "names": [
+          "陈"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "候选含未定义的字符",
+        "length": 1,
+        "extracted_name": "陈"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 32270,
+      "rows": [
+        32270
+      ],
+      "title": "关于新巴尔虎右旗农村信用合作联社白音那木拉任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "白音那木拉"
+        ]
+      },
+      "result": {
+        "names": [
+          "白音那木拉"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "白音那木拉"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 32802,
+      "rows": [
+        32802
+      ],
+      "title": "关于骆碧江的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "骆碧江"
+        ]
+      },
+      "result": {
+        "names": [],
+        "status": "uncertain",
+        "rule": "missing_qualification",
+        "note": "缺少任职资格结构",
+        "length": 0,
+        "extracted_name": ""
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 33411,
+      "rows": [
+        33411
+      ],
+      "title": "关于史巍陈光源任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "史巍",
+          "陈光源"
+        ]
+      },
+      "result": {
+        "names": [
+          "史巍陈光源"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "史巍陈光源"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 35377,
+      "rows": [
+        35377
+      ],
+      "title": "关于核钟丽华任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "钟丽华"
+        ]
+      },
+      "result": {
+        "names": [
+          "核钟丽华"
+        ],
+        "status": "uncertain",
+        "rule": "incomplete_approval_verb",
+        "note": "核可能为缺字许可动词或原姓名首字，缺少唯一边界",
+        "length": 4,
+        "extracted_name": "核钟丽华"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 35692,
+      "rows": [
+        35692
+      ],
+      "title": "关于DAUNYSandrine，Marie-José广汽汇理汽车金融有限公司董事任职资格的批复",
+      "expected": {
+        "names": [
+          "DAUNYSandrine，Marie-José"
+        ],
+        "status": "names",
+        "source": "目标聊天及0.6.0计划第2.3/8节的正文核验",
+        "applies_to_production": false
+      },
+      "result": {
+        "names": [
+          "DAUNYSandrine，Marie-José"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "外文括号外逗号的同人或多人关系缺少标题依据",
+        "length": 21,
+        "extracted_name": "DAUNYSandrine，Marie-José"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 37806,
+      "rows": [
+        37806
+      ],
+      "title": "关于吴芳敏黄洵任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "吴芳敏",
+          "黄洵"
+        ]
+      },
+      "result": {
+        "names": [
+          "吴芳敏黄洵"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "吴芳敏黄洵"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 37972,
+      "rows": [
+        37972
+      ],
+      "title": "关于核准阿拉腾础鲁任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "阿拉腾础鲁"
+        ]
+      },
+      "result": {
+        "names": [
+          "阿拉腾础鲁"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "阿拉腾础鲁"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 38243,
+      "rows": [
+        38243
+      ],
+      "title": "关于SURIKOV，ARTEM俄罗斯天然气工业银行股份公司北京代表处首席代表任职资格的批复",
+      "expected": {
+        "names": [
+          "SURIKOV，ARTEM"
+        ],
+        "status": "names",
+        "source": "目标聊天及0.6.0计划第2.3/8节的正文核验",
+        "applies_to_production": false
+      },
+      "result": {
+        "names": [
+          "SURIKOV，ARTEM"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_institution",
+        "note": "外文括号外逗号的同人或多人关系缺少标题依据",
+        "length": 12,
+        "extracted_name": "SURIKOV，ARTEM"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 39110,
+      "rows": [
+        39110
+      ],
+      "title": "关于阿巴嘎农村商业银行布仁巴雅尔任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "布仁巴雅尔"
+        ]
+      },
+      "result": {
+        "names": [
+          "布仁巴雅尔"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "布仁巴雅尔"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 39226,
+      "rows": [
+        39226
+      ],
+      "title": "关于纳雍县农村信用合作联社行舒振国任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "舒振国"
+        ]
+      },
+      "result": {
+        "names": [
+          "行舒振国"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "机构后孤立行字可能为姓名首字或机构职务残片",
+        "length": 4,
+        "extracted_name": "行舒振国"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 39487,
+      "rows": [
+        39487
+      ],
+      "title": "关于邱畅殷拟任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "邱畅殷"
+        ]
+      },
+      "result": {
+        "names": [
+          "邱畅殷拟"
+        ],
+        "status": "uncertain",
+        "rule": "ambiguous_proposed_appointment",
+        "note": "拟可能修饰任职资格或属于原姓名尾字，缺少唯一边界",
+        "length": 4,
+        "extracted_name": "邱畅殷拟"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 41148,
+      "rows": [
+        41148
+      ],
+      "title": "关于东乌珠穆沁旗农村信用合作联社阿拉坦花尔任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "阿拉坦花尔"
+        ]
+      },
+      "result": {
+        "names": [
+          "阿拉坦花尔"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "阿拉坦花尔"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 41190,
+      "rows": [
+        41190
+      ],
+      "title": "关于BaronvonPfetten，JeanChristophe任职资格的批复",
+      "expected": {
+        "names": [
+          "BaronvonPfetten，JeanChristophe"
+        ],
+        "status": "names",
+        "source": "目标聊天及0.6.0计划第2.3/8节的正文核验",
+        "applies_to_production": false
+      },
+      "result": {
+        "names": [
+          "BaronvonPfetten，JeanChristophe"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "外文括号外逗号的同人或多人关系缺少标题依据",
+        "length": 29,
+        "extracted_name": "BaronvonPfetten，JeanChristophe"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 41749,
+      "rows": [
+        41749
+      ],
+      "title": "关于科尔沁区农村信用合作联社那顺乌力吉独立理事任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "那顺乌力吉"
+        ]
+      },
+      "result": {
+        "names": [
+          "那顺乌力吉"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "那顺乌力吉"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 41811,
+      "rows": [
+        41811
+      ],
+      "title": "关于核准何子任高级管理人员任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "何子任"
+        ]
+      },
+      "result": {
+        "names": [
+          "何子任"
+        ],
+        "status": "uncertain",
+        "rule": "ambiguous_post_verb",
+        "note": "任可能为姓名尾字或任职动词，标题无明确分隔",
+        "length": 3,
+        "extracted_name": "何子任"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 42435,
+      "rows": [
+        42435
+      ],
+      "title": "关于鲁圣翰俞茂林任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "鲁圣翰",
+          "俞茂林"
+        ]
+      },
+      "result": {
+        "names": [
+          "鲁圣翰俞茂林"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 6,
+        "extracted_name": "鲁圣翰俞茂林"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 42476,
+      "rows": [
+        42476
+      ],
+      "title": "关于姚林海徐炜任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "姚林海",
+          "徐炜"
+        ]
+      },
+      "result": {
+        "names": [
+          "姚林海徐炜"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "姚林海徐炜"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 44406,
+      "rows": [
+        44406
+      ],
+      "title": "关于DESPLATS-REDIER，Jean-CédricLaurent（赛德瑞）任职资格的批复",
+      "expected": {
+        "names": [
+          "DESPLATS-REDIER，Jean-CédricLaurent（赛德瑞）"
+        ],
+        "status": "names",
+        "source": "目标聊天及0.6.0计划第2.3/8节的正文核验",
+        "applies_to_production": false
+      },
+      "result": {
+        "names": [
+          "DESPLATS-REDIER，Jean-CédricLaurent（赛德瑞）"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "外文括号外逗号的同人或多人关系缺少标题依据",
+        "length": 33,
+        "extracted_name": "DESPLATS-REDIER，Jean-CédricLaurent（赛德瑞）"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 44574,
+      "rows": [
+        44574
+      ],
+      "title": "关于核准刘志刚的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "刘志刚"
+        ]
+      },
+      "result": {
+        "names": [
+          "刘志刚"
+        ],
+        "status": "uncertain",
+        "rule": "approval_object_without_qualification",
+        "note": "裸核准对象缺少任职或岗位语义，不能区分个人和机构简称",
+        "length": 3,
+        "extracted_name": "刘志刚"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 45032,
+      "rows": [
+        45032
+      ],
+      "title": "关于中国农业银行呼和浩特分行乌日吐白音任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "乌日吐白音"
+        ]
+      },
+      "result": {
+        "names": [
+          "乌日吐白音"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "乌日吐白音"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 45192,
+      "rows": [
+        45192
+      ],
+      "title": "关于蒙商银行朝格毕力格任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "朝格毕力格"
+        ]
+      },
+      "result": {
+        "names": [
+          "朝格毕力格"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "朝格毕力格"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 45205,
+      "rows": [
+        45205
+      ],
+      "title": "关于王菲米兰金融机构独立董事任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "王菲米兰"
+        ]
+      },
+      "result": {
+        "names": [
+          "王菲米兰"
+        ],
+        "status": "uncertain",
+        "rule": "generic_institution_before_boundary",
+        "note": "泛称金融机构前长汉字片段缺少姓名及地区边界",
+        "length": 4,
+        "extracted_name": "王菲米兰"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 45449,
+      "rows": [
+        45449
+      ],
+      "title": "关于阿拉善农村商业银行股份有限公司阿拉腾础鲁任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "阿拉腾础鲁"
+        ]
+      },
+      "result": {
+        "names": [
+          "阿拉腾础鲁"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "阿拉腾础鲁"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 46851,
+      "rows": [
+        46851
+      ],
+      "title": "关于核准储柱东刘刚董事任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "储柱东",
+          "刘刚"
+        ]
+      },
+      "result": {
+        "names": [
+          "储柱东刘刚"
+        ],
+        "status": "uncertain",
+        "rule": "person_before_qualification",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "储柱东刘刚"
+      },
+      "candidate_names_equal": false
+    },
+    {
+      "row": 49883,
+      "rows": [
+        49883
+      ],
+      "title": "关于内蒙古扎鲁特农村商业银行股份有限公司韩豪日钦夫董事、董事会秘书任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "韩豪日钦夫"
+        ]
+      },
+      "result": {
+        "names": [
+          "韩豪日钦夫"
+        ],
+        "status": "uncertain",
+        "rule": "institution_before_person",
+        "note": "较长连续汉字可能是完整长姓名或连写多人，保留原片段由语义复核，不按长度猜拆",
+        "length": 5,
+        "extracted_name": "韩豪日钦夫"
+      },
+      "candidate_names_equal": true
+    },
+    {
+      "row": 51022,
+      "rows": [
+        51022
+      ],
+      "title": "关于殷熊毅辉任职资格的批复",
+      "expected": {
+        "status": "names",
+        "names": [
+          "殷熊毅辉"
+        ]
+      },
+      "result": {
+        "names": [
+          "殷熊毅辉"
+        ],
+        "status": "uncertain",
+        "rule": "reviewed_title_ambiguity",
+        "note": "标题无明示人数或内部姓名边界；独立复核仍无法区分单一姓名与多人连写，保留原片段并弃权",
+        "length": 4,
+        "extracted_name": "殷熊毅辉"
+      },
+      "candidate_names_equal": true
+    }
+  ]
+}
