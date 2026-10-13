@@ -372,11 +372,19 @@ def collect_second():
          pending_inputs=len(sources)-len(accepted), invalid_answers=len(invalid),
          needs_adjudication_inputs=len(disagreements), reference_set_frozen=False))
     if len(accepted) == len(sources) and not invalid:
-        disputed = {r['input_id'] for r in disagreements}
-        ordered = [r for r in original if r['input_id'] in disputed]
-        lines(WORK / 'blind/third-inputs.jsonl', ordered)
+        disputed = {r['input_id']: r for r in disagreements}
+        ordered = []
+        for source in original:
+            if source['input_id'] not in disputed:
+                continue
+            prior = disputed[source['input_id']]
+            alternatives = [dict(round=n, **{key: prior[label][key] for key in
+                            ('names', 'status', 'title_evidence', 'body_evidence', 'reason')})
+                            for n, label in ((1, 'first'), (2, 'second'))]
+            ordered.append(dict(source, alternatives=alternatives))
+        lines(WORK / 'adjudication/third-inputs.jsonl', ordered)
         for offset in range(0, len(ordered), 20):
-            lines(WORK / 'blind/third' / f'third-{offset // 20 + 1:04d}.jsonl', ordered[offset:offset+20])
+            lines(WORK / 'adjudication/third' / f'third-{offset // 20 + 1:04d}.jsonl', ordered[offset:offset+20])
     print((WORK / 'second-progress.json').read_text())
 
 
