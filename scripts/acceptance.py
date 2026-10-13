@@ -308,13 +308,16 @@ def runtime():
     thread_id = os.environ.get('CODEX_THREAD_ID')
     if not thread_id:
         raise ValueError('CODEX_THREAD_ID is needed to restrict metadata to this chat.')
+    parallel_path = WORK / 'runs/parallel-sessions.json'
+    independent_ids = {r['thread_id'] for r in json.loads(parallel_path.read_text())['sessions']} if parallel_path.exists() else set()
     records = []
     for path in (Path.home() / '.codex/sessions/2026/10/13').glob('*.jsonl'):
         with path.open() as stream:
             first = json.loads(next(stream))
             source = first.get('payload', {}).get('source')
             spawn = source.get('subagent', {}).get('thread_spawn', {}) if isinstance(source, dict) else {}
-            if spawn.get('parent_thread_id') != thread_id:
+            independent = first.get('payload', {}).get('id') in independent_ids
+            if spawn.get('parent_thread_id') != thread_id and not independent:
                 continue
             context, usage = {}, {}
             for line in stream:
@@ -327,7 +330,7 @@ def runtime():
                 payload = record.get('payload', {})
                 if record.get('type') == 'event_msg' and payload.get('type') == 'token_count':
                     usage = (payload.get('info') or {}).get('total_token_usage', {})
-            records.append(dict(agent=spawn['agent_path'], rollout=str(path), model=context.get('model'),
+            records.append(dict(agent=spawn.get('agent_path') or first['payload']['id'], rollout=str(path), model=context.get('model'),
                  effort=context.get('effort'), service_tier=context.get('service_tier'), usage=usage))
     totals = {key: sum(r['usage'].get(key, 0) for r in records) for key in
               ('input_tokens', 'cached_input_tokens', 'output_tokens', 'reasoning_output_tokens', 'total_tokens')}
@@ -387,6 +390,35 @@ def collect_second():
         for offset in range(0, len(ordered), 20):
             lines(WORK / 'adjudication/third' / f'third-{offset // 20 + 1:04d}.jsonl', ordered[offset:offset+20])
     print((WORK / 'second-progress.json').read_text())
+
+
+def partition_sessions():
+    """Assign only unreviewed original inputs to eight independent, disjoint sessions."""
+    path = WORK / 'session-partitions.json'
+    if path.exists():
+        raise ValueError('Keep existing ownership assignments; do not repartition active sessions.')
+    reviewed = {r['input_id'] for r in read(WORK / 'valid-first-answers.jsonl')}
+    pending = sorted((r for r in read(WORK / 'blind/inputs.jsonl') if r['input_id'] not in reviewed),
+                     key=lambda r: r['input_id'])
+    count, extra = divmod(len(pending), 8)
+    groups, assigned, offset = [], set(), 0
+    for number in range(1, 9):
+        size = count + (number <= extra)
+        group = pending[offset:offset+size]
+        offset += size
+        prefix = f'session-{number:02d}'
+        for start in range(0, len(group), 20):
+            lines(WORK / 'blind' / prefix / f'part-{start // 20 + 1:04d}.jsonl', group[start:start+20])
+        keys = {r['input_id'] for r in group}
+        assert not assigned.intersection(keys) and not reviewed.intersection(keys), 'Overlapping ownership'
+        assigned.update(keys)
+        groups.append(dict(session=number, prefix=prefix, input_count=len(group),
+             batch_count=(len(group)+19)//20, first_input_id=group[0]['input_id'] if group else None,
+             last_input_id=group[-1]['input_id'] if group else None, input_ids=[r['input_id'] for r in group]))
+    assert assigned == {r['input_id'] for r in pending}, 'Missing unreviewed input'
+    save(path, dict(created_at=datetime.now(timezone.utc).isoformat(), previously_reviewed_inputs=len(reviewed),
+         pending_inputs=len(pending), session_count=8, groups=groups, excludes_script_results=True))
+    print(json.dumps([{k:v for k,v in g.items() if k != 'input_ids'} for g in groups]))
 
 
 def collect_third():
@@ -490,6 +522,6 @@ def watch():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('action', choices=['prepare', 'collect', 'compare', 'collect_second', 'collect_third',
-                                         'freeze_reference', 'human_random', 'runtime', 'watch'])
+                                         'freeze_reference', 'partition_sessions', 'human_random', 'runtime', 'watch'])
     args = parser.parse_args()
     globals()[args.action]()

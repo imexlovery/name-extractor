@@ -1,0 +1,127 @@
+{
+  "created_at": "2026-10-13T11:24:26.865Z",
+  "controller_thread_id": "01a13469-6189-7b62-86c4-c5a1199d210a",
+  "project_id": "790eb940-ade4-44a7-b5e9-05bff204fa69",
+  "model_requested": "gpt-6-luna",
+  "reasoning_effort_requested": "xhigh",
+  "fast_confirmation": "User manually enabled the first session, confirmed inheritance for later sessions, and authorized unified start.",
+  "sessions": [
+    {
+      "session": 1,
+      "prefix": "session-01",
+      "thread_id": "01a134fb-271d-7590-ab67-0c66581577f6",
+      "host_id": "local",
+      "state": "running",
+      "observed_model": "gpt-6-luna",
+      "observed_effort": "xhigh",
+      "observed_service_tier": null,
+      "fast_status": "user_confirmed_inherited",
+      "fast_confirmation_message": "后续会话自动延续了fast，可以直接开始"
+    },
+    {
+      "session": 2,
+      "prefix": "session-02",
+      "thread_id": "01a134fe-204e-7051-93dc-026d47c71f40",
+      "host_id": "local",
+      "state": "running",
+      "observed_model": "gpt-6-luna",
+      "observed_effort": "xhigh",
+      "observed_service_tier": null,
+      "fast_status": "user_confirmed_inherited",
+      "fast_confirmation_message": "后续会话自动延续了fast，可以直接开始"
+    },
+    {
+      "session": 3,
+      "prefix": "session-03",
+      "thread_id": "01a134fe-3d6b-7b81-b56b-ac255bd7032c",
+      "host_id": "local",
+      "state": "running",
+      "observed_model": "gpt-6-luna",
+      "observed_effort": "xhigh",
+      "observed_service_tier": null,
+      "fast_status": "user_confirmed_inherited",
+      "fast_confirmation_message": "后续会话自动延续了fast，可以直接开始"
+    },
+    {
+      "session": 4,
+      "prefix": "session-04",
+      "thread_id": "01a134fe-32f1-7cf1-ab31-8d86956b0faa",
+      "host_id": "local",
+      "state": "running",
+      "observed_model": "gpt-6-luna",
+      "observed_effort": "xhigh",
+      "observed_service_tier": null,
+      "fast_status": "user_confirmed_inherited",
+      "fast_confirmation_message": "后续会话自动延续了fast，可以直接开始"
+    },
+    {
+      "session": 5,
+      "prefix": "session-05",
+      "thread_id": "01a134fe-569e-7f60-a667-8bd632e94545",
+      "host_id": "local",
+      "state": "running",
+      "observed_model": "gpt-6-luna",
+      "observed_effort": "xhigh",
+      "observed_service_tier": null,
+      "fast_status": "user_confirmed_inherited",
+      "fast_confirmation_message": "后续会话自动延续了fast，可以直接开始"
+    },
+    {
+      "session": 6,
+      "prefix": "session-06",
+      "thread_id": "01a134fe-7157-7bb1-95f2-7b66f024c4f7",
+      "host_id": "local",
+      "state": "running",
+      "observed_model": "gpt-6-luna",
+      "observed_effort": "xhigh",
+      "observed_service_tier": null,
+      "fast_status": "user_confirmed_inherited",
+      "fast_confirmation_message": "后续会话自动延续了fast，可以直接开始"
+    },
+    {
+      "session": 7,
+      "prefix": "session-07",
+      "thread_id": "01a134fe-496a-7d73-b2ef-5e7eaee6297b",
+      "host_id": "local",
+      "state": "running",
+      "observed_model": "gpt-6-luna",
+      "observed_effort": "xhigh",
+      "observed_service_tier": null,
+      "fast_status": "user_confirmed_inherited",
+      "fast_confirmation_message": "后续会话自动延续了fast，可以直接开始"
+    },
+    {
+      "session": 8,
+      "prefix": "session-08",
+      "thread_id": "01a134fe-5fc0-7042-9832-c6a2fae0628c",
+      "host_id": "local",
+      "state": "running",
+      "observed_model": "gpt-6-luna",
+      "observed_effort": "xhigh",
+      "observed_service_tier": null,
+      "fast_status": "user_confirmed_inherited",
+      "fast_confirmation_message": "后续会话自动延续了fast，可以直接开始"
+    }
+  ],
+  "former_agents": {
+    "full_a_resume": {
+      "state": "stopped",
+      "valid_inputs": 4320,
+      "last_completed_batch": "full-0200",
+      "partially_read_unwritten_batch": "full-0201",
+      "unwritten_read_count": 10
+    },
+    "full_b": {
+      "state": "stopped",
+      "valid_inputs": 3780,
+      "last_completed_batch": "full-1042"
+    },
+    "full_c": {
+      "state": "stopped",
+      "valid_inputs": 4120,
+      "last_completed_batch": "full-1913"
+    }
+  },
+  "local_default_service_tier_after_user_toggle": "priority",
+  "fast_verification_note": "User confirmed Fast in the UI and inheritance before unified start. Turn-context records do not expose the tier; null is not treated as a Fast or Standard observation."
+}

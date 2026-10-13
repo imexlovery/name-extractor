@@ -1,0 +1,2 @@
+{"at": "2026-10-13T10:41:53.364155+00:00", "agent": "full_a", "event": "stream_disconnected_resume_requested", "method": "collaboration.followup_task", "completed_answers_preserved": true, "coverage_delta": 0, "model_change": false}
+{"at": "2026-10-13T10:44:55.986491+00:00", "agent": "full_a", "event": "second_stream_disconnect_fresh_context_assigned", "replacement_agent": "full_a_resume", "completed_answers_preserved": true, "coverage_delta": 0, "model": "gpt-6-luna", "reasoning_effort": "xhigh"}
