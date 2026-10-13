@@ -1,0 +1,78 @@
+{
+  "run_id": "pilot-a",
+  "started_at_utc": "2026-10-13T08:47:32Z",
+  "finished_at_utc": "2026-10-13T08:53:04Z",
+  "elapsed_seconds": 332,
+  "model": "gpt-6-luna",
+  "requested_reasoning_effort": "xhigh",
+  "actual_reasoning_effort": null,
+  "requested_speed_mode": "Fast",
+  "speed_mode_enabled": null,
+  "prompt_version": "title-body-blind-v1",
+  "batches": [
+    {
+      "batch_id": "pilot-0001",
+      "inputs_read": 20,
+      "answers_written": 20
+    },
+    {
+      "batch_id": "pilot-0002",
+      "inputs_read": 20,
+      "answers_written": 20
+    },
+    {
+      "batch_id": "pilot-0003",
+      "inputs_read": 20,
+      "answers_written": 20
+    },
+    {
+      "batch_id": "pilot-0004",
+      "inputs_read": 20,
+      "answers_written": 20
+    }
+  ],
+  "total_inputs_read": 80,
+  "total_answers_written": 80,
+  "validation": "All 80 identities, model/version fields, status shapes, title quotes, and body quotes passed exact-substring checks; input was split only on newline characters.",
+  "input_issues": [
+    {
+      "input_id": "input-04679",
+      "status": "conflict",
+      "note": "Malformed title boundary around 杨/邵阳银保监分局 conflicts with body nominee 杨友副."
+    },
+    {
+      "input_id": "input-19633",
+      "status": "uncertain",
+      "note": "Title and body contain only 陈同志; full name is unavailable."
+    },
+    {
+      "input_id": "input-39098",
+      "status": "names",
+      "note": "Title has an extra 行 before 舒振国; body confirms 舒振国."
+    },
+    {
+      "input_ids": [
+        "input-31919",
+        "input-35588",
+        "input-38126",
+        "input-41056",
+        "input-44255",
+        "input-47638"
+      ],
+      "note": "Foreign-name spacing or comma punctuation varies between title and body; each body supports one person and internal commas were retained."
+    }
+  ],
+  "prompt_issues": [],
+  "corrections": [
+    {
+      "input_id": "input-33320",
+      "note": "Initial body quote used 大家产险公司, which was not verbatim; corrected to 大家财产保险有限责任公司 and preserved the prior version at validation/0.7.0/final-acceptance/answers/retries/pilot-0003-before.jsonl."
+    }
+  ],
+  "token_usage": null,
+  "cost": null,
+  "runtime_model_verified": "gpt-6-luna",
+  "runtime_effort_verified": "xhigh",
+  "runtime_verification_source": "runtime-verification.json",
+  "fast_verified": false
+}

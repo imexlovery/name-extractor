@@ -1,0 +1,50 @@
+{
+  "reviewer": "pilot-c",
+  "requested_model": "gpt-6-luna",
+  "model": "gpt-6-luna",
+  "model_source": "spawn_agent_parameters",
+  "reasoning_effort": "xhigh",
+  "fast_requested": true,
+  "fast_verified": false,
+  "prompt_version": "title-body-blind-v1",
+  "prompt_path": "validation/0.7.0/final-acceptance/prompt-first-v1.md",
+  "input_dir": "validation/0.7.0/final-acceptance/blind/pilot",
+  "batches": [
+    {
+      "file": "pilot-0008.jsonl",
+      "read_lines": "1-20",
+      "read_count": 20,
+      "output_count": 20,
+      "read_time_utc": null
+    },
+    {
+      "file": "pilot-0009.jsonl",
+      "read_lines": "1-20",
+      "read_count": 20,
+      "output_count": 20,
+      "read_time_utc": null
+    },
+    {
+      "file": "pilot-0010.jsonl",
+      "read_lines": "1-20",
+      "read_count": 20,
+      "output_count": 20,
+      "read_time_utc": null
+    }
+  ],
+  "total_read": 60,
+  "total_output": 60,
+  "started_at_utc": null,
+  "finished_at_utc": "2026-10-13 08:52:48 UTC",
+  "elapsed_seconds": null,
+  "token_usage": null,
+  "cost": null,
+  "prompt_or_input_issues": [
+    "pilot-0010.jsonl lines 9-10 were initially truncated by terminal output; both complete records were reread, with long contents read in chunks. No unresolved truncation.",
+    "No other prompt or input issue observed."
+  ],
+  "timing_note": "Start and individual batch times were not captured; elapsed_seconds is null.",
+  "runtime_model_verified": "gpt-6-luna",
+  "runtime_effort_verified": "xhigh",
+  "runtime_verification_source": "runtime-verification.json"
+}

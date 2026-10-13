@@ -1,0 +1,34 @@
+{
+  "run_id": "pilot-a-v2",
+  "started_at_utc": "2026-10-13T08:57:16Z",
+  "finished_at_utc": "2026-10-13T09:00:58Z",
+  "elapsed_seconds": 222,
+  "model": "gpt-6-luna",
+  "reasoning_effort": "xhigh",
+  "speed_mode": "Fast",
+  "speed_mode_verified": null,
+  "prompt_version": "title-body-blind-v2",
+  "batches": [
+    {"batch_id": "pilot-0001", "inputs_read": 20, "answers_written": 20},
+    {"batch_id": "pilot-0002", "inputs_read": 20, "answers_written": 20},
+    {"batch_id": "pilot-0003", "inputs_read": 20, "answers_written": 20},
+    {"batch_id": "pilot-0004", "inputs_read": 20, "answers_written": 20}
+  ],
+  "total_inputs_read": 80,
+  "total_answers_written": 80,
+  "validation": "All 80 identities, versions, title evidence, and body evidence passed exact-substring and shape checks; JSONL records were split on newline characters only.",
+  "revision_reasons": [
+    "Re-read and independently reassessed all assigned source records under v2; updated prompt_version on all answers.",
+    "Confirmed complete title expressions for Roman/foreign plus Chinese names in parentheses are retained as one element for input-44255 and input-47638.",
+    "Retained internal punctuation and spacing within foreign names; commas are not used to split one supported identity.",
+    "The v1 answers remain preserved at validation/0.7.0/final-acceptance/answers/pilot-v1-preserved."
+  ],
+  "input_issues": [
+    {"input_id": "input-04679", "status": "conflict", "note": "Title boundary around 杨/邵阳银保监分局 conflicts with body nominee 杨友副."},
+    {"input_id": "input-19633", "status": "uncertain", "note": "Title and body provide only 陈同志, not a full name."},
+    {"input_id": "input-39098", "status": "names", "note": "Title includes an extra 行 before 舒振国; body confirms 舒振国."}
+  ],
+  "prompt_issues": [],
+  "token_usage": null,
+  "cost": null
+}

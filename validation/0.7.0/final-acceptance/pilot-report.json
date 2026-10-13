@@ -1,0 +1,33 @@
+{
+  "pilot_inputs": 200,
+  "prompt_version": "title-body-blind-v2",
+  "valid_answers": 200,
+  "invalid_answers": 0,
+  "status_inputs": {
+    "names": 172,
+    "conflict": 1,
+    "no_name": 26,
+    "uncertain": 1
+  },
+  "presentation_differences_resolved": 9,
+  "first_round_script_results_supplied": false,
+  "model_runtime_verified": true,
+  "runtime_model": "gpt-6-luna",
+  "runtime_effort": "xhigh",
+  "fast_verified": false,
+  "token_usage": {
+    "input_tokens": 20050546,
+    "cached_input_tokens": 19582720,
+    "output_tokens": 129259,
+    "reasoning_output_tokens": 49661,
+    "total_tokens": 20179805,
+    "uncached_input_tokens": 467826
+  },
+  "token_note": "Includes both initial v1 and all v2 re-reads; cached context counts repeatedly. Reasoning tokens are part of output tokens, not added again.",
+  "currency_cost": null,
+  "subscription_cost": null,
+  "full_review_authorized": true,
+  "full_review_started": true,
+  "acceptance_passed": false,
+  "true_accuracy": null
+}
