@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from acceptance import validate_answer, read, lines, compare
+from acceptance import validate_answer, read, lines, compare, save, freeze_reference
 
 
 class IndependentEvidenceContract(unittest.TestCase):
@@ -76,6 +76,33 @@ class IndependentEvidenceContract(unittest.TestCase):
                 compare()
             self.assertEqual(read(work / 'blind/second-inputs.jsonl'), [source])
             self.assertNotIn('names', read(work / 'blind/second-inputs.jsonl')[0])
+
+    def test_freezing_requires_coverage_and_preserves_each_cached_row_identity(self):
+        with tempfile.TemporaryDirectory() as directory:
+            work = Path(directory)
+            save(work / 'manifest.json', dict(source_rows=2, unique_full_inputs=1))
+            lines(work / 'blind/inputs.jsonl', [self.source])
+            lines(work / 'blind/second-inputs.jsonl', [self.source])
+            lines(work / 'adjudication/third-inputs.jsonl', [])
+            lines(work / 'valid-first-answers.jsonl', [])
+            lines(work / 'valid-second-answers.jsonl', [dict(self.answer, prompt_version='title-body-independent-v1')])
+            lines(work / 'valid-third-answers.jsonl', [])
+            lines(work / 'row-map.jsonl', [dict(input_id=self.source['input_id'], row_id=f'Sheet1:{n:05d}', excel_row=n) for n in (2, 3)])
+            for stage in ('', 'second-', 'third-'):
+                save(work / f'invalid-{stage}answers.json', [])
+            with patch('acceptance.WORK', work):
+                with self.assertRaises(ValueError):
+                    freeze_reference()
+                self.assertFalse((work / 'fixed-reference.jsonl').exists())
+                lines(work / 'valid-first-answers.jsonl', [self.answer])
+                freeze_reference()
+                with self.assertRaises(ValueError):
+                    freeze_reference()
+            records = read(work / 'fixed-row-reference.jsonl')
+            self.assertEqual([r['row_id'] for r in records], ['Sheet1:00002', 'Sheet1:00003'])
+            self.assertEqual([r['source_row_id'] for r in records], ['Sheet1:00002'] * 2)
+            self.assertEqual([r['names'] for r in records], [['白玉娥', '李毅昕']] * 2)
+            self.assertFalse(__import__('json').loads((work / 'reference-manifest.json').read_text())['final_acceptance_passed'])
 
 
 if __name__ == '__main__':

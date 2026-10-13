@@ -220,7 +220,8 @@ def collect():
          pilot_reviewed_inputs=len(pilot_ids & accepted.keys()), pilot_inputs=len(pilot_ids),
          invalid_answers=len(rejected), status_inputs=dict(Counter(a['status'] for a in accepted.values())),
          human_reviewed_rows=sum(human_status.values()), human_status_rows=dict(human_status),
-         human_review_method='non_blind_confirmation', human_review_limit=100, reference_set_frozen=False,
+         human_review_method='non_blind_confirmation', human_review_limit=100,
+         reference_set_frozen=(WORK / 'reference-manifest.json').exists(),
          true_accuracy=None, acceptance_passed=False))
     print((WORK / 'progress.json').read_text())
 
@@ -388,6 +389,88 @@ def collect_second():
     print((WORK / 'second-progress.json').read_text())
 
 
+def collect_third():
+    sources = {r['input_id']: r for r in read(WORK / 'adjudication/third-inputs.jsonl')}
+    second = json.loads((WORK / 'second-progress.json').read_text())
+    if second['pending_inputs'] or second['invalid_answers']:
+        raise ValueError('Complete valid independent second-round reviews first.')
+    accepted, invalid, duplicated = {}, [], set()
+    for path in sorted((WORK / 'answers/third').glob('*.jsonl')):
+        for number, line in enumerate(path.read_text().split('\n'), 1):
+            if not line.strip():
+                continue
+            try:
+                answer = json.loads(line)
+                key = answer['input_id']
+                valid = validate_answer(answer, sources[key], ('title-body-adjudication-v1',))
+                assert isinstance(answer.get('adjudication_reason'), str) and answer['adjudication_reason'].strip(), 'Missing adjudication evidence reasoning'
+                if key in accepted or key in duplicated:
+                    accepted.pop(key, None)
+                    duplicated.add(key)
+                    raise ValueError('Duplicate adjudication; preserve retries separately')
+                accepted[key] = dict(valid, answer_file=str(path.relative_to(ROOT)))
+            except (AssertionError, ValueError, KeyError, TypeError) as exc:
+                invalid.append(dict(file=str(path.relative_to(ROOT)), line=number, reason=str(exc)))
+    lines(WORK / 'valid-third-answers.jsonl', accepted.values())
+    save(WORK / 'invalid-third-answers.json', invalid)
+    save(WORK / 'third-progress.json', dict(required_inputs=len(sources), reviewed_inputs=len(accepted),
+         pending_inputs=len(sources)-len(accepted), invalid_answers=len(invalid),
+         unresolved_inputs=sum(a['status'] in ('conflict', 'uncertain') for a in accepted.values())))
+    print((WORK / 'third-progress.json').read_text())
+
+
+def freeze_reference():
+    """Freeze reviewed decisions and explicit adjudications; do not estimate true accuracy."""
+    if (WORK / 'reference-manifest.json').exists() or (WORK / 'fixed-reference.jsonl').exists():
+        raise ValueError('Reference already frozen; corrections must preserve its version and evidence.')
+    manifest = json.loads((WORK / 'manifest.json').read_text())
+    original = {r['input_id']: r for r in read(WORK / 'blind/inputs.jsonl')}
+    assert len(original) == manifest['unique_full_inputs'], 'Incomplete original input corpus'
+    first = {r['input_id']: r for r in read(WORK / 'valid-first-answers.jsonl')}
+    second = {r['input_id']: r for r in read(WORK / 'valid-second-answers.jsonl')}
+    third = {r['input_id']: r for r in read(WORK / 'valid-third-answers.jsonl')}
+    required_second = {r['input_id'] for r in read(WORK / 'blind/second-inputs.jsonl')}
+    required_third = {r['input_id'] for r in read(WORK / 'adjudication/third-inputs.jsonl')}
+    if set(first) != set(original) or set(second) != required_second or set(third) != required_third:
+        raise ValueError('Every required original input and review must have a valid answer.')
+    for stage in ('', 'second-', 'third-'):
+        path = WORK / f'invalid-{stage}answers.json'
+        if not path.exists() or json.loads(path.read_text()):
+            raise ValueError('Complete all review collectors with zero invalid answers before freezing.')
+    reference = []
+    for key, source in original.items():
+        if key in required_third:
+            answer, decision_stage = third[key], 'explicit_adjudication'
+            assert answer.get('adjudication_reason', '').strip(), 'Missing explicit adjudication reasoning'
+        elif key in required_second:
+            answer, decision_stage = second[key], 'independent_agreement'
+            assert answer['status'] in ('names', 'no_name') and \
+                answer['status'] == first[key]['status'] and answer['names'] == first[key]['names'], 'Unadjudicated disagreement'
+        else:
+            answer, decision_stage = first[key], 'first_review'
+            assert answer['status'] in ('names', 'no_name'), 'Unreviewed uncertain first answer'
+        validate_answer(answer, source, ('title-body-blind-v1', PROMPT_VERSION,
+                                       'title-body-independent-v1', 'title-body-adjudication-v1'))
+        reference.append(dict(answer, reference_version='v1', decision_stage=decision_stage,
+                              first_answer_file=first[key].get('answer_file'),
+                              second_answer_file=second.get(key, {}).get('answer_file'),
+                              third_answer_file=third.get(key, {}).get('answer_file')))
+    by_id = {a['input_id']: a for a in reference}
+    mapping = read(WORK / 'row-map.jsonl')
+    assert len(mapping) == manifest['source_rows'], 'Incomplete original row map'
+    row_reference = [dict(by_id[m['input_id']], source_row_id=by_id[m['input_id']]['row_id'],
+                         row_id=m['row_id'], excel_row=m['excel_row']) for m in mapping]
+    assert len({r['row_id'] for r in row_reference}) == len(mapping), 'Duplicate original row identities'
+    lines(WORK / 'references/v1.jsonl', reference)
+    lines(WORK / 'fixed-reference.jsonl', reference)
+    lines(WORK / 'fixed-row-reference.jsonl', row_reference)
+    save(WORK / 'reference-manifest.json', dict(version='v1', frozen_at=datetime.now(timezone.utc).isoformat(),
+         input_count=len(reference), row_count=len(row_reference), second_reviewed_inputs=len(second),
+         adjudicated_inputs=len(third), unresolved_rows=sum(r['status'] in ('conflict', 'uncertain') for r in row_reference),
+         true_accuracy=None, human_review_method='non_blind_confirmation', final_acceptance_passed=False))
+    print((WORK / 'reference-manifest.json').read_text())
+
+
 def watch():
     """Checkpoint active subagent batches once a minute; exit when coverage is complete."""
     while True:
@@ -406,6 +489,7 @@ def watch():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action', choices=['prepare', 'collect', 'compare', 'collect_second', 'human_random', 'runtime', 'watch'])
+    parser.add_argument('action', choices=['prepare', 'collect', 'compare', 'collect_second', 'collect_third',
+                                         'freeze_reference', 'human_random', 'runtime', 'watch'])
     args = parser.parse_args()
     globals()[args.action]()
