@@ -1,0 +1,10 @@
+{
+  "method": "non_blind_confirmation",
+  "random_sample_rows": 60,
+  "risk_sample_rows": 0,
+  "checkbox_save_and_reload_verified": true,
+  "UI_test_rows_count_as_human": false,
+  "human_completed": 0,
+  "server_url": "http://127.0.0.1:56393/confirmation.html",
+  "screenshot": "/Users/tristana/法询金融科技codex测试/.local/human-confirmation-qa/confirmation-desktop.jpg"
+}

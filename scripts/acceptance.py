@@ -5,11 +5,14 @@ This module never generates semantic answers or modifies production extraction.
 import argparse
 from collections import Counter, defaultdict
 import csv
+from contextlib import redirect_stdout
 from datetime import datetime, timezone
 import json
+import io
 import os
 from pathlib import Path
 import random
+import time
 
 from openpyxl import load_workbook
 
@@ -193,12 +196,30 @@ def collect():
     save(WORK / 'invalid-answers.json', rejected)
     pilot_ids = {r['input_id'] for r in read(WORK / 'blind/pilot-200.jsonl')}
     covered = sum(m['input_id'] in accepted for m in mapping)
+    human_file = WORK / 'human/confirmations.json'
+    human_records = json.loads(human_file.read_text()) if human_file.exists() else {}
+    selection = json.loads((WORK / 'human/random-60-selection.json').read_text())
+    human_ids = set(selection['row_ids'])
+    risk_selection = WORK / 'human/risk-40-selection.json'
+    if risk_selection.exists():
+        human_ids.update(json.loads(risk_selection.read_text())['row_ids'])
+    row_mapping = {m['row_id']: m for m in mapping}
+    reference = {a['input_id']: a for a in read(WORK / 'fixed-reference.jsonl')} if (WORK / 'fixed-reference.jsonl').exists() else accepted
+    human_status = Counter()
+    for row_id, human in human_records.items():
+        if row_id not in human_ids or human.get('source') != 'human_confirmation_ui':
+            continue
+        ai = reference.get(row_mapping[row_id]['input_id'])
+        snapshot = json.dumps(dict(names=ai['names'], status=ai['status']), ensure_ascii=False, separators=(',', ':')) if ai else 'null'
+        if human.get('answer') == snapshot and human.get('verdict') in ('correct', 'incorrect', 'uncertain'):
+            human_status[human['verdict']] += 1
     save(WORK / 'progress.json', dict(updated_at=datetime.now(timezone.utc).isoformat(),
          source_rows=len(mapping), reviewed_rows=covered, ai_review_coverage=covered/len(mapping),
          unique_inputs=len(inputs), reviewed_inputs=len(accepted), pending_inputs=len(inputs)-len(accepted),
          pilot_reviewed_inputs=len(pilot_ids & accepted.keys()), pilot_inputs=len(pilot_ids),
          invalid_answers=len(rejected), status_inputs=dict(Counter(a['status'] for a in accepted.values())),
-         human_reviewed_rows=0, human_review_limit=100, reference_set_frozen=False,
+         human_reviewed_rows=sum(human_status.values()), human_status_rows=dict(human_status),
+         human_review_method='non_blind_confirmation', human_review_limit=100, reference_set_frozen=False,
          true_accuracy=None, acceptance_passed=False))
     print((WORK / 'progress.json').read_text())
 
@@ -306,8 +327,24 @@ def runtime():
     print(json.dumps(totals))
 
 
+def watch():
+    """Checkpoint active subagent batches once a minute; exit when coverage is complete."""
+    while True:
+        with redirect_stdout(io.StringIO()):
+            collect()
+            compare()
+        progress = json.loads((WORK / 'progress.json').read_text())
+        comparison = json.loads((WORK / 'first-comparison.json').read_text())
+        print(json.dumps(dict(reviewed_rows=progress['reviewed_rows'], total_rows=progress['source_rows'],
+             invalid_answers=progress['invalid_answers'],
+             disputed_rows=comparison['categories_rows'].get('disputed', 0))), flush=True)
+        if progress['reviewed_rows'] == progress['source_rows']:
+            return
+        time.sleep(60)
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action', choices=['prepare', 'collect', 'compare', 'human_random', 'runtime'])
+    parser.add_argument('action', choices=['prepare', 'collect', 'compare', 'human_random', 'runtime', 'watch'])
     args = parser.parse_args()
     globals()[args.action]()
