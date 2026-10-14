@@ -550,6 +550,55 @@ def supplement_reference():
     print(json.dumps(new_manifest, ensure_ascii=False, indent=2))
 
 
+def title_policy_reference():
+    """Apply the user's title-only scoring policy, retaining source-quality conflicts."""
+    manifest = json.loads((WORK / 'reference-manifest.json').read_text())
+    if manifest['version'] != 'v2' or (WORK / 'references/v3.jsonl').exists():
+        raise ValueError('The title policy is a one-time v2 to v3 revision.')
+    sources = {r['input_id']: r for r in read(WORK / 'blind/inputs.jsonl')}
+    reference, changes = [], []
+    for old in read(WORK / 'references/v2.jsonl'):
+        new = dict(old, reference_version='v3')
+        # These retained title arrays were uncertain solely because the body differed.
+        if (old['status'] == 'conflict' and old['row_id'] != 'Sheet1:04361') or old['row_id'] in ('Sheet1:17587', 'Sheet1:21134'):
+            new.update(status='names', source_quality='title_body_information_conflict',
+                       original_ai_status=old['status'], decision_stage='user_title_only_policy',
+                       policy_reason='用户确认姓名提取按标题，正文差异单独标记为原始信息冲突，不替换标题姓名。')
+        elif old['row_id'] == 'Sheet1:04361':
+            source = sources[old['input_id']]
+            assert '李伦红安农商行' in source['标题']
+            assert source['被许可对象'] == '湖北红安农村商业银行股份有限公司'
+            assert '关于李伦同志任职资格核准的请示' in source['内容']
+            new.update(names=['李伦'], status='names', title_evidence=[dict(name='李伦', quote='李伦红安农商行')],
+                body_evidence=['关于李伦同志任职资格核准的请示'], decision_stage='raw_institution_boundary_correction',
+                reason='标题机构为红安农商行，姓名李伦；被许可对象全称和独立请示同样支持此边界。旧参考把机构首字红并入姓名，导致虚假的标题正文冲突。',
+                adjudication_reason='按原始标题、机构全称及独立请示纠正参考边界；不以脚本答案作为证据。',
+                source_quality='reference_boundary_error_corrected', original_ai_status=old['status'])
+        if (new['names'], new['status']) != (old['names'], old['status']):
+            new = validate_answer(new, sources[old['input_id']],
+                ('title-body-blind-v1', PROMPT_VERSION, 'title-body-independent-v1', 'title-body-adjudication-v1'))
+            changes.append(dict(input_id=old['input_id'], before=old, after=new,
+                reason=new.get('policy_reason', new.get('adjudication_reason'))))
+        reference.append(new)
+    by_id = {a['input_id']: a for a in reference}
+    rows = [dict(by_id[m['input_id']], source_row_id=by_id[m['input_id']]['row_id'],
+                 row_id=m['row_id'], excel_row=m['excel_row']) for m in read(WORK / 'row-map.jsonl')]
+    save(WORK / 'references/v3-changes.json', changes)
+    lines(WORK / 'references/v3.jsonl', reference)
+    lines(WORK / 'fixed-reference.jsonl', reference)
+    lines(WORK / 'fixed-row-reference.jsonl', rows)
+    new_manifest = dict(manifest, version='v3', previous_version='v2',
+        frozen_at=datetime.now(timezone.utc).isoformat(),
+        evaluation_policy='姓名按标题；原始信息冲突单独披露，不用正文替换标题姓名',
+        policy_resolved_inputs=sum(c['after'].get('decision_stage') == 'user_title_only_policy' for c in changes),
+        additional_reference_corrections=sum(c['after'].get('decision_stage') == 'raw_institution_boundary_correction' for c in changes),
+        unresolved_rows=sum(r['status'] in ('conflict', 'uncertain') for r in rows),
+        source_information_conflict_rows=sum(r.get('source_quality') == 'title_body_information_conflict' for r in rows))
+    save(WORK / 'references/v3-manifest.json', new_manifest)
+    save(WORK / 'reference-manifest.json', new_manifest)
+    print(json.dumps(new_manifest, ensure_ascii=False, indent=2))
+
+
 def final_compare():
     """Compare every original row with frozen evidence and current script output."""
     from extract import VERSION
@@ -599,11 +648,24 @@ def final_compare():
         human_status_rows=progress['human_status_rows'], true_accuracy=None,
         target_reference_agreement_passed=categories['match']/len(original) > .998,
         acceptance_passed=False)
+    definite = [r for r in comparison if r['script']['status'] != 'uncertain']
+    metrics['script_determinate_rows'] = len(definite)
+    metrics['script_determinate_reference_agreement'] = sum(r['category'] == 'match' for r in definite) / len(definite) if definite else None
+    metrics['source_information_conflict_rows'] = sum(r['reference'].get('source_quality') == 'title_body_information_conflict' for r in comparison)
+    human_ids = set(json.loads((WORK / 'human/random-60-selection.json').read_text())['row_ids']) if (WORK / 'human/random-60-selection.json').exists() else set()
+    risk_path = WORK / 'human/risk-40-selection.json'
+    if risk_path.exists():
+        human_ids.update(json.loads(risk_path.read_text())['row_ids'])
+    metrics['human_sample_script_categories'] = dict(Counter(r['category'] for r in comparison if r['row_id'] in human_ids))
+    declaration = WORK / 'human/review-completion-declaration.json'
+    if declaration.exists():
+        metrics['human_declared_reviewed_rows'] = json.loads(declaration.read_text())['declared_reviewed_rows']
     metrics['acceptance_passed'] = (metrics['ai_review_coverage'] == 1 and not differences and
         metrics['target_reference_agreement_passed'] and metrics['human_reviewed_rows'] == 100 and
         not metrics['human_status_rows'].get('incorrect', 0))
     save(WORK / 'final-comparison.json', metrics)
     save(WORK / f'final-comparison-{VERSION}.json', metrics)
+    save(WORK / f'final-comparison-{VERSION}-{manifest["version"]}.json', metrics)
     print(json.dumps(metrics, ensure_ascii=False, indent=2))
 
 
@@ -679,6 +741,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('action', choices=['prepare', 'collect', 'compare', 'collect_second', 'collect_third',
                                          'freeze_reference', 'partition_sessions', 'human_random', 'human_risk',
-                                         'supplement_reference', 'final_compare', 'runtime', 'watch'])
+                                         'supplement_reference', 'title_policy_reference', 'final_compare', 'runtime', 'watch'])
     args = parser.parse_args()
     globals()[args.action]()

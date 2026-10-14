@@ -1,0 +1,18 @@
+{
+  "decision_source": "用户直接确认按标题提取，正文冲突单独标记原始信息问题",
+  "policy_version": "title-only-evaluation-v1",
+  "prior_ai_model_and_prompt_fields": "保留原始AI来源信息；v3状态调整属于业务口径裁决，不是新模型答案",
+  "policy_resolved_inputs": 35,
+  "controller_raw_evidence_correction": {
+    "row_id": "Sheet1:04361",
+    "before": [
+      "李伦红"
+    ],
+    "after": [
+      "李伦"
+    ],
+    "evidence": "原题机构红安农商行，被许可对象湖北红安农村商业银行，正文独立请示李伦同志；旧参考把机构首字红并入姓名。"
+  },
+  "new_production_rule_changes": 0,
+  "full_ai_rerun_performed": false
+}

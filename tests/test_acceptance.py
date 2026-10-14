@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from acceptance import validate_answer, read, lines, compare, save, freeze_reference, final_compare
+from acceptance import validate_answer, read, lines, compare, save, freeze_reference, final_compare, title_policy_reference
 
 
 class IndependentEvidenceContract(unittest.TestCase):
@@ -30,6 +30,30 @@ class IndependentEvidenceContract(unittest.TestCase):
         result = validate_answer(self.answer, self.source)
         self.assertEqual([(e['start'], e['end']) for e in result['title_evidence']], [(2, 5), (5, 8)])
         self.assertEqual(result['names'], ['白玉娥', '李毅昕'])
+
+    def test_title_policy_preserves_source_conflict_and_does_not_resolve_unknown_title(self):
+        with tempfile.TemporaryDirectory() as directory:
+            work = Path(directory)
+            unknown = dict(self.source, input_id='input-00002', row_id='Sheet1:04682', 标题='关于杨邵阳银保监分局')
+            before = dict(self.answer, status='conflict', reference_version='v2')
+            unresolved = dict(self.answer, input_id=unknown['input_id'], row_id=unknown['row_id'],
+                              names=[], title_evidence=[], status='uncertain', reference_version='v2')
+            save(work / 'reference-manifest.json', dict(version='v2', row_count=2))
+            lines(work / 'blind/inputs.jsonl', [self.source, unknown])
+            lines(work / 'references/v2.jsonl', [before, unresolved])
+            lines(work / 'row-map.jsonl', [dict(input_id=s['input_id'], row_id=s['row_id'], excel_row=i)
+                  for i, s in enumerate((self.source, unknown), 2)])
+            # There is deliberately no script snapshot or output available to this policy step.
+            with patch('acceptance.WORK', work):
+                title_policy_reference()
+                with self.assertRaises(ValueError):
+                    title_policy_reference()
+            current = read(work / 'fixed-reference.jsonl')
+            self.assertEqual(current[0]['names'], self.answer['names'])
+            self.assertEqual(current[0]['status'], 'names')
+            self.assertEqual(current[0]['source_quality'], 'title_body_information_conflict')
+            self.assertEqual(current[1]['status'], 'uncertain')
+            self.assertEqual(read(work / 'references/v2.jsonl')[0]['status'], 'conflict')
 
     def test_body_only_name_cannot_enter_reference(self):
         answer = copy.deepcopy(self.answer)
