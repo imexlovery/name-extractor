@@ -1,0 +1,15 @@
+{
+  "version": "v2",
+  "frozen_at": "2026-10-14T12:22:48.982258+00:00",
+  "input_count": 51962,
+  "row_count": 52146,
+  "second_reviewed_inputs": 3602,
+  "adjudicated_inputs": 327,
+  "unresolved_rows": 39,
+  "true_accuracy": null,
+  "human_review_method": "non_blind_confirmation",
+  "final_acceptance_passed": false,
+  "previous_version": "v1",
+  "supplemental_reviewed_inputs": 9,
+  "corrected_inputs": 6
+}

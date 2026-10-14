@@ -8,6 +8,18 @@ from validate import check
 
 
 class IncompleteTitlesAndInstitutionLinker(unittest.TestCase):
+    def test_adjudicated_full_institution_boundaries(self):
+        cases = {
+            '关于冯毅健安金汇保险销售服务有限公司总经理任职资格的批复': ['冯毅'],
+            '关于核准袁军成都江堰金都村镇银行有限责任公司董事任职资格的批复': ['袁军成'],
+            '中国银保监会中山监管分局于高明任职资格的批复': ['高明'],
+            '关于于高明任职资格的批复': ['于高明'],
+        }
+        for title, names in cases.items():
+            result = extract(title)
+            self.assertEqual((result['status'], result['names']), ('names', names), title)
+            self.assertEqual(check(title, result)['failures'], [], title)
+
     def test_complete_public_matters_without_named_people(self):
         for title in [
             '银保监会持续开展银行保险机构股权和关联交易专项整治不断提升公司治理质效',

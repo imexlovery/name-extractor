@@ -1,0 +1,1047 @@
+{
+  "prefix": "session-07",
+  "valid_batches": 196,
+  "valid_inputs": 3920,
+  "valid_outputs": [
+    {
+      "part": "part-0001.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0001.jsonl"
+    },
+    {
+      "part": "part-0002.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0002.jsonl"
+    },
+    {
+      "part": "part-0003.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0003.jsonl"
+    },
+    {
+      "part": "part-0004.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0004.jsonl"
+    },
+    {
+      "part": "part-0005.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0005.jsonl"
+    },
+    {
+      "part": "part-0006.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0006.jsonl"
+    },
+    {
+      "part": "part-0007.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0007.jsonl"
+    },
+    {
+      "part": "part-0008.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0008.jsonl"
+    },
+    {
+      "part": "part-0009.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0009.jsonl"
+    },
+    {
+      "part": "part-0010.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0010.jsonl"
+    },
+    {
+      "part": "part-0011.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0011.jsonl"
+    },
+    {
+      "part": "part-0012.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0012.jsonl"
+    },
+    {
+      "part": "part-0013.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0013.jsonl"
+    },
+    {
+      "part": "part-0014.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0014.jsonl"
+    },
+    {
+      "part": "part-0015.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0015.jsonl"
+    },
+    {
+      "part": "part-0016.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0016.jsonl"
+    },
+    {
+      "part": "part-0017.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0017.jsonl"
+    },
+    {
+      "part": "part-0018.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0018.jsonl"
+    },
+    {
+      "part": "part-0019.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0019.jsonl"
+    },
+    {
+      "part": "part-0020.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0020.jsonl"
+    },
+    {
+      "part": "part-0021.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0021.jsonl"
+    },
+    {
+      "part": "part-0022.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0022.jsonl"
+    },
+    {
+      "part": "part-0023.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0023.jsonl"
+    },
+    {
+      "part": "part-0024.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0024.jsonl"
+    },
+    {
+      "part": "part-0025.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0025.jsonl"
+    },
+    {
+      "part": "part-0026.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0026.jsonl"
+    },
+    {
+      "part": "part-0027.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0027.jsonl"
+    },
+    {
+      "part": "part-0028.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0028.jsonl"
+    },
+    {
+      "part": "part-0029.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0029.jsonl"
+    },
+    {
+      "part": "part-0030.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0030.jsonl"
+    },
+    {
+      "part": "part-0031.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0031.jsonl"
+    },
+    {
+      "part": "part-0032.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0032.jsonl"
+    },
+    {
+      "part": "part-0033.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0033.jsonl"
+    },
+    {
+      "part": "part-0034.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0034.jsonl"
+    },
+    {
+      "part": "part-0035.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0035.jsonl"
+    },
+    {
+      "part": "part-0036.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0036.jsonl"
+    },
+    {
+      "part": "part-0037.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0037.jsonl"
+    },
+    {
+      "part": "part-0038.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0038.jsonl"
+    },
+    {
+      "part": "part-0039.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0039.jsonl"
+    },
+    {
+      "part": "part-0040.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0040.jsonl"
+    },
+    {
+      "part": "part-0041.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0041.jsonl"
+    },
+    {
+      "part": "part-0042.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0042.jsonl"
+    },
+    {
+      "part": "part-0043.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0043.jsonl"
+    },
+    {
+      "part": "part-0044.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0044.jsonl"
+    },
+    {
+      "part": "part-0045.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0045.jsonl"
+    },
+    {
+      "part": "part-0046.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0046.jsonl"
+    },
+    {
+      "part": "part-0047.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0047.jsonl"
+    },
+    {
+      "part": "part-0048.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0048.jsonl"
+    },
+    {
+      "part": "part-0049.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0049.jsonl"
+    },
+    {
+      "part": "part-0050.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0050.jsonl"
+    },
+    {
+      "part": "part-0051.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0051.jsonl"
+    },
+    {
+      "part": "part-0052.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0052.jsonl"
+    },
+    {
+      "part": "part-0053.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0053.jsonl"
+    },
+    {
+      "part": "part-0054.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0054.jsonl"
+    },
+    {
+      "part": "part-0055.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0055.jsonl"
+    },
+    {
+      "part": "part-0056.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0056.jsonl"
+    },
+    {
+      "part": "part-0057.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0057.jsonl"
+    },
+    {
+      "part": "part-0058.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0058.jsonl"
+    },
+    {
+      "part": "part-0059.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0059.jsonl"
+    },
+    {
+      "part": "part-0060.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0060.jsonl"
+    },
+    {
+      "part": "part-0061.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0061.jsonl"
+    },
+    {
+      "part": "part-0062.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0062.jsonl"
+    },
+    {
+      "part": "part-0063.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0063.jsonl"
+    },
+    {
+      "part": "part-0064.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0064.jsonl"
+    },
+    {
+      "part": "part-0065.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0065.jsonl"
+    },
+    {
+      "part": "part-0066.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0066.jsonl"
+    },
+    {
+      "part": "part-0067.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0067.jsonl"
+    },
+    {
+      "part": "part-0068.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0068.jsonl"
+    },
+    {
+      "part": "part-0069.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0069.jsonl"
+    },
+    {
+      "part": "part-0070.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0070.jsonl"
+    },
+    {
+      "part": "part-0071.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0071.jsonl"
+    },
+    {
+      "part": "part-0072.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0072.jsonl"
+    },
+    {
+      "part": "part-0073.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0073.jsonl"
+    },
+    {
+      "part": "part-0074.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0074.jsonl"
+    },
+    {
+      "part": "part-0075.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0075.jsonl"
+    },
+    {
+      "part": "part-0076.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0076.jsonl"
+    },
+    {
+      "part": "part-0077.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0077.jsonl"
+    },
+    {
+      "part": "part-0078.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0078.jsonl"
+    },
+    {
+      "part": "part-0079.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0079.jsonl"
+    },
+    {
+      "part": "part-0080.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0080.jsonl"
+    },
+    {
+      "part": "part-0081.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0081.jsonl"
+    },
+    {
+      "part": "part-0082.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0082.jsonl"
+    },
+    {
+      "part": "part-0083.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0083.jsonl"
+    },
+    {
+      "part": "part-0084.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0084.jsonl"
+    },
+    {
+      "part": "part-0085.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0085.jsonl"
+    },
+    {
+      "part": "part-0086.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0086.jsonl"
+    },
+    {
+      "part": "part-0087.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0087.jsonl"
+    },
+    {
+      "part": "part-0088.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0088.jsonl"
+    },
+    {
+      "part": "part-0089.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0089.jsonl"
+    },
+    {
+      "part": "part-0090.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0090.jsonl"
+    },
+    {
+      "part": "part-0091.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0091.jsonl"
+    },
+    {
+      "part": "part-0092.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0092.jsonl"
+    },
+    {
+      "part": "part-0093.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0093.jsonl"
+    },
+    {
+      "part": "part-0094.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0094.jsonl"
+    },
+    {
+      "part": "part-0095.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0095.jsonl"
+    },
+    {
+      "part": "part-0096.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0096.jsonl"
+    },
+    {
+      "part": "part-0097.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0097.jsonl"
+    },
+    {
+      "part": "part-0098.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0098.jsonl"
+    },
+    {
+      "part": "part-0099.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0099.jsonl"
+    },
+    {
+      "part": "part-0100.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0100.jsonl"
+    },
+    {
+      "part": "part-0101.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0101.jsonl"
+    },
+    {
+      "part": "part-0102.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0102.jsonl"
+    },
+    {
+      "part": "part-0103.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0103.jsonl"
+    },
+    {
+      "part": "part-0104.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0104.jsonl"
+    },
+    {
+      "part": "part-0105.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0105.jsonl"
+    },
+    {
+      "part": "part-0106.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0106.jsonl"
+    },
+    {
+      "part": "part-0107.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0107.jsonl"
+    },
+    {
+      "part": "part-0108.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0108.jsonl"
+    },
+    {
+      "part": "part-0109.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0109.jsonl"
+    },
+    {
+      "part": "part-0110.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0110.jsonl"
+    },
+    {
+      "part": "part-0111.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0111.jsonl"
+    },
+    {
+      "part": "part-0112.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0112.jsonl"
+    },
+    {
+      "part": "part-0113.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0113.jsonl"
+    },
+    {
+      "part": "part-0114.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0114.jsonl"
+    },
+    {
+      "part": "part-0115.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0115.jsonl"
+    },
+    {
+      "part": "part-0116.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0116.jsonl"
+    },
+    {
+      "part": "part-0117.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0117.jsonl"
+    },
+    {
+      "part": "part-0118.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0118.jsonl"
+    },
+    {
+      "part": "part-0119.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0119.jsonl"
+    },
+    {
+      "part": "part-0120.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0120.jsonl"
+    },
+    {
+      "part": "part-0121.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0121.jsonl"
+    },
+    {
+      "part": "part-0122.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0122.jsonl"
+    },
+    {
+      "part": "part-0123.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0123.jsonl"
+    },
+    {
+      "part": "part-0124.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0124.jsonl"
+    },
+    {
+      "part": "part-0125.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0125.jsonl"
+    },
+    {
+      "part": "part-0126.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0126.jsonl"
+    },
+    {
+      "part": "part-0127.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0127.jsonl"
+    },
+    {
+      "part": "part-0128.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0128.jsonl"
+    },
+    {
+      "part": "part-0129.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0129.jsonl"
+    },
+    {
+      "part": "part-0130.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0130.jsonl"
+    },
+    {
+      "part": "part-0131.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0131.jsonl"
+    },
+    {
+      "part": "part-0132.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0132.jsonl"
+    },
+    {
+      "part": "part-0133.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0133.jsonl"
+    },
+    {
+      "part": "part-0134.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0134.jsonl"
+    },
+    {
+      "part": "part-0135.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0135.jsonl"
+    },
+    {
+      "part": "part-0136.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0136.jsonl"
+    },
+    {
+      "part": "part-0137.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0137.jsonl"
+    },
+    {
+      "part": "part-0138.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0138.jsonl"
+    },
+    {
+      "part": "part-0139.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0139.jsonl"
+    },
+    {
+      "part": "part-0140.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0140.jsonl"
+    },
+    {
+      "part": "part-0141.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0141.jsonl"
+    },
+    {
+      "part": "part-0142.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0142.jsonl"
+    },
+    {
+      "part": "part-0143.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0143.jsonl"
+    },
+    {
+      "part": "part-0144.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0144.jsonl"
+    },
+    {
+      "part": "part-0145.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0145.jsonl"
+    },
+    {
+      "part": "part-0146.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0146.jsonl"
+    },
+    {
+      "part": "part-0147.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0147.jsonl"
+    },
+    {
+      "part": "part-0148.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0148.jsonl"
+    },
+    {
+      "part": "part-0149.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0149.jsonl"
+    },
+    {
+      "part": "part-0150.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0150.jsonl"
+    },
+    {
+      "part": "part-0151.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0151.jsonl"
+    },
+    {
+      "part": "part-0152.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0152.jsonl"
+    },
+    {
+      "part": "part-0153.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0153.jsonl"
+    },
+    {
+      "part": "part-0154.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0154.jsonl"
+    },
+    {
+      "part": "part-0155.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0155.jsonl"
+    },
+    {
+      "part": "part-0156.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0156.jsonl"
+    },
+    {
+      "part": "part-0157.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0157.jsonl"
+    },
+    {
+      "part": "part-0158.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0158.jsonl"
+    },
+    {
+      "part": "part-0159.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0159.jsonl"
+    },
+    {
+      "part": "part-0160.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0160.jsonl"
+    },
+    {
+      "part": "part-0161.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0161.jsonl"
+    },
+    {
+      "part": "part-0162.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0162.jsonl"
+    },
+    {
+      "part": "part-0163.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0163.jsonl"
+    },
+    {
+      "part": "part-0164.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0164.jsonl"
+    },
+    {
+      "part": "part-0165.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0165.jsonl"
+    },
+    {
+      "part": "part-0166.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0166.jsonl"
+    },
+    {
+      "part": "part-0167.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0167.jsonl"
+    },
+    {
+      "part": "part-0168.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0168.jsonl"
+    },
+    {
+      "part": "part-0169.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0169.jsonl"
+    },
+    {
+      "part": "part-0170.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0170.jsonl"
+    },
+    {
+      "part": "part-0171.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0171.jsonl"
+    },
+    {
+      "part": "part-0172.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0172.jsonl"
+    },
+    {
+      "part": "part-0173.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0173.jsonl"
+    },
+    {
+      "part": "part-0174.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0174.jsonl"
+    },
+    {
+      "part": "part-0175.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0175.jsonl"
+    },
+    {
+      "part": "part-0176.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0176.jsonl"
+    },
+    {
+      "part": "part-0177.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0177.jsonl"
+    },
+    {
+      "part": "part-0178.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0178.jsonl"
+    },
+    {
+      "part": "part-0179.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0179.jsonl"
+    },
+    {
+      "part": "part-0180.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0180.jsonl"
+    },
+    {
+      "part": "part-0181.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0181.jsonl"
+    },
+    {
+      "part": "part-0182.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0182.jsonl"
+    },
+    {
+      "part": "part-0183.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0183.jsonl"
+    },
+    {
+      "part": "part-0184.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0184.jsonl"
+    },
+    {
+      "part": "part-0185.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0185.jsonl"
+    },
+    {
+      "part": "part-0186.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0186.jsonl"
+    },
+    {
+      "part": "part-0187.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0187.jsonl"
+    },
+    {
+      "part": "part-0188.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0188.jsonl"
+    },
+    {
+      "part": "part-0189.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0189.jsonl"
+    },
+    {
+      "part": "part-0190.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0190.jsonl"
+    },
+    {
+      "part": "part-0191.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0191.jsonl"
+    },
+    {
+      "part": "part-0192.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0192.jsonl"
+    },
+    {
+      "part": "part-0193.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0193.jsonl"
+    },
+    {
+      "part": "part-0194.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0194.jsonl"
+    },
+    {
+      "part": "part-0195.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0195.jsonl"
+    },
+    {
+      "part": "part-0196.jsonl",
+      "records": 20,
+      "output": "validation/0.7.0/final-acceptance/answers/first/session-07-0196.jsonl"
+    }
+  ],
+  "missing_parts": [
+    "part-0197.jsonl",
+    "part-0198.jsonl",
+    "part-0199.jsonl",
+    "part-0200.jsonl",
+    "part-0201.jsonl",
+    "part-0202.jsonl",
+    "part-0203.jsonl",
+    "part-0204.jsonl",
+    "part-0205.jsonl",
+    "part-0206.jsonl",
+    "part-0207.jsonl",
+    "part-0208.jsonl",
+    "part-0209.jsonl",
+    "part-0210.jsonl",
+    "part-0211.jsonl",
+    "part-0212.jsonl",
+    "part-0213.jsonl",
+    "part-0214.jsonl",
+    "part-0215.jsonl",
+    "part-0216.jsonl",
+    "part-0217.jsonl",
+    "part-0218.jsonl",
+    "part-0219.jsonl",
+    "part-0220.jsonl",
+    "part-0221.jsonl",
+    "part-0222.jsonl",
+    "part-0223.jsonl",
+    "part-0224.jsonl",
+    "part-0225.jsonl",
+    "part-0226.jsonl",
+    "part-0227.jsonl",
+    "part-0228.jsonl",
+    "part-0229.jsonl",
+    "part-0230.jsonl",
+    "part-0231.jsonl",
+    "part-0232.jsonl",
+    "part-0233.jsonl",
+    "part-0234.jsonl",
+    "part-0235.jsonl",
+    "part-0236.jsonl",
+    "part-0237.jsonl",
+    "part-0238.jsonl",
+    "part-0239.jsonl",
+    "part-0240.jsonl",
+    "part-0241.jsonl",
+    "part-0242.jsonl",
+    "part-0243.jsonl",
+    "part-0244.jsonl",
+    "part-0245.jsonl",
+    "part-0246.jsonl",
+    "part-0247.jsonl",
+    "part-0248.jsonl"
+  ],
+  "invalid": [],
+  "old_thread_id": "01a134fe-204e-7051-93dc-026d47c71f40",
+  "replacement_thread_id": "01a1362d-0d0d-72e1-8edd-f7f18b56246e",
+  "handoff_at": "2026-10-13T16:52:25.080128+00:00",
+  "new_run_log": "runs/session-07-clean-replacement.json",
+  "skip_memory_and_history": true
+}

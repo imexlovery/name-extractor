@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-10-14T11:14:23.267456+00:00",
+  "script_version": "r64",
+  "reference_version": "v1",
+  "source_rows": 52146,
+  "categories_rows": {
+    "match": 52022,
+    "script_unresolved_confirmed_reference": 76,
+    "unresolved_reference": 39,
+    "name_or_status_difference": 9
+  },
+  "confirmed_matching_rows": 52022,
+  "confirmed_difference_rows": 85,
+  "unresolved_reference_rows": 39,
+  "reference_agreement": 0.9976220611360411,
+  "confirmed_reference_agreement": 0.9983687412439788,
+  "ai_review_coverage": 1.0,
+  "human_reviewed_rows": 0,
+  "human_status_rows": {},
+  "true_accuracy": null,
+  "target_reference_agreement_passed": false,
+  "acceptance_passed": false
+}

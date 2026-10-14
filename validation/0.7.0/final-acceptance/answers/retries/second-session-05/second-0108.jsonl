@@ -1,0 +1,1 @@
+{"answer": {"input_id": "input-30911", "row_id": "Sheet1:30989", "names": [], "title_evidence": [], "body_evidence": ["三、核准太平财产保险有限公司广安中心支公司副总经理（主持工作）的任职资格。"], "status": "no_name", "reason": "标题只写广安中心支公司开业批复，没有人员姓名；杨帅仅在正文任职核准事项中出现。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}, "error": "Body quote not in original"}

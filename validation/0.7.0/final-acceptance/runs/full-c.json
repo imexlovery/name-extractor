@@ -1,0 +1,2251 @@
+{
+  "reviewer": "full-c",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-blind-v2",
+  "batches": [
+    {
+      "shard": "full-1727.jsonl",
+      "completed_at_utc": "2026-10-13T09:04:18Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1728.jsonl",
+      "completed_at_utc": "2026-10-13T09:04:59Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1729.jsonl",
+      "completed_at_utc": "2026-10-13T09:05:31Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1730.jsonl",
+      "completed_at_utc": "2026-10-13T09:06:10Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1731.jsonl",
+      "completed_at_utc": "2026-10-13T09:06:41Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1732.jsonl",
+      "completed_at_utc": "2026-10-13T09:07:15Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1733.jsonl",
+      "completed_at_utc": "2026-10-13T09:07:51Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1734.jsonl",
+      "completed_at_utc": "2026-10-13T09:08:27Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1735.jsonl",
+      "completed_at_utc": "2026-10-13T09:09:00Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1736.jsonl",
+      "completed_at_utc": "2026-10-13T09:09:33Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1737.jsonl",
+      "completed_at_utc": "2026-10-13T09:10:12Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1738.jsonl",
+      "completed_at_utc": "2026-10-13T09:10:43Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1739.jsonl",
+      "completed_at_utc": "2026-10-13T09:11:22Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1740.jsonl",
+      "completed_at_utc": "2026-10-13T09:11:56Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1741.jsonl",
+      "completed_at_utc": "2026-10-13T09:12:34Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1742.jsonl",
+      "completed_at_utc": "2026-10-13T09:13:11Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1743.jsonl",
+      "completed_at_utc": "2026-10-13T09:13:52Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1744.jsonl",
+      "completed_at_utc": "2026-10-13T09:14:23Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1745.jsonl",
+      "completed_at_utc": "2026-10-13T09:14:54Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1746.jsonl",
+      "completed_at_utc": "2026-10-13T09:15:31Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1747.jsonl",
+      "completed_at_utc": "2026-10-13T09:16:21Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1748.jsonl",
+      "completed_at_utc": "2026-10-13T09:17:01Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1749.jsonl",
+      "completed_at_utc": "2026-10-13T09:17:48Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1750.jsonl",
+      "completed_at_utc": "2026-10-13T09:18:31Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1751.jsonl",
+      "completed_at_utc": "2026-10-13T09:19:17Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1752.jsonl",
+      "completed_at_utc": "2026-10-13T09:19:59Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1753.jsonl",
+      "completed_at_utc": "2026-10-13T09:20:37Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1754.jsonl",
+      "completed_at_utc": "2026-10-13T09:21:20Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1755.jsonl",
+      "completed_at_utc": "2026-10-13T09:22:00Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1756.jsonl",
+      "completed_at_utc": "2026-10-13T09:22:44Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1757.jsonl",
+      "completed_at_utc": "2026-10-13T09:24:22.616Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1758.jsonl",
+      "completed_at_utc": "2026-10-13T09:26:37Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1759.jsonl",
+      "completed_at_utc": "2026-10-13T09:27:20Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1760.jsonl",
+      "completed_at_utc": "2026-10-13T09:29:00Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1761.jsonl",
+      "completed_at_utc": "2026-10-13T09:30:18Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1762.jsonl",
+      "completed_at_utc": "2026-10-13T09:31:27Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1763.jsonl",
+      "completed_at_utc": "2026-10-13T09:31:58Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1764.jsonl",
+      "completed_at_utc": "2026-10-13T09:32:21Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1765.jsonl",
+      "completed_at_utc": "2026-10-13T09:32:46Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1766.jsonl",
+      "completed_at_utc": "2026-10-13T09:33:14Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1767.jsonl",
+      "completed_at_utc": "2026-10-13T09:33:43Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1768.jsonl",
+      "completed_at_utc": "2026-10-13T09:34:01Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1769.jsonl",
+      "completed_at_utc": "2026-10-13T09:34:27Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1770.jsonl",
+      "completed_at_utc": "2026-10-13T09:34:57Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1771.jsonl",
+      "completed_at_utc": "2026-10-13T09:35:22Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1772.jsonl",
+      "completed_at_utc": "2026-10-13T09:35:44Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1773.jsonl",
+      "completed_at_utc": "2026-10-13T09:36:03Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1774.jsonl",
+      "completed_at_utc": "2026-10-13T09:36:24Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1775.jsonl",
+      "completed_at_utc": "2026-10-13T09:36:47Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1776.jsonl",
+      "completed_at_utc": "2026-10-13T09:37:05Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1777.jsonl",
+      "completed_at_utc": "2026-10-13T09:37:25Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1778.jsonl",
+      "completed_at_utc": "2026-10-13T09:37:49Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1779.jsonl",
+      "completed_at_utc": "2026-10-13T09:38:22Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1780.jsonl",
+      "completed_at_utc": "2026-10-13T09:38:44Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1781.jsonl",
+      "completed_at_utc": "2026-10-13T09:39:03Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1782.jsonl",
+      "completed_at_utc": "2026-10-13T09:39:25Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1783.jsonl",
+      "completed_at_utc": "2026-10-13T09:39:50Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1784.jsonl",
+      "completed_at_utc": "2026-10-13T09:40:12Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1785.jsonl",
+      "completed_at_utc": "2026-10-13T09:40:52Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1786.jsonl",
+      "completed_at_utc": "2026-10-13T09:41:27Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1787.jsonl",
+      "completed_at_utc": "2026-10-13T09:42:13Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1788.jsonl",
+      "completed_at_utc": "2026-10-13T09:42:34Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1789.jsonl",
+      "completed_at_utc": "2026-10-13T09:42:54Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1790.jsonl",
+      "completed_at_utc": "2026-10-13T09:43:12Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1791.jsonl",
+      "completed_at_utc": "2026-10-13T09:43:36Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1792.jsonl",
+      "completed_at_utc": "2026-10-13T09:43:58Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1793.jsonl",
+      "completed_at_utc": "2026-10-13T09:44:24Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1794.jsonl",
+      "completed_at_utc": "2026-10-13T09:44:53Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1795.jsonl",
+      "completed_at_utc": "2026-10-13T09:45:33Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1796.jsonl",
+      "completed_at_utc": "2026-10-13T09:45:53Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1797.jsonl",
+      "completed_at_utc": "2026-10-13T09:46:34Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1798.jsonl",
+      "completed_at_utc": "2026-10-13T09:46:55Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1799.jsonl",
+      "completed_at_utc": "2026-10-13T09:47:15Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1800.jsonl",
+      "completed_at_utc": "2026-10-13T09:48:12Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1801.jsonl",
+      "completed_at_utc": "2026-10-13T09:49:05Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1802.jsonl",
+      "completed_at_utc": "2026-10-13T09:49:51Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1803.jsonl",
+      "completed_at_utc": "2026-10-13T09:50:13Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1804.jsonl",
+      "completed_at_utc": "2026-10-13T09:52:06Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1805.jsonl",
+      "completed_at_utc": "2026-10-13T09:52:35Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1806.jsonl",
+      "completed_at_utc": "2026-10-13T09:53:03Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1807.jsonl",
+      "completed_at_utc": "2026-10-13T09:53:45Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1808.jsonl",
+      "completed_at_utc": "2026-10-13T09:54:10Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1809.jsonl",
+      "completed_at_utc": "2026-10-13T09:54:34Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1810.jsonl",
+      "completed_at_utc": "2026-10-13T09:55:00Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1811.jsonl",
+      "completed_at_utc": "2026-10-13T09:55:25Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1813.jsonl",
+      "completed_at_utc": "2026-10-13T09:56:19Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1812.jsonl",
+      "completed_at_utc": "2026-10-13T09:56:47Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1814.jsonl",
+      "completed_at_utc": "2026-10-13T09:57:19Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1815.jsonl",
+      "completed_at_utc": "2026-10-13T09:57:42Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1816.jsonl",
+      "completed_at_utc": "2026-10-13T09:58:06Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1817.jsonl",
+      "completed_at_utc": "2026-10-13T09:58:32Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1818.jsonl",
+      "completed_at_utc": "2026-10-13T09:58:58Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1819.jsonl",
+      "completed_at_utc": "2026-10-13T09:59:28Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1820.jsonl",
+      "completed_at_utc": "2026-10-13T10:00:01Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1821.jsonl",
+      "completed_at_utc": "2026-10-13T10:00:25Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1822.jsonl",
+      "completed_at_utc": "2026-10-13T10:00:50Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1823.jsonl",
+      "completed_at_utc": "2026-10-13T10:01:13Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1824.jsonl",
+      "completed_at_utc": "2026-10-13T10:01:44Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1825.jsonl",
+      "completed_at_utc": "2026-10-13T10:02:12Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1826.jsonl",
+      "completed_at_utc": "2026-10-13T10:02:57Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1827.jsonl",
+      "completed_at_utc": "2026-10-13T10:03:23Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1828.jsonl",
+      "completed_at_utc": "2026-10-13T10:03:48Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1829.jsonl",
+      "completed_at_utc": "2026-10-13T10:04:15Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1830.jsonl",
+      "completed_at_utc": "2026-10-13T10:05:05Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1831.jsonl",
+      "completed_at_utc": "2026-10-13T10:05:35Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1832.jsonl",
+      "completed_at_utc": "2026-10-13T10:06:00Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1833.jsonl",
+      "completed_at_utc": "2026-10-13T10:06:24Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1834.jsonl",
+      "completed_at_utc": "2026-10-13T10:06:56Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1835.jsonl",
+      "completed_at_utc": "2026-10-13T10:07:52Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1836.jsonl",
+      "completed_at_utc": "2026-10-13T10:08:17Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1837.jsonl",
+      "completed_at_utc": "2026-10-13T10:08:41Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1838.jsonl",
+      "completed_at_utc": "2026-10-13T10:09:39Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1839.jsonl",
+      "completed_at_utc": "2026-10-13T10:10:32Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1840.jsonl",
+      "completed_at_utc": "2026-10-13T10:11:03Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1841.jsonl",
+      "completed_at_utc": "2026-10-13T10:11:28Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1842.jsonl",
+      "completed_at_utc": "2026-10-13T10:12:20Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1843.jsonl",
+      "completed_at_utc": "2026-10-13T10:13:50Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1844.jsonl",
+      "completed_at_utc": "2026-10-13T10:16:01Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1845.jsonl",
+      "completed_at_utc": "2026-10-13T10:16:36Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1846.jsonl",
+      "completed_at_utc": "2026-10-13T10:17:04Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1847.jsonl",
+      "completed_at_utc": "2026-10-13T10:17:31Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1848.jsonl",
+      "completed_at_utc": "2026-10-13T10:17:59Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1849.jsonl",
+      "completed_at_utc": "2026-10-13T10:18:26Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1850.jsonl",
+      "completed_at_utc": "2026-10-13T10:18:50Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1860.jsonl",
+      "completed_at_utc": "2026-10-13T10:21:00Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1864.jsonl",
+      "completed_at_utc": "2026-10-13T10:21:24Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1920.jsonl",
+      "completed_at_utc": "2026-10-13T10:21:52Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1987.jsonl",
+      "completed_at_utc": "2026-10-13T10:23:10Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2019.jsonl",
+      "completed_at_utc": "2026-10-13T10:23:41Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2048.jsonl",
+      "completed_at_utc": "2026-10-13T10:24:14Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2102.jsonl",
+      "completed_at_utc": "2026-10-13T10:24:42Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2158.jsonl",
+      "completed_at_utc": "2026-10-13T10:25:08Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2165.jsonl",
+      "completed_at_utc": "2026-10-13T10:25:36Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2230.jsonl",
+      "completed_at_utc": "2026-10-13T10:26:23Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2346.jsonl",
+      "completed_at_utc": "2026-10-13T10:26:48Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2348.jsonl",
+      "completed_at_utc": "2026-10-13T10:27:15Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2375.jsonl",
+      "completed_at_utc": "2026-10-13T10:27:44Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2398.jsonl",
+      "completed_at_utc": "2026-10-13T10:28:17Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2409.jsonl",
+      "completed_at_utc": "2026-10-13T10:28:48Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2431.jsonl",
+      "completed_at_utc": "2026-10-13T10:29:18Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2435.jsonl",
+      "completed_at_utc": "2026-10-13T10:30:10Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2465.jsonl",
+      "completed_at_utc": "2026-10-13T10:30:39Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2502.jsonl",
+      "completed_at_utc": "2026-10-13T10:31:08Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2526.jsonl",
+      "completed_at_utc": "2026-10-13T10:31:39Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-2565.jsonl",
+      "completed_at_utc": "2026-10-13T10:32:06Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1851.jsonl",
+      "completed_at_utc": "2026-10-13T10:32:45Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1852.jsonl",
+      "completed_at_utc": "2026-10-13T10:33:39Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1853.jsonl",
+      "completed_at_utc": "2026-10-13T10:34:07Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1854.jsonl",
+      "completed_at_utc": "2026-10-13T10:34:38Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1855.jsonl",
+      "completed_at_utc": "2026-10-13T10:35:30Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1856.jsonl",
+      "completed_at_utc": "2026-10-13T10:36:02Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1857.jsonl",
+      "completed_at_utc": "2026-10-13T10:36:26Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1858.jsonl",
+      "completed_at_utc": "2026-10-13T10:36:50Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1859.jsonl",
+      "completed_at_utc": "2026-10-13T10:37:27Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1861.jsonl",
+      "completed_at_utc": "2026-10-13T10:37:54Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1862.jsonl",
+      "completed_at_utc": "2026-10-13T10:38:23Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1863.jsonl",
+      "completed_at_utc": "2026-10-13T10:38:45Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1865.jsonl",
+      "completed_at_utc": "2026-10-13T10:40:54Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1866.jsonl",
+      "completed_at_utc": "2026-10-13T10:41:46Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1867.jsonl",
+      "completed_at_utc": "2026-10-13T10:42:42Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1868.jsonl",
+      "completed_at_utc": "2026-10-13T10:46:35Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1869.jsonl",
+      "completed_at_utc": "2026-10-13T10:47:53Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1870.jsonl",
+      "completed_at_utc": "2026-10-13T10:48:53Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1871.jsonl",
+      "completed_at_utc": "2026-10-13T10:49:51Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1872.jsonl",
+      "completed_at_utc": "2026-10-13T10:50:51Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1873.jsonl",
+      "completed_at_utc": "2026-10-13T10:51:56Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1874.jsonl",
+      "completed_at_utc": "2026-10-13T10:53:48Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1875.jsonl",
+      "completed_at_utc": "2026-10-13T10:54:44Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1876.jsonl",
+      "completed_at_utc": "2026-10-13T10:55:09Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1877.jsonl",
+      "completed_at_utc": "2026-10-13T10:55:30Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1878.jsonl",
+      "completed_at_utc": "2026-10-13T10:55:57Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1879.jsonl",
+      "completed_at_utc": "2026-10-13T10:56:18Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1880.jsonl",
+      "completed_at_utc": "2026-10-13T10:56:38Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1881.jsonl",
+      "completed_at_utc": "2026-10-13T10:56:56Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1882.jsonl",
+      "completed_at_utc": "2026-10-13T10:57:14Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1883.jsonl",
+      "completed_at_utc": "2026-10-13T10:57:34Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1884.jsonl",
+      "completed_at_utc": "2026-10-13T10:57:57Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1885.jsonl",
+      "completed_at_utc": "2026-10-13T10:58:16Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1886.jsonl",
+      "completed_at_utc": "2026-10-13T10:58:38Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1887.jsonl",
+      "completed_at_utc": "2026-10-13T10:59:19Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1888.jsonl",
+      "completed_at_utc": "2026-10-13T10:59:41Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1889.jsonl",
+      "completed_at_utc": "2026-10-13T11:00:25Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1890.jsonl",
+      "completed_at_utc": "2026-10-13T11:00:48Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1891.jsonl",
+      "completed_at_utc": "2026-10-13T11:01:11Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1892.jsonl",
+      "completed_at_utc": "2026-10-13T11:01:44Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1893.jsonl",
+      "completed_at_utc": "2026-10-13T11:02:05Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1894.jsonl",
+      "completed_at_utc": "2026-10-13T11:02:29Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1895.jsonl",
+      "completed_at_utc": "2026-10-13T11:02:52Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1896.jsonl",
+      "completed_at_utc": "2026-10-13T11:04:19Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1897.jsonl",
+      "completed_at_utc": "2026-10-13T11:04:40Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1898.jsonl",
+      "completed_at_utc": "2026-10-13T11:05:31Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1899.jsonl",
+      "completed_at_utc": "2026-10-13T11:05:58Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1900.jsonl",
+      "completed_at_utc": "2026-10-13T11:06:21Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1901.jsonl",
+      "completed_at_utc": "2026-10-13T11:06:44Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1902.jsonl",
+      "completed_at_utc": "2026-10-13T11:07:05Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1903.jsonl",
+      "completed_at_utc": "2026-10-13T11:07:27Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1904.jsonl",
+      "completed_at_utc": "2026-10-13T11:07:45Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1905.jsonl",
+      "completed_at_utc": "2026-10-13T11:08:07Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1906.jsonl",
+      "completed_at_utc": "2026-10-13T11:08:28Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1907.jsonl",
+      "completed_at_utc": "2026-10-13T11:08:48Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1908.jsonl",
+      "completed_at_utc": "2026-10-13T11:09:10Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1909.jsonl",
+      "completed_at_utc": "2026-10-13T11:09:37Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1910.jsonl",
+      "completed_at_utc": "2026-10-13T11:09:59Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1911.jsonl",
+      "completed_at_utc": "2026-10-13T11:10:25Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1912.jsonl",
+      "completed_at_utc": "2026-10-13T11:12:36Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    },
+    {
+      "shard": "full-1913.jsonl",
+      "completed_at_utc": "2026-10-13T11:12:59Z",
+      "input_count_read": 20,
+      "output_count_written": 20,
+      "token_usage": null,
+      "cost": null
+    }
+  ],
+  "validations": [
+    {
+      "range": "full-1727.jsonl..full-1756.jsonl",
+      "checked_at_utc": "2026-10-13T09:23:31Z",
+      "input_rows": 600,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "no_name emptiness",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1757.jsonl..full-1760.jsonl",
+      "checked_at_utc": "2026-10-13T09:29:31Z",
+      "input_rows": 80,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "no_name emptiness",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1804.jsonl",
+      "checked_at_utc": "2026-10-13T09:52:06Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1805.jsonl",
+      "checked_at_utc": "2026-10-13T09:52:35Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1806.jsonl",
+      "checked_at_utc": "2026-10-13T09:53:03Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "no_name emptiness",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1807.jsonl",
+      "checked_at_utc": "2026-10-13T09:53:45Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1808.jsonl",
+      "checked_at_utc": "2026-10-13T09:54:10Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1809.jsonl",
+      "checked_at_utc": "2026-10-13T09:54:34Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1810.jsonl",
+      "checked_at_utc": "2026-10-13T09:55:00Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1811.jsonl",
+      "checked_at_utc": "2026-10-13T09:55:25Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1813.jsonl",
+      "checked_at_utc": "2026-10-13T09:56:19Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1812.jsonl",
+      "checked_at_utc": "2026-10-13T09:56:47Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1814.jsonl",
+      "checked_at_utc": "2026-10-13T09:57:19Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1815.jsonl",
+      "checked_at_utc": "2026-10-13T09:57:42Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1816.jsonl",
+      "checked_at_utc": "2026-10-13T09:58:06Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1817.jsonl",
+      "checked_at_utc": "2026-10-13T09:58:32Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1818.jsonl",
+      "checked_at_utc": "2026-10-13T09:58:58Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1819.jsonl",
+      "checked_at_utc": "2026-10-13T09:59:28Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "no_name emptiness",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1820.jsonl",
+      "checked_at_utc": "2026-10-13T10:00:01Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title",
+        "conflict preserved"
+      ]
+    },
+    {
+      "range": "full-1821.jsonl",
+      "checked_at_utc": "2026-10-13T10:00:25Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1822.jsonl",
+      "checked_at_utc": "2026-10-13T10:00:50Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1823.jsonl",
+      "checked_at_utc": "2026-10-13T10:01:13Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1824.jsonl",
+      "checked_at_utc": "2026-10-13T10:01:44Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "no_name emptiness",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1825.jsonl",
+      "checked_at_utc": "2026-10-13T10:02:12Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1826.jsonl",
+      "checked_at_utc": "2026-10-13T10:02:57Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1827.jsonl",
+      "checked_at_utc": "2026-10-13T10:03:23Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1828.jsonl",
+      "checked_at_utc": "2026-10-13T10:03:48Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "no_name emptiness",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1829.jsonl",
+      "checked_at_utc": "2026-10-13T10:04:15Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1830.jsonl",
+      "checked_at_utc": "2026-10-13T10:05:05Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "no_name emptiness",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1831.jsonl",
+      "checked_at_utc": "2026-10-13T10:05:35Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "no_name emptiness",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1832.jsonl",
+      "checked_at_utc": "2026-10-13T10:06:00Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1833.jsonl",
+      "checked_at_utc": "2026-10-13T10:06:24Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1834.jsonl",
+      "checked_at_utc": "2026-10-13T10:06:56Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1835.jsonl",
+      "checked_at_utc": "2026-10-13T10:07:52Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "no_name emptiness",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1836.jsonl",
+      "checked_at_utc": "2026-10-13T10:08:17Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1837.jsonl",
+      "checked_at_utc": "2026-10-13T10:08:41Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1838.jsonl",
+      "checked_at_utc": "2026-10-13T10:09:39Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title",
+        "conflict preserved"
+      ]
+    },
+    {
+      "range": "full-1839.jsonl",
+      "checked_at_utc": "2026-10-13T10:10:32Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1840.jsonl",
+      "checked_at_utc": "2026-10-13T10:11:03Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1841.jsonl",
+      "checked_at_utc": "2026-10-13T10:11:28Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1842.jsonl",
+      "checked_at_utc": "2026-10-13T10:12:20Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "names present in title"
+      ]
+    },
+    {
+      "range": "full-1843.jsonl",
+      "checked_at_utc": "2026-10-13T10:13:50Z",
+      "input_rows": 20,
+      "result": "pass",
+      "checks": [
+        "JSONL parse",
+        "row count and identities",
+        "title evidence presence",
+        "body evidence exact substrings",
+        "no_name emptiness",
+        "names present in title",
+        "conflict preserved"
+      ]
+    }
+  ],
+  "revisions": [
+    {
+      "shard": "full-1755.jsonl",
+      "input_id": "input-35231",
+      "re_reviewed_at_utc": "2026-10-13T09:23:31Z",
+      "retry_record": "answers/retries/full-1755.jsonl",
+      "reason": "Removed a final period from body_evidence because it does not occur in the source quote; status and names unchanged."
+    }
+  ],
+  "retries": [
+    {
+      "shard": "full-1828.jsonl",
+      "input_id": "input-36703",
+      "recorded_at_utc": "2026-10-13T10:22:36Z",
+      "previous_status": "no_name",
+      "revised_status": "names",
+      "previous_answer_backup": "validation/0.7.0/final-acceptance/answers/retries/full-1828.before-input-36703-correction.jsonl",
+      "reason": "标题明确含有姓名高岚松，正文也核准该人任董事会秘书；原no_name判断及理由错误。",
+      "validator": "scripts/acceptance.py::validate_answer",
+      "validator_passed": true,
+      "coverage_delta": 0
+    },
+    {
+      "shard": "full-1846.jsonl",
+      "input_id": "input-37060",
+      "recorded_at_utc": "2026-10-13T10:22:36Z",
+      "previous_status": "no_name",
+      "revised_status": "names",
+      "previous_answer_backup": "validation/0.7.0/final-acceptance/answers/retries/full-1846.before-input-37060-correction.jsonl",
+      "reason": "标题明确含有姓名康静，正文也核准该人任职资格；原no_name判断及理由错误。",
+      "validator": "scripts/acceptance.py::validate_answer",
+      "validator_passed": true,
+      "coverage_delta": 0
+    }
+  ]
+}

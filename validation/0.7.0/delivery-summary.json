@@ -1,6 +1,6 @@
 {
   "release_version": "0.7.0",
-  "version": "r64",
+  "version": "r65",
   "unique_titles": 46760,
   "mapped_rows": 52146,
   "output_status_titles": {
@@ -16,12 +16,15 @@
   "comparison_titles": {
     "single_channel": 35,
     "missing_reference": 22525,
-    "match": 24124,
+    "match": 24122,
     "disputed_reference": 37,
-    "script_unresolved": 39
+    "script_unresolved": 39,
+    "determinate_difference": 2
   },
   "regression_rows_from_v1": [
-    38243
+    38243,
+    43586,
+    51726
   ],
   "ai_a_coverage": 24235,
   "ai_b_coverage": 24200,
@@ -123,8 +126,9 @@
   },
   "full_human_review_complete": false,
   "v1_reference_comparison": {
-    "match": 23336,
-    "script_unresolved": 51
+    "match": 23334,
+    "script_unresolved": 51,
+    "determinate_difference": 2
   },
   "ai_coverage": {
     "a": {

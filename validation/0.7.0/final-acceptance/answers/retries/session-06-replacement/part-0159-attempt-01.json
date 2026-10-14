@@ -1,0 +1,6 @@
+{
+  "part": "part-0159.jsonl",
+  "attempt": 1,
+  "failure": "body quotes for input-39921 and input-39926 did not exactly match source text; validator rejected before write",
+  "resolution": "corrected the parentheses and removed an absent list marker, then validated all 20 answers before and after write"
+}

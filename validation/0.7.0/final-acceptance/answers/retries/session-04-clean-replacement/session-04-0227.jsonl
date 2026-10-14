@@ -1,0 +1,1 @@
+{"input_id": "input-27423", "row_id": "Sheet1:27487", "names": ["付聚军"], "title_evidence": [{"name": "付聚军", "quote": "付聚军", "start": 17, "end": 20}], "body_evidence": ["核准付聚军武邑邢农商村镇银行股份有限公司董事、董事长任职资格"], "status": "names", "reason": "标题明示姓名“付聚军”，正文载明其任职资格事项。", "model": "gpt-6-luna", "prompt_version": "title-body-blind-v2"}

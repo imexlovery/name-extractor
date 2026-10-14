@@ -1,0 +1,39 @@
+{
+  "task": "supplemental-boundary-9",
+  "status": "completed",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-adjudication-v1",
+  "supplemental_prompt_version": "title-boundary-supplement-v1",
+  "source_path": "validation/0.7.0/final-acceptance/blind/supplemental-boundary-9.jsonl",
+  "output_path": "validation/0.7.0/final-acceptance/answers/supplemental/boundary-9.jsonl",
+  "timestamps_utc": {
+    "read_started_at": "2026-10-14T12:08:57.391924Z",
+    "read_completed_at": "2026-10-14T12:08:57.392025Z",
+    "validation_completed_at": "2026-10-14T12:08:57.392153Z",
+    "write_started_at": "2026-10-14T12:08:57.392212Z",
+    "write_completed_at": "2026-10-14T12:08:57.392406Z",
+    "readback_validation_completed_at": "2026-10-14T12:08:57.392647Z"
+  },
+  "human_review_count": 0,
+  "token_count": null,
+  "token_cost": null,
+  "failed_revisions": [
+    {
+      "input_id": "input-08153",
+      "attempt": 1,
+      "recorded_at_utc": "2026-10-14T12:08:57.391821Z",
+      "stage": "prewrite_validation",
+      "failure": "validate_answer rejected a malformed body quote: Body quote not in original",
+      "failed_quote": "《富滇银行关于许清清?",
+      "revision": "Replaced it with the exact request sentence from the original source before writing."
+    }
+  ],
+  "validated_count": 9,
+  "validation_result": "passed_before_write",
+  "readback": {
+    "count": 9,
+    "input_ids_match": true,
+    "row_ids_match": true,
+    "validation_result": "passed"
+  }
+}

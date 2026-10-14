@@ -1,0 +1,1 @@
+{"input_id": "input-17192", "row_id": "Sheet1:17215", "names": [], "title_evidence": [], "body_evidence": ["你行《关于李宝艳任职资格审查的请示》（辽邮银请〔2022〕4号）收悉。经审核，现批复如下：", "经审核，同意中国建设银行股份有限公司朝阳西部新区支行终止营业。"], "status": "no_name", "reason": "标题及当前文号对应的实际批复均为支行终止营业且未明示个人姓名；正文开头李宝艳任职资格请示与当前终止营业事项不对应，不影响标题判断。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

@@ -1,0 +1,3559 @@
+{
+  "agent": "full-a",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-blind-v2",
+  "started_at_utc": "2026-10-13T09:04:10+00:00",
+  "updated_at_utc": "2026-10-13T10:42:31+00:00",
+  "token_count": null,
+  "cost": null,
+  "batches": [
+    {
+      "input_file": "blind/full/full-0001.jsonl",
+      "output_file": "answers/first/full-0001.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T09:05:04+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0002.jsonl",
+      "output_file": "answers/first/full-0002.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T09:06:19+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0003.jsonl",
+      "output_file": "answers/first/full-0003.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T09:07:16+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0004.jsonl",
+      "output_file": "answers/first/full-0004.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T09:08:00+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0005.jsonl",
+      "output_file": "answers/first/full-0005.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T09:08:35+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0006.jsonl",
+      "output_file": "answers/first/full-0006.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T09:08:57+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0007.jsonl",
+      "output_file": "answers/first/full-0007.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T09:09:43+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0008.jsonl",
+      "output_file": "answers/first/full-0008.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T09:10:15+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0009.jsonl",
+      "output_file": "answers/first/full-0009.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T09:10:46+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0010.jsonl",
+      "output_file": "answers/first/full-0010.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T09:11:21+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0011.jsonl",
+      "output_file": "answers/first/full-0011.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:11:52+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0012.jsonl",
+      "output_file": "answers/first/full-0012.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:12:17+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0013.jsonl",
+      "output_file": "answers/first/full-0013.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:12:34+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0014.jsonl",
+      "output_file": "answers/first/full-0014.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:12:58+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0015.jsonl",
+      "output_file": "answers/first/full-0015.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:13:16+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0016.jsonl",
+      "output_file": "answers/first/full-0016.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:13:35+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0017.jsonl",
+      "output_file": "answers/first/full-0017.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:14:00+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0018.jsonl",
+      "output_file": "answers/first/full-0018.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:14:29+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0019.jsonl",
+      "output_file": "answers/first/full-0019.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:14:45+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0020.jsonl",
+      "output_file": "answers/first/full-0020.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:15:06+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0021.jsonl",
+      "output_file": "answers/first/full-0021.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:15:29+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0022.jsonl",
+      "output_file": "answers/first/full-0022.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:15:54+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0023.jsonl",
+      "output_file": "answers/first/full-0023.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:16:14+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0024.jsonl",
+      "output_file": "answers/first/full-0024.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:16:55+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0025.jsonl",
+      "output_file": "answers/first/full-0025.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:17:16+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0026.jsonl",
+      "output_file": "answers/first/full-0026.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 17,
+        "no_name": 3,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:17:46+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0027.jsonl",
+      "output_file": "answers/first/full-0027.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:18:09+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0028.jsonl",
+      "output_file": "answers/first/full-0028.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:18:41+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0029.jsonl",
+      "output_file": "answers/first/full-0029.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:19:25+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0030.jsonl",
+      "output_file": "answers/first/full-0030.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:19:55+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0031.jsonl",
+      "output_file": "answers/first/full-0031.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:20:25+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0032.jsonl",
+      "output_file": "answers/first/full-0032.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:21:01+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0033.jsonl",
+      "output_file": "answers/first/full-0033.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:21:22+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0034.jsonl",
+      "output_file": "answers/first/full-0034.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:21:41+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0035.jsonl",
+      "output_file": "answers/first/full-0035.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:22:18+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0036.jsonl",
+      "output_file": "answers/first/full-0036.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:22:37+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0037.jsonl",
+      "output_file": "answers/first/full-0037.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:23:09+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0038.jsonl",
+      "output_file": "answers/first/full-0038.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:23:31+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0039.jsonl",
+      "output_file": "answers/first/full-0039.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:24:06+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0040.jsonl",
+      "output_file": "answers/first/full-0040.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:24:31+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0041.jsonl",
+      "output_file": "answers/first/full-0041.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:26:38+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0042.jsonl",
+      "output_file": "answers/first/full-0042.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:27:18+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0043.jsonl",
+      "output_file": "answers/first/full-0043.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:28:14+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0044.jsonl",
+      "output_file": "answers/first/full-0044.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:28:50+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0045.jsonl",
+      "output_file": "answers/first/full-0045.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:29:23+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0046.jsonl",
+      "output_file": "answers/first/full-0046.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:29:50+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0047.jsonl",
+      "output_file": "answers/first/full-0047.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:30:32+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0048.jsonl",
+      "output_file": "answers/first/full-0048.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:31:04+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0049.jsonl",
+      "output_file": "answers/first/full-0049.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:31:34+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0050.jsonl",
+      "output_file": "answers/first/full-0050.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:32:00+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0051.jsonl",
+      "output_file": "answers/first/full-0051.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:32:37+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0052.jsonl",
+      "output_file": "answers/first/full-0052.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:33:04+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0053.jsonl",
+      "output_file": "answers/first/full-0053.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:33:35+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0054.jsonl",
+      "output_file": "answers/first/full-0054.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:34:00+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0055.jsonl",
+      "output_file": "answers/first/full-0055.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:34:26+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0056.jsonl",
+      "output_file": "answers/first/full-0056.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 17,
+        "no_name": 1,
+        "conflict": 2,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:35:15+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0057.jsonl",
+      "output_file": "answers/first/full-0057.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:35:45+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0058.jsonl",
+      "output_file": "answers/first/full-0058.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:36:08+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0059.jsonl",
+      "output_file": "answers/first/full-0059.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:36:34+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0060.jsonl",
+      "output_file": "answers/first/full-0060.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:37:04+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0061.jsonl",
+      "output_file": "answers/first/full-0061.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:37:55+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0062.jsonl",
+      "output_file": "answers/first/full-0062.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:38:20+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0063.jsonl",
+      "output_file": "answers/first/full-0063.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:38:51+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0064.jsonl",
+      "output_file": "answers/first/full-0064.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:39:22+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0065.jsonl",
+      "output_file": "answers/first/full-0065.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:39:48+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0066.jsonl",
+      "output_file": "answers/first/full-0066.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:40:25+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0067.jsonl",
+      "output_file": "answers/first/full-0067.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:41:32+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0068.jsonl",
+      "output_file": "answers/first/full-0068.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:42:03+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0069.jsonl",
+      "output_file": "answers/first/full-0069.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:42:27+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0070.jsonl",
+      "output_file": "answers/first/full-0070.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:42:51+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0071.jsonl",
+      "output_file": "answers/first/full-0071.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:43:45+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0072.jsonl",
+      "output_file": "answers/first/full-0072.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:44:13+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0073.jsonl",
+      "output_file": "answers/first/full-0073.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:44:49+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0074.jsonl",
+      "output_file": "answers/first/full-0074.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:45:24+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0075.jsonl",
+      "output_file": "answers/first/full-0075.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:45:48+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0076.jsonl",
+      "output_file": "answers/first/full-0076.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:46:15+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0077.jsonl",
+      "output_file": "answers/first/full-0077.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:46:47+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0078.jsonl",
+      "output_file": "answers/first/full-0078.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:47:18+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0079.jsonl",
+      "output_file": "answers/first/full-0079.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:47:45+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0080.jsonl",
+      "output_file": "answers/first/full-0080.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:48:32+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0081.jsonl",
+      "output_file": "answers/first/full-0081.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:49:15+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0082.jsonl",
+      "output_file": "answers/first/full-0082.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:50:57+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0083.jsonl",
+      "output_file": "answers/first/full-0083.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:53:03+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0084.jsonl",
+      "output_file": "answers/first/full-0084.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 18,
+        "no_name": 2,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:53:27+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0085.jsonl",
+      "output_file": "answers/first/full-0085.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:53:48+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0086.jsonl",
+      "output_file": "answers/first/full-0086.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:54:07+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0087.jsonl",
+      "output_file": "answers/first/full-0087.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:54:22+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0088.jsonl",
+      "output_file": "answers/first/full-0088.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:54:39+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0089.jsonl",
+      "output_file": "answers/first/full-0089.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:55:01+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0090.jsonl",
+      "output_file": "answers/first/full-0090.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:55:19+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0091.jsonl",
+      "output_file": "answers/first/full-0091.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:55:37+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0092.jsonl",
+      "output_file": "answers/first/full-0092.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 17,
+        "no_name": 2,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:56:15+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0093.jsonl",
+      "output_file": "answers/first/full-0093.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:56:31+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0094.jsonl",
+      "output_file": "answers/first/full-0094.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:57:11+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0095.jsonl",
+      "output_file": "answers/first/full-0095.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:57:37+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0096.jsonl",
+      "output_file": "answers/first/full-0096.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:57:56+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0097.jsonl",
+      "output_file": "answers/first/full-0097.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:58:16+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0098.jsonl",
+      "output_file": "answers/first/full-0098.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:58:34+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0099.jsonl",
+      "output_file": "answers/first/full-0099.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:58:51+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0100.jsonl",
+      "output_file": "answers/first/full-0100.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:59:09+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0101.jsonl",
+      "output_file": "answers/first/full-0101.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:59:30+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0102.jsonl",
+      "output_file": "answers/first/full-0102.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T09:59:45+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0103.jsonl",
+      "output_file": "answers/first/full-0103.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:00:01+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0104.jsonl",
+      "output_file": "answers/first/full-0104.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:00:20+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0105.jsonl",
+      "output_file": "answers/first/full-0105.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:00:41+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0106.jsonl",
+      "output_file": "answers/first/full-0106.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:00:59+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0107.jsonl",
+      "output_file": "answers/first/full-0107.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:01:23+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0108.jsonl",
+      "output_file": "answers/first/full-0108.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:01:39+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0109.jsonl",
+      "output_file": "answers/first/full-0109.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:01:55+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0110.jsonl",
+      "output_file": "answers/first/full-0110.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:02:25+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0111.jsonl",
+      "output_file": "answers/first/full-0111.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:02:49+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0112.jsonl",
+      "output_file": "answers/first/full-0112.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:03:05+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0113.jsonl",
+      "output_file": "answers/first/full-0113.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:03:21+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0114.jsonl",
+      "output_file": "answers/first/full-0114.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:03:42+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0115.jsonl",
+      "output_file": "answers/first/full-0115.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:04:00+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0116.jsonl",
+      "output_file": "answers/first/full-0116.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:04:16+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0117.jsonl",
+      "output_file": "answers/first/full-0117.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 17,
+        "no_name": 3,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:04:38+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0118.jsonl",
+      "output_file": "answers/first/full-0118.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 18,
+        "no_name": 0,
+        "conflict": 2,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:05:02+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0119.jsonl",
+      "output_file": "answers/first/full-0119.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:05:39+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0120.jsonl",
+      "output_file": "answers/first/full-0120.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:05:56+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0121.jsonl",
+      "output_file": "answers/first/full-0121.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:06:19+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0122.jsonl",
+      "output_file": "answers/first/full-0122.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:06:34+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0123.jsonl",
+      "output_file": "answers/first/full-0123.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:07:32+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0124.jsonl",
+      "output_file": "answers/first/full-0124.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:07:51+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0125.jsonl",
+      "output_file": "answers/first/full-0125.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:08:10+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0126.jsonl",
+      "output_file": "answers/first/full-0126.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 18,
+        "no_name": 2,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:08:28+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0127.jsonl",
+      "output_file": "answers/first/full-0127.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:09:04+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0128.jsonl",
+      "output_file": "answers/first/full-0128.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:09:44+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0129.jsonl",
+      "output_file": "answers/first/full-0129.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:10:01+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0130.jsonl",
+      "output_file": "answers/first/full-0130.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:10:21+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0131.jsonl",
+      "output_file": "answers/first/full-0131.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 0,
+        "conflict": 1,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:10:57+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0132.jsonl",
+      "output_file": "answers/first/full-0132.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:11:19+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0133.jsonl",
+      "output_file": "answers/first/full-0133.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:12:06+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0134.jsonl",
+      "output_file": "answers/first/full-0134.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:12:25+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0135.jsonl",
+      "output_file": "answers/first/full-0135.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:12:45+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0136.jsonl",
+      "output_file": "answers/first/full-0136.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:13:16+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0137.jsonl",
+      "output_file": "answers/first/full-0137.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:13:32+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0138.jsonl",
+      "output_file": "answers/first/full-0138.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:17:37+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0139.jsonl",
+      "output_file": "answers/first/full-0139.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:18:05+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0140.jsonl",
+      "output_file": "answers/first/full-0140.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:18:25+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0155.jsonl",
+      "output_file": "answers/first/full-0155.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:19:11+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:19:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0226.jsonl",
+      "output_file": "answers/first/full-0226.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:20:06+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:21:29+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0228.jsonl",
+      "output_file": "answers/first/full-0228.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:20:36+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:21:29+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0323.jsonl",
+      "output_file": "answers/first/full-0323.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "no_name": 1,
+        "names": 19
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:21:17+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:21:29+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0331.jsonl",
+      "output_file": "answers/first/full-0331.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:21:52+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:22:04+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0333.jsonl",
+      "output_file": "answers/first/full-0333.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "conflict": 1
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:23:02+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:23:13+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0396.jsonl",
+      "output_file": "answers/first/full-0396.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:23:32+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:23:41+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0412.jsonl",
+      "output_file": "answers/first/full-0412.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:24:05+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:24:11+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0431.jsonl",
+      "output_file": "answers/first/full-0431.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "conflict": 1
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:24:33+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:24:39+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0449.jsonl",
+      "output_file": "answers/first/full-0449.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:25:09+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:25:19+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0569.jsonl",
+      "output_file": "answers/first/full-0569.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:25:41+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:25:48+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0629.jsonl",
+      "output_file": "answers/first/full-0629.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:26:09+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:26:19+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0632.jsonl",
+      "output_file": "answers/first/full-0632.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:26:42+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:26:50+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0634.jsonl",
+      "output_file": "answers/first/full-0634.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:27:12+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:27:19+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0702.jsonl",
+      "output_file": "answers/first/full-0702.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:27:38+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:27:45+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0709.jsonl",
+      "output_file": "answers/first/full-0709.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:28:05+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:28:12+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0721.jsonl",
+      "output_file": "answers/first/full-0721.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "no_name": 1,
+        "names": 19
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:28:34+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:28:42+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0141.jsonl",
+      "output_file": "answers/first/full-0141.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:29:19+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:29:27+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0142.jsonl",
+      "output_file": "answers/first/full-0142.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:29:48+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:29:59+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0143.jsonl",
+      "output_file": "answers/first/full-0143.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:30:18+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:30:26+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0144.jsonl",
+      "output_file": "answers/first/full-0144.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:30:48+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:30:57+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0145.jsonl",
+      "output_file": "answers/first/full-0145.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:31:16+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:31:23+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0146.jsonl",
+      "output_file": "answers/first/full-0146.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:31:44+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:31:53+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0147.jsonl",
+      "output_file": "answers/first/full-0147.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "conflict": 1
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:32:47+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:32:57+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0148.jsonl",
+      "output_file": "answers/first/full-0148.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:33:18+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:33:27+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0149.jsonl",
+      "output_file": "answers/first/full-0149.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "no_name": 1,
+        "names": 19
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:33:54+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:34:04+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0150.jsonl",
+      "output_file": "answers/first/full-0150.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:34:27+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:34:34+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0151.jsonl",
+      "output_file": "answers/first/full-0151.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "no_name": 1
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:35:24+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:35:31+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0152.jsonl",
+      "output_file": "answers/first/full-0152.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 18,
+        "no_name": 1,
+        "conflict": 1
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:36:07+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:36:14+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0153.jsonl",
+      "output_file": "answers/first/full-0153.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 19,
+        "conflict": 1
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:36:37+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:36:44+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0154.jsonl",
+      "output_file": "answers/first/full-0154.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20
+      },
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "completed_at_utc": "2026-10-13T10:37:32+00:00",
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:38:07+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0156.jsonl",
+      "output_file": "answers/first/full-0156.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T10:39:30+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:39:30+00:00"
+    },
+    {
+      "input_file": "blind/full/full-0157.jsonl",
+      "output_file": "answers/first/full-0157.jsonl",
+      "records_read": 20,
+      "records_output": 20,
+      "status_counts": {
+        "names": 20,
+        "no_name": 0,
+        "conflict": 0,
+        "uncertain": 0
+      },
+      "completed_at_utc": "2026-10-13T10:42:31+00:00",
+      "review_type": "AI逐条语义判断",
+      "human_sample_count": 0,
+      "validator_status": "VALID",
+      "validator_completed_at_utc": "2026-10-13T10:42:31+00:00"
+    }
+  ],
+  "review_type": "AI逐条语义判断",
+  "human_sample_count": 0,
+  "corrections": [
+    {
+      "input_file": "blind/full/full-0092.jsonl",
+      "output_file": "answers/first/full-0092.jsonl",
+      "input_id": "input-01839",
+      "completed_at_utc": "2026-10-13T10:15:14+00:00",
+      "change": "Removed null title-evidence entry because title has no person name; kept conflict status and added the exact title/body conflict wording to reason."
+    },
+    {
+      "input_file": "blind/full/full-0110.jsonl",
+      "output_file": "answers/first/full-0110.jsonl",
+      "input_id": "input-02199",
+      "completed_at_utc": "2026-10-13T10:15:14+00:00",
+      "change": "Removed null title-evidence entry because title has no person name; kept conflict status and added the exact title/body conflict wording to reason."
+    },
+    {
+      "input_file": "blind/full/full-0118.jsonl",
+      "output_file": "answers/first/full-0118.jsonl",
+      "input_id": "input-02368",
+      "completed_at_utc": "2026-10-13T10:15:14+00:00",
+      "change": "Removed null title-evidence entry because title has no person name; kept conflict status and added the exact title/body conflict wording to reason."
+    },
+    {
+      "input_file": "blind/full/full-0044.jsonl",
+      "output_file": "answers/first/full-0044.jsonl",
+      "input_id": "input-00869",
+      "completed_at_utc": "2026-10-13T10:16:12+00:00",
+      "change": "Added the exact source title to conflict reason while preserving the verbatim body evidence and no-name decision."
+    },
+    {
+      "input_file": "blind/full/full-0056.jsonl",
+      "output_file": "answers/first/full-0056.jsonl",
+      "input_id": "input-01119",
+      "completed_at_utc": "2026-10-13T10:16:12+00:00",
+      "change": "Added the exact source title to conflict reason while preserving the verbatim body evidence and no-name decision."
+    },
+    {
+      "input_file": "blind/full/full-0056.jsonl",
+      "output_file": "answers/first/full-0056.jsonl",
+      "input_id": "input-01123",
+      "completed_at_utc": "2026-10-13T10:16:12+00:00",
+      "change": "Added the exact source title to conflict reason while preserving the verbatim body evidence and no-name decision."
+    },
+    {
+      "input_file": "blind/full/full-0072.jsonl",
+      "output_file": "answers/first/full-0072.jsonl",
+      "input_id": "input-01433",
+      "completed_at_utc": "2026-10-13T10:16:12+00:00",
+      "change": "Added the exact source title to conflict reason while preserving the verbatim body evidence and no-name decision."
+    },
+    {
+      "input_file": "blind/full/full-0078.jsonl",
+      "output_file": "answers/first/full-0078.jsonl",
+      "input_id": "input-01554",
+      "completed_at_utc": "2026-10-13T10:16:12+00:00",
+      "change": "Added the exact source title to conflict reason while preserving the verbatim body evidence and no-name decision."
+    }
+  ],
+  "correction_notes": [
+    {
+      "completed_at_utc": "2026-10-13T10:16:53+00:00",
+      "input_ids": [
+        "input-00869",
+        "input-01119",
+        "input-01123",
+        "input-01433",
+        "input-01554"
+      ],
+      "note": "Restored the original reasons for these no-name conflicts after confirming the main validator does not require the full title in reason; title_evidence remains empty when names is empty and the exact body excerpts remain in body_evidence."
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:39:30+00:00",
+      "input_ids": [
+        "input-3112",
+        "input-3113",
+        "input-3114",
+        "input-3115",
+        "input-3116",
+        "input-3117",
+        "input-3118",
+        "input-3119",
+        "input-3120",
+        "input-3121",
+        "input-3122",
+        "input-3123",
+        "input-3124",
+        "input-3125",
+        "input-3126",
+        "input-3127",
+        "input-3128",
+        "input-3129",
+        "input-3130",
+        "input-3131"
+      ],
+      "note": "Initial full-0156 output failed format validation: row_id was omitted and body_evidence used objects instead of quote strings. Preserved the original failed output at answers/retries/full-0156-before-schema-fix.jsonl; restored row_id from matching source rows and corrected the evidence representation. Final official validation passed."
+    }
+  ],
+  "scope_events": [
+    {
+      "completed_at_utc": "2026-10-13T10:16:53+00:00",
+      "event": "A broad verification glob inadvertently loaded answers outside assigned batches 0001-0863 while aggregating. The tool output exposed only aggregate counts and issue IDs; no answer text or evidence from those files was printed. All further checks are restricted to assigned batch range."
+    }
+  ],
+  "validation_events": [
+    {
+      "completed_at_utc": "2026-10-13T10:19:39+00:00",
+      "batches": [
+        "full-0001",
+        "full-0002",
+        "full-0003",
+        "full-0004",
+        "full-0005",
+        "full-0006",
+        "full-0007",
+        "full-0008",
+        "full-0009",
+        "full-0010",
+        "full-0011",
+        "full-0012",
+        "full-0013",
+        "full-0014",
+        "full-0015",
+        "full-0016",
+        "full-0017",
+        "full-0018",
+        "full-0019",
+        "full-0020",
+        "full-0021",
+        "full-0022",
+        "full-0023",
+        "full-0024",
+        "full-0025",
+        "full-0026",
+        "full-0027",
+        "full-0028",
+        "full-0029",
+        "full-0030",
+        "full-0031",
+        "full-0032",
+        "full-0033",
+        "full-0034",
+        "full-0035",
+        "full-0036",
+        "full-0037",
+        "full-0038",
+        "full-0039",
+        "full-0040",
+        "full-0041",
+        "full-0042",
+        "full-0043",
+        "full-0044",
+        "full-0045",
+        "full-0046",
+        "full-0047",
+        "full-0048",
+        "full-0049",
+        "full-0050",
+        "full-0051",
+        "full-0052",
+        "full-0053",
+        "full-0054",
+        "full-0055",
+        "full-0056",
+        "full-0057",
+        "full-0058",
+        "full-0059",
+        "full-0060",
+        "full-0061",
+        "full-0062",
+        "full-0063",
+        "full-0064",
+        "full-0065",
+        "full-0066",
+        "full-0067",
+        "full-0068",
+        "full-0069",
+        "full-0070",
+        "full-0071",
+        "full-0072",
+        "full-0073",
+        "full-0074",
+        "full-0075",
+        "full-0076",
+        "full-0077",
+        "full-0078",
+        "full-0079",
+        "full-0080",
+        "full-0081",
+        "full-0082",
+        "full-0083",
+        "full-0084",
+        "full-0085",
+        "full-0086",
+        "full-0087",
+        "full-0088",
+        "full-0089",
+        "full-0090",
+        "full-0091",
+        "full-0092",
+        "full-0093",
+        "full-0094",
+        "full-0095",
+        "full-0096",
+        "full-0097",
+        "full-0098",
+        "full-0099",
+        "full-0100",
+        "full-0101",
+        "full-0102",
+        "full-0103",
+        "full-0104",
+        "full-0105",
+        "full-0106",
+        "full-0107",
+        "full-0108",
+        "full-0109",
+        "full-0110",
+        "full-0111",
+        "full-0112",
+        "full-0113",
+        "full-0114",
+        "full-0115",
+        "full-0116",
+        "full-0117",
+        "full-0118",
+        "full-0119",
+        "full-0120",
+        "full-0121",
+        "full-0122",
+        "full-0123",
+        "full-0124",
+        "full-0125",
+        "full-0126",
+        "full-0127",
+        "full-0128",
+        "full-0129",
+        "full-0130",
+        "full-0131",
+        "full-0132",
+        "full-0133",
+        "full-0134",
+        "full-0135",
+        "full-0136",
+        "full-0137",
+        "full-0138",
+        "full-0139",
+        "full-0140",
+        "full-0155"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:20:47+00:00",
+      "batches": [
+        "full-0226",
+        "full-0228"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:21:29+00:00",
+      "batches": [
+        "full-0226",
+        "full-0228",
+        "full-0323"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:22:04+00:00",
+      "batches": [
+        "full-0331"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:23:13+00:00",
+      "batches": [
+        "full-0333"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:23:41+00:00",
+      "batches": [
+        "full-0396"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:24:11+00:00",
+      "batches": [
+        "full-0412"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:24:39+00:00",
+      "batches": [
+        "full-0431"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:25:19+00:00",
+      "batches": [
+        "full-0449"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:25:48+00:00",
+      "batches": [
+        "full-0569"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:26:19+00:00",
+      "batches": [
+        "full-0629"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:26:50+00:00",
+      "batches": [
+        "full-0632"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:27:19+00:00",
+      "batches": [
+        "full-0634"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:27:45+00:00",
+      "batches": [
+        "full-0702"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:28:12+00:00",
+      "batches": [
+        "full-0709"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:28:42+00:00",
+      "batches": [
+        "full-0721"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:29:27+00:00",
+      "batches": [
+        "full-0141"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:29:59+00:00",
+      "batches": [
+        "full-0142"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:30:26+00:00",
+      "batches": [
+        "full-0143"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:30:57+00:00",
+      "batches": [
+        "full-0144"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:31:23+00:00",
+      "batches": [
+        "full-0145"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:31:53+00:00",
+      "batches": [
+        "full-0146"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:32:57+00:00",
+      "batches": [
+        "full-0147"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:33:27+00:00",
+      "batches": [
+        "full-0148"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:34:04+00:00",
+      "batches": [
+        "full-0149"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:34:34+00:00",
+      "batches": [
+        "full-0150"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:34:55+00:00",
+      "batches": [
+        "full-0001",
+        "full-0002",
+        "full-0003",
+        "full-0004",
+        "full-0005",
+        "full-0006",
+        "full-0007",
+        "full-0008",
+        "full-0009",
+        "full-0010",
+        "full-0011",
+        "full-0012",
+        "full-0013",
+        "full-0014",
+        "full-0015",
+        "full-0016",
+        "full-0017",
+        "full-0018",
+        "full-0019",
+        "full-0020",
+        "full-0021",
+        "full-0022",
+        "full-0023",
+        "full-0024",
+        "full-0025",
+        "full-0026",
+        "full-0027",
+        "full-0028",
+        "full-0029",
+        "full-0030",
+        "full-0031",
+        "full-0032",
+        "full-0033",
+        "full-0034",
+        "full-0035",
+        "full-0036",
+        "full-0037",
+        "full-0038",
+        "full-0039",
+        "full-0040",
+        "full-0041",
+        "full-0042",
+        "full-0043",
+        "full-0044",
+        "full-0045",
+        "full-0046",
+        "full-0047",
+        "full-0048",
+        "full-0049",
+        "full-0050",
+        "full-0051",
+        "full-0052",
+        "full-0053",
+        "full-0054",
+        "full-0055",
+        "full-0056",
+        "full-0057",
+        "full-0058",
+        "full-0059",
+        "full-0060",
+        "full-0061",
+        "full-0062",
+        "full-0063",
+        "full-0064",
+        "full-0065",
+        "full-0066",
+        "full-0067",
+        "full-0068",
+        "full-0069",
+        "full-0070",
+        "full-0071",
+        "full-0072",
+        "full-0073",
+        "full-0074",
+        "full-0075",
+        "full-0076",
+        "full-0077",
+        "full-0078",
+        "full-0079",
+        "full-0080",
+        "full-0081",
+        "full-0082",
+        "full-0083",
+        "full-0084",
+        "full-0085",
+        "full-0086",
+        "full-0087",
+        "full-0088",
+        "full-0089",
+        "full-0090",
+        "full-0091",
+        "full-0092",
+        "full-0093",
+        "full-0094",
+        "full-0095",
+        "full-0096",
+        "full-0097",
+        "full-0098",
+        "full-0099",
+        "full-0100",
+        "full-0101",
+        "full-0102",
+        "full-0103",
+        "full-0104",
+        "full-0105",
+        "full-0106",
+        "full-0107",
+        "full-0108",
+        "full-0109",
+        "full-0110",
+        "full-0111",
+        "full-0112",
+        "full-0113",
+        "full-0114",
+        "full-0115",
+        "full-0116",
+        "full-0117",
+        "full-0118",
+        "full-0119",
+        "full-0120",
+        "full-0121",
+        "full-0122",
+        "full-0123",
+        "full-0124",
+        "full-0125",
+        "full-0126",
+        "full-0127",
+        "full-0128",
+        "full-0129",
+        "full-0130",
+        "full-0131",
+        "full-0132",
+        "full-0133",
+        "full-0134",
+        "full-0135",
+        "full-0136",
+        "full-0137",
+        "full-0138",
+        "full-0139",
+        "full-0140",
+        "full-0141",
+        "full-0142",
+        "full-0143",
+        "full-0144",
+        "full-0145",
+        "full-0146",
+        "full-0147",
+        "full-0148",
+        "full-0149",
+        "full-0150",
+        "full-0155",
+        "full-0226",
+        "full-0228",
+        "full-0323",
+        "full-0331",
+        "full-0333",
+        "full-0396",
+        "full-0412",
+        "full-0431",
+        "full-0449",
+        "full-0569",
+        "full-0629",
+        "full-0632",
+        "full-0634",
+        "full-0702",
+        "full-0709",
+        "full-0721"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed per batch; 3340 unique IDs across 167 selected batches",
+      "status_counts": {
+        "names": 3275,
+        "no_name": 44,
+        "conflict": 21,
+        "uncertain": 0
+      }
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:35:31+00:00",
+      "batches": [
+        "full-0151"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:36:14+00:00",
+      "batches": [
+        "full-0152"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:36:44+00:00",
+      "batches": [
+        "full-0153"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:38:07+00:00",
+      "batches": [
+        "full-0154"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:39:30+00:00",
+      "batches": [
+        "full-0156"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    },
+    {
+      "completed_at_utc": "2026-10-13T10:42:31+00:00",
+      "batches": [
+        "full-0157"
+      ],
+      "validator": "scripts/acceptance.py read + validate_answer",
+      "status": "all 20 records passed; 1:1 source coverage checked"
+    }
+  ],
+  "interruptions": [
+    {
+      "type": "stream_disconnected",
+      "interrupted_at_utc": null,
+      "interruption_time_note": "Exact disconnect time was not exposed; parent reported the interruption.",
+      "reported_and_recovered_at_utc": "2026-10-13T10:42:31+00:00",
+      "coverage_added": 0
+    }
+  ]
+}

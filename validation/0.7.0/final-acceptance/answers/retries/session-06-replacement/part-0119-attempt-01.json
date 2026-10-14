@@ -1,0 +1,12 @@
+{
+  "session": "session-06-replacement",
+  "part": "part-0119",
+  "attempt": 1,
+  "stage": "pre-write-output-path-check",
+  "utc": "2026-10-13T16:05:30.563445+00:00",
+  "source": "blind/session-06/part-0118.jsonl",
+  "attempted_answer_count": 30,
+  "failure": "The candidate generation used the preceding batch path and collided with the already-existing valid part-0118 output; the existence guard stopped before any write. No first-directory file was changed.",
+  "written_to_first": false,
+  "repair": "Discard the mismatched candidate and rebuild from part-0119 source rows only."
+}

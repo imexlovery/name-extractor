@@ -1,0 +1,19 @@
+{
+  "batch": 151,
+  "attempt": 1,
+  "input_id": "input-43566",
+  "validation_error": "Body evidence quote incorrectly prefixed 五、; the source sentence has no such prefix at that location.",
+  "answer": {
+    "input_id": "input-43566",
+    "row_id": "Sheet1:43715",
+    "names": [],
+    "title_evidence": [],
+    "body_evidence": [
+      "五、你公司应当自负责人任命决定作出之日起10日内向果洛银保监分局报告人员任职情况，报告时应提交下列材料：任职报告文件、任职报告表和任命文件复印件。"
+    ],
+    "status": "no_name",
+    "reason": "标题只述营销服务部开业，没有人员姓名；正文只要求报告负责人任职信息，未列具体姓名。",
+    "model": "gpt-6-luna",
+    "prompt_version": "title-body-independent-v1"
+  }
+}

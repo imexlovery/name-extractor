@@ -1,0 +1,692 @@
+{
+  "updated_at": "2026-10-14T12:24:44.573723+00:00",
+  "agents": [
+    {
+      "agent": "01a135ed-a495-7de0-ad87-7de8f87ce852",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T23-42-09-01a135ed-a495-7de0-ad87-7de8f87ce852.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 756731,
+        "cached_input_tokens": 704768,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15471,
+        "reasoning_output_tokens": 9471,
+        "total_tokens": 772202
+      }
+    },
+    {
+      "agent": "01a135c5-3ac8-7971-b29a-d1d9583fde0d",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T22-58-00-01a135c5-3ac8-7971-b29a-d1d9583fde0d.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 99182656,
+        "cached_input_tokens": 97248512,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 393652,
+        "reasoning_output_tokens": 82124,
+        "total_tokens": 99576308
+      }
+    },
+    {
+      "agent": "01a134fe-569e-7f60-a667-8bd632e94545",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T19-20-45-01a134fe-569e-7f60-a667-8bd632e94545.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 238295704,
+        "cached_input_tokens": 235092736,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 879158,
+        "reasoning_output_tokens": 207428,
+        "total_tokens": 239174862
+      }
+    },
+    {
+      "agent": "01a134fe-5fc0-7042-9832-c6a2fae0628c",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T19-20-48-01a134fe-5fc0-7042-9832-c6a2fae0628c.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 111991531,
+        "cached_input_tokens": 109991936,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 411476,
+        "reasoning_output_tokens": 91723,
+        "total_tokens": 112403007
+      }
+    },
+    {
+      "agent": "/root/pilot_a",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T16-47-17-01a13471-d4a9-7891-9b64-30c61166e040.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 7550989,
+        "cached_input_tokens": 7366656,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53834,
+        "reasoning_output_tokens": 19798,
+        "total_tokens": 7604823
+      }
+    },
+    {
+      "agent": "01a135f1-d1dd-72f3-8981-0843a62bdc01",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T23-46-42-01a135f1-d1dd-72f3-8981-0843a62bdc01.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 56793265,
+        "cached_input_tokens": 55962112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 206136,
+        "reasoning_output_tokens": 42704,
+        "total_tokens": 56999401
+      }
+    },
+    {
+      "agent": "/root/full_c",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T17-03-26-01a13480-9c3f-78f1-bef6-5c7cb3f5da36.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 200034986,
+        "cached_input_tokens": 197485312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 711077,
+        "reasoning_output_tokens": 131532,
+        "total_tokens": 200746063
+      }
+    },
+    {
+      "agent": "01a134fe-204e-7051-93dc-026d47c71f40",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T19-20-32-01a134fe-204e-7051-93dc-026d47c71f40.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 124194472,
+        "cached_input_tokens": 121438976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 539941,
+        "reasoning_output_tokens": 149719,
+        "total_tokens": 124734413
+      }
+    },
+    {
+      "agent": "01a134fe-496a-7d73-b2ef-5e7eaee6297b",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T19-20-42-01a134fe-496a-7d73-b2ef-5e7eaee6297b.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 163191854,
+        "cached_input_tokens": 160650752,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 627180,
+        "reasoning_output_tokens": 137966,
+        "total_tokens": 163819034
+      }
+    },
+    {
+      "agent": "/root/full_a",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T17-02-47-01a13480-0676-7b41-af7a-9a06c8e24bc3.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 148405326,
+        "cached_input_tokens": 146343936,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 562187,
+        "reasoning_output_tokens": 112686,
+        "total_tokens": 148967513
+      }
+    },
+    {
+      "agent": "01a135ed-9eb8-7592-acae-34a944829119",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T23-42-07-01a135ed-9eb8-7592-acae-34a944829119.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 869946,
+        "cached_input_tokens": 807936,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14321,
+        "reasoning_output_tokens": 9115,
+        "total_tokens": 884267
+      }
+    },
+    {
+      "agent": "01a134fe-7157-7bb1-95f2-7b66f024c4f7",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T19-20-52-01a134fe-7157-7bb1-95f2-7b66f024c4f7.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 60531213,
+        "cached_input_tokens": 59364352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 257682,
+        "reasoning_output_tokens": 45913,
+        "total_tokens": 60788895
+      }
+    },
+    {
+      "agent": "01a134fb-271d-7590-ab67-0c66581577f6",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T19-17-17-01a134fb-271d-7590-ab67-0c66581577f6.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 144076360,
+        "cached_input_tokens": 141277440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 558072,
+        "reasoning_output_tokens": 101031,
+        "total_tokens": 144634432
+      }
+    },
+    {
+      "agent": "01a134fe-3d6b-7b81-b56b-ac255bd7032c",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T19-20-39-01a134fe-3d6b-7b81-b56b-ac255bd7032c.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 192777962,
+        "cached_input_tokens": 188623872,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 686112,
+        "reasoning_output_tokens": 157653,
+        "total_tokens": 193464074
+      }
+    },
+    {
+      "agent": "/root/pilot_b",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T16-47-41-01a13472-30cf-7451-95ac-24e3947e77b7.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 4570190,
+        "cached_input_tokens": 4446464,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 36828,
+        "reasoning_output_tokens": 13451,
+        "total_tokens": 4607018
+      }
+    },
+    {
+      "agent": "/root/pilot_c",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T16-48-01-01a13472-80ce-7562-9b4a-b30bcbaf8548.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 7929367,
+        "cached_input_tokens": 7769600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 38597,
+        "reasoning_output_tokens": 16412,
+        "total_tokens": 7967964
+      }
+    },
+    {
+      "agent": "/root/full_b",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T17-03-06-01a13480-4f6e-7a61-a0ca-d84046a909b1.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 246886306,
+        "cached_input_tokens": 244507136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 616434,
+        "reasoning_output_tokens": 100604,
+        "total_tokens": 247502740
+      }
+    },
+    {
+      "agent": "01a135f2-610b-7093-9c3a-f5df45e29488",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T23-47-19-01a135f2-610b-7093-9c3a-f5df45e29488.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 106857731,
+        "cached_input_tokens": 105554432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 336629,
+        "reasoning_output_tokens": 66218,
+        "total_tokens": 107194360
+      }
+    },
+    {
+      "agent": "01a134fe-32f1-7cf1-ab31-8d86956b0faa",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T19-20-36-01a134fe-32f1-7cf1-ab31-8d86956b0faa.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 208586232,
+        "cached_input_tokens": 206253824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 564682,
+        "reasoning_output_tokens": 102755,
+        "total_tokens": 209150914
+      }
+    },
+    {
+      "agent": "/root/full_a_resume",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/13/rollout-2026-10-13T18-44-10-01a134dc-d504-70c1-951b-8c46930ca16b.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 36492929,
+        "cached_input_tokens": 35828480,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 140246,
+        "reasoning_output_tokens": 36189,
+        "total_tokens": 36633175
+      }
+    },
+    {
+      "agent": "01a139f2-efcd-7101-9a30-da4c7db02467",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-26-24-01a139f2-efcd-7101-9a30-da4c7db02467.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 2749007,
+        "cached_input_tokens": 2615040,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 43454,
+        "reasoning_output_tokens": 14160,
+        "total_tokens": 2792461
+      }
+    },
+    {
+      "agent": "01a13a14-d79f-7742-9a34-0fefac6079cd",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T19-03-26-01a13a14-d79f-7742-9a34-0fefac6079cd.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 826434,
+        "cached_input_tokens": 743424,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 46966,
+        "reasoning_output_tokens": 18684,
+        "total_tokens": 873400
+      }
+    },
+    {
+      "agent": "01a139fb-6908-7ab2-ad15-4165e2fac0ae",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-35-40-01a139fb-6908-7ab2-ad15-4165e2fac0ae.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 19966013,
+        "cached_input_tokens": 19454720,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 140609,
+        "reasoning_output_tokens": 40164,
+        "total_tokens": 20106622
+      }
+    },
+    {
+      "agent": "01a13a14-d137-7173-9de6-a5524330f8e0",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T19-03-25-01a13a14-d137-7173-9de6-a5524330f8e0.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 879896,
+        "cached_input_tokens": 814592,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 24620,
+        "reasoning_output_tokens": 13245,
+        "total_tokens": 904516
+      }
+    },
+    {
+      "agent": "01a139f2-f1b6-7513-80e6-d458a1660648",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-26-25-01a139f2-f1b6-7513-80e6-d458a1660648.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 4775060,
+        "cached_input_tokens": 4619776,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 48070,
+        "reasoning_output_tokens": 12547,
+        "total_tokens": 4823130
+      }
+    },
+    {
+      "agent": "01a139fb-5da3-75e0-95e8-71331197d1f7",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-35-37-01a139fb-5da3-75e0-95e8-71331197d1f7.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 12285967,
+        "cached_input_tokens": 11765504,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 103627,
+        "reasoning_output_tokens": 23535,
+        "total_tokens": 12389594
+      }
+    },
+    {
+      "agent": "01a139fb-6af6-7713-8bff-cd67ef97effe",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-35-40-01a139fb-6af6-7713-8bff-cd67ef97effe.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 26392824,
+        "cached_input_tokens": 25926656,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 126760,
+        "reasoning_output_tokens": 46010,
+        "total_tokens": 26519584
+      }
+    },
+    {
+      "agent": "01a1362d-0d0d-72e1-8edd-f7f18b56246e",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T00-51-24-01a1362d-0d0d-72e1-8edd-f7f18b56246e.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 40163862,
+        "cached_input_tokens": 39600384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 134745,
+        "reasoning_output_tokens": 32674,
+        "total_tokens": 40298607
+      }
+    },
+    {
+      "agent": "01a13a4d-f015-7da0-8fa9-53967b1318b2",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T20-05-48-01a13a4d-f015-7da0-8fa9-53967b1318b2.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 371905,
+        "cached_input_tokens": 343040,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 17099,
+        "reasoning_output_tokens": 9384,
+        "total_tokens": 389004
+      }
+    },
+    {
+      "agent": "01a13a14-cf0d-7a53-9a41-f77407b34564",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T19-03-24-01a13a14-cf0d-7a53-9a41-f77407b34564.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 1395467,
+        "cached_input_tokens": 1300224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30203,
+        "reasoning_output_tokens": 11775,
+        "total_tokens": 1425670
+      }
+    },
+    {
+      "agent": "01a13a14-d56f-7973-b9f9-6e6ca80c5c6d",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T19-03-26-01a13a14-d56f-7973-b9f9-6e6ca80c5c6d.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 1035770,
+        "cached_input_tokens": 949248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26877,
+        "reasoning_output_tokens": 12657,
+        "total_tokens": 1062647
+      }
+    },
+    {
+      "agent": "01a1362d-05ac-7ad2-afb4-345ee7807694",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T00-51-22-01a1362d-05ac-7ad2-afb4-345ee7807694.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 42718564,
+        "cached_input_tokens": 42139904,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 190493,
+        "reasoning_output_tokens": 26718,
+        "total_tokens": 42909057
+      }
+    },
+    {
+      "agent": "01a139f2-ebbd-7d13-afb1-a1cdf1ac4939",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-26-23-01a139f2-ebbd-7d13-afb1-a1cdf1ac4939.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 3461900,
+        "cached_input_tokens": 3335424,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 28214,
+        "reasoning_output_tokens": 14112,
+        "total_tokens": 3490114
+      }
+    },
+    {
+      "agent": "01a139f2-f3c8-7ba0-848c-d7af12e6bcfb",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-26-25-01a139f2-f3c8-7ba0-848c-d7af12e6bcfb.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 3812074,
+        "cached_input_tokens": 3686912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29961,
+        "reasoning_output_tokens": 8313,
+        "total_tokens": 3842035
+      }
+    },
+    {
+      "agent": "01a13a14-d327-7a22-87cf-80dff1480116",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T19-03-25-01a13a14-d327-7a22-87cf-80dff1480116.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 1034171,
+        "cached_input_tokens": 942592,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 37929,
+        "reasoning_output_tokens": 15917,
+        "total_tokens": 1072100
+      }
+    },
+    {
+      "agent": "01a13a14-cd16-7cb3-a7da-221576e09b67",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T19-03-24-01a13a14-cd16-7cb3-a7da-221576e09b67.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 1810648,
+        "cached_input_tokens": 1710848,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30074,
+        "reasoning_output_tokens": 14107,
+        "total_tokens": 1840722
+      }
+    },
+    {
+      "agent": "01a139fb-66a5-7770-b511-e1b6a4a2f172",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-35-39-01a139fb-66a5-7770-b511-e1b6a4a2f172.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 21653516,
+        "cached_input_tokens": 21244928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 146645,
+        "reasoning_output_tokens": 50599,
+        "total_tokens": 21800161
+      }
+    },
+    {
+      "agent": "01a139fb-6cf2-7743-beb4-d4ae34c7ee7c",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-35-41-01a139fb-6cf2-7743-beb4-d4ae34c7ee7c.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 16804396,
+        "cached_input_tokens": 16428032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 117293,
+        "reasoning_output_tokens": 35881,
+        "total_tokens": 16921689
+      }
+    },
+    {
+      "agent": "01a139f2-e8f5-7792-bf23-afee1ad588c8",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-26-23-01a139f2-e8f5-7792-bf23-afee1ad588c8.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 4346347,
+        "cached_input_tokens": 4205312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41265,
+        "reasoning_output_tokens": 12218,
+        "total_tokens": 4387612
+      }
+    },
+    {
+      "agent": "01a139fb-64bd-7702-b660-bd7633b10929",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-35-39-01a139fb-64bd-7702-b660-bd7633b10929.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 15946033,
+        "cached_input_tokens": 15602432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 92321,
+        "reasoning_output_tokens": 31476,
+        "total_tokens": 16038354
+      }
+    },
+    {
+      "agent": "01a139fb-6252-7840-b654-01659549f86a",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-35-38-01a139fb-6252-7840-b654-01659549f86a.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 34734326,
+        "cached_input_tokens": 34259968,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 178444,
+        "reasoning_output_tokens": 44396,
+        "total_tokens": 34912770
+      }
+    },
+    {
+      "agent": "01a139fb-6069-7043-9b0c-d79e345560a5",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-35-37-01a139fb-6069-7043-9b0c-d79e345560a5.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 16366611,
+        "cached_input_tokens": 15894016,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 112263,
+        "reasoning_output_tokens": 32472,
+        "total_tokens": 16478874
+      }
+    },
+    {
+      "agent": "01a139f2-eddc-78c2-aeae-229d87439cb1",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T18-26-24-01a139f2-eddc-78c2-aeae-229d87439cb1.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 4917598,
+        "cached_input_tokens": 4745984,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53526,
+        "reasoning_output_tokens": 17934,
+        "total_tokens": 4971124
+      }
+    },
+    {
+      "agent": "01a13a14-ca74-7f03-ae0b-074e7cb713c3",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T19-03-23-01a13a14-ca74-7f03-ae0b-074e7cb713c3.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 1611246,
+        "cached_input_tokens": 1517568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 36329,
+        "reasoning_output_tokens": 16796,
+        "total_tokens": 1647575
+      }
+    },
+    {
+      "agent": "01a13a14-d9eb-7050-adc0-f97dd934453e",
+      "rollout": "/Users/tristana/.codex/sessions/2026/10/14/rollout-2026-10-14T19-03-27-01a13a14-d9eb-7050-adc0-f97dd934453e.jsonl",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "service_tier": null,
+      "usage": {
+        "input_tokens": 2823207,
+        "cached_input_tokens": 2709760,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 61483,
+        "reasoning_output_tokens": 33427,
+        "total_tokens": 2884690
+      }
+    }
+  ],
+  "cumulative_token_usage": {
+    "input_tokens": 2442858592,
+    "cached_input_tokens": 2403275520,
+    "output_tokens": 9548985,
+    "reasoning_output_tokens": 2223693,
+    "total_tokens": 2452407577
+  },
+  "currency_cost": null,
+  "cost_note": "Codex subscription accounting is not exposed; tokens include repeated and cached contexts.",
+  "fast_requested": true,
+  "fast_verified": false,
+  "fast_confirmation_source": "用户已在界面开启并确认新会话继承，运行元数据未暴露该字段"
+}

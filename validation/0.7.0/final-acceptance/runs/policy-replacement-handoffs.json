@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-13T15:43:04.529790+00:00",
+  "replacements": [
+    {
+      "slot": 4,
+      "prefix": "session-04",
+      "start": 181,
+      "batches": 68,
+      "inputs": 1343,
+      "completed": 180,
+      "valid": 3600,
+      "old": "01a134fe-32f1-7cf1-ab31-8d86956b0faa",
+      "title": "0.7 首轮盲审 04 续接｜Luna xhigh Fast",
+      "log": "session-04-clean-replacement.json",
+      "reason": "invalid_prompt_policy_flag",
+      "new": "01a135f1-d1dd-72f3-8981-0843a62bdc01",
+      "discarded_initializer": "01a135ed-9eb8-7592-acae-34a944829119"
+    },
+    {
+      "slot": 7,
+      "prefix": "session-08",
+      "start": 155,
+      "batches": 94,
+      "inputs": 1862,
+      "completed": 154,
+      "valid": 3080,
+      "old": "01a134fe-496a-7d73-b2ef-5e7eaee6297b",
+      "title": "0.7 首轮盲审 08 续接｜Luna xhigh Fast",
+      "log": "session-08-clean-replacement.json",
+      "reason": "stream_disconnected",
+      "new": "01a135f2-610b-7093-9c3a-f5df45e29488",
+      "discarded_initializer": "01a135ed-a495-7de0-ad87-7de8f87ce852"
+    }
+  ],
+  "old_threads_no_further_dispatch": true,
+  "purpose": "金融任职批复原始文本姓名审核；新会话只接续未完成记录",
+  "policy_flag_specific_reason": null,
+  "preserve_existing_outputs": true,
+  "final_handoff_at": "2026-10-13T15:48:20.209627+00:00",
+  "initialization_deviation": {
+    "reason": "两个初始化会话检索了项目历史记忆，均已停止；新会话明确跳过所有记忆及历史检索",
+    "session_04_new_outputs": 0,
+    "session_08_quarantined_records": 20,
+    "quarantine_path": "answers/retries/session-08-replacement/session-08-0155-contaminated.jsonl",
+    "quarantined_records_counted_as_independent_coverage": false
+  },
+  "capacity_retry": {
+    "at": "2026-10-13T15:50:08.390160+00:00",
+    "thread_id": "01a134fe-204e-7051-93dc-026d47c71f40",
+    "prefix": "session-07",
+    "first_missing_part": 190,
+    "reason": "Selected model is at capacity",
+    "action": "保留既有模型及Fast，尝试续跑一次"
+  }
+}

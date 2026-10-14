@@ -1,0 +1,72 @@
+{
+  "session": "third-session-6",
+  "prompt_version": "title-body-adjudication-v1",
+  "model": "gpt-6-luna",
+  "started_at_utc": "2026-10-14T11:07:20.963931+00:00",
+  "finished_at_utc": "2026-10-14T11:07:20.965828+00:00",
+  "input_records_read": 40,
+  "output_records_written": 40,
+  "records_validated_before_write": 40,
+  "records_validated_after_batch_readback": 40,
+  "records_validated_final_recheck": 40,
+  "validator_calls_total_including_initial_preflight": 121,
+  "initial_preflight_validations": 1,
+  "human_review_count": 0,
+  "token_count": null,
+  "cost": null,
+  "failed_revisions": [],
+  "batches": [
+    {
+      "file": "third-0011.jsonl",
+      "first_input_id": "input-35549",
+      "last_input_id": "input-35842",
+      "count": 5
+    },
+    {
+      "file": "third-0011.jsonl",
+      "first_input_id": "input-35857",
+      "last_input_id": "input-35960",
+      "count": 5
+    },
+    {
+      "file": "third-0011.jsonl",
+      "first_input_id": "input-36041",
+      "last_input_id": "input-36708",
+      "count": 5
+    },
+    {
+      "file": "third-0011.jsonl",
+      "first_input_id": "input-36752",
+      "last_input_id": "input-36994",
+      "count": 5
+    },
+    {
+      "file": "third-0012.jsonl",
+      "first_input_id": "input-37346",
+      "last_input_id": "input-37653",
+      "count": 5
+    },
+    {
+      "file": "third-0012.jsonl",
+      "first_input_id": "input-37658",
+      "last_input_id": "input-38315",
+      "count": 5
+    },
+    {
+      "file": "third-0012.jsonl",
+      "first_input_id": "input-38365",
+      "last_input_id": "input-39070",
+      "count": 5
+    },
+    {
+      "file": "third-0012.jsonl",
+      "first_input_id": "input-39072",
+      "last_input_id": "input-39380",
+      "count": 5
+    }
+  ],
+  "files": {
+    "third-0011.jsonl": 20,
+    "third-0012.jsonl": 20
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "session_id": "third-session-1",
+  "status": "completed",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-adjudication-v1",
+  "completed_at_utc": "2026-10-14T11:08:45Z",
+  "validation_interface": "scripts/acceptance.py: read(Path), validate_answer(answer, source, (\"title-body-adjudication-v1\",))",
+  "batch_size": 5,
+  "final_batches_written_in_source_order": 8,
+  "files": [
+    {
+      "source": "adjudication/third/third-0001.jsonl",
+      "source_rows_read_and_semantically_reviewed": 20,
+      "output": "answers/third/third-0001.jsonl",
+      "output_rows_written_and_readback_validated": 20,
+      "status_counts": {
+        "names": 12,
+        "no_name": 8
+      },
+      "input_ids_in_source_order": [
+        "input-00167",
+        "input-00228",
+        "input-00352",
+        "input-00560",
+        "input-00677",
+        "input-00778",
+        "input-00841",
+        "input-00869",
+        "input-00929",
+        "input-01119",
+        "input-01123",
+        "input-01325",
+        "input-01433",
+        "input-01554",
+        "input-01654",
+        "input-01839",
+        "input-02131",
+        "input-02199",
+        "input-02354",
+        "input-02368"
+      ]
+    },
+    {
+      "source": "adjudication/third/third-0002.jsonl",
+      "source_rows_read_and_semantically_reviewed": 20,
+      "output": "answers/third/third-0002.jsonl",
+      "output_rows_written_and_readback_validated": 20,
+      "status_counts": {
+        "conflict": 5,
+        "names": 12,
+        "no_name": 2,
+        "uncertain": 1
+      },
+      "input_ids_in_source_order": [
+        "input-02624",
+        "input-02951",
+        "input-02995",
+        "input-03051",
+        "input-03063",
+        "input-03549",
+        "input-03609",
+        "input-03934",
+        "input-03954",
+        "input-03959",
+        "input-04358",
+        "input-04679",
+        "input-04884",
+        "input-04931",
+        "input-04938",
+        "input-05090",
+        "input-05094",
+        "input-05557",
+        "input-05937",
+        "input-06435"
+      ]
+    }
+  ],
+  "totals": {
+    "complete_source_records_read_and_semantically_reviewed": 40,
+    "final_answer_rows_written": 40,
+    "final_answer_rows_readback_validated": 40,
+    "full_file_order_checks_passed": 2,
+    "human_review_count": 0,
+    "tokens": null,
+    "cost": null
+  },
+  "failed_revisions": [
+    {
+      "type": "transient_batch_ordering_error",
+      "description": "The initial append placed source records 11-15 before records 6-10. The five affected answer rows were saved to retries, the final output was restored to its validated first five rows, and all rows were then written and read back in source order.",
+      "retry_snapshot": "answers/retries/third-session-1/third-0001-ordering-error.jsonl",
+      "affected_rows": 5,
+      "affected_input_ids": [
+        "input-01123",
+        "input-01325",
+        "input-01433",
+        "input-01554",
+        "input-01654"
+      ],
+      "all_affected_rows_present_and_valid_in_final_output": true
+    }
+  ]
+}

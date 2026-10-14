@@ -1,0 +1,43 @@
+{
+  "session": "session-08-replacement",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-blind-v2",
+  "token_count": null,
+  "currency_cost": null,
+  "human_review_count": 0,
+  "batches": [
+    {
+      "batch": "part-0155",
+      "source_file": "validation/0.7.0/final-acceptance/blind/session-08/part-0155.jsonl",
+      "output_file": "validation/0.7.0/final-acceptance/answers/retries/session-08-replacement/session-08-0155-contaminated.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 0,
+      "read_subbatches": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "completed_at_utc": "2026-10-13T15:44:40.674173+00:00",
+      "failures": [
+        "首批结果不计入独立首轮：生成前检索了 MEMORY.md，检索输出包含历史姓名判断与生产规则。"
+      ],
+      "revisions": [],
+      "independent_review_eligible": false
+    }
+  ],
+  "failures": [
+    {
+      "batch": "part-0155",
+      "reason": "审核上下文受到历史信息污染；按补充约束停止，并将答案从 answers/first 移至 retries。",
+      "source_read": "MEMORY.md 仅执行一次 rg -n 检索，命中并输出行 579、581、585、589、644、646、661；未打开 rollout summaries。"
+    }
+  ],
+  "revisions": [],
+  "stopped_at": {
+    "batch": "part-0155",
+    "earliest_unfinished": "part-0155",
+    "reason": "补充约束要求历史材料读取后停止独立审核。"
+  }
+}

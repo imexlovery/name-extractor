@@ -1,0 +1,36 @@
+{
+  "session_id": "third-session-2",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-adjudication-v1",
+  "completed_at_utc": "2026-10-14T11:08:09Z",
+  "assigned_input_files": [
+    "adjudication/third/third-0003.jsonl",
+    "adjudication/third/third-0004.jsonl"
+  ],
+  "semantic_input_rows_read": 40,
+  "output_rows_written": 40,
+  "semantic_read_batch_sizes": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "prewrite_validated_rows": 40,
+  "incremental_readback_validated_rows": 80,
+  "final_readback_validated_rows": 40,
+  "answer_validator_calls": 160,
+  "status_counts": {
+    "names": 2,
+    "no_name": 37,
+    "conflict": 1,
+    "uncertain": 0
+  },
+  "failed_revisions": [],
+  "human_review_count": 0,
+  "token_usage": null,
+  "cost": null
+}

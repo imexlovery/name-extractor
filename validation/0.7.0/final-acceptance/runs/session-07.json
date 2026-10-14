@@ -1,0 +1,1985 @@
+{
+  "session": "session-07",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-blind-v2",
+  "token_count": null,
+  "cost": null,
+  "human_checked_count": 0,
+  "batches": {
+    "part-0001": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0001.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0001.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:24:50.394097+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0002": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0002.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0002.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:25:22.129220+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0003": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0003.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0003.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:25:48.598724+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0004": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0004.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0004.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:26:05.681062+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0005": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0005.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0005.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:26:25.754819+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0006": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0006.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0006.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:26:43.975578+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0007": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0007.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0007.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:27:07.046874+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0008": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0008.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0008.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:27:27.920188+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0009": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0009.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0009.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:27:48.015322+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0010": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0010.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0010.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:28:08.745985+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0011": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0011.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0011.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:28:40.016669+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0012": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0012.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0012.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:29:00.163333+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0013": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0013.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0013.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:29:25.861518+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0014": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0014.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0014.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:29:50.522222+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0015": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0015.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0015.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:30:11.968611+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0016": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0016.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0016.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:30:32.065491+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0017": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0017.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0017.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:30:55.422522+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0018": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0018.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0018.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:31:13.857114+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0019": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0019.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0019.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:31:37.480172+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0020": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0020.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0020.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:32:04.675779+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0021": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0021.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0021.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:32:25.265791+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0022": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0022.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0022.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:32:46.987819+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0023": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0023.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0023.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:33:06.388376+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0024": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0024.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0024.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:33:24.701666+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0025": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0025.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0025.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:33:44.854601+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0026": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0026.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0026.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:34:05.327658+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0027": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0027.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0027.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:34:24.721758+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0028": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0028.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0028.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:34:43.389741+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0029": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0029.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0029.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:35:05.858651+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0030": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0030.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0030.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:35:29.868633+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0031": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0031.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0031.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:35:47.628576+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0032": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0032.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0032.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:36:04.584385+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0033": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0033.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0033.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:36:31.715258+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0034": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0034.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0034.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:36:50.542814+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0035": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0035.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0035.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:37:10.973781+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0036": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0036.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0036.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:37:31.564225+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0037": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0037.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0037.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:37:59.223918+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0038": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0038.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0038.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:38:22.462414+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0039": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0039.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0039.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:38:45.505734+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0040": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0040.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0040.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:39:05.176472+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0041": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0041.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0041.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:39:50.913086+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0042": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0042.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0042.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:40:10.036716+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0043": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0043.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0043.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:40:38.481183+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0044": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0044.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0044.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:41:52.168730+00:00",
+      "failures": [
+        {
+          "input_id": "input-42636",
+          "reason": "body_evidence quote used 经审核 but source says 经审查; no output was written",
+          "utc": "2026-10-13T11:41:52.168969+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-42636",
+          "reason": "corrected body quote from complete source text and revalidated batch",
+          "utc": "2026-10-13T11:41:52.168972+00:00"
+        }
+      ]
+    },
+    "part-0045": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0045.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0045.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:42:41.797022+00:00",
+      "failures": [
+        {
+          "reason": "initial attempt used an incorrect source path and stopped before writing; corrected path then read the assigned batch",
+          "utc": "2026-10-13T11:42:41.797249+00:00"
+        }
+      ],
+      "revisions": []
+    },
+    "part-0046": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0046.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0046.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:43:47.513916+00:00",
+      "failures": [
+        {
+          "input_id": "input-42674",
+          "reason": "body evidence included absent prefix 经审核，; exact source clause omits that prefix, no output was written",
+          "utc": "2026-10-13T11:43:47.514149+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-42674",
+          "reason": "corrected body quote from source and revalidated the full batch",
+          "utc": "2026-10-13T11:43:47.514155+00:00"
+        }
+      ]
+    },
+    "part-0047": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0047.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0047.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:45:48.446935+00:00",
+      "failures": [
+        {
+          "input_id": null,
+          "reason": "initial read call passed a string where acceptance.read requires pathlib.Path; no records were read and no output was written",
+          "utc": "2026-10-13T11:45:48.446935+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": null,
+          "reason": "retried read with pathlib.Path, manually reviewed all five source fields, and validated the complete batch",
+          "utc": "2026-10-13T11:45:48.446935+00:00"
+        }
+      ]
+    },
+    "part-0048": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0048.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0048.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:46:19.032041+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0049": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0049.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0049.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:47:11.105510+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0050": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0050.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0050.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:47:46.842551+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0051": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0051.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0051.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:48:12.211704+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0052": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0052.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0052.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:48:30.297910+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0053": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0053.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0053.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:50:10.836204+00:00",
+      "failures": [
+        {
+          "input_id": null,
+          "reason": "an earlier manual batch mapping failed title-evidence validation before writing; review traced the error to decisions copied from the wrong source slice",
+          "utc": "2026-10-13T11:50:10.836204+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": null,
+          "reason": "re-read the actual part-0053 tail records, manually assigned their names, and validated all 20 rows",
+          "utc": "2026-10-13T11:50:10.836204+00:00"
+        }
+      ]
+    },
+    "part-0054": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0054.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0054.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:50:30.935362+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0055": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0055.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0055.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:50:58.137370+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0056": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0056.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0056.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:51:38.365991+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0057": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0057.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0057.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:52:34.922372+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0058": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0058.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0058.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:52:58.388887+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0059": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0059.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0059.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:53:52.160873+00:00",
+      "failures": [
+        {
+          "input_id": "input-42943",
+          "reason": "no_name row initially carried status names; validator rejected the batch before writing",
+          "utc": "2026-10-13T11:53:52.160873+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-42943",
+          "reason": "set status to no_name for the title without a personal name, then revalidated all 20 rows",
+          "utc": "2026-10-13T11:53:52.160873+00:00"
+        }
+      ]
+    },
+    "part-0060": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0060.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0060.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:54:18.155745+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0061": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0061.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0061.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:54:54.654575+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0062": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0062.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0062.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:55:25.661681+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0063": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0063.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0063.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:56:00.603307+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0064": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0064.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0064.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:56:27.863884+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0065": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0065.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0065.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:56:54.054713+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0066": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0066.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0066.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:57:25.287558+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0067": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0067.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0067.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:57:48.375615+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0068": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0068.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0068.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:58:08.822445+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0069": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0069.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0069.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:58:39.894684+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0070": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0070.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0070.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:58:56.182254+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0071": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0071.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0071.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:59:26.443981+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0072": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0072.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0072.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:59:49.895444+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0073": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0073.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0073.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:00:13.810665+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0074": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0074.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0074.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:00:44.976322+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0075": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0075.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0075.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:01:09.813648+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0076": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0076.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0076.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:01:29.141477+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0077": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0077.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0077.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:01:53.881305+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0078": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0078.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0078.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:02:22.127563+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0079": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0079.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0079.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:02:56.862685+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0080": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0080.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0080.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:03:19.548006+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0081": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0081.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0081.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:03:49.485825+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0082": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0082.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0082.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:04:21.290596+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0083": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0083.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0083.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:05:22.087325+00:00",
+      "failures": [
+        {
+          "input_id": null,
+          "reason": "earlier decision IDs came from a different source slice; identity assertion stopped the batch before writing",
+          "utc": "2026-10-13T12:05:22.087325+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": null,
+          "reason": "re-read the actual part-0083 records, resolved input-43438 as 高明 from the title grammar and matching body, and revalidated all 20 rows",
+          "utc": "2026-10-13T12:05:22.087325+00:00"
+        }
+      ]
+    },
+    "part-0084": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0084.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0084.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:05:46.618436+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0085": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0085.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0085.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:06:49.860153+00:00",
+      "failures": [
+        {
+          "input_id": "input-43515",
+          "reason": "body evidence quote was rejected as not an exact source substring; no output was written",
+          "utc": "2026-10-13T12:06:49.860153+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-43515",
+          "reason": "replaced the mismatched long body quote with the exact source snippets 程顺琴 and 袁炜, then revalidated all rows",
+          "utc": "2026-10-13T12:06:49.860153+00:00"
+        }
+      ]
+    },
+    "part-0086": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0086.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0086.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:07:19.167398+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0087": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0087.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0087.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:07:51.394791+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0088": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0088.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0088.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:08:24.547974+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0089": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0089.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0089.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:08:53.717410+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0090": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0090.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0090.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:09:15.246402+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0091": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0091.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0091.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:09:35.892805+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0092": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0092.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0092.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:09:56.824552+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0093": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0093.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0093.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:10:20.297809+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0094": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0094.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0094.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:12:06.714708+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0095": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0095.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0095.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:12:30.391027+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0096": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0096.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0096.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:12:53.351478+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0097": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0097.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0097.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:13:22.985841+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0098": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0098.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0098.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:13:43.668243+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0099": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0099.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0099.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:14:04.263035+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0100": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0100.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0100.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:14:30.410438+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0101": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0101.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0101.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:14:54.991045+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0102": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0102.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0102.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:15:17.967164+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0103": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0103.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0103.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:15:47.928718+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0104": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0104.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0104.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:16:12.426382+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0105": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0105.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0105.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:16:48.844643+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0106": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0106.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0106.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:17:09.622814+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0107": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0107.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0107.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:17:24.773520+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0108": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0108.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0108.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:17:48.999642+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0109": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0109.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0109.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:18:15.928633+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0110": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0110.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0110.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:18:35.656072+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0111": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0111.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0111.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:18:58.792354+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0112": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0112.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0112.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:19:24.898791+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0113": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0113.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0113.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:19:51.158667+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0114": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0114.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0114.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:20:20.067264+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0115": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0115.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0115.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:20:38.174699+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0116": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0116.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0116.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:21:00.282459+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0117": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0117.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0117.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:21:24.730158+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0118": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0118.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0118.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:21:51.369405+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0119": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0119.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0119.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:22:12.574444+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0120": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0120.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0120.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:22:39.715656+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0121": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0121.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0121.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:23:02.239528+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0122": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0122.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0122.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:23:25.589097+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0123": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0123.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0123.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:23:46.441083+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0124": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0124.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0124.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:24:33.467983+00:00",
+      "failures": [
+        {
+          "input_id": null,
+          "reason": "decision completeness assertion found 19 decisions for 20 rows; stopped before validation or writing",
+          "utc": "2026-10-13T12:24:33.467983+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-44295",
+          "reason": "added no_name decision for branch opening title with no personal name, then validated all 20 rows",
+          "utc": "2026-10-13T12:24:33.467983+00:00"
+        }
+      ]
+    },
+    "part-0125": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0125.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0125.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:25:00.609551+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0126": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0126.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0126.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:26:00.873142+00:00",
+      "failures": [
+        {
+          "input_id": "input-44330",
+          "reason": "manual decisions after the first ten rows came from the wrong source slice; validator stopped before writing",
+          "utc": "2026-10-13T12:26:00.873142+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-44330",
+          "reason": "re-read the assigned part, corrected the remaining row-to-decision mappings, and revalidated all 20 rows",
+          "utc": "2026-10-13T12:26:00.873142+00:00"
+        }
+      ]
+    },
+    "part-0127": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0127.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0127.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:26:30.010531+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0128": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0128.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0128.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:27:00.253800+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0129": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0129.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0129.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:27:18.213841+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0130": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0130.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0130.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:27:38.634928+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0131": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0131.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0131.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:28:02.738561+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0132": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0132.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0132.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:28:21.530398+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0133": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0133.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0133.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:29:17.692682+00:00",
+      "failures": [
+        {
+          "input_id": "input-44470",
+          "reason": "body_evidence quote ended with a period; source clause ends with a semicolon, so validator stopped before writing",
+          "utc": "2026-10-13T12:29:17.692682+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-44470",
+          "reason": "changed the citation to the exact source clause ending with a semicolon and revalidated all 20 rows",
+          "utc": "2026-10-13T12:29:17.692682+00:00"
+        }
+      ]
+    },
+    "part-0134": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0134.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0134.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:29:37.608876+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0135": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0135.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0135.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:30:05.305364+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0136": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0136.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0136.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:30:27.355647+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0137": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0137.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0137.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:30:44.329379+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0138": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0138.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0138.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:31:00.977220+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0139": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0139.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0139.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:31:23.274684+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0140": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0140.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0140.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:31:49.526312+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0141": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0141.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0141.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:32:17.766441+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0142": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0142.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0142.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:32:38.116058+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0143": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0143.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0143.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:36:03.345817+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [
+        {
+          "input_id": null,
+          "reason": "validator called with source row and answer in reverse argument order; stopped before writing",
+          "utc": "2026-10-13T12:36:03.345817+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": null,
+          "reason": "corrected validator call order to validate_answer(answer, source_row), then validated all 20 manually prepared rows",
+          "utc": "2026-10-13T12:36:03.345817+00:00"
+        }
+      ]
+    },
+    "part-0144": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0144.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0144.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:36:49.226809+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0145": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0145.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0145.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:37:40.502677+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0146": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0146.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0146.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:38:24.224770+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0147": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0147.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0147.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:39:18.084708+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0148": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0148.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0148.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:40:25.842798+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0149": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0149.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0149.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:41:29.674612+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0150": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0150.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0150.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:42:37.603747+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0151": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0151.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0151.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:43:38.877513+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0152": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0152.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0152.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:44:44.887340+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0153": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0153.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0153.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:45:58.002089+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0154": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0154.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0154.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:47:28.907299+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0155": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0155.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0155.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:48:28.989757+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0156": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0156.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0156.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:49:24.919620+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0157": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0157.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0157.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:50:15.281745+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0158": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0158.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0158.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:51:11.850443+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0159": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0159.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0159.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:52:00.107040+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0160": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0160.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0160.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:52:58.340208+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0161": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0161.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0161.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:53:57.247143+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0162": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0162.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0162.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:54:52.091574+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0163": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0163.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0163.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:57:18.220079+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [
+        {
+          "input_id": "input-45094",
+          "reason": "body evidence citation used ASCII parentheses; source uses full-width Chinese parentheses, so validation stopped before writing",
+          "utc": "2026-10-13T12:57:18.220079+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-45094",
+          "reason": "replaced the quote with the exact substring 姜龙同志任职资格审核的请示; revalidated all 20 rows",
+          "utc": "2026-10-13T12:57:18.220079+00:00"
+        }
+      ]
+    },
+    "part-0164": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0164.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0164.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:01:03.116768+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [
+        {
+          "input_id": "input-45106",
+          "reason": "body evidence quote omitted 责任 from 有限责任公司; validation stopped before writing",
+          "utc": "2026-10-13T13:01:03.116768+00:00"
+        },
+        {
+          "input_id": "input-45117",
+          "reason": "body evidence cited the wrong bank name; validation stopped before writing",
+          "utc": "2026-10-13T13:01:03.116768+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-45106",
+          "reason": "restored 责任 to the exact company name in the body citation",
+          "utc": "2026-10-13T13:01:03.116768+00:00"
+        },
+        {
+          "input_id": "input-45117",
+          "reason": "replaced the bank name with the exact original China Bank Nanping citation; revalidated all 20 rows",
+          "utc": "2026-10-13T13:01:03.116768+00:00"
+        }
+      ]
+    },
+    "part-0165": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0165.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0165.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:02:08.964434+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0166": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0166.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0166.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:03:51.635341+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [
+        {
+          "input_id": null,
+          "reason": "manual decision map had 21 entries because it included a no_name record from the previous batch; completeness assertion stopped before validation or writing",
+          "utc": "2026-10-13T13:03:51.635341+00:00"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": null,
+          "reason": "removed the prior-batch entry and restored one-to-one mapping for this batch; validated all 20 rows",
+          "utc": "2026-10-13T13:03:51.635341+00:00"
+        }
+      ]
+    },
+    "part-0167": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0167.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0167.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:04:51.771618+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0168": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0168.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0168.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:05:57.701513+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0169": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0169.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0169.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:06:48.651057+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0170": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0170.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0170.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:07:54.633608+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0171": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0171.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0171.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:19:12.479852+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0172": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0172.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0172.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:23:39.198163+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    },
+    "part-0173": {
+      "input_path": "validation/0.7.0/final-acceptance/blind/session-07/part-0173.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-07-0173.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:36:21.820173+00:00",
+      "token_count": "unknown",
+      "cost": "unknown",
+      "failures": [],
+      "revisions": []
+    }
+  }
+}

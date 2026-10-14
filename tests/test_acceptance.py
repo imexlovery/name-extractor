@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from acceptance import validate_answer, read, lines, compare, save, freeze_reference
+from acceptance import validate_answer, read, lines, compare, save, freeze_reference, final_compare
 
 
 class IndependentEvidenceContract(unittest.TestCase):
@@ -76,6 +76,12 @@ class IndependentEvidenceContract(unittest.TestCase):
                 compare()
             self.assertEqual(read(work / 'blind/second-inputs.jsonl'), [source])
             self.assertNotIn('names', read(work / 'blind/second-inputs.jsonl')[0])
+            # Later-round retries must not redefine the already fixed first-review cohort.
+            lines(work / 'answers/retries/old.jsonl', [dict(answer, names=[], status='no_name',
+                  prompt_version='title-body-adjudication-v1')])
+            with patch('acceptance.ROOT', root), patch('acceptance.WORK', work):
+                compare()
+            self.assertEqual(read(work / 'blind/second-inputs.jsonl'), [])
 
     def test_freezing_requires_coverage_and_preserves_each_cached_row_identity(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -103,6 +109,31 @@ class IndependentEvidenceContract(unittest.TestCase):
             self.assertEqual([r['source_row_id'] for r in records], ['Sheet1:00002'] * 2)
             self.assertEqual([r['names'] for r in records], [['白玉娥', '李毅昕']] * 2)
             self.assertFalse(__import__('json').loads((work / 'reference-manifest.json').read_text())['final_acceptance_passed'])
+
+    def test_final_comparison_counts_real_splits_and_excludes_unknown_truth(self):
+        with tempfile.TemporaryDirectory() as directory:
+            work = Path(directory) / 'acceptance'
+            from extract import VERSION
+            title = self.source['标题']
+            sources = [dict(row_id=f'Sheet1:{i:05d}', excel_row=i, fields={'标题': title}) for i in (2, 3, 4)]
+            references = [dict(row_id=s['row_id'], input_id=f'input-{i}', names=['白玉娥', '李毅昕'],
+                               status='conflict' if i == 1 else 'names') for i, s in enumerate(sources)]
+            snapshots = [dict(rows=[s['excel_row']], title=title,
+                result=dict(names=['白玉娥李毅昕'] if i == 2 else ['白玉娥', '李毅昕'], status='names'))
+                for i, s in enumerate(sources)]
+            save(work / 'reference-manifest.json', dict(row_count=3, version='v1'))
+            save(work / 'progress.json', dict(ai_review_coverage=1, human_reviewed_rows=0, human_status_rows={}))
+            lines(work / 'source-rows.jsonl', sources)
+            lines(work / 'fixed-row-reference.jsonl', references)
+            lines(work.parent / f'script-{VERSION}.jsonl', snapshots)
+            with patch('acceptance.WORK', work), patch('acceptance.collect'):
+                final_compare()
+            metrics = __import__('json').loads((work / 'final-comparison.json').read_text())
+            self.assertEqual(metrics['categories_rows'], {'match': 1, 'unresolved_reference': 1, 'count_or_split_difference': 1})
+            self.assertEqual(metrics['reference_agreement'], 1/3)
+            self.assertEqual(metrics['confirmed_reference_agreement'], 1/2)
+            self.assertIsNone(metrics['true_accuracy'])
+            self.assertFalse(metrics['acceptance_passed'])
 
 
 if __name__ == '__main__':

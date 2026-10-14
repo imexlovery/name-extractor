@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-13T16:52:25.080128+00:00",
+  "local_date": "2026-10-14",
+  "reason": "用户要求刷新进度并处理个别会话错误",
+  "replacements": [
+    {
+      "slot": 1,
+      "prefix": "session-01",
+      "start": 209,
+      "completed": 208,
+      "valid": 4160,
+      "batches": 40,
+      "inputs": 783,
+      "old": "01a134fb-271d-7590-ab67-0c66581577f6",
+      "title": "0.7 首轮盲审 01 原文续接｜Luna xhigh Fast",
+      "last3": true,
+      "new": "01a1362d-05ac-7ad2-afb4-345ee7807694"
+    },
+    {
+      "slot": 2,
+      "prefix": "session-07",
+      "start": 197,
+      "completed": 196,
+      "valid": 3920,
+      "batches": 52,
+      "inputs": 1022,
+      "old": "01a134fe-204e-7051-93dc-026d47c71f40",
+      "title": "0.7 首轮盲审 07 原文续接｜Luna xhigh Fast",
+      "last3": false,
+      "new": "01a1362d-0d0d-72e1-8edd-f7f18b56246e"
+    }
+  ],
+  "preserve_valid_outputs": true,
+  "skip_memory_and_history": true,
+  "old_threads_no_further_dispatch": true
+}

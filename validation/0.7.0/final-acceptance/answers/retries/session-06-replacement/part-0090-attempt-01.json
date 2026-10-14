@@ -1,0 +1,12 @@
+{
+  "session": "session-06-replacement",
+  "part": "part-0090",
+  "attempt": 1,
+  "stage": "pre-write-validation",
+  "utc": "2026-10-13T15:14:23.331230+00:00",
+  "source": "blind/session-06/part-0090.jsonl",
+  "attempted_answer_count": 20,
+  "failure": "Main validator rejected title evidence because the manually composed second half did not match part-0090 source identities; no answer file was written.",
+  "written_to_first": false,
+  "repair": "Discard mismatched candidate and read part-0090 rows 11-20 before rebuilding the batch."
+}

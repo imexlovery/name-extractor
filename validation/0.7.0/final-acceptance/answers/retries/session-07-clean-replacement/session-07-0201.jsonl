@@ -1,0 +1,1 @@
+{"input_id": "input-45860", "row_id": "Sheet1:46018", "names": ["王精明"], "title_evidence": [{"name": "王精明", "quote": "王精明"}], "body_evidence": ["遵义金融监管分局关于高俊峰都邦财产保险股份有限", "一、核准王精明兴业银行股份有限公司遵义分行行长的任职资格。"], "status": "conflict", "reason": "标题及核准决定指向王精明，但正文开头另出现高俊峰的批复残题，存在姓名冲突。", "model": "gpt-6-luna", "prompt_version": "title-body-blind-v2"}

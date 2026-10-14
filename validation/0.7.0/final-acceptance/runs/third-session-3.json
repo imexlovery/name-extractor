@@ -1,0 +1,50 @@
+{
+  "session": "third-session-3",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-adjudication-v1",
+  "recorded_at_utc": "2026-10-14T11:07:44.178310+00:00",
+  "records_read_complete": 40,
+  "records_output": 40,
+  "records_validated_before_write": 40,
+  "records_read_back_and_validated": 40,
+  "files": [
+    {
+      "source": "validation/0.7.0/final-acceptance/adjudication/third/third-0005.jsonl",
+      "answer": "validation/0.7.0/final-acceptance/answers/third/third-0005.jsonl",
+      "read": 20,
+      "output": 20,
+      "validated_before_write": 20,
+      "read_back_validated": 20
+    },
+    {
+      "source": "validation/0.7.0/final-acceptance/adjudication/third/third-0006.jsonl",
+      "answer": "validation/0.7.0/final-acceptance/answers/third/third-0006.jsonl",
+      "read": 20,
+      "output": 20,
+      "validated_before_write": 20,
+      "read_back_validated": 20
+    }
+  ],
+  "failed_revisions": [
+    {
+      "attempt": 1,
+      "stage": "pre-write format validation",
+      "reason": "answer-construction helper omitted required row_id; validation stopped before writing; corrected by copying row_id from source",
+      "records_written": 0
+    }
+  ],
+  "human_review_count": 0,
+  "tokens": null,
+  "cost": null,
+  "retry_records": [
+    "validation/0.7.0/final-acceptance/answers/retries/third-session-3/attempt-001-validation-failure.json"
+  ],
+  "final_audit": {
+    "source_records": 40,
+    "answer_records": 40,
+    "identity_order_match": true,
+    "validated": 40,
+    "adjudication_reason_nonempty": 40
+  },
+  "final_audit_at_utc": "2026-10-14T11:08:07.725772+00:00"
+}

@@ -1,0 +1,7 @@
+{
+  "part": "part-0134.jsonl",
+  "attempt": 1,
+  "failed_input_id": "input-39395",
+  "failure": "body_evidence quote used 经审查, while source says 经审核; rejected before write",
+  "resolution": "corrected the quote to match the source and validated all records before and after write"
+}

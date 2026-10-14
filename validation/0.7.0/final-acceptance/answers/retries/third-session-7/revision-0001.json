@@ -1,0 +1,11 @@
+{
+  "revision": 1,
+  "recorded_at_utc": "2026-10-14T11:09:49.767488+00:00",
+  "input_id": "input-42122",
+  "row_id": "Sheet1:42263",
+  "failure_stage": "prewrite_validate_answer",
+  "failed_quote": "二、核准葛景亮故城县农村信用联社董事长任职资格，核准康龙飞故城县农村信用联社主任任职资格。",
+  "failure_reason": "Body quote not in original; the quote belonged to input-41229.",
+  "corrected_quote": "二、孙冠勇等四人应自核准之日起三个月内到任",
+  "resolution": "Replaced with a verbatim quote from input-42122 and revalidated the full batch."
+}

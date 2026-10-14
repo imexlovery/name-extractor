@@ -1,0 +1,945 @@
+{
+  "session_id": "session-06",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-blind-v2",
+  "manual_checked_count": 0,
+  "token_usage": null,
+  "cost": null,
+  "batches": [
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0001.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0001.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:24:51.547196+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0002.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0002.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:25:34.303411+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0003.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0003.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:26:00.604797+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0004.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0004.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:26:28.112638+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0005.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0005.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:26:53.485283+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0006.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0006.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:28:02.276802+00:00",
+      "failures": [
+        {
+          "input_id": "input-33042",
+          "reason": "初次组批时误将part-0005后十条复用于part-0006；主validator在标题证据不属于当前标题时拒绝，未写出答案文件。"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-33042",
+          "reason": "重新读取part-0006原文后按实际20个ID逐条重建并通过主validator。",
+          "utc": "2026-10-13T11:28:02.277014+00:00"
+        }
+      ]
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0007.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0007.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:28:29.344619+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0008.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0008.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:28:52.562754+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0009.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0009.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:29:16.186775+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0010.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0010.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:29:48.606450+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0011.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0011.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:30:15.499365+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0012.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0012.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:30:49.143313+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0013.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0013.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:31:13.041950+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0014.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0014.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:31:40.582087+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0015.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0015.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:32:14.240903+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0016.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0016.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:32:38.274908+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0017.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0017.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:33:02.338159+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0018.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0018.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:33:26.542600+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0019.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0019.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:33:58.385189+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0020.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0020.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:34:22.777723+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0021.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0021.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:35:16.230325+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0022.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0022.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:35:44.683507+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0023.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0023.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:36:08.607342+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0024.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0024.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:36:40.981598+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0025.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0025.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:37:01.704086+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0026.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0026.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:37:27.119764+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0027.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0027.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:37:59.096163+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0028.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0028.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:38:29.283628+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0029.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0029.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:39:04.670686+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0030.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0030.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:39:26.924764+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0031.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0031.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:40:05.276308+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0032.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0032.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:40:50.003857+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0033.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0033.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:41:56.920953+00:00",
+      "failures": [
+        {
+          "input_id": "input-33584",
+          "reason": "初次组批误将part-0032后十条用于part-0033；主validator因姓名证据不属于当前原标题而拒绝，未写出答案文件。"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-33584",
+          "reason": "重新读取part-0033实际后十条并按当前原文重建，通过主validator。",
+          "utc": "2026-10-13T11:41:56.921131+00:00"
+        }
+      ]
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0034.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0034.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:42:34.618651+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0035.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0035.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:43:10.113585+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0036.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0036.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:43:44.109391+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0037.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0037.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:44:44.503613+00:00",
+      "failures": [
+        {
+          "input_id": "input-33664",
+          "reason": "初次组批误将part-0036后十条用于part-0037；主validator因姓名证据不属于当前原标题而拒绝，未写出答案文件。"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-33664",
+          "reason": "重新读取part-0037实际后十条并按当前原文重建，通过主validator。",
+          "utc": "2026-10-13T11:44:44.503821+00:00"
+        }
+      ]
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0038.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0038.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:45:23.699479+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0039.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0039.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:45:59.229953+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0040.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0040.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:46:37.444707+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0041.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0041.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:49:33.113359+00:00",
+      "failures": [
+        {
+          "input_id": "input-33734",
+          "reason": "初次写批次时误指向part-0040且旧输出已存在，系统拒绝覆盖，未写入part-0041答案。"
+        },
+        {
+          "input_id": "input-33735",
+          "reason": "首次答案体引文误抄，主validator判定引文不在原文中，未写出答案文件。"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-33734",
+          "reason": "改用part-0041原始文件和session-06-0041输出路径。",
+          "utc": "2026-10-13T11:49:33.113530+00:00"
+        },
+        {
+          "input_id": "input-33735",
+          "reason": "重读对应完整原文并将正文引文更正为原句后重新验证。",
+          "utc": "2026-10-13T11:49:33.113533+00:00"
+        }
+      ]
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0042.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0042.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:50:03.813475+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0043.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0043.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:51:21.722848+00:00",
+      "failures": [
+        {
+          "input_id": "input-33780",
+          "reason": "首次正文引文误加了原文不存在的“一、”，主validator拒绝写出。"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-33780",
+          "reason": "重读原文并按其实际起始“经审核”修正引文，随后全批主validator通过。",
+          "utc": "2026-10-13T11:51:21.723036+00:00"
+        }
+      ]
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0044.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0044.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:52:55.345043+00:00",
+      "failures": [
+        {
+          "input_id": "input-33800",
+          "reason": "正文证据误抄时添加原文不存在的“一、”，主validator拒绝写出答案。"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-33800",
+          "reason": "重读原文后按其实际“经我分局审核，现核准”句修正正文引文并重新验证。",
+          "utc": "2026-10-13T11:52:55.345228+00:00"
+        }
+      ]
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0045.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0045.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:55:22.071339+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0046.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0046.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:55:55.177146+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0047.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0047.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:56:40.987905+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0048.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0048.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:57:21.147957+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0049.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0049.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:57:56.042673+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0050.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0050.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:59:05.384516+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0051.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0051.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:59:51.481397+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0052.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0052.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:00:44.390597+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0053.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0053.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:01:20.431337+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0054.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0054.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:01:56.215545+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0055.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0055.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:02:30.169118+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0056.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0056.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:03:10.946940+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0057.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0057.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:03:51.171839+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0058.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0058.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:04:26.488245+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0059.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0059.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:04:58.573523+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0060.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0060.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:05:46.788183+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0061.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0061.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:06:22.625690+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0062.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0062.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:07:01.841403+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0063.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0063.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:07:38.193850+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0064.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0064.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:08:13.879296+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0065.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0065.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:08:51.958799+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0066.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0066.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:09:25.408515+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0067.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0067.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:09:54.980697+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0068.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0068.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:10:29.713572+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0069.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0069.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:13:38.735600+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0070.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0070.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:58:02.663261+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0071.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0071.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:59:22.252444+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0072.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0072.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:01:12.064526+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0073.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0073.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:02:31.998008+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0074.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0074.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:03:54.548195+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0075.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0075.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:05:53.493316+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0076.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0076.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:35:55.066951+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0077.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0077.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:39:31.071005+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0078.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0078.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:40:23.339232+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0079.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0079.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:42:06.725629+00:00",
+      "failures": [
+        {
+          "input_id": "input-34497",
+          "reason": "初次答案组装把标题姓名误判为李强，validator因标题证据不在原标题中拒绝，未写出答案文件。"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-34497",
+          "reason": "重新阅读part-0079标题与正文后确认姓名为吕健，按原文更正并通过主validator。",
+          "utc": "2026-10-13T14:42:06.725629+00:00"
+        }
+      ]
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0080.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0080.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:42:50.167868+00:00",
+      "failures": [],
+      "revisions": []
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0081.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0081.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:44:47.758314+00:00",
+      "failures": [
+        {
+          "input_id": "input-34576",
+          "reason": "首次正文引文漏掉原文中“一”与“、”之间的空格，主validator拒绝，未写出答案文件。"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-34576",
+          "reason": "重新核对part-0081原文并修正正文引文空格后通过主validator。",
+          "utc": "2026-10-13T14:44:47.758314+00:00"
+        }
+      ]
+    },
+    {
+      "source_path": "validation/0.7.0/final-acceptance/blind/session-06/part-0082.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-06-0082.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:49:33.518747+00:00",
+      "failures": [
+        {
+          "input_id": "input-34577",
+          "reason": "首次组批沿用了不匹配的输入ID映射，源ID集合检查拦截，未写出答案文件。"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-34577",
+          "reason": "重新阅读part-0082原文并按本批实际20个ID逐条重建答案，通过主validator。",
+          "utc": "2026-10-13T14:49:33.518747+00:00"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "batch_count": 80,
+    "read_count": 1600,
+    "output_count": 1600,
+    "valid_count": 1600,
+    "unique_input_id_count": 1600
+  }
+}

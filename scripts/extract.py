@@ -7,7 +7,7 @@ import unicodedata
 import json
 from pathlib import Path
 
-VERSION = "r64"
+VERSION = "r65"
 
 _HAN_RANGES = (
     (0x3400, 0x4DBF), (0x4E00, 0x9FFF), (0xF900, 0xFAFF),
@@ -81,7 +81,7 @@ _INSTITUTION_STARTS = (
     "云南", "西藏", "陕西", "甘肃", "青海", "宁夏", "新疆", "香港", "澳门", "台湾",
 )
 _ACRONYM_INSTITUTION = re.compile(r"[A-Z]{2,}(?=科技集团|集团财务|金融公司)")
-INSTITUTION_ANCHOR_RESOURCE = 'institution_anchors_r57.json'
+INSTITUTION_ANCHOR_RESOURCE = 'institution_anchors_r65.json'
 AMBIGUITY_RESOURCE = 'title_ambiguities_r61.json'
 _TITLE_AMBIGUITIES = json.loads(Path(__file__).with_name(AMBIGUITY_RESOURCE).read_text(encoding='utf-8'))
 _INSTITUTION_STARTS += tuple(json.loads(Path(__file__).with_name(INSTITUTION_ANCHOR_RESOURCE).read_text(encoding='utf-8')))
@@ -283,6 +283,10 @@ def _extract(title: str) -> dict:
     if _COMPLETE_GOVERNANCE_NOTICE.fullmatch(public_core):
         return _result([], 'no_name', 'complete_governance_notice', '完整地区金融学会的理事会届次变更事项公示，全文未明示人员')
     core = title.split("关于", 1)[-1].strip()
+    # A regulator heading may use 于 as the linking word when 关于 is omitted.
+    # Do not remove 于 from a bare name or from an ordinary 关于 title.
+    if '关于' not in title and re.fullmatch(r'[\u4e00-\u9fff]{2,24}?(?:监管分局|监管局)于.+任职资格.*', core):
+        core = re.sub(r'^([\u4e00-\u9fff]{2,24}?(?:监管分局|监管局))于', r'\1', core, count=1)
     core = re.sub(r"^[\u4e00-\u9fff]{2,24}?(?:银保监局|银监局|监管分局|监管局)", "", core).strip()
     # A document type does not establish absence of a named applicant.
     if notice := re.fullmatch(r'(?:加强)?(.+?)(?:同志|先生|女士)(?:准予行政许可决定书|行政许可事项终止审查通知书|任职资格管理的通知)', core):

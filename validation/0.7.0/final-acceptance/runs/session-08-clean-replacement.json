@@ -1,0 +1,1182 @@
+{
+  "session": "session-08-clean-replacement",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-blind-v2",
+  "checkpoint_utc": "2026-10-13T17:17:38Z",
+  "batches": [
+    {
+      "part": "0155",
+      "checkpoint_utc": "2026-10-13T15:56:14Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0156",
+      "checkpoint_utc": "2026-10-13T15:56:14Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0157",
+      "checkpoint_utc": "2026-10-13T15:56:14Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0158",
+      "checkpoint_utc": "2026-10-13T15:56:14Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0159",
+      "checkpoint_utc": "2026-10-13T15:56:14Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0160",
+      "checkpoint_utc": "2026-10-13T15:56:14Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 2,
+      "revisions": [
+        "Shortened both body excerpts to exact source substrings; final 20-row prewrite and readback validation passed."
+      ],
+      "validation_failures": [
+        "Prewrite validation rejected body evidence for input-50141 and input-50153; no answer file was written from either failed attempt."
+      ]
+    },
+    {
+      "part": "0161",
+      "checkpoint_utc": "2026-10-13T15:56:14Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0162",
+      "checkpoint_utc": "2026-10-13T15:56:14Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0163",
+      "checkpoint_utc": "2026-10-13T15:56:14Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0164",
+      "checkpoint_utc": "2026-10-13T15:56:14Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0165",
+      "checkpoint_utc": "2026-10-13T16:02:48Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0166",
+      "checkpoint_utc": "2026-10-13T16:02:48Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0167",
+      "checkpoint_utc": "2026-10-13T16:02:48Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0168",
+      "checkpoint_utc": "2026-10-13T16:02:48Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0169",
+      "checkpoint_utc": "2026-10-13T16:02:48Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0170",
+      "checkpoint_utc": "2026-10-13T16:02:48Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Used a verified source substring for the body quote; final 20-row prewrite and readback validation passed."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-50376 included an omitted source space; no answer file was written from the failed attempt."
+      ]
+    },
+    {
+      "part": "0171",
+      "checkpoint_utc": "2026-10-13T16:02:48Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0172",
+      "checkpoint_utc": "2026-10-13T16:02:48Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Corrected the quote to the exact source wording; final 20-row prewrite and readback validation passed."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-50408 used 经审查 where the source says 经审核; no answer file was written from the failed attempt."
+      ]
+    },
+    {
+      "part": "0173",
+      "checkpoint_utc": "2026-10-13T16:02:48Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0174",
+      "checkpoint_utc": "2026-10-13T16:02:48Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0175",
+      "checkpoint_utc": "2026-10-13T16:09:27Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0176",
+      "checkpoint_utc": "2026-10-13T16:09:27Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0177",
+      "checkpoint_utc": "2026-10-13T16:09:27Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0178",
+      "checkpoint_utc": "2026-10-13T16:09:27Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0179",
+      "checkpoint_utc": "2026-10-13T16:09:27Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0180",
+      "checkpoint_utc": "2026-10-13T16:09:27Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0181",
+      "checkpoint_utc": "2026-10-13T16:09:27Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Shortened the quote to the exact source substring; final prewrite and readback validation passed."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-50589 omitted a source space; no answer file was written from the failed attempt."
+      ]
+    },
+    {
+      "part": "0182",
+      "checkpoint_utc": "2026-10-13T16:09:27Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Removed the item marker from the quote and validated an exact source substring; final prewrite and readback validation passed."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-50612 omitted a source space after the item marker; no answer file was written from the failed attempt."
+      ]
+    },
+    {
+      "part": "0183",
+      "checkpoint_utc": "2026-10-13T16:09:27Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0184",
+      "checkpoint_utc": "2026-10-13T16:09:27Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Shortened the quote to the exact source substring; final prewrite and readback validation passed."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-50646 did not match the source punctuation exactly; no answer file was written from the failed attempt."
+      ]
+    },
+    {
+      "part": "0185",
+      "checkpoint_utc": "2026-10-13T16:13:21Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0186",
+      "checkpoint_utc": "2026-10-13T16:13:21Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0187",
+      "checkpoint_utc": "2026-10-13T16:13:21Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0188",
+      "checkpoint_utc": "2026-10-13T16:13:21Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Shortened the quote to an exact source substring; final prewrite and readback validation passed."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-50742 differed from source wording; no answer file was written from the failed attempt."
+      ]
+    },
+    {
+      "part": "0189",
+      "checkpoint_utc": "2026-10-13T16:13:21Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0190",
+      "checkpoint_utc": "2026-10-13T16:16:34Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0191",
+      "checkpoint_utc": "2026-10-13T16:16:34Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0192",
+      "checkpoint_utc": "2026-10-13T16:16:34Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0193",
+      "checkpoint_utc": "2026-10-13T16:16:34Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0194",
+      "checkpoint_utc": "2026-10-13T16:16:34Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Corrected the body quote to match the source substring; final prewrite and readback validation passed."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-50868 omitted ‘服务’ from the company name; no answer file was written from the failed attempt."
+      ]
+    },
+    {
+      "part": "0195",
+      "checkpoint_utc": "2026-10-13T16:32:15Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0196",
+      "checkpoint_utc": "2026-10-13T16:32:15Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 2,
+      "revisions": [
+        "Changed body_evidence to the prompt-required array of quote strings and used validate_answer(answer, source)."
+      ],
+      "validation_failures": [
+        "Initial prewrite validation used object entries for body_evidence instead of the prompt-required string array; a subsequent call also used reversed arguments. No answer file was written from either failed call. Corrected the schema and call, then final prewrite and readback validation passed."
+      ]
+    },
+    {
+      "part": "0197",
+      "checkpoint_utc": "2026-10-13T16:32:15Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0198",
+      "checkpoint_utc": "2026-10-13T16:32:15Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Corrected input-50940 body quote to the exact source phrase naming the vice-president role."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-50940 included the wrong role; no answer file was written from the failed attempt. Replaced it with the exact source phrase, then final prewrite and readback validation passed."
+      ]
+    },
+    {
+      "part": "0199",
+      "checkpoint_utc": "2026-10-13T16:32:15Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0200",
+      "checkpoint_utc": "2026-10-13T16:32:15Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0201",
+      "checkpoint_utc": "2026-10-13T16:32:15Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0202",
+      "checkpoint_utc": "2026-10-13T16:32:15Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0203",
+      "checkpoint_utc": "2026-10-13T16:32:15Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0204",
+      "checkpoint_utc": "2026-10-13T16:32:15Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0205",
+      "checkpoint_utc": "2026-10-13T16:41:28Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0206",
+      "checkpoint_utc": "2026-10-13T16:41:28Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0207",
+      "checkpoint_utc": "2026-10-13T16:41:28Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Corrected input-51120 quote to match the body’s center-branch deputy general manager role wording."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-51120 used an inferred role phrase absent from the source; no answer file was written. Corrected the quote to the exact body role wording."
+      ]
+    },
+    {
+      "part": "0208",
+      "checkpoint_utc": "2026-10-13T16:41:28Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Corrected input-51146 body quote to the source wording ending in 副行长任职资格."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-51146 included 的任职资格, which is absent from the source wording; no answer file was written. Corrected to the exact source substring."
+      ]
+    },
+    {
+      "part": "0209",
+      "checkpoint_utc": "2026-10-13T16:41:28Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0210",
+      "checkpoint_utc": "2026-10-13T16:41:28Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Added the exact 的 in the input-51197 source quote."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-51197 omitted 的 before 任职资格; no answer file was written. Corrected the quote to the exact source phrase."
+      ]
+    },
+    {
+      "part": "0211",
+      "checkpoint_utc": "2026-10-13T16:41:28Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Corrected input-51214 to include the full source institution and role phrase.",
+        "Corrected input-51217 to include the source wording 董事长的任职资格."
+      ],
+      "validation_failures": [
+        "Prewrite validation rejected body quotes for input-51214 and input-51217 because the quotes omitted source wording; no answer file was written. Corrected both to exact source substrings."
+      ]
+    },
+    {
+      "part": "0212",
+      "checkpoint_utc": "2026-10-13T16:41:28Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Corrected input-51223 to use the exact shorter institution name in the source.",
+        "Corrected input-51231 to include 理事、理事长 as stated in the source."
+      ],
+      "validation_failures": [
+        "Prewrite validation rejected body quotes for input-51223 and input-51231 because institution/role wording differed from source; no answer file was written. Corrected both to exact source substrings."
+      ]
+    },
+    {
+      "part": "0213",
+      "checkpoint_utc": "2026-10-13T16:41:28Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0214",
+      "checkpoint_utc": "2026-10-13T16:41:28Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0215",
+      "checkpoint_utc": "2026-10-13T16:51:32Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0216",
+      "checkpoint_utc": "2026-10-13T16:51:32Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 2,
+      "revisions": [
+        "Corrected input-51316 to the exact source wording for the independent-director role; retained only the title-explicit name among 等 three.",
+        "Corrected input-51317 to include the exact source phrase ending 的任职资格."
+      ],
+      "validation_failures": [
+        "First prewrite attempt for input-51316 used an incomplete role quote; no answer file was written. After correcting it, a second prewrite attempt failed on input-51317 because the quote omitted 的任职资格; no answer file was written. Both were corrected to exact source substrings before the successful write."
+      ]
+    },
+    {
+      "part": "0217",
+      "checkpoint_utc": "2026-10-13T16:51:32Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Corrected input-51324 body quote to the exact source role wording."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-51324 used a role phrase absent from the source; no answer file was written. Replaced it with the exact source role 合规部门负责人."
+      ]
+    },
+    {
+      "part": "0218",
+      "checkpoint_utc": "2026-10-13T16:51:32Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0219",
+      "checkpoint_utc": "2026-10-13T16:51:32Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0220",
+      "checkpoint_utc": "2026-10-13T16:51:32Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0221",
+      "checkpoint_utc": "2026-10-13T16:51:32Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0222",
+      "checkpoint_utc": "2026-10-13T16:51:32Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0223",
+      "checkpoint_utc": "2026-10-13T16:51:32Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0224",
+      "checkpoint_utc": "2026-10-13T16:51:32Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0225",
+      "checkpoint_utc": "2026-10-13T17:02:06Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0226",
+      "checkpoint_utc": "2026-10-13T17:02:06Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Restored the full name 罗丽文 for input-51538 and matched the exact body quote."
+      ],
+      "validation_failures": [
+        "Prewrite validation rejected the abbreviated name 罗丽 because the title and body use 罗丽文; no answer file was written. Corrected the answer to the full title name and exact body quote."
+      ]
+    },
+    {
+      "part": "0227",
+      "checkpoint_utc": "2026-10-13T17:02:06Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0228",
+      "checkpoint_utc": "2026-10-13T17:02:06Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0229",
+      "checkpoint_utc": "2026-10-13T17:02:06Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0230",
+      "checkpoint_utc": "2026-10-13T17:02:06Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0231",
+      "checkpoint_utc": "2026-10-13T17:02:06Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0232",
+      "checkpoint_utc": "2026-10-13T17:02:06Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0233",
+      "checkpoint_utc": "2026-10-13T17:02:06Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Used the required array shape for names, including the no_name empty array."
+      ],
+      "validation_failures": [
+        "Prewrite validation received a singleton name as a string rather than the required names array; no answer file was written. Wrapped singleton names in arrays and retried."
+      ]
+    },
+    {
+      "part": "0234",
+      "checkpoint_utc": "2026-10-13T17:02:06Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Shortened input-51699 body evidence to the exact first approval sentence."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-51699 joined three source sentences without their separating spaces; no answer file was written. Shortened it to one exact source sentence."
+      ]
+    },
+    {
+      "part": "0235",
+      "checkpoint_utc": "2026-10-13T17:14:09Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 2,
+      "revisions": [
+        "Corrected input-51704 to preserve the source space in ‘1 号’.",
+        "Corrected input-51709 to the exact source sentence naming the approval for 张桂闻."
+      ],
+      "validation_failures": [
+        "Two prewrite attempts failed: input-51704 body quote omitted the source space in ‘1 号’; after that correction, input-51709 quote included an extra heading phrase not present in the source. No answer file was written until both quotes were corrected."
+      ]
+    },
+    {
+      "part": "0236",
+      "checkpoint_utc": "2026-10-13T17:14:09Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Changed input-51735 quote to the source phrase with 其中联金安保险经纪有限公司."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-51735 used 其 instead of the source’s repeated name; no answer file was written. Corrected to the exact source text."
+      ]
+    },
+    {
+      "part": "0237",
+      "checkpoint_utc": "2026-10-13T17:14:09Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0238",
+      "checkpoint_utc": "2026-10-13T17:14:09Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0239",
+      "checkpoint_utc": "2026-10-13T17:14:09Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0240",
+      "checkpoint_utc": "2026-10-13T17:14:09Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Added the source’s 的 to the input-51813 quote."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-51813 omitted 的 before 任职资格; no answer file was written. Corrected to exact source wording."
+      ]
+    },
+    {
+      "part": "0241",
+      "checkpoint_utc": "2026-10-13T17:14:09Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Shortened input-51826 evidence to the exact source clause 不予核准甘新发正隆保险经纪股份有限公司湖北分公司总经理的任职资格."
+      ],
+      "validation_failures": [
+        "Prewrite body quote for input-51826 paraphrased the cited regulation; no answer file was written. Replaced it with the exact denial clause."
+      ]
+    },
+    {
+      "part": "0242",
+      "checkpoint_utc": "2026-10-13T17:14:09Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0243",
+      "checkpoint_utc": "2026-10-13T17:14:09Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0244",
+      "checkpoint_utc": "2026-10-13T17:14:09Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 1,
+      "revisions": [
+        "Aligned each part-0244 claim to its source input_id and kept the branch-opening row’s title-explicit candidate status."
+      ],
+      "validation_failures": [
+        "Initial prewrite claim-to-row alignment assigned the branch-opening no_name decision to the wrong row; no answer file was written. Rechecked the source identities and rebuilt the batch mapping."
+      ]
+    },
+    {
+      "part": "0245",
+      "checkpoint_utc": "2026-10-13T17:17:38Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0246",
+      "checkpoint_utc": "2026-10-13T17:17:38Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0247",
+      "checkpoint_utc": "2026-10-13T17:17:38Z",
+      "source_rows_read": 20,
+      "answer_rows_written": 20,
+      "prewrite_validated_rows": 20,
+      "readback_rows": 20,
+      "readback_validated_rows": 20,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    },
+    {
+      "part": "0248",
+      "checkpoint_utc": "2026-10-13T17:17:38Z",
+      "source_rows_read": 2,
+      "answer_rows_written": 2,
+      "prewrite_validated_rows": 2,
+      "readback_rows": 2,
+      "readback_validated_rows": 2,
+      "failed_validation_attempts": 0,
+      "revisions": []
+    }
+  ],
+  "totals": {
+    "batches_completed": 94,
+    "source_rows_read": 1862,
+    "answer_rows_written": 1862,
+    "prewrite_validated_rows": 1862,
+    "readback_rows": 1862,
+    "readback_validated_rows": 1862,
+    "token_count": null,
+    "cost": null,
+    "manual_count": 0
+  }
+}

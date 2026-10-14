@@ -1,0 +1,1 @@
+{"answer": {"input_id": "input-28935", "row_id": "Sheet1:29007", "names": ["梁宗杰"], "title_evidence": [{"name": "梁宗杰", "quote": "梁宗杰"}], "body_evidence": ["一、核准梁宗杰和顺贵都村镇银行的董事的任职资格。"], "status": "names", "reason": "标题连续片段“梁宗杰和顺贵都村镇银行”分为人名梁宗杰和机构简称和顺贵都村镇银行；正文申请及核准事项支持该拆分。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}, "error": "Body quote not in original"}

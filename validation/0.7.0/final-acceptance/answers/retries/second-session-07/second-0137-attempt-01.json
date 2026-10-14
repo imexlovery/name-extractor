@@ -1,0 +1,19 @@
+{
+  "batch": 137,
+  "attempt": 1,
+  "input_id": "input-39441",
+  "validation_error": "Body evidence quote not found in source; draft used '五、' while source says '三、'.",
+  "answer": {
+    "input_id": "input-39441",
+    "row_id": "Sheet1:39571",
+    "names": [],
+    "title_evidence": [],
+    "body_evidence": [
+      "五、核准覃家闷桂林银行股份有限公司来宾象州支行行长的任职资格。"
+    ],
+    "status": "no_name",
+    "reason": "标题只述支行开业，没有人员姓名；覃家闷仅在正文出现。",
+    "model": "gpt-6-luna",
+    "prompt_version": "title-body-independent-v1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "part": "part-0162.jsonl",
+  "attempt": 1,
+  "failed_input_id": "input-39977",
+  "failure": "body quote had an absent list marker, so exact-source validation rejected it before write",
+  "resolution": "used the exact source sentence and validated all 20 answers before and after write"
+}

@@ -1,0 +1,115 @@
+{
+  "at": "2026-10-14T11:14:19.217972+00:00",
+  "changes": [
+    {
+      "input_id": "input-45770",
+      "before": {
+        "input_id": "input-45770",
+        "row_id": "Sheet1:45928",
+        "names": [
+          "余天云"
+        ],
+        "title_evidence": [
+          {
+            "name": "余天云",
+            "quote": "余天云",
+            "start": 2,
+            "end": 5
+          }
+        ],
+        "body_evidence": [
+          "中国银保监会温州监管分局关于高业波任职资格的批复 温银保监复〔2022〕175号",
+          "你分行《关于余天云任职资格审查的请示》（交银温〔2022〕20号）悉。经审核，核准余天云的交通银行股份有限公司温州开发区支行行长的任职资格。"
+        ],
+        "status": "conflict",
+        "reason": "结构化标题及申请、核准内容指向余天云，但正文开头另有高业波批复标题且带同一文号，人员归属冲突无法排除。",
+        "adjudication_reason": "第1轮conflict指出的证据差异仍无法排除：结构化标题、当前收文行中的余天云请示及实际核准句均指向余天云；正文开头却写“关于高业波任职资格的批复”，并紧接同一温银保监复〔2022〕175号及同一监管分局。第2轮将该标题断定为无关网页残留，但本条原文没有证据把它与当前文号、机构分开；因此不能安全忽略，也不能据此改写标题姓名，保留余天云作为标题候选并标记conflict。",
+        "model": "gpt-6-luna",
+        "prompt_version": "title-body-adjudication-v1"
+      },
+      "after": {
+        "input_id": "input-45770",
+        "row_id": "Sheet1:45928",
+        "names": [
+          "余天云"
+        ],
+        "title_evidence": [
+          {
+            "name": "余天云",
+            "quote": "余天云",
+            "start": 2,
+            "end": 5
+          }
+        ],
+        "body_evidence": [
+          "中国银保监会温州监管分局关于高业波任职资格的批复 温银保监复〔2022〕175号",
+          "你分行《关于余天云任职资格审查的请示》（交银温〔2022〕20号）悉。经审核，核准余天云的交通银行股份有限公司温州开发区支行行长的任职资格。"
+        ],
+        "status": "names",
+        "reason": "当前结构化标题、余天云请示及实际核准句一致；反复出现的高业波抬头是无关网页残留。",
+        "adjudication_reason": "原始竞争解释一判conflict、解释二判names。复核本分配原始记录可见完全相同的“温州监管分局关于高业波任职资格的批复”抬头反复附在不同文号、不同受批机构和不同审批事项前，属于网页残留，而非本条实际批复。当前文号温银保监复〔2022〕175号下的交通银行温州分行请示及核准句均明确为余天云，和结构化标题一致；排除残留后无姓名冲突。",
+        "model": "gpt-6-luna",
+        "prompt_version": "title-body-adjudication-v1",
+        "revision_of": "answers/third/third-0015.jsonl"
+      },
+      "reason": "原始竞争解释一判conflict、解释二判names。复核本分配原始记录可见完全相同的“温州监管分局关于高业波任职资格的批复”抬头反复附在不同文号、不同受批机构和不同审批事项前，属于网页残留，而非本条实际批复。当前文号温银保监复〔2022〕175号下的交通银行温州分行请示及核准句均明确为余天云，和结构化标题一致；排除残留后无姓名冲突。",
+      "source_correction": "answers/retries/third-session-8/revisions.jsonl",
+      "backup": "validation/0.7.0/final-acceptance/answers/retries/main-adjudication-assembly/third-0015.jsonl"
+    },
+    {
+      "input_id": "input-46697",
+      "before": {
+        "input_id": "input-46697",
+        "row_id": "Sheet1:46859",
+        "names": [
+          "陈国乐"
+        ],
+        "title_evidence": [
+          {
+            "name": "陈国乐",
+            "quote": "陈国乐",
+            "start": 2,
+            "end": 5
+          }
+        ],
+        "body_evidence": [
+          "中国银保监会温州监管分局关于高业波任职资格的批复 温银保监复〔2022〕244号",
+          "《浙江泰顺农村商业银行股份有限公司关于陈国乐同志任职资格审核的请示》（泰农商银〔2022〕154号）悉。经审核，核准陈国乐的浙江泰顺农村商业银行股份有限公司行长任职资格。"
+        ],
+        "status": "conflict",
+        "reason": "标题、泰顺农商行请示和核准句指向陈国乐；正文另有同温州监管分局且带当前文号的高业波批复标题，不能排除冲突。",
+        "adjudication_reason": "第1轮conflict保留了正文开头异名标题的影响，第2轮names将它视为残留；但原文没有分隔或另一文号证明其与当前批复无关。该完整标题“关于高业波任职资格的批复”紧接温银保监复〔2022〕244号，随后同一监管分局辖下的泰顺农商行请示及核准句却写陈国乐。现有五字段不能确认异名标题是网页残留还是当前文号下的冲突标题，因此保留标题候选陈国乐并标记conflict。",
+        "model": "gpt-6-luna",
+        "prompt_version": "title-body-adjudication-v1"
+      },
+      "after": {
+        "input_id": "input-46697",
+        "row_id": "Sheet1:46859",
+        "names": [
+          "陈国乐"
+        ],
+        "title_evidence": [
+          {
+            "name": "陈国乐",
+            "quote": "陈国乐",
+            "start": 2,
+            "end": 5
+          }
+        ],
+        "body_evidence": [
+          "中国银保监会温州监管分局关于高业波任职资格的批复 温银保监复〔2022〕244号",
+          "《浙江泰顺农村商业银行股份有限公司关于陈国乐同志任职资格审核的请示》（泰农商银〔2022〕154号）悉。经审核，核准陈国乐的浙江泰顺农村商业银行股份有限公司行长任职资格。"
+        ],
+        "status": "names",
+        "reason": "当前结构化标题、泰顺农商行请示及实际核准句一致；反复出现的高业波抬头是无关网页残留。",
+        "adjudication_reason": "原始竞争解释一判conflict、解释二判names。完全相同的“温州监管分局关于高业波任职资格的批复”抬头还重复出现在本分配中其他文号、机构与审批事项的正文前缀，足以识别为网页残留。当前文号温银保监复〔2022〕244号对应的泰顺农村商业银行请示和实际核准句均明确为陈国乐，且结构化标题相同；排除残留后不构成当前人员冲突。",
+        "model": "gpt-6-luna",
+        "prompt_version": "title-body-adjudication-v1",
+        "revision_of": "answers/third/third-0016.jsonl"
+      },
+      "reason": "原始竞争解释一判conflict、解释二判names。完全相同的“温州监管分局关于高业波任职资格的批复”抬头还重复出现在本分配中其他文号、机构与审批事项的正文前缀，足以识别为网页残留。当前文号温银保监复〔2022〕244号对应的泰顺农村商业银行请示和实际核准句均明确为陈国乐，且结构化标题相同；排除残留后不构成当前人员冲突。",
+      "source_correction": "answers/retries/third-session-8/revisions.jsonl",
+      "backup": "validation/0.7.0/final-acceptance/answers/retries/main-adjudication-assembly/third-0016.jsonl"
+    }
+  ]
+}

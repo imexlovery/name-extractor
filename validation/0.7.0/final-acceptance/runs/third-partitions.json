@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-14T11:03:27.896867+00:00",
+  "inputs": 327,
+  "jobs": [
+    {
+      "number": 1,
+      "first_batch": 1,
+      "last_batch": 2,
+      "inputs": 40,
+      "thread_id": "01a13a14-ca74-7f03-ae0b-074e7cb713c3"
+    },
+    {
+      "number": 2,
+      "first_batch": 3,
+      "last_batch": 4,
+      "inputs": 40,
+      "thread_id": "01a13a14-cd16-7cb3-a7da-221576e09b67"
+    },
+    {
+      "number": 3,
+      "first_batch": 5,
+      "last_batch": 6,
+      "inputs": 40,
+      "thread_id": "01a13a14-cf0d-7a53-9a41-f77407b34564"
+    },
+    {
+      "number": 4,
+      "first_batch": 7,
+      "last_batch": 8,
+      "inputs": 40,
+      "thread_id": "01a13a14-d137-7173-9de6-a5524330f8e0"
+    },
+    {
+      "number": 5,
+      "first_batch": 9,
+      "last_batch": 10,
+      "inputs": 40,
+      "thread_id": "01a13a14-d327-7a22-87cf-80dff1480116"
+    },
+    {
+      "number": 6,
+      "first_batch": 11,
+      "last_batch": 12,
+      "inputs": 40,
+      "thread_id": "01a13a14-d56f-7973-b9f9-6e6ca80c5c6d"
+    },
+    {
+      "number": 7,
+      "first_batch": 13,
+      "last_batch": 14,
+      "inputs": 40,
+      "thread_id": "01a13a14-d79f-7742-9a34-0fefac6079cd"
+    },
+    {
+      "number": 8,
+      "first_batch": 15,
+      "last_batch": 17,
+      "inputs": 47,
+      "thread_id": "01a13a14-d9eb-7050-adc0-f97dd934453e"
+    }
+  ]
+}

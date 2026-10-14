@@ -6,7 +6,7 @@ import argparse
 from collections import Counter, defaultdict
 import csv
 from contextlib import redirect_stdout
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import json
 import io
 import os
@@ -259,6 +259,8 @@ def compare():
     corrected = set()
     for path in (WORK / 'answers/retries').rglob('*.jsonl'):
         for old in read(path):
+            if old.get('prompt_version') not in ('title-body-blind-v1', PROMPT_VERSION):
+                continue
             current = answers.get(old.get('input_id'))
             if current and 'names' in old and 'status' in old and \
                     (old['names'] != current['names'] or old['status'] != current['status']):
@@ -311,7 +313,11 @@ def runtime():
     parallel_path = WORK / 'runs/parallel-sessions.json'
     independent_ids = {r['thread_id'] for r in json.loads(parallel_path.read_text())['sessions']} if parallel_path.exists() else set()
     records = []
-    for path in (Path.home() / '.codex/sessions/2026/10/13').glob('*.jsonl'):
+    started = datetime(2026, 10, 13, tzinfo=timezone.utc).date()
+    today = datetime.now(timezone.utc).date()
+    folders = [Path.home() / '.codex/sessions' / (started + timedelta(days=n)).strftime('%Y/%m/%d')
+               for n in range((today - started).days + 1)]
+    for path in (path for folder in folders for path in folder.glob('*.jsonl')):
         with path.open() as stream:
             first = json.loads(next(stream))
             source = first.get('payload', {}).get('source')
@@ -337,7 +343,8 @@ def runtime():
     save(WORK / 'runs/current-runtime.json', dict(updated_at=datetime.now(timezone.utc).isoformat(),
          agents=records, cumulative_token_usage=totals, currency_cost=None,
          cost_note='Codex subscription accounting is not exposed; tokens include repeated and cached contexts.',
-         fast_requested=True, fast_verified=False))
+         fast_requested=True, fast_verified=False,
+         fast_confirmation_source='用户已在界面开启并确认新会话继承，运行元数据未暴露该字段'))
     print(json.dumps(totals))
 
 
@@ -503,6 +510,155 @@ def freeze_reference():
     print((WORK / 'reference-manifest.json').read_text())
 
 
+def supplement_reference():
+    """Preserve v1 and freeze independently reread institution-boundary evidence as v2."""
+    manifest = json.loads((WORK / 'reference-manifest.json').read_text())
+    if manifest['version'] != 'v1' or (WORK / 'references/v2.jsonl').exists():
+        raise ValueError('Supplement is a one-time v1 to v2 correction, never overwrite a version.')
+    sources = {r['input_id']: r for r in read(WORK / 'blind/supplemental-boundary-9.jsonl')}
+    answers = read(WORK / 'answers/supplemental/boundary-9.jsonl')
+    assert len(sources) == len(answers) == 9
+    assert {a['input_id'] for a in answers} == set(sources)
+    answers = {a['input_id']: a for a in answers}
+    before = read(WORK / 'references/v1.jsonl')
+    reference, corrections = [], []
+    for old in before:
+        new = dict(old, reference_version='v2')
+        if old['input_id'] in answers:
+            answer = answers[old['input_id']]
+            validate_answer(answer, sources[old['input_id']], ('title-body-adjudication-v1',))
+            assert answer['adjudication_reason'].strip()
+            new.update(answer, decision_stage='supplemental_boundary_review',
+                       supplemental_answer_file='answers/supplemental/boundary-9.jsonl')
+            corrections.append(dict(input_id=old['input_id'], before=old, after=new,
+                changed=(old['names'], old['status']) != (new['names'], new['status']),
+                evidence=answer['adjudication_reason']))
+        reference.append(new)
+    by_id = {a['input_id']: a for a in reference}
+    rows = [dict(by_id[m['input_id']], source_row_id=by_id[m['input_id']]['row_id'],
+                 row_id=m['row_id'], excel_row=m['excel_row']) for m in read(WORK / 'row-map.jsonl')]
+    save(WORK / 'references/v1-manifest.json', manifest)
+    save(WORK / 'references/v2-corrections.json', corrections)
+    lines(WORK / 'references/v2.jsonl', reference)
+    lines(WORK / 'fixed-reference.jsonl', reference)
+    lines(WORK / 'fixed-row-reference.jsonl', rows)
+    new_manifest = dict(manifest, version='v2', previous_version='v1',
+        frozen_at=datetime.now(timezone.utc).isoformat(), supplemental_reviewed_inputs=9,
+        corrected_inputs=sum(c['changed'] for c in corrections))
+    save(WORK / 'references/v2-manifest.json', new_manifest)
+    save(WORK / 'reference-manifest.json', new_manifest)
+    print(json.dumps(new_manifest, ensure_ascii=False, indent=2))
+
+
+def final_compare():
+    """Compare every original row with frozen evidence and current script output."""
+    from extract import VERSION
+    from validate import check
+    manifest = json.loads((WORK / 'reference-manifest.json').read_text())
+    original = read(WORK / 'source-rows.jsonl')
+    reference = read(WORK / 'fixed-row-reference.jsonl')
+    assert len(original) == len(reference) == manifest['row_count']
+    assert [r['row_id'] for r in original] == [r['row_id'] for r in reference]
+    script = {row: item for item in read(WORK.parent / f'script-{VERSION}.jsonl') for row in item['rows']}
+    assert set(script) == {r['excel_row'] for r in original}
+    comparison, categories = [], Counter()
+    for source, answer in zip(original, reference):
+        item = script[source['excel_row']]
+        assert item['title'] == source['fields']['标题'], 'Original title/order changed'
+        result = item['result']
+        failures = check(item['title'], result)['failures']
+        if failures:
+            category = 'invalid_script'
+        elif answer['status'] in ('conflict', 'uncertain'):
+            category = 'unresolved_reference'
+        elif result['status'] == answer['status'] and result['names'] == answer['names']:
+            category = 'match'
+        elif result['status'] == 'uncertain':
+            category = 'script_unresolved_confirmed_reference'
+        elif len(result['names']) != len(answer['names']):
+            category = 'count_or_split_difference'
+        else:
+            category = 'name_or_status_difference'
+        categories[category] += 1
+        comparison.append(dict(row_id=source['row_id'], excel_row=source['excel_row'],
+                               input_id=answer['input_id'], title=item['title'], category=category,
+                               script=result, reference=answer, contract_failures=failures))
+    lines(WORK / 'final-row-comparison.jsonl', comparison)
+    lines(WORK / 'final-differences.jsonl', [r for r in comparison if r['category'] != 'match'])
+    collect()
+    progress = json.loads((WORK / 'progress.json').read_text())
+    determinate = len(original) - categories['unresolved_reference']
+    differences = len(original) - categories['match'] - categories['unresolved_reference']
+    metrics = dict(updated_at=datetime.now(timezone.utc).isoformat(), script_version=VERSION,
+        reference_version=manifest['version'], source_rows=len(original), categories_rows=dict(categories),
+        confirmed_matching_rows=categories['match'], confirmed_difference_rows=differences,
+        unresolved_reference_rows=categories['unresolved_reference'],
+        reference_agreement=categories['match']/len(original),
+        confirmed_reference_agreement=categories['match']/determinate if determinate else None,
+        ai_review_coverage=progress['ai_review_coverage'], human_reviewed_rows=progress['human_reviewed_rows'],
+        human_status_rows=progress['human_status_rows'], true_accuracy=None,
+        target_reference_agreement_passed=categories['match']/len(original) > .998,
+        acceptance_passed=False)
+    metrics['acceptance_passed'] = (metrics['ai_review_coverage'] == 1 and not differences and
+        metrics['target_reference_agreement_passed'] and metrics['human_reviewed_rows'] == 100 and
+        not metrics['human_status_rows'].get('incorrect', 0))
+    save(WORK / 'final-comparison.json', metrics)
+    save(WORK / f'final-comparison-{VERSION}.json', metrics)
+    print(json.dumps(metrics, ensure_ascii=False, indent=2))
+
+
+def human_risk():
+    """Fix forty distinct risk rows after evidence adjudication, preserving the random sixty."""
+    path = WORK / 'human/risk-40-selection.json'
+    if path.exists():
+        raise ValueError('Risk sample already fixed; preserve the existing human workload.')
+    reference = {r['row_id']: r for r in read(WORK / 'fixed-row-reference.jsonl')}
+    original = read(WORK / 'source-rows.jsonl')
+    baseline = {row: item for item in read(ROOT / 'validation/0.7.0/script-r64.jsonl') for row in item['rows']}
+    excluded = set(json.loads((WORK / 'human/random-60-selection.json').read_text())['row_ids'])
+    groups = {'多人及边界': [], '裁决及分歧': [], '无姓名标题': [], '历史未决': []}
+    for row in original:
+        if row['row_id'] in excluded:
+            continue
+        a, b = reference[row['row_id']], baseline[row['excel_row']]
+        if len(a['names']) > 1 or '四字姓名人数边界' in b.get('risk_categories', []):
+            groups['多人及边界'].append(row['row_id'])
+        if a['decision_stage'] == 'explicit_adjudication' or a['status'] in ('conflict', 'uncertain'):
+            groups['裁决及分歧'].append(row['row_id'])
+        if a['status'] == 'no_name':
+            groups['无姓名标题'].append(row['row_id'])
+        if b['result']['status'] == 'uncertain' or (b['result']['names'], b['result']['status']) != (a['names'], a['status']):
+            groups['历史未决'].append(row['row_id'])
+    rng, selected, seen_inputs, reasons = random.Random(SEED), [], set(), {}
+    for category, population in groups.items():
+        candidates = population[:]
+        rng.shuffle(candidates)
+        added = 0
+        for row_id in candidates:
+            if row_id in selected or reference[row_id]['input_id'] in seen_inputs:
+                continue
+            selected.append(row_id)
+            seen_inputs.add(reference[row_id]['input_id'])
+            reasons[row_id] = category
+            added += 1
+            if added == 10:
+                break
+    pool = list(dict.fromkeys(row_id for rows in groups.values() for row_id in rows))
+    rng.shuffle(pool)
+    for row_id in pool:
+        if len(selected) == 40:
+            break
+        if row_id not in selected and reference[row_id]['input_id'] not in seen_inputs:
+            selected.append(row_id)
+            seen_inputs.add(reference[row_id]['input_id'])
+            reasons[row_id] = '风险补足'
+    assert len(selected) == 40 and len(excluded | set(selected)) == 100
+    save(path, dict(seed=SEED, row_ids=selected, reasons=reasons,
+                   population_counts={key: len(value) for key, value in groups.items()},
+                   selection_method='冻结答案后分类型随机风险样本，不作为全量准确率估计'))
+    print(json.dumps(dict(random_rows=60, risk_rows=40, human_confirmation_required=True), ensure_ascii=False))
+
+
 def watch():
     """Checkpoint active subagent batches once a minute; exit when coverage is complete."""
     while True:
@@ -522,6 +678,7 @@ def watch():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('action', choices=['prepare', 'collect', 'compare', 'collect_second', 'collect_third',
-                                         'freeze_reference', 'partition_sessions', 'human_random', 'runtime', 'watch'])
+                                         'freeze_reference', 'partition_sessions', 'human_random', 'human_risk',
+                                         'supplement_reference', 'final_compare', 'runtime', 'watch'])
     args = parser.parse_args()
     globals()[args.action]()

@@ -1,0 +1,87 @@
+{
+  "session": "third-session-8",
+  "recorded_at_utc": "2026-10-14 11:11:26 UTC",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "xhigh",
+  "fast_mode": "user-confirmed new-session default",
+  "prompt_version": "title-body-adjudication-v1",
+  "source_review": {
+    "files": [
+      {
+        "path": "adjudication/third/third-0015.jsonl",
+        "records": 20,
+        "batch_sizes": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "path": "adjudication/third/third-0016.jsonl",
+        "records": 20,
+        "batch_sizes": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      {
+        "path": "adjudication/third/third-0017.jsonl",
+        "records": 7,
+        "batch_sizes": [
+          5,
+          2
+        ]
+      }
+    ],
+    "unique_records_fully_read_and_semantically_adjudicated": 47,
+    "semantic_answers_generated_by_code": false
+  },
+  "outputs": {
+    "third_files": [
+      {
+        "path": "answers/third/third-0015.jsonl",
+        "records": 20
+      },
+      {
+        "path": "answers/third/third-0016.jsonl",
+        "records": 20
+      },
+      {
+        "path": "answers/third/third-0017.jsonl",
+        "records": 7
+      }
+    ],
+    "answer_records_written_to_third": 47,
+    "revision_records_written_to_retries": 2,
+    "total_jsonl_lines_written": 49,
+    "post_write_batch_readback_validated": 47,
+    "final_full_file_readback_validated": 47,
+    "revisions_readback_validated": 2,
+    "all_47_input_ids_present_once_in_third_files": true,
+    "original_shards_overwritten": false
+  },
+  "format_validation": {
+    "validate_answer_calls": 289,
+    "passed": 288,
+    "failed_attempts": 1,
+    "failed_attempt_details": "A non-verbatim body_evidence quote in the input-49231 batch was rejected before write; replaced with exact source wording, then the batch passed validation.",
+    "revisions": [
+      {
+        "input_id": "input-45770",
+        "revision_path": "answers/retries/third-session-8/revisions.jsonl",
+        "reason": "Repeated high-ye-bo webpage heading was identified as unrelated residual across distinct current documents."
+      },
+      {
+        "input_id": "input-46697",
+        "revision_path": "answers/retries/third-session-8/revisions.jsonl",
+        "reason": "Repeated high-ye-bo webpage heading was identified as unrelated residual across distinct current documents."
+      }
+    ]
+  },
+  "human_review_count": 0,
+  "token_usage": null,
+  "cost": null
+}

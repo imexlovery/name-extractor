@@ -1,0 +1,390 @@
+{
+  "session": "second-session-01",
+  "started_at_utc": "2026-10-14T10:37:07.161050+00:00",
+  "updated_at_utc": "2026-10-14T10:48:42.123310+00:00",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-independent-v1",
+  "batches": [
+    {
+      "batch": "second-0001.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0002.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0003.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0004.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0005.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0006.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0007.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0008.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0009.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0010.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0011.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0012.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0013.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0014.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0015.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0016.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0017.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0018.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0019.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0020.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0021.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    },
+    {
+      "batch": "second-0022.jsonl",
+      "source_rows_read": 20,
+      "answers_written": 20,
+      "answers_validated_before_write": 20,
+      "answers_validated_after_readback": 20,
+      "human_review_count": 0,
+      "tokens": null,
+      "cost": null,
+      "failed_revisions": []
+    }
+  ],
+  "totals": {
+    "source_rows_read": 440,
+    "answers_written": 440,
+    "answers_validated": 1320,
+    "human_review_count": 0,
+    "tokens": null,
+    "cost": null,
+    "final_audit_source_rows_re_read": 440,
+    "final_audit_answer_rows_readback": 440,
+    "final_audit_human_review_count": 0
+  },
+  "completed_at_utc": "2026-10-14T10:49:01.929973+00:00",
+  "final_audit": {
+    "completed_at_utc": "2026-10-14T10:49:01.929973+00:00",
+    "source_batches_re_read": 22,
+    "source_rows_re_read": 440,
+    "answer_batches_readback": 22,
+    "answer_rows_readback": 440,
+    "answers_revalidated": 440,
+    "id_and_row_order_match": true,
+    "status_counts": {
+      "names": 341,
+      "no_name": 93,
+      "conflict": 5,
+      "uncertain": 1
+    },
+    "batch_counts": [
+      {
+        "batch": "second-0001.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0002.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0003.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0004.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0005.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0006.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0007.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0008.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0009.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0010.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0011.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0012.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0013.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0014.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0015.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0016.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0017.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0018.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0019.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0020.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0021.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      },
+      {
+        "batch": "second-0022.jsonl",
+        "source_rows": 20,
+        "answer_rows": 20
+      }
+    ]
+  }
+}

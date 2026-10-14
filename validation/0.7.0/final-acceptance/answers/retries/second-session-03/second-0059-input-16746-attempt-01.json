@@ -1,0 +1,1 @@
+{"input_id": "input-16746", "row_id": "Sheet1:16767", "names": [], "title_evidence": [], "body_evidence": ["六、核准李学刚、王建、余定强、王文东、张德军、邹伟董事任职资格，核准李后建、李廷章、蒋海曦独立董事任职资格。"], "status": "no_name", "reason": "标题仅说明四川汉源农村商业银行开业，未明示个人姓名；正文所列任职人员不纳入标题抽取。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

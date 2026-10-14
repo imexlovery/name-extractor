@@ -1,0 +1,26 @@
+{
+  "batch": 149,
+  "attempt": 1,
+  "input_id": "input-42952",
+  "validation_error": "Body evidence quote began with 经核准; source reads 经审查，核准.",
+  "answer": {
+    "input_id": "input-42952",
+    "row_id": "Sheet1:43098",
+    "names": [
+      "姜爱丽"
+    ],
+    "title_evidence": [
+      {
+        "name": "姜爱丽",
+        "quote": "姜爱丽"
+      }
+    ],
+    "body_evidence": [
+      "经核准姜爱丽潍坊农村商业银行股份有限公司独立董事任职资格，核准李爱杰、扈培源、张政霞、张连东、李建卫潍坊农村商业银行股份有限公司董事任职资格。"
+    ],
+    "status": "uncertain",
+    "reason": "标题明示姜爱丽并写“等6人”；正文列出其他人员，但标题未出现其姓名，依规则不加入，完整多人范围标记uncertain。",
+    "model": "gpt-6-luna",
+    "prompt_version": "title-body-independent-v1"
+  }
+}

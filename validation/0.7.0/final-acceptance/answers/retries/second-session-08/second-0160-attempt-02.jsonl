@@ -1,0 +1,1 @@
+{"input_id": "input-45855", "row_id": "Sheet1:46013", "names": [], "title_evidence": [], "body_evidence": ["核准曹炜担任四川分公司总经理的任职资格"], "status": "no_name", "reason": "标题仅涉及设立北部湾财产保险四川分公司，未出现人员姓名；正文提到曹炜任职，但不能补入标题未出现的人。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

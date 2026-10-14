@@ -1,0 +1,91 @@
+{
+  "session": "session-06",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-blind-v2",
+  "human": 0,
+  "tokens": null,
+  "cost": null,
+  "batches": [
+    {
+      "batch": "part-0241.jsonl",
+      "input_ids_read": 20,
+      "answers_written": 20,
+      "valid_answers": 20,
+      "completed_at_utc": "2026-10-14T10:28:07.846537Z",
+      "output": "answers/first/session-06-0241.jsonl",
+      "failed_revisions": []
+    },
+    {
+      "batch": "part-0242.jsonl",
+      "input_ids_read": 20,
+      "answers_written": 20,
+      "valid_answers": 20,
+      "completed_at_utc": "2026-10-14T10:28:30.336836Z",
+      "output": "answers/first/session-06-0242.jsonl",
+      "failed_revisions": []
+    },
+    {
+      "batch": "part-0243.jsonl",
+      "input_ids_read": 20,
+      "answers_written": 20,
+      "valid_answers": 20,
+      "completed_at_utc": "2026-10-14T10:28:55.791377Z",
+      "output": "answers/first/session-06-0243.jsonl",
+      "failed_revisions": []
+    },
+    {
+      "batch": "part-0244.jsonl",
+      "input_ids_read": 20,
+      "answers_written": 20,
+      "valid_answers": 20,
+      "completed_at_utc": "2026-10-14T10:29:22.506493Z",
+      "output": "answers/first/session-06-0244.jsonl",
+      "failed_revisions": []
+    },
+    {
+      "batch": "part-0245.jsonl",
+      "input_ids_read": 20,
+      "answers_written": 20,
+      "valid_answers": 20,
+      "completed_at_utc": "2026-10-14T10:29:49.691450Z",
+      "output": "answers/first/session-06-0245.jsonl",
+      "failed_revisions": []
+    },
+    {
+      "batch": "part-0246.jsonl",
+      "input_ids_read": 20,
+      "answers_written": 20,
+      "valid_answers": 20,
+      "completed_at_utc": "2026-10-14T10:30:13.640904Z",
+      "output": "answers/first/session-06-0246.jsonl",
+      "failed_revisions": []
+    },
+    {
+      "batch": "part-0247.jsonl",
+      "input_ids_read": 20,
+      "answers_written": 20,
+      "valid_answers": 20,
+      "completed_at_utc": "2026-10-14T10:30:39.390142Z",
+      "output": "answers/first/session-06-0247.jsonl",
+      "failed_revisions": []
+    },
+    {
+      "batch": "part-0248.jsonl",
+      "input_ids_read": 3,
+      "answers_written": 3,
+      "valid_answers": 3,
+      "completed_at_utc": "2026-10-14T10:30:53.085034Z",
+      "output": "answers/first/session-06-0248.jsonl",
+      "failed_revisions": []
+    }
+  ],
+  "checkpoint": "all assigned batches part-0241.jsonl through part-0248.jsonl complete",
+  "totals": {
+    "input_rows_read": 143,
+    "answers_written": 143,
+    "valid_answers": 143,
+    "human": 0,
+    "tokens": null,
+    "cost": null
+  }
+}

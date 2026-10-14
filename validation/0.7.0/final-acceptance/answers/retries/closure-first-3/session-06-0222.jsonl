@@ -1,0 +1,1 @@
+{"input_id": "input-41229", "row_id": "Sheet1:41364", "names": ["葛景亮"], "title_evidence": [{"name": "葛景亮", "quote": "葛景亮", "start": 11, "end": 14}], "body_evidence": ["二、核准葛景亮故城县农村信用联社董事长任职资格"], "status": "names", "reason": "标题明示葛景亮并以“等7人”省略其他人；只列标题明示的葛景亮。", "model": "gpt-6-luna", "prompt_version": "title-body-blind-v2"}

@@ -1,0 +1,3065 @@
+{
+  "session": "session-04",
+  "batches": [
+    {
+      "batch": "part-0001",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0001.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0001.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0002",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0002.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0002.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0003",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0003.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0003.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0004",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0004.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0004.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0005",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0005.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0005.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0006",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0006.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0006.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0007",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0007.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0007.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0008",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0008.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0008.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0009",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0009.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0009.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0010",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0010.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0010.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0011",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0011.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0011.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0012",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0012.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0012.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0013",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0013.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0013.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0014",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0014.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0014.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0015",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0015.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0015.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0016",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0016.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0016.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0017",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0017.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0017.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0018",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0018.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0018.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0019",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0019.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0019.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0020",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0020.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0020.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0021",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0021.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0021.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0022",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0022.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0022.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0023",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0023.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0023.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0024",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0024.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0024.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0025",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0025.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0025.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0026",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0026.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0026.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0027",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0027.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0027.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [
+        {
+          "utc": null,
+          "reason": "Initial validation rejected malformed body-evidence quote nesting; no answer file was written."
+        }
+      ],
+      "revisions": [
+        {
+          "utc": null,
+          "reason": "Corrected evidence structure and revalidated all 20 records."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0028",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0028.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0028.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0029",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0029.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0029.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [
+        {
+          "utc": null,
+          "reason": "Initial validation rejected non-exact body evidence; no answer file was written."
+        }
+      ],
+      "revisions": [
+        {
+          "utc": null,
+          "reason": "Corrected exact body quotations and revalidated all 20 records."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0030",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0030.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0030.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0031",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0031.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0031.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0032",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0032.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0032.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0033",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0033.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0033.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0034",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0034.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0034.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0035",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0035.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0035.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0036",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0036.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0036.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0037",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0037.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0037.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0038",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0038.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0038.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0039",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0039.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0039.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0040",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0040.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0040.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0041",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0041.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0041.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0042",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0042.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0042.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0043",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0043.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0043.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0044",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0044.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0044.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": null,
+      "failures": [
+        {
+          "utc": null,
+          "reason": "Initial validation rejected a non-exact body quotation; no answer file was written."
+        }
+      ],
+      "revisions": [
+        {
+          "utc": null,
+          "reason": "Corrected exact body quotations and revalidated all 20 records."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0045",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0045.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0045.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:57:19.090153+00:00",
+      "failures": [
+        {
+          "utc": "2026-10-13T11:57:19.090153+00:00",
+          "reason": "Initial validation rejected a quotation reflecting a misread name; no answer file was written."
+        }
+      ],
+      "revisions": [
+        {
+          "utc": "2026-10-13T11:57:19.090153+00:00",
+          "reason": "Corrected the name and quotation from source, then revalidated all 20 records."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0046",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0046.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0046.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:58:57.735966+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0047",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0047.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0047.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T11:59:44.215246+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0048",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0048.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0048.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:00:31.105831+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0049",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0049.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0049.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:01:15.191053+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0050",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0050.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0050.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:02:03.763656+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0051",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0051.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0051.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:03:49.484818+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0052",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0052.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0052.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:04:34.345325+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0053",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0053.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0053.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:05:15.312794+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0054",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0054.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0054.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:05:48.569939+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0055",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0055.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0055.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:06:38.760339+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0056",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0056.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0056.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:07:16.397716+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0057",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0057.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0057.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:08:08.991300+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0058",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0058.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0058.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:08:57.775898+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0059",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0059.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0059.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:09:25.521503+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0060",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0060.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0060.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:09:55.999306+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0061",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0061.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0061.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:10:45.766477+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0062",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0062.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0062.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:11:36.964291+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0063",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0063.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0063.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:12:18.345679+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0064",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0064.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0064.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:12:47.975943+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0065",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0065.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0065.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:14:29.813690+00:00",
+      "failures": [
+        {
+          "utc": "2026-10-13T12:14:04.107342+00:00",
+          "reason": "Initial answer assembly included one out-of-batch record; the 20-row count assertion stopped before writing any answer."
+        }
+      ],
+      "revisions": [
+        {
+          "utc": "2026-10-13T12:14:29.813690+00:00",
+          "reason": "Removed the out-of-batch row, rebuilt the 20 answers from this batch, and validated every answer."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0066",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0066.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0066.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:15:18.582669+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0067",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0067.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0067.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:16:16.705185+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0068",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0068.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0068.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:17:04.494513+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0069",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0069.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0069.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:17:40.177396+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0070",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0070.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0070.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:19:27.317308+00:00",
+      "failures": [
+        {
+          "utc": "2026-10-13T12:18:50.471923+00:00",
+          "reason": "Initial validation rejected a body quotation that was not an exact source substring; no answer file was written."
+        }
+      ],
+      "revisions": [
+        {
+          "utc": "2026-10-13T12:19:27.317308+00:00",
+          "reason": "Replaced the inexact excerpt with an exact decision sentence and revalidated all 20 answers."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0071",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0071.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0071.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:20:25.046306+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0072",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0072.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0072.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:21:24.101570+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0073",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0073.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0073.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:22:17.445510+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0074",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0074.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0074.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:23:08.084150+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0075",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0075.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0075.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:23:50.573613+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0076",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0076.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0076.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:24:55.030118+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0077",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0077.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0077.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:26:10.312150+00:00",
+      "failures": [
+        {
+          "utc": "2026-10-13T12:25:43.063832+00:00",
+          "reason": "Initial validation rejected a body quotation that was not an exact source substring; no answer file was written."
+        }
+      ],
+      "revisions": [
+        {
+          "utc": "2026-10-13T12:26:10.312150+00:00",
+          "reason": "Replaced the inexact body quotation with an exact excerpt and revalidated all 20 answers."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0078",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0078.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0078.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:27:02.356558+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0079",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0079.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0079.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:27:35.464158+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0080",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0080.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0080.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:29:09.167865+00:00",
+      "failures": [
+        {
+          "utc": "2026-10-13T12:28:40.017605+00:00",
+          "reason": "Initial validation rejected a body quotation that was not an exact source substring; no answer file was written."
+        }
+      ],
+      "revisions": [
+        {
+          "utc": "2026-10-13T12:29:09.167865+00:00",
+          "reason": "Removed an extra space from the quoted opening approval clause and revalidated all 20 answers."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0081",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0081.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0081.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:30:46.968784+00:00",
+      "failures": [
+        {
+          "utc": "2026-10-13T12:30:05.340961+00:00",
+          "reason": "Initial validation rejected a body quotation that was not an exact source substring; no answer file was written."
+        }
+      ],
+      "revisions": [
+        {
+          "utc": "2026-10-13T12:30:46.968784+00:00",
+          "reason": "Replaced the inexact company-name excerpt with an exact source quotation and revalidated all 20 answers."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0082",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0082.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0082.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:31:42.019786+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0083",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0083.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0083.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:32:40.358602+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0084",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0084.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0084.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:33:25.977219+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0085",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0085.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0085.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:34:31.610285+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0086",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0086.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0086.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:35:11.121348+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0087",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0087.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0087.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:37:38.528543+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0088",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0088.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0088.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:38:04.324354+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0089",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0089.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0089.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:39:29.476995+00:00",
+      "failures": [
+        "Initial validation failed: body quote missing from source for input-24657, input-24669"
+      ],
+      "revisions": [
+        "input-24657: corrected extracted title name from 郑炎 to 郑炎新 and replaced the non-matching body quote with the exact source sentence.",
+        "input-24669: corrected the body quote from 核准 to the exact source wording 审查."
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0090",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0090.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0090.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:40:03.968344+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0091",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0091.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0091.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:40:43.331952+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0092",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0092.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0092.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:41:08.906515+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0093",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0093.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0093.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:41:34.649303+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0094",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0094.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0094.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:42:15.116703+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0095",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0095.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0095.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:42:59.273743+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0096",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0096.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0096.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:43:36.174239+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0097",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0097.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0097.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:44:05.481710+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0098",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0098.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0098.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:44:34.537820+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0099",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0099.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0099.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:45:19.514020+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0100",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0100.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0100.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:45:55.255686+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0101",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0101.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0101.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:46:37.394420+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0102",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0102.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0102.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:47:24.574588+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0103",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0103.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0103.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:47:58.818705+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0104",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0104.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0104.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:48:56.750322+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0105",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0105.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0105.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:50:01.218504+00:00",
+      "failures": [
+        "Initial validation failed: body quote for input-24993 did not match the source verbatim."
+      ],
+      "revisions": [
+        "input-24993: replaced the mismatched phrase with the exact source wording “安诚财产保险股份有限公司中心支公司”. The corrected answer then passed validation."
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0106",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0106.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0106.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:50:31.472839+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0107",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0107.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0107.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:51:23.537901+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0108",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0108.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0108.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:51:47.254548+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0109",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0109.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0109.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:52:29.120534+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0110",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0110.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0110.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:53:03.282516+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0111",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0111.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0111.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:54:06.802334+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0112",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0112.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0112.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:55:11.751490+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0113",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0113.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0113.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:56:07.038813+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0114",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0114.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0114.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:56:40.515108+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0115",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0115.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0115.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:57:56.752538+00:00",
+      "failures": [
+        "Initial validation failed: names field was a string rather than an array."
+      ],
+      "revisions": [
+        "Converted each title-named person to the required one-element names array; retained the empty array for the no_name item. All 20 answers then passed validation."
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0116",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0116.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0116.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:59:00.317088+00:00",
+      "failures": [
+        "Initial validation failed: names field was a string rather than an array."
+      ],
+      "revisions": [
+        "Converted title-named people to one-element names arrays and retained the empty array for the no_name item. All 20 answers then passed validation."
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0117",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0117.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0117.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:59:26.285434+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0118",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0118.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0118.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T12:59:57.376584+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0119",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0119.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0119.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:00:50.326293+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0120",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0120.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0120.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:01:20.860411+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0121",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0121.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0121.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:03:11.035271+00:00",
+      "failures": [
+        "Initial validation failed: body quote for input-25296, input-25299, input-25315 was not present verbatim in source."
+      ],
+      "revisions": [
+        "input-25296: replaced an unrelated body quote with the exact 刘川 approval sentence.",
+        "input-25299: used the complete source sentence listing all four approvals because the shorter title-name phrase is not a contiguous source substring; retained only 宋杰 from the title.",
+        "input-25315: replaced the non-matching shortened quote with the exact sentence including 李映军's qualification clause."
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0122",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0122.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0122.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:03:58.271517+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0123",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0123.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0123.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:04:49.938726+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0124",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0124.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0124.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:05:29.781581+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0125",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0125.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0125.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:06:08.055077+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0126",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0126.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0126.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:07:07.736749+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0127",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0127.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0127.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:07:37.521997+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0128",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0128.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0128.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:08:27.274747+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0129",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0129.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0129.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:18:00.748406+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0130",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0130.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0130.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:19:10.681865+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0131",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0131.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0131.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:21:23.496293+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0132",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0132.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0132.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:22:54.611541+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0133",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0133.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0133.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:36:20.564439+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0134",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0134.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0134.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:37:25.017298+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0135",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0135.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0135.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:38:17.115084+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0136",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0136.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0136.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:39:44.581855+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0137",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0137.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0137.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:41:01.201761+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0138",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0138.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0138.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:43:09.454837+00:00",
+      "failures": [
+        {
+          "input_id": "input-25645",
+          "error": "Body quote not in original: omitted 服务 in 河北华圣保险销售服务有限公司"
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-25645",
+          "change": "Corrected body_evidence to include 服务 in 河北华圣保险销售服务有限公司; corrected quote now matches assigned source text exactly."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0139",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0139.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0139.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:44:19.943417+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0140",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0140.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0140.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:45:23.434597+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0141",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0141.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0141.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:46:11.675692+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0142",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0142.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0142.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:47:43.918419+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0143",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0143.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0143.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:49:40.717612+00:00",
+      "failures": [
+        {
+          "input_id": "input-25737",
+          "error": "Body evidence was nested as a list rather than supplied as a quote string; validation rejected the value."
+        },
+        {
+          "input_id": "input-25738",
+          "error": "Body evidence was nested as a list rather than supplied as a quote string; validation rejected the value."
+        },
+        {
+          "input_id": "input-25739",
+          "error": "Body evidence was nested as a list rather than supplied as a quote string; validation rejected the value."
+        },
+        {
+          "input_id": "input-25740",
+          "error": "Body evidence was nested as a list rather than supplied as a quote string; validation rejected the value."
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-25737",
+          "change": "Normalized body_evidence to a one-element array containing the exact source quote string."
+        },
+        {
+          "input_id": "input-25738",
+          "change": "Normalized body_evidence to a one-element array containing the exact source quote string."
+        },
+        {
+          "input_id": "input-25739",
+          "change": "Normalized body_evidence to a one-element array containing the exact source quote string."
+        },
+        {
+          "input_id": "input-25740",
+          "change": "Normalized body_evidence to a one-element array containing the exact source quote string."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0144",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0144.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0144.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:52:05.341492+00:00",
+      "failures": [
+        {
+          "input_id": "input-25767",
+          "error": "Body quote not in original: omitted the source title brackets around the 刘柏亮 petition title."
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-25767",
+          "change": "Added the exact source 《...请示》 delimiters to body_evidence."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0145",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0145.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0145.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:53:03.813858+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0146",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0146.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0146.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:53:48.946595+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0147",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0147.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0147.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:54:57.885453+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0148",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0148.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0148.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:56:07.836969+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0149",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0149.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0149.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:58:06.619822+00:00",
+      "failures": [
+        {
+          "input_id": "input-25860",
+          "error": "Body quote not in original: source uses a comma after 任职资格, not a full stop."
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-25860",
+          "change": "Removed the non-source terminal punctuation so body_evidence matches the exact source substring."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0150",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0150.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0150.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T13:59:23.904889+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0151",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0151.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0151.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:00:39.820379+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0152",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0152.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0152.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:02:16.020162+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0153",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0153.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0153.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:03:48.224102+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0154",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0154.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0154.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:05:01.964529+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0155",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0155.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0155.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:06:57.032317+00:00",
+      "failures": [
+        {
+          "input_id": "input-25977",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25978",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25979",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25980",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25981",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25982",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25983",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25984",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25985",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25986",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25987",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25988",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25989",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25990",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25991",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25992",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25993",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25994",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25995",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        },
+        {
+          "input_id": "input-25996",
+          "error": "Body quote was nested in a list before reaching the one-element body_evidence array; validator rejected the value."
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-25977",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25978",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25979",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25980",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25981",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25982",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25983",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25984",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25985",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25986",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25987",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25988",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25989",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25990",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25991",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25992",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25993",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25994",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25995",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-25996",
+          "change": "Changed the body quote value to a plain string and wrapped it once in body_evidence."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0156",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0156.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0156.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:07:49.165350+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0157",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0157.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0157.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:09:00.336577+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0158",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0158.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0158.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:10:33.752114+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0159",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0159.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0159.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:12:46.353701+00:00",
+      "failures": [
+        {
+          "input_id": "input-26057",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26058",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26059",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26060",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26061",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26062",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26063",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26064",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26065",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26066",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26067",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26068",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26069",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26070",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26071",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26072",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26073",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26074",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26075",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        },
+        {
+          "input_id": "input-26076",
+          "error": "Body quote was wrapped in a list before reaching the one-element body_evidence array; validator rejected each value."
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-26057",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26058",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26059",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26060",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26061",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26062",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26063",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26064",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26065",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26066",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26067",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26068",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26069",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26070",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26071",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26072",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26073",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26074",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26075",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        },
+        {
+          "input_id": "input-26076",
+          "change": "Set body quote to a plain string and wrapped it once in body_evidence."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0160",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0160.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0160.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:36:19.575697+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0161",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0161.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0161.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:37:55.911444+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0162",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0162.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0162.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:39:04.484328+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0163",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0163.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0163.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:40:10.208402+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0164",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0164.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0164.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:41:23.921212+00:00",
+      "failures": [
+        {
+          "input_id": "input-26162",
+          "error": "Body quote not in original; the approval phrase was paraphrased and omitted the source sentence opening."
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-26162",
+          "change": "Replaced body_evidence with the exact source sentence naming 董晓勇 and confirming the approval."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0165",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0165.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0165.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:42:50.992463+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0166",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0166.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0166.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:43:42.269385+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0167",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0167.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0167.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:47:31.422418+00:00",
+      "failures": [
+        {
+          "error": "Pre-write source-order check rejected the draft: the assigned source has no input-26222, so the draft IDs were not an exact ordered match."
+        }
+      ],
+      "revisions": [
+        {
+          "change": "Reread all 20 source records and rebuilt the answer list from the actual source IDs in order, including 26217-26221 and 26223-26237."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0168",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0168.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0168.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:49:21.395107+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0169",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0169.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0169.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T14:50:57.858361+00:00",
+      "failures": [
+        {
+          "input_id": "input-26265",
+          "error": "Body quote not in original: source uses 经审查 rather than 经审核."
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-26265",
+          "change": "Corrected the first two characters of the body quote to match the source exactly."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0170",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0170.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0170.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T15:00:29.149308+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0171",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0171.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0171.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T15:03:03.100276+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0172",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0172.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0172.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T15:05:10.594065+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0173",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0173.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0173.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T15:09:10.984200+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0174",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0174.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0174.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T15:22:31.803394+00:00",
+      "failures": [
+        {
+          "input_id": "input-26362",
+          "error": "Initial body quote did not match this source record; corrected to its exact approval sentence after rereading the assigned record."
+        }
+      ],
+      "revisions": [
+        {
+          "input_id": "input-26362",
+          "change": "Replaced the mismatched body_evidence with the exact source approval sentence."
+        }
+      ],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0175",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0175.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0175.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T15:23:43.862101+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0176",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0176.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0176.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T15:24:51.284124+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0177",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0177.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0177.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T15:25:45.428896+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0178",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0178.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0178.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T15:26:33.702192+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0179",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0179.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0179.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T15:27:37.656351+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    },
+    {
+      "batch": "part-0180",
+      "original_path": "validation/0.7.0/final-acceptance/blind/session-04/part-0180.jsonl",
+      "output_path": "validation/0.7.0/final-acceptance/answers/first/session-04-0180.jsonl",
+      "read_count": 20,
+      "output_count": 20,
+      "valid_count": 20,
+      "utc": "2026-10-13T15:28:42.986288+00:00",
+      "failures": [],
+      "revisions": [],
+      "tokens": null,
+      "cost": null,
+      "human_checked_count": 0
+    }
+  ],
+  "note": "Historical counts through part-0045 are based on the completed-batch record. Earlier UTC timestamps were not recoverable from the prior single-record log and are left null."
+}

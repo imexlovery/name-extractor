@@ -1,0 +1,1 @@
+{"input_id": "input-18575", "row_id": "Sheet1:18603", "names": [], "title_evidence": [], "body_evidence": ["三、核准张锐、高本伦、王建、陈怀毅、郑贇、刘祥荣董事任职资格；核准周玮、戴治勇、李君独立董事任职资格"], "status": "no_name", "reason": "标题仅说明四川天全农村商业银行开业，未明示个人姓名；正文列出的董事、高管不纳入标题抽取。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

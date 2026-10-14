@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-13T17:24:50.418825+00:00",
+  "operation": "assemble_existing_independent_ai_correction",
+  "prefix": "session-07",
+  "part": "0201",
+  "old_count": 19,
+  "new_count": 20,
+  "restored_input_id": "input-45860",
+  "source_correction": "validation/0.7.0/final-acceptance/answers/retries/session-07-clean-replacement/session-07-0201.jsonl",
+  "backup": "validation/0.7.0/final-acceptance/answers/retries/main-completion-repair/session-07-0201-before-assembly.jsonl",
+  "names_status_reason_changed_by_main": false,
+  "validator_passed": true,
+  "missing_batches_still_require_independent_reread": [
+    "0244",
+    "0245"
+  ],
+  "actual_human_checks": 0
+}

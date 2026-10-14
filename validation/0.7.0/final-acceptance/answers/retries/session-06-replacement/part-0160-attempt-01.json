@@ -1,0 +1,6 @@
+{
+  "part": "part-0160.jsonl",
+  "attempt": 1,
+  "failure": "one body quote in the initial candidate set failed exact-source validation before write",
+  "resolution": "reconstructed all evidence quotes against the assigned source; the complete batch passed prewrite and readback validation"
+}

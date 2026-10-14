@@ -1,0 +1,1 @@
+{"input_id": "input-16047", "row_id": "Sheet1:16068", "names": ["周明强"], "title_evidence": [{"name": "周明强", "quote": "周明强"}], "body_evidence": ["一、核准周明强郧西村镇银行股份有限公司董事、董事长的任职资格。"], "status": "names", "reason": "标题明示周明强；正文批复其董事、董事长任职资格，与标题对象一致。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

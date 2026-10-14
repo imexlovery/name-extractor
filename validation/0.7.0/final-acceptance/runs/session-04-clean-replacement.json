@@ -1,0 +1,628 @@
+{
+  "session": "session-04-clean-replacement",
+  "model": "gpt-6-luna",
+  "prompt_version": "title-body-blind-v2",
+  "batches": [
+    {
+      "part": "0181",
+      "utc": "2026-10-13T15:48:23.210445+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0182",
+      "utc": "2026-10-13T15:49:07.500342+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0183",
+      "utc": "2026-10-13T15:49:50.257847+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0184",
+      "utc": "2026-10-13T15:50:33.608537+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0185",
+      "utc": "2026-10-13T15:51:13.620735+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0186",
+      "utc": "2026-10-13T15:52:55.965038+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 1,
+      "revisions": 1,
+      "retry_rows_written": 1
+    },
+    {
+      "part": "0187",
+      "utc": "2026-10-13T15:53:33.538743+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0188",
+      "utc": "2026-10-13T15:54:17.945514+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0189",
+      "utc": "2026-10-13T15:54:53.783952+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0190",
+      "utc": "2026-10-13T15:55:40.301548+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0191",
+      "utc": "2026-10-13T15:56:27.269879+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0192",
+      "utc": "2026-10-13T15:57:09.592399+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0193",
+      "utc": "2026-10-13T15:57:50.739257+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0194",
+      "utc": "2026-10-13T15:58:30.694425+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0195",
+      "utc": "2026-10-13T15:59:14.423368+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0196",
+      "utc": "2026-10-13T16:00:06.275202+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0197",
+      "utc": "2026-10-13T16:00:46.694912+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0198",
+      "utc": "2026-10-13T16:01:46.702909+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0199",
+      "utc": "2026-10-13T16:02:23.664098+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0200",
+      "utc": "2026-10-13T16:03:02.628020+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0201",
+      "utc": "2026-10-13T16:03:41.141982+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0202",
+      "utc": "2026-10-13T16:04:15.915909+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0203",
+      "utc": "2026-10-13T16:04:49.803822+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0204",
+      "utc": "2026-10-13T16:05:27.287661+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0205",
+      "utc": "2026-10-13T16:06:07.981536+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0206",
+      "utc": "2026-10-13T16:06:47.750094+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0207",
+      "utc": "2026-10-13T16:07:26.728115+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0208",
+      "utc": "2026-10-13T16:08:05.247197+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0209",
+      "utc": "2026-10-13T16:08:46.694734+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0210",
+      "utc": "2026-10-13T16:09:25.819382+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0211",
+      "utc": "2026-10-13T16:10:05.679493+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0212",
+      "utc": "2026-10-13T16:10:42.366418+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0213",
+      "utc": "2026-10-13T16:11:26.589982+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0214",
+      "utc": "2026-10-13T16:12:39.525387+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0215",
+      "utc": "2026-10-13T16:13:16.822969+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0216",
+      "utc": "2026-10-13T16:13:58.880040+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0217",
+      "utc": "2026-10-13T16:14:37.444702+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0218",
+      "utc": "2026-10-13T16:16:05.583573+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0219",
+      "utc": "2026-10-13T16:16:45.025454+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0220",
+      "utc": "2026-10-13T16:18:29.059655+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 1,
+      "revisions": 1,
+      "retry_rows_written": 1
+    },
+    {
+      "part": "0221",
+      "utc": "2026-10-13T16:19:13.732651+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0222",
+      "utc": "2026-10-13T16:26:08.005255+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 2,
+      "revisions": 2,
+      "retry_rows_written": 2
+    },
+    {
+      "part": "0223",
+      "utc": "2026-10-13T16:29:10.453753+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0224",
+      "utc": "2026-10-13T16:30:08.001162+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0225",
+      "utc": "2026-10-13T16:32:19.231084+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0226",
+      "utc": "2026-10-13T16:32:40.649211+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0227",
+      "utc": "2026-10-13T16:33:23.065536+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 1,
+      "revisions": 1,
+      "retry_rows_written": 1
+    },
+    {
+      "part": "0228",
+      "utc": "2026-10-13T16:33:39.972483+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0229",
+      "utc": "2026-10-13T16:33:56.599263+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0230",
+      "utc": "2026-10-13T16:34:13.930835+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0231",
+      "utc": "2026-10-13T16:34:37.663550+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0232",
+      "utc": "2026-10-13T16:34:55.798224+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0233",
+      "utc": "2026-10-13T16:35:17.803090+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0234",
+      "utc": "2026-10-13T16:35:58.205622+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0235",
+      "utc": "2026-10-13T16:36:19.598157+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0236",
+      "utc": "2026-10-13T16:36:37.178616+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0237",
+      "utc": "2026-10-13T16:37:06.772043+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0238",
+      "utc": "2026-10-13T16:37:38.230576+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0239",
+      "utc": "2026-10-13T16:38:18.707938+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 1,
+      "revisions": 1,
+      "retry_rows_written": 1
+    },
+    {
+      "part": "0240",
+      "utc": "2026-10-13T16:38:40.310388+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0241",
+      "utc": "2026-10-13T16:38:58.644982+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0242",
+      "utc": "2026-10-13T16:39:14.285260+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0243",
+      "utc": "2026-10-13T16:39:45.985641+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0244",
+      "utc": "2026-10-13T16:41:17.092066+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 1,
+      "revisions": 1,
+      "retry_rows_written": 1
+    },
+    {
+      "part": "0245",
+      "utc": "2026-10-13T16:41:48.273440+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0246",
+      "utc": "2026-10-13T16:42:17.751963+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0247",
+      "utc": "2026-10-13T16:42:55.694010+00:00",
+      "input_read": 20,
+      "output_written": 20,
+      "validated": 20,
+      "failures": 0,
+      "revisions": 0
+    },
+    {
+      "part": "0248",
+      "utc": "2026-10-13T16:43:09.112698+00:00",
+      "input_read": 3,
+      "output_written": 3,
+      "validated": 3,
+      "failures": 0,
+      "revisions": 0
+    }
+  ],
+  "token_count": null,
+  "cost": null,
+  "human_review_count": 0
+}
