@@ -1,0 +1,27 @@
+{
+  "version": "v3",
+  "rows": 52146,
+  "unique_titles": 46760,
+  "source": "source.xlsx",
+  "sheet": "Sheet1",
+  "title_column": "A",
+  "full_reference_archive_member": "validation/0.7.0/final-acceptance/fixed-row-reference.jsonl",
+  "full_reference_manifest_archive_member": "validation/0.7.0/final-acceptance/references/v3-manifest.json",
+  "archive": ".archives/r65-20261015/history.tar.gz",
+  "baseline_branch": "codex/r65-frozen-20261015",
+  "baseline_commit": "9f1a0e2",
+  "removed_learned_institution_fragments": 12277,
+  "removed_builtin_named_institution_anchors": 44,
+  "removed_named_institution_abbreviations": [
+    "农发行",
+    "进出口行"
+  ],
+  "removed_exact_title_abstentions": 7,
+  "retained_geographic_and_type_anchors": 38,
+  "unresolved_reference_rows": 3,
+  "source_information_conflict_rows": 35,
+  "purpose": "Fixed regression references previously used in rule and dictionary development.",
+  "unseen_data_accuracy": null,
+  "true_accuracy": null,
+  "acceptance_passed": false
+}

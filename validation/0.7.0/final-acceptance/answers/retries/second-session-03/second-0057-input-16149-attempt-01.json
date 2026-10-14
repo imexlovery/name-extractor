@@ -1,1 +1,0 @@
-{"input_id": "input-16149", "row_id": "Sheet1:16170", "names": [], "title_evidence": [], "body_evidence": ["六、核准文岐军广西阳朔农村商业银行股份有限公司董事长的任职资格；核准文岐军、秦成昆、董钢、廖浩、龚爱玲、黄高斌广西阳朔农村商业银行股份有限公司董事的任职资格。"], "status": "no_name", "reason": "标题仅说明广西阳朔农村商业银行开业，未明示个人姓名；正文所列法定代表人及任职人员不纳入标题抽取。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

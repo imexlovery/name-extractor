@@ -1,0 +1,82 @@
+{
+  "script_version": "generic-v0.1",
+  "source_rows": 52146,
+  "unique_titles": 46760,
+  "categories_rows": {
+    "match": 43389,
+    "script_unresolved_confirmed_reference": 8681,
+    "name_or_status_difference": 65,
+    "unresolved_reference": 3,
+    "count_or_split_difference": 8
+  },
+  "status_rows": {
+    "names": 42723,
+    "uncertain": 8684,
+    "no_name": 739
+  },
+  "confirmed_matching_rows": 43389,
+  "confirmed_difference_rows": 8754,
+  "unresolved_reference_rows": 3,
+  "reference_agreement": 0.8320676561960649,
+  "confirmed_reference_agreement": 0.832115528450607,
+  "script_determinate_rows": 43462,
+  "script_determinate_reference_agreement": 0.9983203718190603,
+  "source_information_conflict_rows": 35,
+  "contract_failure_rows": 0,
+  "contract_failure_titles": 0,
+  "errors_by_rule": {
+    "institution_root_unknown": 6798,
+    "person_before_institution": 1070,
+    "person_before_generic_bank": 812,
+    "person_before_qualification": 27,
+    "missing_qualification": 15,
+    "complete_person_clauses": 11,
+    "institution_before_person": 7,
+    "institution_intermediate_segment": 6,
+    "approval_object_without_qualification": 4,
+    "conflicting_person_boundaries": 2,
+    "multiple_person_or_post_clauses": 1,
+    "incomplete_approval_verb": 1,
+    "ambiguous_proposed_appointment": 1,
+    "ambiguous_post_verb": 1,
+    "generic_institution_before_boundary": 1
+  },
+  "errors_by_risk": {
+    "机构边界": 8638,
+    "无姓名候选": 7836,
+    "中点或括号姓名形式": 1072,
+    "长连续姓名或异常长度": 828,
+    "多人连接": 593,
+    "职务或部门残片": 385,
+    "英文及别名": 138,
+    "四字姓名人数边界": 77,
+    "缺少标准结构": 48,
+    "等人省略": 4,
+    "称谓或介词结构": 4,
+    "括号异常": 1
+  },
+  "unseen_data_accuracy": null,
+  "true_accuracy": null,
+  "acceptance_passed": false,
+  "seconds": 1.909,
+  "reference_version": "v3",
+  "reference_file": "reference_v3.jsonl",
+  "v3_reference_agreement": 0.8320676561960649,
+  "source_check": {
+    "original_titles_verified": 52146,
+    "title_column": "A",
+    "sheet": "Sheet1"
+  },
+  "excel_export_check": {
+    "records_verified": 52146,
+    "original_field_slots_verified": 677898,
+    "original_cells_xml_verified": 677911,
+    "xml_rows_preserved": 107328,
+    "unchanged_zip_members": 16,
+    "result_cells_verified": 104294,
+    "original_values_types_styles_order_preserved": true,
+    "original_column_formats_preserved": true,
+    "dimension_and_filter_expanded_to_O": true,
+    "source_overwritten": false
+  }
+}

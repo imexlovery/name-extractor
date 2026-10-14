@@ -1,7 +1,0 @@
-{
-  "part": "part-0142.jsonl",
-  "attempt": 1,
-  "failed_input_id": "input-39560",
-  "failure": "body quote used traditional character 任職 instead of source wording 任职; validator rejected before write",
-  "resolution": "corrected quote and validated all records before and after write"
-}

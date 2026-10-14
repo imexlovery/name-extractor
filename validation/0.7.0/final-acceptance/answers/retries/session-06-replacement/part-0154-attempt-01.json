@@ -1,6 +1,0 @@
-{
-  "part": "part-0154.jsonl",
-  "attempt": 1,
-  "failure": "body_evidence text failed exact-source validation before write",
-  "resolution": "reconstructed evidence quotes against the assigned source; all 20 answers passed prewrite and readback validation"
-}

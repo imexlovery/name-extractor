@@ -1,7 +1,0 @@
-{
-  "part": "part-0166.jsonl",
-  "attempt": 1,
-  "failed_input_id": "input-40055",
-  "failure": "combined two noncontiguous body passages into one evidence quote; validator rejected before write",
-  "resolution": "split the header and operative approval into exact-source quotes; validated all 20 records before and after write"
-}

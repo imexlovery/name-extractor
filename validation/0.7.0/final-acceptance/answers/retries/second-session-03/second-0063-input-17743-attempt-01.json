@@ -1,1 +1,0 @@
-{"input_id": "input-17743", "row_id": "Sheet1:17767", "names": [], "title_evidence": [], "body_evidence": ["五、核准李乾才、周波、范明庆、迟文学、王燕董事任职资格，不予核准栾宝秋董事、于湘君独立董事任职资格；核准李乾才董事长、李鑫董事会秘书任职资格。"], "status": "no_name", "reason": "标题仅说明黑龙江木兰农村商业银行开业，未明示个人姓名；正文中的董事及高管任职决定不纳入标题抽取。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

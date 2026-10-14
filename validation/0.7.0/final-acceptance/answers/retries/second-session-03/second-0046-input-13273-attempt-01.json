@@ -1,1 +1,0 @@
-{"input_id": "input-13273", "row_id": "Sheet1:13287", "names": ["李川"], "title_evidence": [{"name": "李川", "quote": "李川"}], "body_evidence": ["四、同意李川江西安福农村商业银行股份有限公司横龙支行行长任职资格的备案。"], "status": "names", "reason": "标题明示李川；正文批复其行长任职资格，与标题对象一致。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

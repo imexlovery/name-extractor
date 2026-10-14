@@ -1,8 +1,0 @@
-{
-  "attempt": 1,
-  "stage": "pre-write format validation",
-  "failure": "answer-construction helper omitted required row_id",
-  "effect": "validation stopped before any output file was written",
-  "resolution": "copied row_id from the matching source record and reran validation",
-  "recorded_at_utc": "2026-10-14T11:08:07.725505+00:00"
-}

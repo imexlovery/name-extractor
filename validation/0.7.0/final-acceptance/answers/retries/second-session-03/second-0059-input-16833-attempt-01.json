@@ -1,1 +1,0 @@
-{"input_id": "input-16833", "row_id": "Sheet1:16855", "names": [], "title_evidence": [], "body_evidence": ["六、核准蒋东明信银金融资产投资有限公司董事、董事长的任职资格；核准吴威信银金融资产投资有限公司董事、总裁的任职资格；核准王志斌、李景璐信银金融资产投资有限公司董事的任职资格。"], "status": "no_name", "reason": "标题仅说明信银金融资产投资有限公司开业，未明示个人姓名；正文中的董事及高管不纳入标题抽取。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

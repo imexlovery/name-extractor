@@ -1,7 +1,0 @@
-{
-  "part": "part-0180.jsonl",
-  "attempt": 1,
-  "failed_input_id": "input-40338",
-  "failure": "body quote omitted a source space in the citation for the 2014 regulation; validator rejected before write",
-  "resolution": "restored the source space and validated all 20 records before and after write"
-}

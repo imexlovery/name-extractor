@@ -1,7 +1,0 @@
-{
-  "version": "r48",
-  "source": "extract-r48.py",
-  "institution_resource": "institution_anchors_r41.json",
-  "fresh_titles": "blind/structure-fresh.jsonl",
-  "model_visibility": "作者先冻结预期且未看当前规则；通道B仅见标题；主Agent首次评价前保存规则源码。合成结构家族来自已揭示开发样本，不是真实未见数据。"
-}

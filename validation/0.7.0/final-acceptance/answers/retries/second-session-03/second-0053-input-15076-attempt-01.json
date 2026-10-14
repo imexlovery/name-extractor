@@ -1,1 +1,0 @@
-{"input_id": "input-15076", "row_id": "Sheet1:15096", "names": [], "title_evidence": [], "body_evidence": ["四、该行注册资本为人民币10000万元，法定代表人为牛岩；机构住址为黑龙江省林口县林口镇向阳路56号。", "五、核准牛岩、祝喜忱、焉永新、朱星源、张涛、万施雨董事任职资格；核准孟凡飞独立董事任职资格。"], "status": "no_name", "reason": "标题仅说明黑龙江林口农村商业银行开业，未明示个人姓名；正文中的法定代表人及获批董事不纳入标题抽取。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

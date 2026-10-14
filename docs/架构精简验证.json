@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-15",
+  "baseline": "codex/r65-frozen-20261015",
+  "experiment": "codex/generic-v0.1",
+  "archive": {
+    "frozen_commit": "9f1a0e23fce4066dc77169a1451a455d4935acc3",
+    "frozen_branch": "codex/r65-frozen-20261015",
+    "archive": "history.tar.gz",
+    "tracked_files": 8476,
+    "ignored_local_history_files": 3557,
+    "verified_files": 12033,
+    "verified_original_bytes": 2953712119,
+    "archive_bytes": 654845182,
+    "verification": "Every member decompressed and compared byte-for-byte with its source; gzip reached EOF.",
+    "excluded": [
+      ".git",
+      ".venv",
+      "__pycache__",
+      ".DS_Store"
+    ],
+    "seconds": 20.17
+  },
+  "slim_reference_rows_verified_against_original_excel": 52146,
+  "reproduced_r65_row_categories": 52146,
+  "r65_all_comparison_metrics_match": true,
+  "r65_reproduction": {
+    "script_version": "r65",
+    "source_rows": 52146,
+    "unique_titles": 46760,
+    "categories_rows": {
+      "match": 52067,
+      "script_unresolved_confirmed_reference": 76,
+      "unresolved_reference": 3
+    },
+    "status_rows": {
+      "names": 51309,
+      "no_name": 758,
+      "uncertain": 79
+    },
+    "confirmed_matching_rows": 52067,
+    "confirmed_difference_rows": 76,
+    "unresolved_reference_rows": 3,
+    "reference_agreement": 0.9984850228205423,
+    "confirmed_reference_agreement": 0.9985424697466583,
+    "script_determinate_rows": 52067,
+    "script_determinate_reference_agreement": 1.0,
+    "source_information_conflict_rows": 35,
+    "contract_failure_rows": 0,
+    "contract_failure_titles": 0,
+    "errors_by_rule": {
+      "institution_before_person": 25,
+      "person_before_qualification": 18,
+      "person_before_institution": 12,
+      "missing_qualification": 9,
+      "incomplete_institution_title": 5,
+      "approval_object_without_qualification": 4,
+      "reviewed_title_ambiguity": 2,
+      "incomplete_approval_verb": 1,
+      "ambiguous_proposed_appointment": 1,
+      "ambiguous_post_verb": 1,
+      "generic_institution_before_boundary": 1
+    },
+    "errors_by_risk": {
+      "机构边界": 44,
+      "长连续姓名或异常长度": 44,
+      "缺少标准结构": 21,
+      "无姓名候选": 14,
+      "四字姓名人数边界": 8,
+      "多人连接": 5,
+      "英文及别名": 5,
+      "中点或括号姓名形式": 4,
+      "职务或部门残片": 2
+    },
+    "unseen_data_accuracy": null,
+    "true_accuracy": null,
+    "acceptance_passed": false,
+    "seconds": 2.126,
+    "reference_version": "v3",
+    "reference_file": "reference_v3.jsonl",
+    "v3_reference_agreement": 0.9984850228205423
+  },
+  "tests_passed": 31,
+  "generic_excel_export_check": {
+    "records_verified": 52146,
+    "original_field_slots_verified": 677898,
+    "original_cells_xml_verified": 677911,
+    "xml_rows_preserved": 107328,
+    "unchanged_zip_members": 16,
+    "result_cells_verified": 104294,
+    "original_values_types_styles_order_preserved": true,
+    "original_column_formats_preserved": true,
+    "dimension_and_filter_expanded_to_O": true,
+    "source_overwritten": false
+  },
+  "git_history_rewritten": false,
+  "pushed": false,
+  "active_project_files": 27,
+  "active_project_bytes": 21766998,
+  "post_cleanup_checks_passed": true,
+  "post_cleanup_generic_categories_rows": {
+    "match": 43389,
+    "script_unresolved_confirmed_reference": 8681,
+    "name_or_status_difference": 65,
+    "unresolved_reference": 3,
+    "count_or_split_difference": 8
+  }
+}

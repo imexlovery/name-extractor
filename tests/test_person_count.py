@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 import unittest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from extract import extract
 from validate import check
 
@@ -68,9 +68,11 @@ class PersonCountContract(unittest.TestCase):
             self.assertEqual(extract(title)['status'], 'uncertain', title)
         for title in ['关于张明董事及监事任职资格的批复',
                       '关于张明董事兼监事任职资格的批复',
-                      '关于梁居正大连银行营业部总经理助理任职资格的批复',
                       '关于核准区琨瑜理事会秘书任职资格的批复']:
             self.assertEqual(extract(title)['status'], 'names', title)
+        # 大连银行 was resolved by the frozen institution dictionary. The
+        # generic experiment keeps an unknown institution root unresolved.
+        self.assertEqual(extract('关于梁居正大连银行营业部总经理助理任职资格的批复')['status'], 'uncertain')
 
     def test_connectors_inside_names_departments_and_aliases_are_not_clause_boundaries(self):
         self.assert_result('关于任庆和董事任职资格的批复', 'names', ['任庆和'])
@@ -92,10 +94,10 @@ class PersonCountContract(unittest.TestCase):
             self.assert_result(f'关于{name}任职资格的批复', 'names', [name])
         self.assert_result('关于林零1人任职资格的批复', 'names', ['林零'])
 
-    def test_reviewed_ambiguities_abstain_without_changing_fragments(self):
+    def test_removed_exact_title_exceptions_use_general_four_character_rule(self):
         for fragment in ['王夏春子', '殷熊毅辉', '陈琳张瑞', '胡宇陈琳', '张瑞胡铁', '陈琳胡宇', '胡铁张瑞']:
-            result = self.assert_result(f'关于{fragment}任职资格的批复', 'uncertain', [fragment])
-            self.assertEqual(result['rule'], 'reviewed_title_ambiguity')
+            result = self.assert_result(f'关于{fragment}任职资格的批复', 'names', [fragment])
+            self.assertNotEqual(result['rule'], 'reviewed_title_ambiguity')
 
     def test_plural_structure_supports_connectors_but_never_run_on_splits(self):
         for title, names in [

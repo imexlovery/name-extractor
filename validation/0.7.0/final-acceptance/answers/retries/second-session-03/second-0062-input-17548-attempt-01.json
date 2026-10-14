@@ -1,1 +1,0 @@
-{"input_id": "input-17548", "row_id": "Sheet1:17572", "names": [], "title_evidence": [], "body_evidence": ["三、翟雪莹符合辽宁盖州农村商业银行股份有限公司北海支行行长任职资格条件。"], "status": "no_name", "reason": "标题仅说明西海分理处升格、迁址并更名为北海支行，未明示个人姓名；正文中的翟雪莹不纳入标题抽取。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

@@ -1,1 +1,0 @@
-{"input_id": "input-27283", "row_id": "Sheet1:27347", "names": ["张福彬"], "title_evidence": [{"name": "张福彬", "quote": "张福彬", "start": 2, "end": 5}], "body_evidence": ["核准其大家财产保险有限责任公司支公司经理的任职资格。"], "status": "names", "reason": "标题明示张福彬一人，正文核准其支公司经理资格。", "model": "gpt-6-luna", "prompt_version": "title-body-blind-v2"}

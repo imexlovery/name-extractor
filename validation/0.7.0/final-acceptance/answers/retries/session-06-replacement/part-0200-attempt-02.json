@@ -1,7 +1,0 @@
-{
-  "part": "part-0200.jsonl",
-  "attempt": 2,
-  "failed_input_id": "input-40763",
-  "failure": "body evidence quote omitted the source phrase 的任职资格; validator rejected before write",
-  "resolution": "restored the complete source wording and validated all 20 records before and after write"
-}

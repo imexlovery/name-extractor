@@ -1,1 +1,0 @@
-{"input_id": "input-27762", "row_id": "Sheet1:27828", "names": ["王鑫"], "title_evidence": [{"name": "王鑫", "quote": "王鑫", "start": 4, "end": 6}], "body_evidence": ["经审查，核准王鑫中国邮政储蓄银行菏泽市定陶区支行行长高级管理人员任职资格。"], "status": "names", "reason": "标题明示姓名“王鑫”，正文载明其任职资格事项。", "model": "gpt-6-luna", "prompt_version": "title-body-blind-v2"}

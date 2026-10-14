@@ -1,5 +1,0 @@
-{
-  "version": "r29",
-  "holdout5_answers_used_to_revise": false,
-  "note": "4984机构锚点排除本组400标题；实际运行锚点5066，清理生成缓存重跑后冻结，再揭示参考答案。"
-}

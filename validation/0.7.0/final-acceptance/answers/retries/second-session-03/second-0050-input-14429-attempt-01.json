@@ -1,1 +1,0 @@
-{"input_id": "input-14429", "row_id": "Sheet1:14447", "names": [], "title_evidence": [], "body_evidence": ["五、核准王立生吉林农村商业银行股份有限公司董事长的任职资格；核准马剑凤吉林农村商业银行股份有限公司行长的任职资格；核准刘桂宝、王汉奇、侯颖丽、刘鑫吉林农村商业银行股份有限公司副行长的任职资格。"], "status": "no_name", "reason": "标题仅说明吉林农村商业银行股份有限公司开业，未明示个人姓名；正文中的任职人员不纳入标题抽取。", "model": "gpt-6-luna", "prompt_version": "title-body-independent-v1"}

@@ -1,7 +1,0 @@
-{
-  "part": "part-0200.jsonl",
-  "attempt": 1,
-  "failed_input_id": null,
-  "failure": "candidate count was 21 for a 20-row source batch because a two-name title was expanded into two records",
-  "resolution": "combined both explicitly titled names in one answer record before validation"
-}

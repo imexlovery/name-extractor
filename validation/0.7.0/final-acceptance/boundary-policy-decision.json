@@ -1,9 +1,0 @@
-{
-  "decision": "preserve_general_rules_and_disclose_remaining_differences",
-  "source": "用户在本会话明确回复：保留通用规则，披露剩余差异",
-  "title_specific_exceptions_allowed": false,
-  "script_version": "r65",
-  "remaining_confirmed_reference_differences": 76,
-  "unresolved_reference_rows": 39,
-  "acceptance_passed": false
-}
